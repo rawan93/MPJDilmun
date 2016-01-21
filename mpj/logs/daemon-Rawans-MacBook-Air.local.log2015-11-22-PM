@@ -1,0 +1,16 @@
+ DEBUG mpjdaemon  - mpjHomeDir /Users/senior/Desktop/mpj/
+ DEBUG mpjdaemon  -  args[0] 40050
+ DEBUG mpjdaemon  - setting daemon port to40050
+ DEBUG mpjdaemon  - Starting PortManager thread .. 
+ DEBUG mpjdaemon  - Starting ConnectionManager thread .. 
+ DEBUG mpjdaemon  - serverSocketInit .. 
+ DEBUG mpjdaemon  - serverSocketInit called .. 
+ DEBUG mpjdaemon  - Accepting connection ..
+ DEBUG mpjdaemon  - mpjHomeDir /Users/senior/Desktop/mpj/
+ DEBUG mpjdaemon  -  args[0] 40056
+ DEBUG mpjdaemon  - setting daemon port to40056
+ DEBUG mpjdaemon  - Starting PortManager thread .. 
+ DEBUG mpjdaemon  - Starting ConnectionManager thread .. 
+ DEBUG mpjdaemon  - serverSocketInit .. 
+ DEBUG mpjdaemon  - serverSocketInit called .. 
+ DEBUG mpjdaemon  - Accepting connection ..
