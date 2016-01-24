@@ -108,7 +108,10 @@ public static boolean runtimeStatus = false;
       }
 
       ExecuteThreads(threads, options.getThreadCount());
+        //check if the status is required and print
+     if (type.equals(DMConstants.STATUS)) {
       System.out.println("runtime status: "+runtimeStatus);
+     }
     }
   }
 }
