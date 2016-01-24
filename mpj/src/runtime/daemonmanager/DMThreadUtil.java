@@ -112,18 +112,18 @@ public static String ProcessID="";
       }
 
       ExecuteThreads(threads, options.getThreadCount());
-<<<<<<< HEAD
+     
+       
+        
+        
       
-        System.out.println("--------------------------------");
-        System.out.println("runtime status: "+runtimeStatus);
-        System.out.println("Process ID:"+ProcessID+".");
-      
-=======
-        //check if the status is required and print
+       //check if the status is required and print
      if (type.equals(DMConstants.STATUS)) {
+      System.out.println("--------------------------------");
       System.out.println("runtime status: "+runtimeStatus);
+      System.out.println("Process ID:"+ProcessID+".");
+      
      }
->>>>>>> 8ed9b721706cb6abb6a214878e73de1df8b9e579
     }
   }
 }
