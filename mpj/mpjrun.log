@@ -9,7 +9,7 @@
  DEBUG runtime  - -psl: <131072>
  DEBUG runtime  - jvmArgs.length: <0>
  DEBUG runtime  - className : <HelloWorld>
- DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Project/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Project/MPJDilmun/mpj>
  DEBUG runtime  - -yarn: <false>
  DEBUG runtime  - $HADOOP_HOME: <null>
  DEBUG runtime  - -amMem: <null>
@@ -25,7 +25,7 @@
  DEBUG runtime  - className HelloWorld
  DEBUG runtime  - mpjHomeDir /Users/senior/Desktop/Project/MPJDilmun/mpj/
  DEBUG runtime  - McDaemon is waiting to accept connections ... 
- DEBUG runtime  - wdir /Users/senior/Desktop/Project/MPJDilmun/mpj/mpj-user
+ DEBUG runtime  - wdir /Users/senior/Desktop/Project/MPJDilmun/mpj
  DEBUG runtime  - A client has connected
  DEBUG runtime  - the daemon will start <2> threads
  DEBUG runtime  - cp = /Users/senior/Desktop/Project/MPJDilmun/mpj//lib/smpdev.jar:/Users/senior/Desktop/Project/MPJDilmun/mpj//lib/xdev.jar:/Users/senior/Desktop/Project/MPJDilmun/mpj//lib/mpjbuf.jar:/Users/senior/Desktop/Project/MPJDilmun/mpj//lib/loader2.jar:/Users/senior/Desktop/Project/MPJDilmun/mpj//lib/starter.jar:/Users/senior/Desktop/Project/MPJDilmun/mpj//lib/mpiExp.jar
@@ -35,14 +35,14 @@
  DEBUG runtime  - 1: -cp
  DEBUG runtime  - 2: /Users/senior/Desktop/Project/MPJDilmun/mpj//lib/smpdev.jar:/Users/senior/Desktop/Project/MPJDilmun/mpj//lib/xdev.jar:/Users/senior/Desktop/Project/MPJDilmun/mpj//lib/mpjbuf.jar:/Users/senior/Desktop/Project/MPJDilmun/mpj//lib/loader2.jar:/Users/senior/Desktop/Project/MPJDilmun/mpj//lib/starter.jar:/Users/senior/Desktop/Project/MPJDilmun/mpj//lib/mpiExp.jar
  DEBUG runtime  - 3: runtime.starter.MulticoreStarter
- DEBUG runtime  - 4: /Users/senior/Desktop/Project/MPJDilmun/mpj/mpj-user
+ DEBUG runtime  - 4: /Users/senior/Desktop/Project/MPJDilmun/mpj
  DEBUG runtime  - 5: 2
  DEBUG runtime  - 6: smpdev
  DEBUG runtime  - 7: useLocalLoader
  DEBUG runtime  - 8: EMPTY
  DEBUG runtime  - 9: HelloWorld
  DEBUG runtime  - creating process-builder object 
- DEBUG runtime  - wdir =/Users/senior/Desktop/Project/MPJDilmun/mpj/mpj-user
+ DEBUG runtime  - wdir =/Users/senior/Desktop/Project/MPJDilmun/mpj
  DEBUG runtime  - starting the MultithreadStarter.
  DEBUG runtime  - started the MultithreadStarter.
  DEBUG runtime  - Stopping the output

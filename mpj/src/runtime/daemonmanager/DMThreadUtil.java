@@ -50,6 +50,10 @@ public class DMThreadUtil {
 
     //status of runtime
 public static boolean runtimeStatus = false;
+
+    // Process ID 
+    
+public static String ProcessID="";
     
   public static ExecutorService getThreadExecutor(int nThreads) {
     return Executors.newFixedThreadPool(nThreads);
@@ -108,7 +112,11 @@ public static boolean runtimeStatus = false;
       }
 
       ExecuteThreads(threads, options.getThreadCount());
-      System.out.println("runtime status: "+runtimeStatus);
+      
+        System.out.println("--------------------------------");
+        System.out.println("runtime status: "+runtimeStatus);
+        System.out.println("Process ID:"+ProcessID+".");
+      
     }
   }
 }

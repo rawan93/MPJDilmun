@@ -55,8 +55,14 @@ public class StatusThread extends DMThread {
       if (pid != ""){
       System.out.println(MPJUtil.FormatMessage(host,
 	  DMMessages.MPJDAEMON_AVAILABLE + pid));
+	  
+	  //System.out.println("------------1-------------");
+	  
       //set mpj status
+      
       DMThreadUtil.runtimeStatus = true;
+      DMThreadUtil.ProcessID=pid;
+      
       }
     else {
       System.out.println(MPJUtil.FormatMessage(host,

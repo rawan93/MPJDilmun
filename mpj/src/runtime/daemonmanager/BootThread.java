@@ -53,6 +53,8 @@ public class BootThread extends DMThread {
   public BootThread(String machineName, String daemonPort) {
     host = machineName;
     port = daemonPort;
+    
+         
 
   }
 
