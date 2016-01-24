@@ -56,11 +56,12 @@ public class StatusThread extends DMThread {
       System.out.println(MPJUtil.FormatMessage(host,
 	  DMMessages.MPJDAEMON_AVAILABLE + pid));
 	  
-	  //System.out.println("------------1-------------");
+	 
 	  
-      //set mpj status
-      
+      //set mpj status 
       DMThreadUtil.runtimeStatus = true;
+      
+      //set daemon number 
       DMThreadUtil.ProcessID=pid;
       
       }

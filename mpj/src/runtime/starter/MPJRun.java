@@ -77,7 +77,8 @@ public class MPJRun {
   private String CONF_FILE_CONTENTS="";
   private String WRAPPER_INFO = "#Peer Information";
   private int mxBoardNum = 0;
-  private int D_SER_PORT = 0;
+  public  int D_SER_PORT = 0;
+  //private  int D_SER_PORT = 0;
   private int DEBUG_PORT = 0;
   private int portManagerPort = 0;
 
@@ -324,6 +325,10 @@ public class MPJRun {
 
       System.out.println("MPJ Express (" + VERSION + ") is started in the "
                                                 + "multicore configuration");
+      // print the port number                                           
+      //System.out.println("Port:"+D_SER_PORT);
+                                                                                         
+      
       if (DEBUG && logger.isDebugEnabled()) {
         logger.debug("className " + className);
       }
@@ -335,9 +340,23 @@ public class MPJRun {
       MulticoreDaemon multicoreDaemon = new MulticoreDaemon(className,
           applicationClassPathEntry, jarOrClass, nprocs, wdir, jvmArgs,
           appArgs, mpjHomeDir, ADEBUG, APROFILE, DEBUG_PORT);
+          
+          
+      //print  Daemon Prot number    
+      System.out.println("--------------------------------");
+          
+      // print Daemon port number                                           
+      System.out.println("Port:"+D_SER_PORT);
+      
       return;
+      
+      
 
     }
+    
+   
+      
+      
     // Cluster mode
    
     System.out.println("MPJ Express (" + VERSION + ") is started in the "
@@ -513,9 +532,11 @@ public class MPJRun {
       }
       else if (args[i].equals("-dport")) {
         D_SER_PORT = new Integer(args[i + 1]).intValue();
+        // store the Daemon Port Number
+      //DMThreadUtil.DaemonPortNumber=D_SER_PORT;
         i++;
       }
-
+  
       else if (args[i].equals("-dev")) {
         deviceName = args[i + 1];
         i++;
@@ -614,6 +635,8 @@ public class MPJRun {
         }
       }
     }
+    
+   
 
     jArgs = jvmArgs.toArray(new String[0]);
     aArgs = appArgs.toArray(new String[0]);
@@ -622,6 +645,8 @@ public class MPJRun {
 
       logger.debug("###########################");
       logger.debug("-dport: <" + D_SER_PORT + ">");
+      // store the Daemon Port Number
+      //DMThreadUtil.DaemonPortNumber=D_SER_PORT;
       logger.debug("-np: <" + nprocs + ">");
       logger.debug("$MPJ_HOME: <" + mpjHomeDir + ">");
       logger.debug("-dir: <" + wdir + ">");
@@ -660,7 +685,8 @@ public class MPJRun {
         logger.debug("###########################");
     }
   }
-
+  
+   
   /*
    * 1. Application Classpath Entry (urlArray). This is a String classpath entry
    * which will be appended by the MPJ Express daemon before starting a user
@@ -1236,9 +1262,11 @@ public class MPJRun {
   public static void main(String args[]) throws Exception {
     try {
       MPJRun client = new MPJRun(args);
-    }
+    } //end try 
     catch (Exception exp) {
       throw exp;
-    }
-  }
+    } //end catch
+    
+      
+  } // end main 
 }
