@@ -292,7 +292,12 @@
                               commons-codec-1.8.jar"/>
           </manifest>
      </jar>
-
+     <jar destfile="${lib.dir}/Dilmun.jar" basedir="src"
+         includes="runtime/dilmun/*.class">
+         <manifest>
+             <attribute name="Main-class" value="runtime.dilmun.Dilmun"/>
+         </manifest>
+     </jar>
      </target>
 
     <!-- Hadoop Jar Files -->

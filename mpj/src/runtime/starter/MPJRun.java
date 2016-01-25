@@ -346,6 +346,7 @@ public class MPJRun {
 
     // Read the machine file and set machineList
     machineList = MPJUtil.readMachineFile(machinesFile);
+    //if number of devices greater than number of processes
     for (int i = machineList.size(); i > nprocs; i--) {
       machineList.remove(i - 1);
     }
@@ -357,6 +358,7 @@ public class MPJRun {
       assignTasksHyb();
     }
     else{
+        //not hybrid (works for niodev)
       assignTasks();
     }
     
@@ -378,6 +380,7 @@ public class MPJRun {
 
       if (DEBUG && logger.isDebugEnabled()) {
         logger.debug("procsPerMachineTable " + procsPerMachineTable);
+        System.out.println("TEST: "+"procsPerMachineTable " + procsPerMachineTable);
       }
 
       String hAddress = peerSock.getInetAddress().getHostAddress();
@@ -938,6 +941,8 @@ public class MPJRun {
               CONF_FILE_CONTENTS += ";"
                   + InetAddress.getByName((String) machineList.get(i))
                       .getHostAddress() + "@0@0@" + (rank++);
+                      System.out.println("TEST: "+"1 "+ InetAddress.getByName((String) machineList.get(i))
+                  .getHostAddress() + "@0@0@"+ (rank));
             } //end sub if 1
             else if (deviceName.equals("mxdev")) {//start sub else if 1
               CONF_FILE_CONTENTS += ";" + (String) machineList.get(i) + "@"
@@ -960,6 +965,8 @@ public class MPJRun {
               CONF_FILE_CONTENTS += ";"
                   + InetAddress.getByName((String) machineList.get(i))
                       .getHostAddress() + "@0@0@" + (rank++);
+                      System.out.println("TEST: "+"2 "+ InetAddress.getByName((String) machineList.get(i))
+                  .getHostAddress() + "@0@0@"+ (rank));
 
             } 
             else if (deviceName.equals("mxdev")) {
