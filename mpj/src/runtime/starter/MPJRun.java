@@ -341,6 +341,7 @@ public class MPJRun {
           applicationClassPathEntry, jarOrClass, nprocs, wdir, jvmArgs,
           appArgs, mpjHomeDir, ADEBUG, APROFILE, DEBUG_PORT);
           
+       // Dilmun Code 
           
       //print  Daemon Prot number    
       System.out.println("--------------------------------");

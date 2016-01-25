@@ -48,17 +48,14 @@ import runtime.daemonmanager.DMThread;
 
 public class DMThreadUtil {
 
+ // Dilmun code 
+
 //status of runtime
 public static boolean runtimeStatus = false;
 
+
 // (Daemon)Process ID 
 public static String ProcessID="";
-
-// status of  Cluster
-
-//public static boolean clusterStatus = false;
-
-
 
     
   public static ExecutorService getThreadExecutor(int nThreads) {
@@ -120,15 +117,22 @@ public static String ProcessID="";
       ExecuteThreads(threads, options.getThreadCount());
       
       
+       
+       // Dilmun code 
+       
        //check if the status is required and print
-     if (type.equals(DMConstants.STATUS)) {
+      if (type.equals(DMConstants.STATUS)) {
+      
+      
       System.out.println("--------------------------------");
-      System.out.println("runtime status: "+runtimeStatus);
-      System.out.println(" Daemon (Process) ID:"+ProcessID+".");
-      //System.out.println(" Cluster status:"+clusterStatus+".");
+      // Print the mpj runtime status 
+      System.out.println("Runtime status:"+runtimeStatus);
+      //print the Process (Daemon) Id 
+      System.out.println("Daemon (Process) ID:"+ProcessID+".");
+      
      
       
-     }
+     }//end if 
     }
   }
 }

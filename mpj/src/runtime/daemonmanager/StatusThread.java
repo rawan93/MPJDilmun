@@ -40,6 +40,7 @@ import runtime.common.MPJUtil;
 import runtime.daemonmanager.DMThreadUtil;
 
 public class StatusThread extends DMThread {
+  
   private String host = "localhost";
 
   public StatusThread(String machineName) {
@@ -52,24 +53,30 @@ public class StatusThread extends DMThread {
 
   public void queryMPJExpressDeamons() {
     String pid = DaemonUtil.getMPJProcessID(host);
+    
       if (pid != ""){
       System.out.println(MPJUtil.FormatMessage(host,
 	  DMMessages.MPJDAEMON_AVAILABLE + pid));
 	  
-	 
+	  
+	 // Dilmun code 
 	  
       //set mpj status 
       DMThreadUtil.runtimeStatus = true;
       
-      //set daemon number 
+      //Set the process (Daemon) Id 
       DMThreadUtil.ProcessID=pid;
+      }// end if 
       
-      }
+      
+      
+      
+     
     else {
       System.out.println(MPJUtil.FormatMessage(host,
 	  DMMessages.MPJDAEMON_NOT_AVAILABLE));
        // DMThreadUtil.status = false;
-    }
+    }//end else
   }
 
 }
