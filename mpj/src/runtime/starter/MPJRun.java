@@ -327,13 +327,16 @@ public class MPJRun {
                                                 + "multicore configuration");
       // print the port number                                           
       //System.out.println("Port:"+D_SER_PORT);
-                                                                                         
+       
+       // Name of job
+       System.out.println ("Name of job: " + className);                                                                                   
       
       if (DEBUG && logger.isDebugEnabled()) {
         logger.debug("className " + className);
       }
-
-      int jarOrClass = (applicationClassPathEntry.endsWith(".jar")
+	// to calculate length of job
+   	long lStartTime = System.currentTimeMillis();
+	  int jarOrClass = (applicationClassPathEntry.endsWith(".jar")
                                   ? RUNNING_JAR_FILE
           : RUNNING_CLASS_FILE);
 
@@ -348,6 +351,10 @@ public class MPJRun {
       // print Daemon port number                                           
       System.out.println("Port:"+D_SER_PORT);
       
+        long lEndTime = System.currentTimeMillis();
+		long difference = lEndTime - lStartTime;
+
+		System.out.println("Length of job = " + difference/100 + " second");
       return;
       
       
