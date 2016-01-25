@@ -57,10 +57,21 @@ public static boolean runtimeStatus = false;
 // (Daemon)Process ID 
 public static String ProcessID="";
 
+ // The size of the machine list 
+public static int sizeOfMachineList;
+
+
+//status of Cluster (array list to save the status of each daemon in the cluster)
+public static ArrayList<Integer> clusterStatus = new ArrayList<Integer>();
+
+// status of cluster (Final value)
+
+public static boolean clusterStatusValue = false;
+
     
   public static ExecutorService getThreadExecutor(int nThreads) {
     return Executors.newFixedThreadPool(nThreads);
-  }
+  }//end getThreadExecutor method 
 
   public static void ExecuteThreads(ArrayList<Thread> threads, int nThreads) {
 
@@ -68,7 +79,7 @@ public static String ProcessID="";
 
     for (Thread thread : threads) {
       tpes.execute(thread);
-    }
+    } //end for loop 
 
     tpes.shutdown();
 
@@ -77,8 +88,8 @@ public static String ProcessID="";
       tpes.awaitTermination(Long.MAX_VALUE, TimeUnit.NANOSECONDS);
     } catch (InterruptedException e) {
       e.printStackTrace();
-    }
-  }
+    }//end try - catch block 
+  }// end ExecuteThreads method 
 
   public static void ExecuteCommand(CLOptions options) {
 
@@ -112,12 +123,16 @@ public static String ProcessID="";
 	  threads.add(thread);
 	}
 
-      }
+      } //end for loop 
 
       ExecuteThreads(threads, options.getThreadCount());
       
+      // set the number of machines in the machineList file 
+     
+       sizeOfMachineList=machinesList.size()-1;
       
-       
+      
+        
        // Dilmun code 
        
        //check if the status is required and print
@@ -130,9 +145,42 @@ public static String ProcessID="";
       //print the Process (Daemon) Id 
       System.out.println("Daemon (Process) ID:"+ProcessID+".");
       
+      //print the number of the machines in the machine file 
+      System.out.println("size Of Machine List:"+sizeOfMachineList+".");
+      
+      if(runtimeStatus==false)
+      {
+         clusterStatusValue=false;
+      
+      }//end if 
+      
+      
+      for(int i=0;i<=sizeOfMachineList;i++)
+      {
+      
+        if(clusterStatus.get(i)==1)
+        {
+        
+        clusterStatusValue=true;
+        
+        }//end if 
+        
+        else
+        {
+            
+            clusterStatusValue=false;
+            
+        }//end else
+      
+      }//end for loop
+      
+      //print the number of the machines in the machine file 
+      System.out.println("Cluster status:"+clusterStatusValue+".");
+      
      
       
-     }//end if 
-    }
-  }
-}
+     }//end if  (check if the status)
+     
+    }//end  outer if 
+  }// end ExecuteCommand method 
+}// end DMThreadUtil class 

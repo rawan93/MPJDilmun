@@ -59,6 +59,8 @@ public class StatusThread extends DMThread {
 	  DMMessages.MPJDAEMON_AVAILABLE + pid));
 	  
 	  
+	  
+	  
 	 // Dilmun code 
 	  
       //set mpj status 
@@ -67,16 +69,53 @@ public class StatusThread extends DMThread {
       //Set the process (Daemon) Id 
       DMThreadUtil.ProcessID=pid;
       }// end if 
-      
-      
-      
-      
-     
+           
+
     else {
       System.out.println(MPJUtil.FormatMessage(host,
 	  DMMessages.MPJDAEMON_NOT_AVAILABLE));
        // DMThreadUtil.status = false;
     }//end else
+    
+    // set the machine list size
+   int MachineListNO;
+    
+    //MachineListNO=DMThreadUtil.getInt();
+    
+    MachineListNO=DMThreadUtil.sizeOfMachineList;
+    
+  
+    
+    for( int i=0;i<=MachineListNO;i++)
+    {
+    
+       //System.out.println("Size"+MachineListNO);
+    
+       if (pid != "")
+       {
+       
+           DMThreadUtil.clusterStatus.add(1);
+            
+       
+       }// end if 
+       
+       else
+       {
+       
+         DMThreadUtil.clusterStatus.add(0);
+       
+       }//end else
+       
+       
+       
+    
+      
+    
+    
+    }// end for loop 
+    
+    
+    
   }
 
 }
