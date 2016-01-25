@@ -3,6 +3,323 @@
  DEBUG runtime  - ###########################
  DEBUG runtime  - -dport: <40055>
  DEBUG runtime  - -np: <2>
+<<<<<<< HEAD
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 2 are greater than than machines 1
+ DEBUG runtime  - divisor 2
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{10.132.198.44=2}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.198.44@0@0@0@0;10.132.198.44@0@0@1@2
+ DEBUG runtime  - Connecting to Rawans-MacBook-Air.local@40055
+ DEBUG runtime  - procsPerMachineTable {10.132.198.44=2}
+ INFO  runtime  - Machine Name: Rawans-MacBook-Air.local Starting Rank: 0 Process Count: 2
+ DEBUG runtime  - Sending to Socket[addr=Rawans-MacBook-Air.local/10.132.198.44,port=40055,localport=51622]
+ DEBUG runtime  - procsPerMachineTable {10.132.198.44=2}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <2> to connect
+ DEBUG runtime  - Socket 10.132.198.44 connected to share Rank and Ports
+ DEBUG runtime  - Socket 10.132.198.44 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 10.132.198.44
+Info: #Peer Information;10.132.198.44@34952@25141@0@0;10.132.198.44@30363@38062@1@0
+ DEBUG runtime  - Sending info to Socket 10.132.198.44
+Info: #Peer Information;10.132.198.44@34952@25141@0@0;10.132.198.44@30363@38062@1@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <1>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 1 are less than than machines 1
+ DEBUG runtime  - Adding 1 processes to the first 1 items
+ DEBUG runtime  - procPerMachineTable==>{10.132.198.44=1}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;1;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.198.44@0@0@0@0
+ DEBUG runtime  - Connecting to Rawans-MacBook-Air.local@40055
+ DEBUG runtime  - procsPerMachineTable {10.132.198.44=1}
+ INFO  runtime  - Machine Name: Rawans-MacBook-Air.local Starting Rank: 0 Process Count: 1
+ DEBUG runtime  - Sending to Socket[addr=Rawans-MacBook-Air.local/10.132.198.44,port=40055,localport=51627]
+ DEBUG runtime  - procsPerMachineTable {10.132.198.44=1}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <1> to connect
+ DEBUG runtime  - Socket 10.132.198.44 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 10.132.198.44
+Info: #Peer Information;10.132.198.44@32986@27886@0@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <1>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 1 are less than than machines 1
+ DEBUG runtime  - Adding 1 processes to the first 1 items
+ DEBUG runtime  - procPerMachineTable==>{10.132.198.44=1}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;1;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.198.44@0@0@0@0
+ DEBUG runtime  - Connecting to Rawans-MacBook-Air.local@40055
+ DEBUG runtime  - procsPerMachineTable {10.132.198.44=1}
+ INFO  runtime  - Machine Name: Rawans-MacBook-Air.local Starting Rank: 0 Process Count: 1
+ DEBUG runtime  - Sending to Socket[addr=Rawans-MacBook-Air.local/10.132.198.44,port=40055,localport=51629]
+ DEBUG runtime  - procsPerMachineTable {10.132.198.44=1}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <1> to connect
+ DEBUG runtime  - Socket 10.132.198.44 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 10.132.198.44
+Info: #Peer Information;10.132.198.44@28645@30005@0@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <2>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 2 are greater than than machines 1
+ DEBUG runtime  - divisor 2
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{10.132.198.44=2}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.198.44@0@0@0@0;10.132.198.44@0@0@1@2
+ DEBUG runtime  - Connecting to Rawans-MacBook-Air.local@40055
+ DEBUG runtime  - procsPerMachineTable {10.132.198.44=2}
+ INFO  runtime  - Machine Name: Rawans-MacBook-Air.local Starting Rank: 0 Process Count: 2
+ DEBUG runtime  - Sending to Socket[addr=Rawans-MacBook-Air.local/10.132.198.44,port=40055,localport=51631]
+ DEBUG runtime  - procsPerMachineTable {10.132.198.44=2}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <2> to connect
+ DEBUG runtime  - Socket 10.132.198.44 connected to share Rank and Ports
+ DEBUG runtime  - Socket 10.132.198.44 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 10.132.198.44
+Info: #Peer Information;10.132.198.44@28452@34982@0@0;10.132.198.44@34889@36740@1@0
+ DEBUG runtime  - Sending info to Socket 10.132.198.44
+Info: #Peer Information;10.132.198.44@28452@34982@0@0;10.132.198.44@34889@36740@1@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <2>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 2 are greater than than machines 1
+ DEBUG runtime  - divisor 2
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{10.132.198.44=2}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.198.44@0@0@0@0;10.132.198.44@0@0@2@2
+ DEBUG runtime  - Connecting to Rawans-MacBook-Air.local@40055
+ DEBUG runtime  - procsPerMachineTable {10.132.198.44=2}
+ INFO  runtime  - Machine Name: Rawans-MacBook-Air.local Starting Rank: 0 Process Count: 2
+ DEBUG runtime  - Sending to Socket[addr=Rawans-MacBook-Air.local/10.132.198.44,port=40055,localport=51636]
+ DEBUG runtime  - procsPerMachineTable {10.132.198.44=2}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <2> to connect
+ DEBUG runtime  - Socket 10.132.198.44 connected to share Rank and Ports
+ DEBUG runtime  - Socket 10.132.198.44 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 10.132.198.44
+Info: #Peer Information;10.132.198.44@39271@35214@0@0;10.132.198.44@30834@27693@1@0
+ DEBUG runtime  - Sending info to Socket 10.132.198.44
+Info: #Peer Information;10.132.198.44@39271@35214@0@0;10.132.198.44@30834@27693@1@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <2>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 2 are greater than than machines 1
+ DEBUG runtime  - divisor 2
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{169.254.58.184=2}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;169.254.58.184@0@0@0@0;169.254.58.184@0@0@1@2
+ DEBUG runtime  - Connecting to Rawans-MacBook-Air.local@40055
+ DEBUG runtime  - procsPerMachineTable {169.254.58.184=2}
+ INFO  runtime  - Machine Name: Rawans-MacBook-Air.local Starting Rank: 0 Process Count: 2
+ DEBUG runtime  - Sending to Socket[addr=Rawans-MacBook-Air.local/169.254.58.184,port=40055,localport=51639]
+ DEBUG runtime  - procsPerMachineTable {169.254.58.184=2}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <2> to connect
+ DEBUG runtime  - Socket 169.254.58.184 connected to share Rank and Ports
+ DEBUG runtime  - Socket 169.254.58.184 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 169.254.58.184
+Info: #Peer Information;169.254.58.184@36642@33292@0@0;169.254.58.184@34340@35496@1@0
+ DEBUG runtime  - Sending info to Socket 169.254.58.184
+Info: #Peer Information;169.254.58.184@36642@33292@0@0;169.254.58.184@34340@35496@1@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <2>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj>
+=======
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+>>>>>>> 73cc2b163df9d851cf85ca69d5c5f2a5373991d7
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <multicore>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+<<<<<<< HEAD
+ DEBUG runtime  - Processes Requested 2 are greater than than machines 1
+ DEBUG runtime  - divisor 2
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{169.254.58.184=2}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;169.254.58.184@0@0@0@0;169.254.58.184@0@0@1@2
+ DEBUG runtime  - Connecting to Rawans-MacBook-Air.local@40055
+ DEBUG runtime  - procsPerMachineTable {169.254.58.184=2}
+ INFO  runtime  - Machine Name: Rawans-MacBook-Air.local Starting Rank: 0 Process Count: 2
+ DEBUG runtime  - Sending to Socket[addr=Rawans-MacBook-Air.local/169.254.58.184,port=40055,localport=51644]
+ DEBUG runtime  - procsPerMachineTable {169.254.58.184=2}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <2> to connect
+ DEBUG runtime  - Socket 169.254.58.184 connected to share Rank and Ports
+ DEBUG runtime  - Socket 169.254.58.184 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 169.254.58.184
+Info: #Peer Information;169.254.58.184@27753@26710@0@0;169.254.58.184@26331@39615@1@0
+ DEBUG runtime  - Sending info to Socket 169.254.58.184
+Info: #Peer Information;169.254.58.184@27753@26710@0@0;169.254.58.184@26331@39615@1@0
+=======
+ DEBUG runtime  - className HelloWorld
+ DEBUG runtime  - mpjHomeDir /Users/senior/Desktop/Dilmun/MPJDilmun/mpj/
+ DEBUG runtime  - McDaemon is waiting to accept connections ... 
+ DEBUG runtime  - wdir /Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG runtime  - A client has connected
+ DEBUG runtime  - the daemon will start <2> threads
+ DEBUG runtime  - cp = /Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/smpdev.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/xdev.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpjbuf.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader2.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/starter.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpiExp.jar
+ DEBUG runtime  - modified: jArgs[0]=-cp
+ DEBUG runtime  - modified: jArgs[1]=/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/smpdev.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/xdev.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpjbuf.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader2.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/starter.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpiExp.jar
+ DEBUG runtime  - 0: java
+ DEBUG runtime  - 1: -cp
+ DEBUG runtime  - 2: /Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/smpdev.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/xdev.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpjbuf.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader2.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/starter.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpiExp.jar
+ DEBUG runtime  - 3: runtime.starter.MulticoreStarter
+ DEBUG runtime  - 4: /Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG runtime  - 5: 2
+ DEBUG runtime  - 6: smpdev
+ DEBUG runtime  - 7: useLocalLoader
+ DEBUG runtime  - 8: EMPTY
+ DEBUG runtime  - 9: HelloWorld
+ DEBUG runtime  - creating process-builder object 
+ DEBUG runtime  - wdir =/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG runtime  - starting the MultithreadStarter.
+ DEBUG runtime  - started the MultithreadStarter.
+ DEBUG runtime  - Stopping the output
+ DEBUG runtime  - outputting ...
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <2>
  DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
  DEBUG runtime  - -dir: <null>
  DEBUG runtime  - -dev: <multicore>
@@ -47,6 +364,7 @@
  DEBUG runtime  - started the MultithreadStarter.
  DEBUG runtime  - Stopping the output
  DEBUG runtime  - outputting ...
+<<<<<<< HEAD
  DEBUG runtime  -  --MPJRun.java invoked--
  DEBUG runtime  - [MPJRun.java]: processInput called ...
  DEBUG runtime  - ###########################
@@ -145,3 +463,6 @@
  DEBUG runtime  - started the MultithreadStarter.
  DEBUG runtime  - Stopping the output
  DEBUG runtime  - outputting ...
+=======
+>>>>>>> 73cc2b163df9d851cf85ca69d5c5f2a5373991d7
+>>>>>>> a4b72a01eab42f9e2e633dd8b1964b9f19bf34af
