@@ -54,6 +54,10 @@ public static boolean runtimeStatus = false;
 // (Daemon)Process ID 
 public static String ProcessID="";
 
+// status of  Cluster
+
+//public static boolean clusterStatus = false;
+
 
 
     
@@ -121,6 +125,7 @@ public static String ProcessID="";
       System.out.println("--------------------------------");
       System.out.println("runtime status: "+runtimeStatus);
       System.out.println(" Daemon (Process) ID:"+ProcessID+".");
+      //System.out.println(" Cluster status:"+clusterStatus+".");
      
       
      }

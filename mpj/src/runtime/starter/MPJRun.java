@@ -77,8 +77,8 @@ public class MPJRun {
   private String CONF_FILE_CONTENTS="";
   private String WRAPPER_INFO = "#Peer Information";
   private int mxBoardNum = 0;
-  public  int D_SER_PORT = 0;
-  //private  int D_SER_PORT = 0;
+  //public  int D_SER_PORT = 0;
+  private  int D_SER_PORT = 0;
   private int DEBUG_PORT = 0;
   private int portManagerPort = 0;
 
