@@ -48,8 +48,18 @@ import runtime.daemonmanager.DMThread;
 
 public class DMThreadUtil {
 
-    //status of runtime
+//status of runtime
 public static boolean runtimeStatus = false;
+
+// (Daemon)Process ID 
+public static String ProcessID="";
+
+// status of  Cluster
+
+//public static boolean clusterStatus = false;
+
+
+
     
   public static ExecutorService getThreadExecutor(int nThreads) {
     return Executors.newFixedThreadPool(nThreads);
@@ -108,9 +118,16 @@ public static boolean runtimeStatus = false;
       }
 
       ExecuteThreads(threads, options.getThreadCount());
-        //check if the status is required and print
+      
+      
+       //check if the status is required and print
      if (type.equals(DMConstants.STATUS)) {
+      System.out.println("--------------------------------");
       System.out.println("runtime status: "+runtimeStatus);
+      System.out.println(" Daemon (Process) ID:"+ProcessID+".");
+      //System.out.println(" Cluster status:"+clusterStatus+".");
+     
+      
      }
     }
   }

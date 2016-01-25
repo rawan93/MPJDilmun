@@ -50,7 +50,7 @@ public class DMMessages {
   public static String MPJDAEMON_NOT_STARTED = "Unable to start MPJ Express daemon";
   public static String MPJDAEMON_NOT_AVAILABLE = "MPJ Daemon is not running ";
   public static String MPJDAEMON_AVAILABLE = "MPJ Daemon is running with process id: ";
-  public static String MPJDAEMON_STOPPED = "MPJ Daemon stopped ";
+  public static String MPJDAEMON_STOPPED = "MPJ Daemon stopped";
   public static String HOST_INACESSABLE = " is not accessable";
   public static String JAVA_PROCESS_KILLED = " Killed all java processes";
   public static String NO_JAVA_PROCESS_RUNNING = " No java process is running";
