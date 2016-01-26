@@ -46,6 +46,8 @@ public class DMConstants {
   public static String WIN_HALT = "winhalt";
   public static String CLEAN = "clean";
   public static String STATUS = "status";
+  //Test
+  public static String DATA = "data";
   public static String INFO = "info";
   public static String CONF = "conf";
   public static String LIB = "lib";
@@ -65,6 +67,8 @@ public class DMConstants {
   public static String CLEAN_OPT = "c";
   public static String INFO_OPT = "i";
   public static String STATUS_OPT = "s";
+  //Test
+  public static String DATA_OPT = "d";
   public static String MACHINE_FILE_OPT = "m";
   public static String HOSTS_OPT = "ht";
   public static String HELP_OPT = "help";

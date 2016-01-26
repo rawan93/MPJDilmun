@@ -73,7 +73,12 @@ public class MPJDaemonManager {
     } else if (options.getCmdType().equals(DMConstants.STATUS)) {
       MPJStatus mpQuery = new MPJStatus();
       mpQuery.getMPJExpressStatus(options);
-
+	/* TEST */
+    } else if (options.getCmdType().equals(DMConstants.DATA)) {
+      System.out.println("TEST!!!!!!!!!!!!!!!!!!!!!!!!");
+      MPJData dataQuery = new MPJData();
+      dataQuery.getMPJExpressData(options);
+	/*end test */
     /* mpjinfo */
     } else if (options.getCmdType().equals(DMConstants.INFO)) {
       MPJProcessInfo mpInfo = new MPJProcessInfo();

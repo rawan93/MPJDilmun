@@ -49,7 +49,6 @@ import runtime.daemonmanager.DMThread;
 public class DMThreadUtil {
 
  // Dilmun code 
-
 //status of runtime
 public static boolean runtimeStatus = false;
 
@@ -70,7 +69,11 @@ public static boolean clusterStatusValue = false;
 
  // Total number of daemons.
 public static int numberOfDaemons;
-
+//end of dilmun
+//test
+//array list of device name and id
+public static ArrayList<String> machineMsgList;
+//end test
     
   public static ExecutorService getThreadExecutor(int nThreads) {
     return Executors.newFixedThreadPool(nThreads);
@@ -99,6 +102,9 @@ public static int numberOfDaemons;
     String type = options.getCmdType();
     ArrayList<Thread> threads = new ArrayList<Thread>();
     ArrayList<String> machinesList = new ArrayList<String>();
+    //test
+	machineMsgList = new ArrayList<String>();
+	//end test
 
     if (options.getMachineList().size() > 0)
       machinesList = options.getMachineList();
@@ -119,6 +125,10 @@ public static int numberOfDaemons;
 	  thread = new CleanUpThread(host);
 	} else if (type.equals(DMConstants.STATUS)) {
 	  thread = new StatusThread(host);
+	/*test*/
+	} else if (type.equals(DMConstants.DATA)) {
+	  thread = new DataThread(host);
+	/*end test*/
 	} else if (type.equals(DMConstants.INFO)) {
 	  thread = new ProcessInfoThread(host);
 	}
@@ -134,8 +144,19 @@ public static int numberOfDaemons;
      
        sizeOfMachineList=machinesList.size();
       
-      
-        
+      /*test*/
+       //check if the status is required and print
+     if (type.equals(DMConstants.DATA)) {
+     	//status
+     	System.out.println("runtime status: "+runtimeStatus);
+     	//print the total number of Daemons
+      	System.out.println("Total number of Daemons: "+numberOfDaemons+".");
+      	System.out.println("Machines in cluster:");
+     	for (int i=0; i< machineMsgList.size(); i++){
+     		System.out.println(machineMsgList.get(i));
+     	}
+     }
+     /*end of test */
        // Dilmun code 
        
        //check if the status is required and print
