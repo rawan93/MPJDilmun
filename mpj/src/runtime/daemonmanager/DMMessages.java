@@ -59,6 +59,8 @@ public class DMMessages {
   public static String CMD_OPT_HALT = "Stop MPJ Express daemons on given  machine(s)";
   public static String CMD_OPT_CLEAN = "Clean all java  process on given machine(s)";
   public static String CMD_OPT_STATUS = "Get status of MPJ Express daemons on given  machine(s) ";
+  //TEST
+  public static String CMD_OPT_DATA = "Get data of MPJ Express daemons on given  machine(s) ";
   public static String CMD_OPT_INFO = "Get all java processes on given  machine(s)";
 
   public static String CMD_OPT_MACHINE_FILE = "Machine File e.g. <machines>";
