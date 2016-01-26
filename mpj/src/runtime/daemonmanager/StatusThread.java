@@ -105,12 +105,6 @@ public class StatusThread extends DMThread {
          DMThreadUtil.clusterStatus.add(0);
        
        }//end else
-       
-       
-       
-    
-      
-    
     
     }// end for loop 
     

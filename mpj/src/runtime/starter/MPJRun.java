@@ -369,6 +369,9 @@ public class MPJRun {
    
     System.out.println("MPJ Express (" + VERSION + ") is started in the "
                             + "cluster configuration with " + deviceName);
+                            
+       //print the port number                                           
+       System.out.println("Port:"+D_SER_PORT);
     
 
     // Read the machine file and set machineList
