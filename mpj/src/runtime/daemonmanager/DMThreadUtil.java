@@ -42,9 +42,9 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-import runtime.common.MPJUtil;
 import runtime.daemonmanager.CLOptions;
 import runtime.daemonmanager.DMThread;
+import runtime.common.MPJUtil;
 
 public class DMThreadUtil {
 
@@ -52,10 +52,10 @@ public class DMThreadUtil {
 //status of runtime
 public static boolean runtimeStatus = false;
 
-
 // (Daemon)Process ID 
 public static String ProcessID="";
-
+//Daemon port number 
+private static int daemonPort = 0;
  // The size of the machine list 
 public static int sizeOfMachineList;
 
@@ -147,8 +147,15 @@ public static ArrayList<String> machineMsgList;
       /*test*/
        //check if the status is required and print
      if (type.equals(DMConstants.DATA)) {
-     	//status
-     	System.out.println("runtime status: "+runtimeStatus);
+     	//status of cluster
+     	//revisit cluster status (doesnt check if cluster exists without runtime)
+     	 if(runtimeStatus==true)
+      	{
+         clusterStatusValue=true;
+      	}
+      	System.out.println("Cluster status: "+clusterStatusValue);
+      	//status of runtime
+     	System.out.println("Runtime status: "+runtimeStatus);
      	//print the total number of Daemons
       	System.out.println("Total number of Daemons: "+numberOfDaemons+".");
       	System.out.println("Machines in cluster:");
@@ -217,4 +224,5 @@ public static ArrayList<String> machineMsgList;
      
     }//end  outer if 
   }// end ExecuteCommand method 
+  
 }// end DMThreadUtil class 

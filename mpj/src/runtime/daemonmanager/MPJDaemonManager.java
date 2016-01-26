@@ -75,7 +75,6 @@ public class MPJDaemonManager {
       mpQuery.getMPJExpressStatus(options);
 	/* TEST */
     } else if (options.getCmdType().equals(DMConstants.DATA)) {
-      System.out.println("TEST!!!!!!!!!!!!!!!!!!!!!!!!");
       MPJData dataQuery = new MPJData();
       dataQuery.getMPJExpressData(options);
 	/*end test */

@@ -161,6 +161,16 @@ public class MPJUtil {
   public static String FormatMessage(String host, String message) {
     return "[" + host + "] " + message;
   }
+  
+  public static String FormatMachineMessage(String host, String message, String pid, String port) {
+  	String data="";
+  	if (pid == ""){
+  		data= "[" + host + "] " +"\n"+ message+"\nProcess ID:  - \nPort Number: -";
+  	} else {
+  		data= "[" + host + "] " +"\n"+ message+"\nProcess ID: "+ pid+"\nPort Number: "+ port;
+  	}
+    return data;
+  }
 
   public static void readConfigFile() {
     FileInputStream in = null;
