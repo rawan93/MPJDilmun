@@ -164,9 +164,6 @@ public static ArrayList<String> machineMsgList;
      	}
      }
      /*end of test */
-       // Dilmun code 
-      
-     
     }//end  outer if 
   }// end ExecuteCommand method 
   
