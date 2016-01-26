@@ -392,7 +392,7 @@ public class MPJRun {
       System.out.println("--------------------------------");
                            
       //print the port number                                           
-      System.out.println("Port ("+i+"):"+D_SER_PORT);
+      System.out.println("Port ():"+D_SER_PORT);
       
       System.out.println("--------------------------------");
     

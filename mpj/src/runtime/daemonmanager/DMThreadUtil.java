@@ -189,7 +189,7 @@ public static int numberOfDaemons;
       //print the number of the machines in the machine file 
       System.out.println("Cluster status:"+clusterStatusValue+".");
       
-       System.out.println("--------------------------------");
+      System.out.println("--------------------------------");
      
       
      }//end if  (check if the status)
