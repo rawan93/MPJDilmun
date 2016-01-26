@@ -68,6 +68,9 @@ public static ArrayList<Integer> clusterStatus = new ArrayList<Integer>();
 
 public static boolean clusterStatusValue = false;
 
+ // Total number of daemons.
+public static int numberOfDaemons;
+
     
   public static ExecutorService getThreadExecutor(int nThreads) {
     return Executors.newFixedThreadPool(nThreads);
@@ -129,7 +132,7 @@ public static boolean clusterStatusValue = false;
       
       // set the number of machines in the machineList file 
      
-       sizeOfMachineList=machinesList.size()-1;
+       sizeOfMachineList=machinesList.size();
       
       
         
@@ -140,13 +143,21 @@ public static boolean clusterStatusValue = false;
       
       
       System.out.println("--------------------------------");
+      
       // Print the mpj runtime status 
-      System.out.println("Runtime status:"+runtimeStatus);
+      System.out.println("Runtime status:"+runtimeStatus+".");
+      
       //print the Process (Daemon) Id 
       System.out.println("Daemon (Process) ID:"+ProcessID+".");
       
+      //print the total number of Daemons
+      System.out.println("Total number of Daemons :"+numberOfDaemons+".");
+      
       //print the number of the machines in the machine file 
-      System.out.println("size Of Machine List:"+sizeOfMachineList+".");
+      System.out.println("Size of machine list:"+sizeOfMachineList+".");
+      
+      
+      
       
       if(runtimeStatus==false)
       {
@@ -154,14 +165,15 @@ public static boolean clusterStatusValue = false;
       
       }//end if 
       
+      int i;
       
-      for(int i=0;i<=sizeOfMachineList;i++)
+      for(i=0;i<sizeOfMachineList;i++)
       {
       
         if(clusterStatus.get(i)==1)
         {
         
-        clusterStatusValue=true;
+           clusterStatusValue=true;
         
         }//end if 
         
@@ -177,6 +189,7 @@ public static boolean clusterStatusValue = false;
       //print the number of the machines in the machine file 
       System.out.println("Cluster status:"+clusterStatusValue+".");
       
+       System.out.println("--------------------------------");
      
       
      }//end if  (check if the status)

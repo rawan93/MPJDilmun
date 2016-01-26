@@ -42,6 +42,9 @@ import runtime.daemonmanager.DMThreadUtil;
 public class StatusThread extends DMThread {
   
   private String host = "localhost";
+  
+  //count for the total number of daemons.
+  public static int countOfDaemons;
 
   public StatusThread(String machineName) {
     host = machineName;
@@ -95,6 +98,9 @@ public class StatusThread extends DMThread {
        {
        
            DMThreadUtil.clusterStatus.add(1);
+           
+           countOfDaemons++;
+           
             
        
        }// end if 
@@ -107,6 +113,9 @@ public class StatusThread extends DMThread {
        }//end else
     
     }// end for loop 
+    
+    // set the number of Daemons 
+    DMThreadUtil.numberOfDaemons=countOfDaemons;
     
     
     

@@ -369,13 +369,40 @@ public class MPJRun {
    
     System.out.println("MPJ Express (" + VERSION + ") is started in the "
                             + "cluster configuration with " + deviceName);
-                            
+       
+       // Dilmun Code
+       //print  Daemon Prot number    
+      //System.out.println("--------------------------------");
+                           
        //print the port number                                           
-       System.out.println("Port:"+D_SER_PORT);
+       //System.out.println("Port:"+D_SER_PORT);
     
 
     // Read the machine file and set machineList
     machineList = MPJUtil.readMachineFile(machinesFile);
+    
+    // Dilmun Code
+    
+    for (int i=0; i<machineList.size(); i++)
+    {
+    
+       
+      
+      //print  Daemon Prot number    
+      System.out.println("--------------------------------");
+                           
+      //print the port number                                           
+      System.out.println("Port ("+i+"):"+D_SER_PORT);
+      
+      System.out.println("--------------------------------");
+    
+    
+    
+    
+    }//end for loop
+    
+    
+    
     //if number of devices greater than number of processes
     for (int i = machineList.size(); i > nprocs; i--) {
       machineList.remove(i - 1);
@@ -659,8 +686,6 @@ public class MPJRun {
 
       logger.debug("###########################");
       logger.debug("-dport: <" + D_SER_PORT + ">");
-      // store the Daemon Port Number
-      //DMThreadUtil.DaemonPortNumber=D_SER_PORT;
       logger.debug("-np: <" + nprocs + ">");
       logger.debug("$MPJ_HOME: <" + mpjHomeDir + ">");
       logger.debug("-dir: <" + wdir + ">");
