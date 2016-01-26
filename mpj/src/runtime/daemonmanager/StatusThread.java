@@ -96,12 +96,9 @@ public class StatusThread extends DMThread {
     
        if (pid != "")
        {
-       
            DMThreadUtil.clusterStatus.add(1);
            
-           countOfDaemons++;
-           
-            
+           countOfDaemons++; 
        
        }// end if 
        
