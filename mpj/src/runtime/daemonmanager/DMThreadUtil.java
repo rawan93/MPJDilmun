@@ -165,62 +165,7 @@ public static ArrayList<String> machineMsgList;
      }
      /*end of test */
        // Dilmun code 
-       
-       //check if the status is required and print
-      if (type.equals(DMConstants.STATUS)) {
       
-      
-      System.out.println("--------------------------------");
-      
-      // Print the mpj runtime status 
-      System.out.println("Runtime status:"+runtimeStatus+".");
-      
-      //print the Process (Daemon) Id 
-      System.out.println("Daemon (Process) ID:"+ProcessID+".");
-      
-      //print the total number of Daemons
-      System.out.println("Total number of Daemons :"+numberOfDaemons+".");
-      
-      //print the number of the machines in the machine file 
-      System.out.println("Size of machine list:"+sizeOfMachineList+".");
-      
-      
-      
-      
-      if(runtimeStatus==false)
-      {
-         clusterStatusValue=false;
-      
-      }//end if 
-      
-      int i;
-      
-      for(i=0;i<sizeOfMachineList;i++)
-      {
-      
-        if(clusterStatus.get(i)==1)
-        {
-        
-           clusterStatusValue=true;
-        
-        }//end if 
-        
-        else
-        {
-            
-            clusterStatusValue=false;
-            
-        }//end else
-      
-      }//end for loop
-      
-      //print the number of the machines in the machine file 
-      System.out.println("Cluster status:"+clusterStatusValue+".");
-      
-       System.out.println("--------------------------------");
-     
-      
-     }//end if  (check if the status)
      
     }//end  outer if 
   }// end ExecuteCommand method 
