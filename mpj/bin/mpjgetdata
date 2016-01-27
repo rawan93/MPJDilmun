@@ -1,4 +1,3 @@
 #!/bin/sh
 
 java -jar $MPJ_HOME/lib/Dilmun.jar "$@"
-java -jar $MPJ_HOME/lib/daemonmanager.jar -status -m "$@"

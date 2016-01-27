@@ -12,7 +12,7 @@ import java.util.Map;
 
 
 public class DataThread extends DMThread {
-  private String host = "localhost";
+private String host = "localhost";
 private static int daemonPort = 0;
 static String mpjHomeDir = null;
 
@@ -38,6 +38,7 @@ static String mpjHomeDir = null;
       msg = MPJUtil.FormatMachineMessage(host, DMMessages.MPJDAEMON_NOT_AVAILABLE, "", "");
     }
     DMThreadUtil.machineMsgList.add(msg);
+    
   }
 	
 	public static void getDaemonPort(){
