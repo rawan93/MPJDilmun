@@ -149,10 +149,12 @@ public static ArrayList<String> machineMsgList;
      if (type.equals(DMConstants.DATA)) {
      	//status of cluster
      	//revisit cluster status (doesnt check if cluster exists without runtime)
+     	
      	 if(runtimeStatus==true)
       	{
          clusterStatusValue=true;
       	}
+      	
       	System.out.println("Cluster status: "+clusterStatusValue);
       	//status of runtime
      	System.out.println("Runtime status: "+runtimeStatus);
