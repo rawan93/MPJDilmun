@@ -197,6 +197,9 @@ public class CLOptions {
 	false, DMMessages.CMD_OPT_CLEAN));
     options.addOption(new Option(DMConstants.STATUS_OPT, DMConstants.STATUS,
 	false, DMMessages.CMD_OPT_STATUS));
+	//test
+	options.addOption(new Option(DMConstants.DATA_OPT, DMConstants.DATA,
+	false, DMMessages.CMD_OPT_DATA));
     options.addOption(new Option(DMConstants.INFO_OPT, DMConstants.INFO, false,
 	DMMessages.CMD_OPT_INFO));
     options.addOption(new Option(DMConstants.MACHINE_FILE_OPT,
@@ -223,6 +226,10 @@ public class CLOptions {
 	this.setCmdType(DMConstants.HALT);
       else if (line.hasOption(DMConstants.STATUS))
 	this.setCmdType(DMConstants.STATUS);
+	//Test
+	else if (line.hasOption(DMConstants.DATA))
+	this.setCmdType(DMConstants.DATA);
+	//end Test
       else if (line.hasOption(DMConstants.INFO))
 	this.setCmdType(DMConstants.INFO);
       else if (line.hasOption(DMConstants.CLEAN))

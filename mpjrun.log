@@ -3,9 +3,15 @@
  DEBUG runtime  - ###########################
  DEBUG runtime  - -dport: <40055>
  DEBUG runtime  - -np: <2>
+<<<<<<< HEAD
  DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
  DEBUG runtime  - -dir: <null>
  DEBUG runtime  - -dev: <multicore>
+=======
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+>>>>>>> d38b3ed6990fefe515cfce61bd6caf838d645eaf
  DEBUG runtime  - -psl: <131072>
  DEBUG runtime  - jvmArgs.length: <0>
  DEBUG runtime  - className : <HelloWorld>
@@ -22,6 +28,7 @@
  DEBUG runtime  - -hdfsFolder: <null>
  DEBUG runtime  - appArgs.length: <0>
  DEBUG runtime  - ###########################
+<<<<<<< HEAD
  DEBUG runtime  - className HelloWorld
  DEBUG runtime  - mpjHomeDir /Users/senior/Desktop/Dilmun/MPJDilmun/mpj/
  DEBUG runtime  - McDaemon is waiting to accept connections ... 
@@ -47,3 +54,5 @@
  DEBUG runtime  - started the MultithreadStarter.
  DEBUG runtime  - Stopping the output
  DEBUG runtime  - outputting ...
+=======
+>>>>>>> d38b3ed6990fefe515cfce61bd6caf838d645eaf
