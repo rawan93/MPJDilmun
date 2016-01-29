@@ -2,7 +2,7 @@
  DEBUG runtime  - [MPJRun.java]: processInput called ...
  DEBUG runtime  - ###########################
  DEBUG runtime  - -dport: <40055>
- DEBUG runtime  - -np: <2>
+ DEBUG runtime  - -np: <3>
  DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj>
  DEBUG runtime  - -dir: <null>
  DEBUG runtime  - -dev: <niodev>
@@ -22,18 +22,3 @@
  DEBUG runtime  - -hdfsFolder: <null>
  DEBUG runtime  - appArgs.length: <0>
  DEBUG runtime  - ###########################
-<<<<<<< HEAD
-=======
- DEBUG runtime  - Processes Requested 2 are greater than than machines 1
- DEBUG runtime  - divisor 2
- DEBUG runtime  - remainder 0
- DEBUG runtime  - procPerMachineTable==>{10.132.198.44=2}
- DEBUG runtime  - conf file contents #temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.198.44@0@0@0@0;10.132.198.44@0@0@1@2
- DEBUG runtime  - Connecting to Rawans-MacBook-Air.local@40055
- DEBUG runtime  - procsPerMachineTable {10.132.198.44=2}
- INFO  runtime  - Machine Name: Rawans-MacBook-Air.local Starting Rank: 0 Process Count: 2
- DEBUG runtime  - Sending to Socket[addr=Rawans-MacBook-Air.local/10.132.198.44,port=40055,localport=54516]
- DEBUG runtime  - procsPerMachineTable {10.132.198.44=2}
- DEBUG runtime  - [MPJRun.java]:Creating server..
- DEBUG runtime  - [MPJRun.java]:Waiting for <2> to connect
->>>>>>> d38b3ed6990fefe515cfce61bd6caf838d645eaf

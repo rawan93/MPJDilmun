@@ -343,22 +343,15 @@ public class MPJRun {
       MulticoreDaemon multicoreDaemon = new MulticoreDaemon(className,
           applicationClassPathEntry, jarOrClass, nprocs, wdir, jvmArgs,
           appArgs, mpjHomeDir, ADEBUG, APROFILE, DEBUG_PORT);
-<<<<<<< HEAD
+
      //     long lEndTime = System.currentTimeMillis();
 		//  long difference = lEndTime - lStartTime;
 
 		//System.out.println("Length of job = " + difference/100 + " second");
-=======
+
           
        // Dilmun Code 
->>>>>>> d38b3ed6990fefe515cfce61bd6caf838d645eaf
-          
-      //print  Daemon Prot number    
-      System.out.println("--------------------------------");
-          
-      // print Daemon port number                                           
-      System.out.println("Port:"+D_SER_PORT);
-      
+
         
       return;
 
@@ -369,10 +362,10 @@ public class MPJRun {
    
     System.out.println("MPJ Express (" + VERSION + ") is started in the "
                             + "cluster configuration with " + deviceName);
-<<<<<<< HEAD
+
    
     System.out.println ("Name of job: " + className); 
-long ST = System.currentTimeMillis();
+	long ST = System.currentTimeMillis();
 	// write in text file
 		//String fileName = "outt.txt";
 		//try{
@@ -384,8 +377,7 @@ long ST = System.currentTimeMillis();
 		//e.printStackTrace();
 		//}
 		
-=======
-       
+
        // Dilmun Code
        //print  Daemon Prot number    
       //System.out.println("--------------------------------");
@@ -394,7 +386,6 @@ long ST = System.currentTimeMillis();
        //System.out.println("Port:"+D_SER_PORT);
     
 
->>>>>>> d38b3ed6990fefe515cfce61bd6caf838d645eaf
     // Read the machine file and set machineList
     machineList = MPJUtil.readMachineFile(machinesFile);
     
@@ -402,19 +393,7 @@ long ST = System.currentTimeMillis();
     
     for (int i=0; i<machineList.size(); i++)
     {
-    
-       
-      
-      //print  Daemon Prot number    
-      System.out.println("--------------------------------");
-                           
-      //print the port number                                           
-      System.out.println("Port ():"+D_SER_PORT);
-      
-      System.out.println("--------------------------------");
-    
-    
-    
+   
     
     }//end for loop
     
@@ -456,7 +435,6 @@ long ST = System.currentTimeMillis();
 
       if (DEBUG && logger.isDebugEnabled()) {
         logger.debug("procsPerMachineTable " + procsPerMachineTable);
-        System.out.println("TEST: "+"procsPerMachineTable " + procsPerMachineTable);
       }
 
       String hAddress = peerSock.getInetAddress().getHostAddress();
@@ -492,9 +470,9 @@ long ST = System.currentTimeMillis();
     if(!deviceName.equals("mxdev")){
       collectPortInfo();
     }
-   long ET = System.currentTimeMillis();
-       long DIF = ET - ST;
-                   System.out.println("Length of job = " + DIF/100 + " second");
+  	    long ET = System.currentTimeMillis();
+        long DIF = ET - ST;
+        System.out.println("Length of job = " + DIF/100 + " second");
 
   }
 
@@ -1030,12 +1008,6 @@ long ST = System.currentTimeMillis();
               CONF_FILE_CONTENTS += ";"
                   + InetAddress.getByName((String) machineList.get(i))
                       .getHostAddress() + "@0@0@" + (rank++);
-<<<<<<< HEAD
-                      
-=======
-                      System.out.println("TEST: "+"1 "+ InetAddress.getByName((String) machineList.get(i))
-                  .getHostAddress() + "@0@0@"+ (rank));
->>>>>>> d38b3ed6990fefe515cfce61bd6caf838d645eaf
             } //end sub if 1
             else if (deviceName.equals("mxdev")) {//start sub else if 1
               CONF_FILE_CONTENTS += ";" + (String) machineList.get(i) + "@"
@@ -1060,12 +1032,7 @@ long ST = System.currentTimeMillis();
               CONF_FILE_CONTENTS += ";"
                   + InetAddress.getByName((String) machineList.get(i))
                       .getHostAddress() + "@0@0@" + (rank++);
-<<<<<<< HEAD
-=======
-                      System.out.println("TEST: "+"2 "+ InetAddress.getByName((String) machineList.get(i))
-                  .getHostAddress() + "@0@0@"+ (rank));
 
->>>>>>> d38b3ed6990fefe515cfce61bd6caf838d645eaf
             } 
             
             else if (deviceName.equals("mxdev")) {
