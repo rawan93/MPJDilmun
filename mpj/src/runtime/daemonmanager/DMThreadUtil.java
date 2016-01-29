@@ -45,6 +45,7 @@ import java.util.concurrent.TimeUnit;
 import runtime.daemonmanager.CLOptions;
 import runtime.daemonmanager.DMThread;
 import runtime.common.MPJUtil;
+import java.io.*;
 
 public class DMThreadUtil {
 
@@ -173,7 +174,46 @@ public static ArrayList<String> machineMsgList;
      	}
      }
      /*end of test */
+     
     }//end  outer if 
+    
+    // *** Open the text file and write the runtime data to it *** 
+    
+    // The name of the text file to open.
+        String fileName = "RuntimeData.txt";
+        
+        try {
+            // Create  an object form FileWriter Class 
+            FileWriter fileWriter = new FileWriter(fileName);
+            
+            // Cerate an object from BufferedWriter Class
+            // wrap FileWriter in BufferedWriter.
+            BufferedWriter bufferedWriter =new BufferedWriter(fileWriter);
+        
+            bufferedWriter.write(""+clusterStatusValue);
+            bufferedWriter.newLine();
+            bufferedWriter.write(""+runtimeStatus);
+            bufferedWriter.newLine();
+            bufferedWriter.write(""+numberOfDaemons);
+            bufferedWriter.newLine();
+            
+            // close the text files.
+            bufferedWriter.close();
+            
+            }//end try 
+            
+             catch(IOException ex) {
+            System.out.println("Error writing to file '" + fileName + "'");
+           
+        }//end catch 
+            
+            
+            
+        
+    
+    
   }// end ExecuteCommand method 
+  
+  
   
 }// end DMThreadUtil class 
