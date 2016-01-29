@@ -335,7 +335,7 @@ public class MPJRun {
         logger.debug("className " + className);
       }
 	// to calculate length of job
-   	long lStartTime = System.currentTimeMillis();
+   //	long lStartTime = System.currentTimeMillis();
 	  int jarOrClass = (applicationClassPathEntry.endsWith(".jar")
                                   ? RUNNING_JAR_FILE
           : RUNNING_CLASS_FILE);
@@ -343,8 +343,15 @@ public class MPJRun {
       MulticoreDaemon multicoreDaemon = new MulticoreDaemon(className,
           applicationClassPathEntry, jarOrClass, nprocs, wdir, jvmArgs,
           appArgs, mpjHomeDir, ADEBUG, APROFILE, DEBUG_PORT);
+<<<<<<< HEAD
+     //     long lEndTime = System.currentTimeMillis();
+		//  long difference = lEndTime - lStartTime;
+
+		//System.out.println("Length of job = " + difference/100 + " second");
+=======
           
        // Dilmun Code 
+>>>>>>> d38b3ed6990fefe515cfce61bd6caf838d645eaf
           
       //print  Daemon Prot number    
       System.out.println("--------------------------------");
@@ -352,23 +359,32 @@ public class MPJRun {
       // print Daemon port number                                           
       System.out.println("Port:"+D_SER_PORT);
       
-        long lEndTime = System.currentTimeMillis();
-		long difference = lEndTime - lStartTime;
-
-		System.out.println("Length of job = " + difference/100 + " second");
+        
       return;
-      
-      
 
     }
     
-   
-      
-      
+    
     // Cluster mode
    
     System.out.println("MPJ Express (" + VERSION + ") is started in the "
                             + "cluster configuration with " + deviceName);
+<<<<<<< HEAD
+   
+    System.out.println ("Name of job: " + className); 
+long ST = System.currentTimeMillis();
+	// write in text file
+		//String fileName = "outt.txt";
+		//try{
+		//PrintWriter outputStream = new PrintWriter(fileName);
+		//outputStream.println(className);
+		//outputStream.close();
+
+		//} catch(FileNotFoundException e) {
+		//e.printStackTrace();
+		//}
+		
+=======
        
        // Dilmun Code
        //print  Daemon Prot number    
@@ -378,6 +394,7 @@ public class MPJRun {
        //System.out.println("Port:"+D_SER_PORT);
     
 
+>>>>>>> d38b3ed6990fefe515cfce61bd6caf838d645eaf
     // Read the machine file and set machineList
     machineList = MPJUtil.readMachineFile(machinesFile);
     
@@ -405,7 +422,9 @@ public class MPJRun {
     
     //if number of devices greater than number of processes
     for (int i = machineList.size(); i > nprocs; i--) {
-      machineList.remove(i - 1);
+		
+		machineList.remove(i - 1);
+		
     }
 
     machinesSanityCheck();
@@ -473,6 +492,10 @@ public class MPJRun {
     if(!deviceName.equals("mxdev")){
       collectPortInfo();
     }
+   long ET = System.currentTimeMillis();
+       long DIF = ET - ST;
+                   System.out.println("Length of job = " + DIF/100 + " second");
+
   }
 
   // Parses the input ...
@@ -677,7 +700,7 @@ public class MPJRun {
       }
     }
     
-   
+ 
 
     jArgs = jvmArgs.toArray(new String[0]);
     aArgs = appArgs.toArray(new String[0]);
@@ -746,7 +769,8 @@ public class MPJRun {
    * MPJRun.java is awaiting connections from the wrapper class.
    */
   private void pack(int nProcesses, int start_rank, Socket sockClient) {
-
+	
+          
     if (wdir == null) {
       wdir = System.getProperty("user.dir");
     }
@@ -788,7 +812,7 @@ public class MPJRun {
       appArgs.add(aArgs[j]);
     }
     ticket.setAppArgs(appArgs);
-
+		
     if (deviceName.equals("hybdev")) {
       ticket.setNetworkProcessCount(networkProcesscount);
       ticket.setTotalProcessCount(nprocs);
@@ -833,6 +857,7 @@ public class MPJRun {
       e.printStackTrace();
     }
   }
+ 
 
   private void createLogger(String[] args) throws MPJRuntimeException {
     String userDir = System.getProperty("user.dir");
@@ -911,7 +936,6 @@ public class MPJRun {
    *  debugger project!
    */
   private void assignTasks() throws Exception {
-
     int rank = 0;
 
     int noOfMachines = machineList.size();
@@ -930,7 +954,6 @@ public class MPJRun {
      * nodes
      */
     if (nprocs <= noOfMachines) {
-
       if (DEBUG && logger.isDebugEnabled()) {
         logger.debug("Processes Requested " + nprocs
             + " are less than than machines " + noOfMachines);
@@ -942,6 +965,7 @@ public class MPJRun {
      * allocate each machine a single process
      */
       for (int i = 0; i < nprocs; i++) {
+      
         procsPerMachineTable
             .put(InetAddress.getByName((String) machineList.get(i))
                 .getHostAddress(), new Integer(1));
@@ -951,7 +975,7 @@ public class MPJRun {
           CONF_FILE_CONTENTS += ";"
               + InetAddress.getByName((String) machineList.get(i))
                   .getHostAddress() + "@0@0@"+ (rank++);
-         
+        
         } 
         else 
         if (deviceName.equals("mxdev")) {
@@ -995,6 +1019,9 @@ public class MPJRun {
                   .getHostAddress(), new Integer(divisor + 1));
           if (DEBUG && logger.isDebugEnabled()) { //start sub if 1
             logger.debug("procPerMachineTable==>" + procsPerMachineTable);
+             
+
+	
           }//end sub if 1
 
           for (int j = 0; j < (divisor + 1); j++) { //start sub loop1
@@ -1003,8 +1030,12 @@ public class MPJRun {
               CONF_FILE_CONTENTS += ";"
                   + InetAddress.getByName((String) machineList.get(i))
                       .getHostAddress() + "@0@0@" + (rank++);
+<<<<<<< HEAD
+                      
+=======
                       System.out.println("TEST: "+"1 "+ InetAddress.getByName((String) machineList.get(i))
                   .getHostAddress() + "@0@0@"+ (rank));
+>>>>>>> d38b3ed6990fefe515cfce61bd6caf838d645eaf
             } //end sub if 1
             else if (deviceName.equals("mxdev")) {//start sub else if 1
               CONF_FILE_CONTENTS += ";" + (String) machineList.get(i) + "@"
@@ -1014,23 +1045,29 @@ public class MPJRun {
           }//end sub loop1
         }//end if
         else if (divisor > 0) { //start else if
+        
           procsPerMachineTable.put(
               InetAddress.getByName((String) machineList.get(i))
                   .getHostAddress(), new Integer(divisor));
 
           if (DEBUG && logger.isDebugEnabled()) {
             logger.debug("procPerMachineTable==>" + procsPerMachineTable);
+           
           }
-
           for (int j = 0; j < divisor; j++) {//start lopp
+          
             if (deviceName.equals("niodev")) {
               CONF_FILE_CONTENTS += ";"
                   + InetAddress.getByName((String) machineList.get(i))
                       .getHostAddress() + "@0@0@" + (rank++);
+<<<<<<< HEAD
+=======
                       System.out.println("TEST: "+"2 "+ InetAddress.getByName((String) machineList.get(i))
                   .getHostAddress() + "@0@0@"+ (rank));
 
+>>>>>>> d38b3ed6990fefe515cfce61bd6caf838d645eaf
             } 
+            
             else if (deviceName.equals("mxdev")) {
               CONF_FILE_CONTENTS += ";" + (String) machineList.get(i) + "@"
                   + (mxBoardNum + j) + "@" + (rank++);
@@ -1047,7 +1084,6 @@ public class MPJRun {
     if (DEBUG && logger.isDebugEnabled()) {
       logger.debug("conf file contents " + CONF_FILE_CONTENTS);
     }
-
   }
 
   // Hybrid Device Assign Tasks
@@ -1108,7 +1144,7 @@ public class MPJRun {
     }
 
   }
-
+    
   private void machinesSanityCheck() throws Exception {
 
     for (int i = 0; i < machineList.size(); i++) {

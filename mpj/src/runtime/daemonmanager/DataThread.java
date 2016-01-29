@@ -12,7 +12,7 @@ import java.util.Map;
 
 
 public class DataThread extends DMThread {
-  private String host = "localhost";
+private String host = "localhost";
 private static int daemonPort = 0;
 static String mpjHomeDir = null;
 
@@ -28,7 +28,8 @@ static String mpjHomeDir = null;
     String pid = DaemonUtil.getMPJProcessID(host);
     String msg = "";
       if (pid != ""){
-        getDaemonPort();
+      
+        getDaemonPort(); // get the daemon port read from config file 
         msg = MPJUtil.FormatMachineMessage(host,"MPJ Daemon is running", pid, ""+daemonPort);
         //msg = msg + " with port number "+ daemonPort;
         DMThreadUtil.runtimeStatus = true;
@@ -40,6 +41,7 @@ static String mpjHomeDir = null;
       msg = MPJUtil.FormatMachineMessage(host, DMMessages.MPJDAEMON_NOT_AVAILABLE, "", "");
     }
     DMThreadUtil.machineMsgList.add(msg);
+    
   }
 	
 	public static void getDaemonPort(){

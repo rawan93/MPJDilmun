@@ -292,6 +292,8 @@
  DEBUG runtime  - started the MultithreadStarter.
  DEBUG runtime  - Stopping the output
  DEBUG runtime  - outputting ...
+<<<<<<< HEAD
+=======
  DEBUG runtime  -  --MPJRun.java invoked--
  DEBUG runtime  - [MPJRun.java]: processInput called ...
  DEBUG runtime  - ###########################
@@ -316,3 +318,4 @@
  DEBUG runtime  - -hdfsFolder: <null>
  DEBUG runtime  - appArgs.length: <0>
  DEBUG runtime  - ###########################
+>>>>>>> d38b3ed6990fefe515cfce61bd6caf838d645eaf
