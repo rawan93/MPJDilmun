@@ -58,17 +58,18 @@ public static String ProcessID="";
 private static int daemonPort = 0;
  // The size of the machine list 
 public static int sizeOfMachineList;
-
-
 //status of Cluster (array list to save the status of each daemon in the cluster)
 public static ArrayList<Integer> clusterStatus = new ArrayList<Integer>();
-
 // status of cluster (Final value)
-
 public static boolean clusterStatusValue = false;
-
  // Total number of daemons.
 public static int numberOfDaemons;
+// Set the message of runtime Status
+public static String runtimeStatusMessage = "";
+// Set the message of cluster Status Value
+public static String clusterStatusMMessage = "";
+
+
 //end of dilmun
 //test
 //array list of device name and id
@@ -155,17 +156,25 @@ public static ArrayList<String> machineMsgList;
       	
          clusterStatusValue=true;
          
+         runtimeStatusMessage="is running";
+         clusterStatusMMessage = "is running";
+         
       	}//end if 
       	else if(runtimeStatus==false)
       	{
       	  
-      	 clusterStatusValue=true;
+      	 clusterStatusValue=false;
+      	 
+      	 runtimeStatusMessage="is not running";
+         clusterStatusMMessage = " is not running";
+      	 
+      	 
       	
       	}//end else is 
       	
-      	System.out.println("Cluster status: "+clusterStatusValue);
+      	System.out.println("Cluster status: "+clusterStatusMMessage);
       	//status of runtime
-     	System.out.println("Runtime status: "+runtimeStatus);
+     	System.out.println("Runtime status: "+runtimeStatusMessage);
      	//print the total number of Daemons
       	System.out.println("Total number of Daemons: "+numberOfDaemons+".");
       	System.out.println("Machines in cluster:");
@@ -190,12 +199,19 @@ public static ArrayList<String> machineMsgList;
             // wrap FileWriter in BufferedWriter.
             BufferedWriter bufferedWriter =new BufferedWriter(fileWriter);
         
-            bufferedWriter.write(""+clusterStatusValue);
+            bufferedWriter.write(""+clusterStatusMMessage);
             bufferedWriter.newLine();
-            bufferedWriter.write(""+runtimeStatus);
+            bufferedWriter.write(""+runtimeStatusMessage);
             bufferedWriter.newLine();
             bufferedWriter.write(""+numberOfDaemons);
             bufferedWriter.newLine();
+            
+            for (int i=0; i< machineMsgList.size(); i++)
+            {
+                bufferedWriter.write(""+machineMsgList.get(i));
+                 bufferedWriter.newLine();
+     		    
+     	    }//end for loop
             
             // close the text files.
             bufferedWriter.close();
@@ -203,7 +219,7 @@ public static ArrayList<String> machineMsgList;
             }//end try 
             
              catch(IOException ex) {
-            System.out.println("Error writing to file '" + fileName + "'");
+                  System.out.println("Error writing to file '" + fileName + "'");
            
         }//end catch 
             

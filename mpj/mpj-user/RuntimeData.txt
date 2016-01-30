@@ -1,3 +1,11 @@
-true
-true
+is running
+is running
 1
+[mais-MacBook-Pro.local] 
+MPJ Daemon is running
+Process ID: 4182
+Port Number: 40055
+[Reemis-MacBook-Pro.local] 
+MPJ Daemon is not running 
+Process ID:  - 
+Port Number: -
