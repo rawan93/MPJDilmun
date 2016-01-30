@@ -186,7 +186,16 @@ public static ArrayList<String> machineMsgList;
      
     }//end  outer if 
     
-    // *** Open the text file and write the runtime data to it *** 
+    
+            
+        WriteToTextFile();
+    
+    
+  }// end ExecuteCommand method 
+  
+   public static void WriteToTextFile(){
+  
+  // *** Open the text file and write the runtime data to it *** 
     
     // The name of the text file to open.
         String fileName = "RuntimeData.txt";
@@ -224,12 +233,7 @@ public static ArrayList<String> machineMsgList;
         }//end catch 
             
             
-            
-        
-    
-    
-  }// end ExecuteCommand method 
-  
+  }// end WriteToTextFile method 
   
   
 }// end DMThreadUtil class 
