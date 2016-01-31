@@ -77,7 +77,7 @@ public class Wrapper extends Thread {
    *          MPJRun.java server, args[5] is rank, args[6] is className
    */
   public void execute(String args[]) throws Exception {
-
+	double ST = (double) System.currentTimeMillis()/1000;
     InetAddress localaddr = InetAddress.getLocalHost();
     hostName = localaddr.getHostName();
 
@@ -103,7 +103,15 @@ public class Wrapper extends Thread {
 
     c = Class.forName(className);
 
+
     try {
+   
+ 	  /*System.out.println(" ");
+   		double ST = (double) System.currentTimeMillis()/1000;
+   		System.out.print ("ST= ");
+   		System.out.printf("%.2f", ST);
+   		System.out.println(" ");*/
+   	
       System.out.println("Starting process <"+rank+"> on <"+hostName+">");
 
       String arvs[] = new String[nargs.length + 3];
@@ -131,29 +139,60 @@ public class Wrapper extends Thread {
       m.invoke(null, new Object[] { arvs });
       
       System.out.println("Stopping Process <"+rank+"> on <"+hostName+">");
+      
+      /*
+		double ET = (double)System.currentTimeMillis()/1000;
+		System.out.print ("ET= ");
+   		System.out.printf("%.2f%n" , ET);
+   		System.out.println(" ");
+   		double DIF = ET - ST;
+   		System.out.format("Length of job = %.2f%n second" , DIF );
+   		System.out.print ("DIF= ");
+   		System.out.printf("%.2f%n" , DIF );
+   		System.out.println(" ");*/
+   		
     }
+    
     catch (Exception ioe) {
       System.err.println("["+hostName+"-Wrapper.java]: Multi-threaded"+
                          " starter: exception" + ioe.getMessage());
       ioe.printStackTrace();
     }
-  }
+
+/*
+    double ET = (double)System.currentTimeMillis()/1000;
+   		double DIF = ET - ST;
+   		System.out.print ("DIF in wrapper = ");
+   		//System.out.print (className);
+   		System.out.printf("%.2f%n" , DIF);
+   		
+
+		try(PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("outee.txt", true)))) {
+  		 	
+  		 	out.println("Name of job: " + className);
+   			 //more code
+   			 out.println("Length = " + DIF);
+   			 //more code
+		}catch (IOException e) {
+   			 //exception handling left as an exercise for the reader
+		}
+
+*/
+		}
 
   public void run() {
     try {
-      execute(args);
+      execute(args);     
     }
     catch (Exception ex) {
       ex.printStackTrace();
     }
   }
-  
-
-  public static void main(String args[]) throws Exception {
+    public static void main(String args[]) throws Exception {
     ThreadGroup group = new ThreadGroup("MPI" + args[3]);
     Wrapper wrap = new Wrapper(group, args[3]);
     wrap.args = args;
     wrap.start();
     wrap.join();
-  }
+     }
 }
