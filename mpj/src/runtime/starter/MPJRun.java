@@ -464,29 +464,21 @@ public class MPJRun {
     if(!deviceName.equals("mxdev")){
       collectPortInfo();
     }
+    
+    
+    //****test****//
+    
+    // end time & difference (ET - ST)
 	 double ET = (double)System.currentTimeMillis()/1000;
    		double DIF = ET - ST;
    		System.out.print ("DIF in MPJRun = ");
    		//System.out.print (className);
    		System.out.printf("%.2f%n" , DIF);
-   	
-   /*		try(PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("outee.txt", true)))) {
-  		 	
-  		 	out.println("Name of job: " + "Length = "+ className);
-   			 //more code
-   			 out.println("Length = " + DIF);
-   			 //more code
-		}catch (IOException e) {
-   			 //exception handling left as an exercise for the reader
-		}*/
-		
-		    String heading = "Name of job 			Length";
+
        
-
+	// write in a text file -- Name of job & length of each --
+	        File f = new File("test.txt");
     try {
-        File f = new File("test.txt");
-       // FileWriter writer = new FileWriter(f, true); 
-
         if(!f.exists()) {
         f.createNewFile();
         FileWriter writer = new FileWriter(f, true); 
@@ -511,30 +503,85 @@ public class MPJRun {
     } catch (IOException ex) {
         System.out.println(ex.getMessage());
     }
-
-         
+    
+    //read the file and calculate the average..
         double total = 0.0;
         double d ;
         BufferedReader reader;
         int number_of_E_jobs = 0;
         try{
-            reader = new BufferedReader(new FileReader("test.txt"));
-                String line= reader.readLine();       
-            while(line !=null){
-                try{
+        	reader = new BufferedReader(new FileReader("test.txt"));
+        	String line= reader.readLine();
+       		while(line !=null){
+        		try{
                     d=Double.valueOf(line);
                     total += d;
                     number_of_E_jobs = number_of_E_jobs + 1;
+                
                 }catch(NumberFormatException e){
                 }
                 line=reader.readLine();
-            }
+                }
+                
+    	  }catch(Exception ex){
+        	System.out.println(ex.getMessage());
+          } 
+         
+         
+        FileWriter writer2 = new FileWriter(f, true); 
+		writer2.write("AVG = " + total/number_of_E_jobs + "\n");
+		writer2.close();
+ 
 
-        }catch(Exception ex){
-            System.out.println(ex.getMessage());
-        } 
-         System.out.println("Average Length= "+total/number_of_E_jobs);
-    
+		File inputFile = new File("test.txt");
+        File tempFile = new File("myTempFile.txt");
+        BufferedReader reader6 = null;
+        try {
+            reader6 = new BufferedReader(new FileReader(inputFile));
+        } catch (FileNotFoundException e2) {
+            // TODO Auto-generated catch block
+           // e2.printStackTrace();
+        }
+        BufferedWriter writer6 = null;
+        try {
+            writer6 = new BufferedWriter(new FileWriter(tempFile));
+        } catch (IOException e1) {
+            // TODO Auto-generated catch block
+           // e1.printStackTrace();
+        }
+        String currentLine;
+
+        try {
+            while((currentLine = reader6.readLine()) != null)
+            {
+                String trimmedLine = currentLine.trim();
+                if(trimmedLine.contains("AVG ="))
+                    continue;
+                try {
+                    writer6.write(currentLine + "\n");
+                } catch (IOException e) {
+                    // TODO Auto-generated catch block
+                   // e.printStackTrace();
+                }
+            }
+            
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+           // e.printStackTrace();
+        }
+        writer6.write("AVG = " + total/number_of_E_jobs + "\n");
+         
+
+ 		boolean rename = tempFile.renameTo(inputFile);
+ 
+ 		RandomAccessFile ff = new RandomAccessFile(new File("test.txt"), "rw");
+		ff.seek(0); // to the beginning
+		ff.write("Running Job: ".getBytes());
+		ff.close();
+ 		writer6.close();
+		reader6.close();
+          //  System.out.println("File renamed");
+    //********test*********//
    }
    
 
