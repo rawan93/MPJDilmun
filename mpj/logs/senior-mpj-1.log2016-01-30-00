@@ -1,0 +1,22 @@
+ INFO  mpj  - --init method of niodev is called--
+ INFO  mpj  - Address: Reemis-MacBook-Pro.local/192.168.1.13
+ INFO  mpj  - Name :Reemis-MacBook-Pro.local
+ INFO  mpj  - rank :1
+ INFO  mpj  - Orignal string: #temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.13@0@0@0@0;192.168.1.13@0@0@1@2;#Server Name;Reemis-MacBook-Pro.local;#Server Port;40002
+ DEBUG mpj  - created writableServerChannel on port 32914
+ DEBUG mpj  - created readableServerChannel on port 32045
+ DEBUG mpj  - Connecting to :ServerName Reemis-MacBook-Pro.local ServerPort 40002
+ DEBUG mpj  - Socket Connected Reemis-MacBook-Pro.local/192.168.1.13
+ DEBUG mpj  - Sending Write Port 32914
+ DEBUG mpj  - Sending Read Port32045
+ INFO  mpj  - --init method of niodev is called--
+ INFO  mpj  - Address: Reemis-MacBook-Pro.local/192.168.1.13
+ INFO  mpj  - Name :Reemis-MacBook-Pro.local
+ INFO  mpj  - rank :1
+ INFO  mpj  - Orignal string: #temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.13@0@0@0@0;192.168.1.13@0@0@1@2;#Server Name;Reemis-MacBook-Pro.local;#Server Port;40002
+ DEBUG mpj  - created writableServerChannel on port 38065
+ DEBUG mpj  - created readableServerChannel on port 37542
+ DEBUG mpj  - Connecting to :ServerName Reemis-MacBook-Pro.local ServerPort 40002
+ DEBUG mpj  - Socket Connected Reemis-MacBook-Pro.local/192.168.1.13
+ DEBUG mpj  - Sending Write Port 38065
+ DEBUG mpj  - Sending Read Port37542

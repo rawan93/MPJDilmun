@@ -1,0 +1,39 @@
+ INFO  mpj  - --init method of niodev is called--
+ INFO  mpj  - Address: Reemis-MacBook-Pro.local/192.168.1.13
+ INFO  mpj  - Name :Reemis-MacBook-Pro.local
+ INFO  mpj  - rank :0
+ INFO  mpj  - Orignal string: #temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.13@0@0@0@0;192.168.1.13@0@0@1@2;#Server Name;Reemis-MacBook-Pro.local;#Server Port;40002
+ DEBUG mpj  - created writableServerChannel on port 35820
+ DEBUG mpj  - created readableServerChannel on port 27193
+ DEBUG mpj  - Connecting to :ServerName Reemis-MacBook-Pro.local ServerPort 40002
+ DEBUG mpj  - Socket Connected Reemis-MacBook-Pro.local/192.168.1.13
+ DEBUG mpj  - Sending Write Port 35820
+ DEBUG mpj  - Sending Read Port27193
+ INFO  mpj  - --init method of niodev is called--
+ INFO  mpj  - Address: Reemis-MacBook-Pro.local/192.168.1.13
+ INFO  mpj  - Name :Reemis-MacBook-Pro.local
+ INFO  mpj  - rank :0
+ INFO  mpj  - Orignal string: #temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.13@0@0@0@0;192.168.1.13@0@0@1@2;#Server Name;Reemis-MacBook-Pro.local;#Server Port;40002
+ DEBUG mpj  - created writableServerChannel on port 32130
+ DEBUG mpj  - created readableServerChannel on port 27317
+ DEBUG mpj  - Connecting to :ServerName Reemis-MacBook-Pro.local ServerPort 40002
+ DEBUG mpj  - Socket Connected Reemis-MacBook-Pro.local/192.168.1.13
+ DEBUG mpj  - Sending Write Port 32130
+ DEBUG mpj  - Sending Read Port27317
+ INFO  mpj  - Peer Processes Info #Peer Information;192.168.1.13@27317@32130@0@0;192.168.1.13@32045@32914@1@0null
+ DEBUG mpj  - Nodes list
+ DEBUG mpj  - node[0] 192.168.1.13
+ DEBUG mpj  - node[1] 192.168.1.13
+ DEBUG mpj  - Read Ports List
+ DEBUG mpj  - rPortList[0] 27317
+ DEBUG mpj  - rPortList[1] 32045
+ DEBUG mpj  - Write Ports List
+ DEBUG mpj  - wPortList[0] 32130
+ DEBUG mpj  - wPortList[1] 32914
+ DEBUG mpj  - Ranks List
+ DEBUG mpj  - ranks[0] 0
+ DEBUG mpj  - ranks[1] 1
+ DEBUG mpj  - Dont connect to itself, so contine;
+ DEBUG mpj  - Starting the selector thread 
+ DEBUG mpj  - testing if all peers are connected?
+ INFO  mpj  - selector Thread started 
