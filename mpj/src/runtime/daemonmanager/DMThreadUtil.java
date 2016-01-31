@@ -150,37 +150,47 @@ public static ArrayList<String> machineMsgList;
      if (type.equals(DMConstants.DATA)) {
      	//status of cluster
      	//revisit cluster status (doesnt check if cluster exists without runtime)
-     	
+     	String runtimeData = "";
      	 if(runtimeStatus==true)
       	{
       	
          clusterStatusValue=true;
-         
-         runtimeStatusMessage="is running";
-         clusterStatusMMessage = "is running";
+         runtimeData = runtimeData + "Cluster status: Existing\n" + "Runtime status: Running\n";
+         //runtimeStatusMessage="is running";
+         //clusterStatusMMessage = "is running";
          
       	}//end if 
       	else if(runtimeStatus==false)
       	{
       	  
       	 clusterStatusValue=false;
-      	 
-      	 runtimeStatusMessage="is not running";
-         clusterStatusMMessage = " is not running";
+      	 runtimeData = runtimeData + "Cluster status: Not existing\n" + "Runtime status: Not running\n";
+
+      	// runtimeStatusMessage="is not running";
+        // clusterStatusMMessage = " is not running";
       	 
       	 
       	
       	}//end else is 
       	
-      	System.out.println("Cluster status: "+clusterStatusMMessage);
+      	//System.out.println("Cluster status: "+clusterStatusMMessage);
       	//status of runtime
-     	System.out.println("Runtime status: "+runtimeStatusMessage);
+     	//System.out.println("Runtime status: "+runtimeStatusMessage);
      	//print the total number of Daemons
-      	System.out.println("Total number of Daemons: "+numberOfDaemons+".");
-      	System.out.println("Machines in cluster:");
+     	runtimeData = runtimeData + "Total number of Daemons: "+numberOfDaemons+".\n"+
+     	"Machines in cluster:\n";
      	for (int i=0; i< machineMsgList.size(); i++){
-     		System.out.println(machineMsgList.get(i));
+     		runtimeData = runtimeData + machineMsgList.get(i)+"\n";
      	}
+     	
+      //	System.out.println("Total number of Daemons: "+numberOfDaemons+".");
+      //	System.out.println("Machines in cluster:");
+     	//for (int i=0; i< machineMsgList.size(); i++){
+     	//	System.out.println(machineMsgList.get(i));
+     	//}
+     	
+     	 WriteToTextFile(runtimeData);
+     	
      }
      /*end of test */
      
@@ -188,12 +198,12 @@ public static ArrayList<String> machineMsgList;
     
     
             
-        WriteToTextFile();
+       
     
     
   }// end ExecuteCommand method 
   
-   public static void WriteToTextFile(){
+   public static void WriteToTextFile(String data){
   
   // *** Open the text file and write the runtime data to it *** 
     
@@ -207,8 +217,8 @@ public static ArrayList<String> machineMsgList;
             // Cerate an object from BufferedWriter Class
             // wrap FileWriter in BufferedWriter.
             BufferedWriter bufferedWriter =new BufferedWriter(fileWriter);
-        
-            bufferedWriter.write(""+clusterStatusMMessage);
+        	bufferedWriter.write(data);
+            /*bufferedWriter.write(""+clusterStatusMMessage);
             bufferedWriter.newLine();
             bufferedWriter.write(""+runtimeStatusMessage);
             bufferedWriter.newLine();
@@ -221,7 +231,7 @@ public static ArrayList<String> machineMsgList;
                  bufferedWriter.newLine();
      		    
      	    }//end for loop
-            
+            */
             // close the text files.
             bufferedWriter.close();
             

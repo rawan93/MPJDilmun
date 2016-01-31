@@ -1,6 +1,7 @@
-is running
-is running
-1
+Cluster status: Existing
+Runtime status: Running
+Total number of Daemons: 1.
+Machines in cluster:
 [mais-MacBook-Pro.local] 
 MPJ Daemon is running
 Process ID: 4182
