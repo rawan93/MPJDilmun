@@ -1,10 +1,10 @@
-Cluster status: Existing
-Runtime status: Running
+Cluster status: Existing.
+Runtime status: Running.
 Total number of Daemons: 1.
 Machines in cluster:
 [mais-MacBook-Pro.local] 
 MPJ Daemon is running
-Process ID: 4182
+Process ID: 8977
 Port Number: 40055
 [Reemis-MacBook-Pro.local] 
 MPJ Daemon is not running 

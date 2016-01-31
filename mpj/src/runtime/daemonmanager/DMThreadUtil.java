@@ -146,16 +146,23 @@ public static ArrayList<String> machineMsgList;
        sizeOfMachineList=machinesList.size();
       
       /*test*/
+      if(type.equals(DMConstants.BOOT)){
+     		runtimeStatus=true;
+     	} else if (type.equals(DMConstants.HALT)){
+     		runtimeStatus= false;
+     		numberOfDaemons = 0;
+     	}
        //check if the status is required and print
-     if (type.equals(DMConstants.DATA)) {
+     if (type.equals(DMConstants.DATA) || type.equals(DMConstants.BOOT) || type.equals(DMConstants.HALT) ) {
      	//status of cluster
      	//revisit cluster status (doesnt check if cluster exists without runtime)
      	String runtimeData = "";
+     	
      	 if(runtimeStatus==true)
       	{
       	
          clusterStatusValue=true;
-         runtimeData = runtimeData + "Cluster status: Existing\n" + "Runtime status: Running\n";
+         runtimeData = runtimeData + "Cluster status: Existing.\n" + "Runtime status: Running.\n";
          //runtimeStatusMessage="is running";
          //clusterStatusMMessage = "is running";
          
@@ -164,7 +171,7 @@ public static ArrayList<String> machineMsgList;
       	{
       	  
       	 clusterStatusValue=false;
-      	 runtimeData = runtimeData + "Cluster status: Not existing\n" + "Runtime status: Not running\n";
+      	 runtimeData = runtimeData + "Cluster status: Not existing.\n" + "Runtime status: Not running.\n";
 
       	// runtimeStatusMessage="is not running";
         // clusterStatusMMessage = " is not running";
