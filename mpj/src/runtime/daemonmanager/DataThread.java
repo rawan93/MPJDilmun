@@ -28,16 +28,13 @@ static String mpjHomeDir = null;
     String pid = DaemonUtil.getMPJProcessID(host);
     String msg = "";
       if (pid != ""){
-      
-        getDaemonPort(); // get the daemon port read from config file 
-        msg = MPJUtil.FormatMachineMessage(host,"MPJ Daemon is running", pid, ""+daemonPort);
-        //msg = msg + " with port number "+ daemonPort;
-        DMThreadUtil.runtimeStatus = true;
-        DMThreadUtil.numberOfDaemons++;
+      getDaemonPort();
+      msg = MPJUtil.FormatMachineMessage(host,"MPJ Daemon is running", pid, ""+daemonPort);
+      //msg = msg + " with port number "+ daemonPort;
+      DMThreadUtil.runtimeStatus = true;
+      DMThreadUtil.numberOfDaemons++;
       }
-    else 
-    
-    {
+    else {
       msg = MPJUtil.FormatMachineMessage(host, DMMessages.MPJDAEMON_NOT_AVAILABLE, "", "");
     }
     DMThreadUtil.machineMsgList.add(msg);

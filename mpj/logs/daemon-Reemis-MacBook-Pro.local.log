@@ -1,25 +1,25 @@
  DEBUG mpjdaemon  - Accepting connection ..
  DEBUG mpjdaemon  - Job Started
- DEBUG mpjdaemon  - Ticket length 1047
+ DEBUG mpjdaemon  - Ticket length 1030
  DEBUG mpjdaemon  - <MPJProcessInfo>
-<TicketID>957d4b7e-3a49-40ff-85f3-8b601e3b1f50</TicketID>
+<TicketID>47dfd2fd-62fd-41af-b632-dd80d0923056</TicketID>
 <ClassPath>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</ClassPath>
 <MasterNode>Reemis-MacBook-Pro.local</MasterNode>
 <MasterPort>40002</MasterPort>
-<ProcessCount>3</ProcessCount>
+<ProcessCount>2</ProcessCount>
 <StartingRank>0</StartingRank>
 <JvmArgs/>
 <WorkingDirectory>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</WorkingDirectory>
 <ZippedSource>false</ZippedSource>
-<MainClass>HelloWorld</MainClass>
+<MainClass>HelloWorld2</MainClass>
 <DeviceName>niodev</DeviceName>
-<ConfFileContents>#temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4</ConfFileContents>
+<ConfFileContents>#temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2</ConfFileContents>
 <AppArgs/>
 <UserID>senior</UserID>
 <NetworkProcessCount>-1</NetworkProcessCount>
 <TotalProcessCount>-1</TotalProcessCount>
 <NetworkDevice>niodev</NetworkDevice>
-<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj</MPJ_HOME>
+<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/</MPJ_HOME>
 <Debug>false</Debug>
 <DebugPort>24500</DebugPort>
 <Profiler>false</Profiler>
@@ -28,46 +28,32 @@
  DEBUG mpjdaemon  - configFilePath
  DEBUG mpjdaemon  - Config file created :
  DEBUG mpjdaemon  - modified: jArgs[0]=-cp
- DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[0] = java
  DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;3;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4
- DEBUG mpjdaemon  - arguments[5] = 3
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
  DEBUG mpjdaemon  - arguments[6] = niodev
  DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
  DEBUG mpjdaemon  - arguments[8] = 40002
  DEBUG mpjdaemon  - arguments[9] = 0
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
  DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - outputting ...
  DEBUG mpjdaemon  - started the process 
  DEBUG mpjdaemon  - arguments[0] = java
  DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;3;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4
- DEBUG mpjdaemon  - arguments[5] = 3
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
  DEBUG mpjdaemon  - arguments[6] = niodev
  DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
  DEBUG mpjdaemon  - arguments[8] = 40002
  DEBUG mpjdaemon  - arguments[9] = 1
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
  DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;3;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4
- DEBUG mpjdaemon  - arguments[5] = 3
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 2
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
  DEBUG mpjdaemon  - starting the process 
  DEBUG mpjdaemon  - started the process 
  DEBUG mpjdaemon  - outputting ...
@@ -80,26 +66,26 @@
 
  DEBUG mpjdaemon  - Accepting connection ..
  DEBUG mpjdaemon  - Job Started
- DEBUG mpjdaemon  - Ticket length 1047
+ DEBUG mpjdaemon  - Ticket length 1030
  DEBUG mpjdaemon  - <MPJProcessInfo>
-<TicketID>733dae40-73be-4206-a01f-ebe82a24dac9</TicketID>
+<TicketID>cce5d3f2-02e2-4c6b-8799-d3a30b3132e1</TicketID>
 <ClassPath>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</ClassPath>
 <MasterNode>Reemis-MacBook-Pro.local</MasterNode>
 <MasterPort>40002</MasterPort>
-<ProcessCount>3</ProcessCount>
+<ProcessCount>2</ProcessCount>
 <StartingRank>0</StartingRank>
 <JvmArgs/>
 <WorkingDirectory>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</WorkingDirectory>
 <ZippedSource>false</ZippedSource>
-<MainClass>HelloWorld</MainClass>
+<MainClass>HelloWorld2</MainClass>
 <DeviceName>niodev</DeviceName>
-<ConfFileContents>#temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4</ConfFileContents>
+<ConfFileContents>#temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2</ConfFileContents>
 <AppArgs/>
 <UserID>senior</UserID>
 <NetworkProcessCount>-1</NetworkProcessCount>
 <TotalProcessCount>-1</TotalProcessCount>
 <NetworkDevice>niodev</NetworkDevice>
-<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj</MPJ_HOME>
+<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/</MPJ_HOME>
 <Debug>false</Debug>
 <DebugPort>24500</DebugPort>
 <Profiler>false</Profiler>
@@ -108,46 +94,32 @@
  DEBUG mpjdaemon  - configFilePath
  DEBUG mpjdaemon  - Config file created :
  DEBUG mpjdaemon  - modified: jArgs[0]=-cp
- DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[0] = java
  DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;3;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4
- DEBUG mpjdaemon  - arguments[5] = 3
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
  DEBUG mpjdaemon  - arguments[6] = niodev
  DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
  DEBUG mpjdaemon  - arguments[8] = 40002
  DEBUG mpjdaemon  - arguments[9] = 0
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
  DEBUG mpjdaemon  - starting the process 
  DEBUG mpjdaemon  - started the process 
  DEBUG mpjdaemon  - arguments[0] = java
  DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;3;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4
- DEBUG mpjdaemon  - arguments[5] = 3
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
+ DEBUG mpjdaemon  - outputting ...
  DEBUG mpjdaemon  - arguments[6] = niodev
  DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
  DEBUG mpjdaemon  - arguments[8] = 40002
  DEBUG mpjdaemon  - arguments[9] = 1
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;3;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4
- DEBUG mpjdaemon  - arguments[5] = 3
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 2
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
  DEBUG mpjdaemon  - starting the process 
  DEBUG mpjdaemon  - started the process 
  DEBUG mpjdaemon  - outputting ...
@@ -160,26 +132,26 @@
 
  DEBUG mpjdaemon  - Accepting connection ..
  DEBUG mpjdaemon  - Job Started
- DEBUG mpjdaemon  - Ticket length 1047
+ DEBUG mpjdaemon  - Ticket length 1030
  DEBUG mpjdaemon  - <MPJProcessInfo>
-<TicketID>54984d57-772c-40d1-af00-208cce98c197</TicketID>
+<TicketID>44a75ffa-d84e-415e-88a8-f119d4e38fca</TicketID>
 <ClassPath>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</ClassPath>
 <MasterNode>Reemis-MacBook-Pro.local</MasterNode>
 <MasterPort>40002</MasterPort>
-<ProcessCount>3</ProcessCount>
+<ProcessCount>2</ProcessCount>
 <StartingRank>0</StartingRank>
 <JvmArgs/>
 <WorkingDirectory>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</WorkingDirectory>
 <ZippedSource>false</ZippedSource>
-<MainClass>HelloWorld</MainClass>
+<MainClass>HelloWorld2</MainClass>
 <DeviceName>niodev</DeviceName>
-<ConfFileContents>#temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4</ConfFileContents>
+<ConfFileContents>#temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2</ConfFileContents>
 <AppArgs/>
 <UserID>senior</UserID>
 <NetworkProcessCount>-1</NetworkProcessCount>
 <TotalProcessCount>-1</TotalProcessCount>
 <NetworkDevice>niodev</NetworkDevice>
-<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj</MPJ_HOME>
+<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/</MPJ_HOME>
 <Debug>false</Debug>
 <DebugPort>24500</DebugPort>
 <Profiler>false</Profiler>
@@ -188,45 +160,163 @@
  DEBUG mpjdaemon  - configFilePath
  DEBUG mpjdaemon  - Config file created :
  DEBUG mpjdaemon  - modified: jArgs[0]=-cp
- DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[0] = java
  DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;3;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4
- DEBUG mpjdaemon  - arguments[5] = 3
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
  DEBUG mpjdaemon  - arguments[6] = niodev
  DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
  DEBUG mpjdaemon  - arguments[8] = 40002
  DEBUG mpjdaemon  - arguments[9] = 0
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
  DEBUG mpjdaemon  - starting the process 
  DEBUG mpjdaemon  - started the process 
  DEBUG mpjdaemon  - arguments[0] = java
  DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - outputting ...
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;3;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4
- DEBUG mpjdaemon  - arguments[5] = 3
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
  DEBUG mpjdaemon  - arguments[6] = niodev
  DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
  DEBUG mpjdaemon  - arguments[8] = 40002
  DEBUG mpjdaemon  - arguments[9] = 1
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
  DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - outputting ...
  DEBUG mpjdaemon  - started the process 
+ DEBUG mpjdaemon  - outputting ...
+ DEBUG mpjdaemon  - Stopping the output
+ DEBUG mpjdaemon  - Job Finished
+ DEBUG mpjdaemon  - 
+
+ ** .. execution ends .. ** 
+
+
+ DEBUG mpjdaemon  - Accepting connection ..
+ DEBUG mpjdaemon  - Job Started
+ DEBUG mpjdaemon  - Ticket length 1030
+ DEBUG mpjdaemon  - <MPJProcessInfo>
+<TicketID>ab07738a-46cb-4c57-9c74-62f82f93087f</TicketID>
+<ClassPath>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</ClassPath>
+<MasterNode>Reemis-MacBook-Pro.local</MasterNode>
+<MasterPort>40002</MasterPort>
+<ProcessCount>2</ProcessCount>
+<StartingRank>0</StartingRank>
+<JvmArgs/>
+<WorkingDirectory>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</WorkingDirectory>
+<ZippedSource>false</ZippedSource>
+<MainClass>HelloWorld2</MainClass>
+<DeviceName>niodev</DeviceName>
+<ConfFileContents>#temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2</ConfFileContents>
+<AppArgs/>
+<UserID>senior</UserID>
+<NetworkProcessCount>-1</NetworkProcessCount>
+<TotalProcessCount>-1</TotalProcessCount>
+<NetworkDevice>niodev</NetworkDevice>
+<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/</MPJ_HOME>
+<Debug>false</Debug>
+<DebugPort>24500</DebugPort>
+<Profiler>false</Profiler>
+</MPJProcessInfo>
+
+ DEBUG mpjdaemon  - configFilePath
+ DEBUG mpjdaemon  - Config file created :
+ DEBUG mpjdaemon  - modified: jArgs[0]=-cp
+ DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[0] = java
  DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;3;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4
- DEBUG mpjdaemon  - arguments[5] = 3
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
  DEBUG mpjdaemon  - arguments[6] = niodev
  DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
  DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 2
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
+ DEBUG mpjdaemon  - arguments[9] = 0
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
+ DEBUG mpjdaemon  - starting the process 
+ DEBUG mpjdaemon  - started the process 
+ DEBUG mpjdaemon  - outputting ...
+ DEBUG mpjdaemon  - arguments[0] = java
+ DEBUG mpjdaemon  - arguments[1] = -cp
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
+ DEBUG mpjdaemon  - arguments[6] = niodev
+ DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
+ DEBUG mpjdaemon  - arguments[8] = 40002
+ DEBUG mpjdaemon  - arguments[9] = 1
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
+ DEBUG mpjdaemon  - starting the process 
+ DEBUG mpjdaemon  - started the process 
+ DEBUG mpjdaemon  - outputting ...
+ DEBUG mpjdaemon  - Stopping the output
+ DEBUG mpjdaemon  - Job Finished
+ DEBUG mpjdaemon  - 
+
+ ** .. execution ends .. ** 
+
+
+ DEBUG mpjdaemon  - Accepting connection ..
+ DEBUG mpjdaemon  - Job Started
+ DEBUG mpjdaemon  - Ticket length 1030
+ DEBUG mpjdaemon  - <MPJProcessInfo>
+<TicketID>c6d97ed3-4dc2-411c-a0fd-2722612043e4</TicketID>
+<ClassPath>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</ClassPath>
+<MasterNode>Reemis-MacBook-Pro.local</MasterNode>
+<MasterPort>40002</MasterPort>
+<ProcessCount>2</ProcessCount>
+<StartingRank>0</StartingRank>
+<JvmArgs/>
+<WorkingDirectory>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</WorkingDirectory>
+<ZippedSource>false</ZippedSource>
+<MainClass>HelloWorld2</MainClass>
+<DeviceName>niodev</DeviceName>
+<ConfFileContents>#temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2</ConfFileContents>
+<AppArgs/>
+<UserID>senior</UserID>
+<NetworkProcessCount>-1</NetworkProcessCount>
+<TotalProcessCount>-1</TotalProcessCount>
+<NetworkDevice>niodev</NetworkDevice>
+<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/</MPJ_HOME>
+<Debug>false</Debug>
+<DebugPort>24500</DebugPort>
+<Profiler>false</Profiler>
+</MPJProcessInfo>
+
+ DEBUG mpjdaemon  - configFilePath
+ DEBUG mpjdaemon  - Config file created :
+ DEBUG mpjdaemon  - modified: jArgs[0]=-cp
+ DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[0] = java
+ DEBUG mpjdaemon  - arguments[1] = -cp
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
+ DEBUG mpjdaemon  - arguments[6] = niodev
+ DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
+ DEBUG mpjdaemon  - arguments[8] = 40002
+ DEBUG mpjdaemon  - arguments[9] = 0
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
+ DEBUG mpjdaemon  - starting the process 
+ DEBUG mpjdaemon  - started the process 
+ DEBUG mpjdaemon  - arguments[0] = java
+ DEBUG mpjdaemon  - arguments[1] = -cp
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
+ DEBUG mpjdaemon  - arguments[6] = niodev
+ DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
+ DEBUG mpjdaemon  - arguments[8] = 40002
+ DEBUG mpjdaemon  - arguments[9] = 1
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
  DEBUG mpjdaemon  - starting the process 
  DEBUG mpjdaemon  - outputting ...
  DEBUG mpjdaemon  - started the process 
@@ -240,26 +330,26 @@
 
  DEBUG mpjdaemon  - Accepting connection ..
  DEBUG mpjdaemon  - Job Started
- DEBUG mpjdaemon  - Ticket length 1201
+ DEBUG mpjdaemon  - Ticket length 1030
  DEBUG mpjdaemon  - <MPJProcessInfo>
-<TicketID>2ca97aa0-288c-4bf7-bba0-a84924427a07</TicketID>
+<TicketID>49eaa3f7-a851-4dc0-84d8-b0777992d241</TicketID>
 <ClassPath>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</ClassPath>
 <MasterNode>Reemis-MacBook-Pro.local</MasterNode>
 <MasterPort>40002</MasterPort>
-<ProcessCount>10</ProcessCount>
+<ProcessCount>2</ProcessCount>
 <StartingRank>0</StartingRank>
 <JvmArgs/>
 <WorkingDirectory>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</WorkingDirectory>
 <ZippedSource>false</ZippedSource>
-<MainClass>HelloWorld</MainClass>
+<MainClass>HelloWorld2</MainClass>
 <DeviceName>niodev</DeviceName>
-<ConfFileContents>#temp line;#Number of Processes;10;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18</ConfFileContents>
+<ConfFileContents>#temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2</ConfFileContents>
 <AppArgs/>
 <UserID>senior</UserID>
 <NetworkProcessCount>-1</NetworkProcessCount>
 <TotalProcessCount>-1</TotalProcessCount>
 <NetworkDevice>niodev</NetworkDevice>
-<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj</MPJ_HOME>
+<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/</MPJ_HOME>
 <Debug>false</Debug>
 <DebugPort>24500</DebugPort>
 <Profiler>false</Profiler>
@@ -268,144 +358,32 @@
  DEBUG mpjdaemon  - configFilePath
  DEBUG mpjdaemon  - Config file created :
  DEBUG mpjdaemon  - modified: jArgs[0]=-cp
- DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[0] = java
  DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
  DEBUG mpjdaemon  - arguments[6] = niodev
  DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
  DEBUG mpjdaemon  - arguments[8] = 40002
  DEBUG mpjdaemon  - arguments[9] = 0
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
  DEBUG mpjdaemon  - starting the process 
  DEBUG mpjdaemon  - started the process 
  DEBUG mpjdaemon  - arguments[0] = java
  DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
  DEBUG mpjdaemon  - arguments[6] = niodev
  DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
  DEBUG mpjdaemon  - arguments[8] = 40002
  DEBUG mpjdaemon  - arguments[9] = 1
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
  DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 2
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 3
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 4
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 5
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 6
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 7
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 8
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 9
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
  DEBUG mpjdaemon  - starting the process 
  DEBUG mpjdaemon  - started the process 
  DEBUG mpjdaemon  - outputting ...
@@ -418,365 +396,9 @@
 
  DEBUG mpjdaemon  - Accepting connection ..
  DEBUG mpjdaemon  - Job Started
- DEBUG mpjdaemon  - Ticket length 1201
+ DEBUG mpjdaemon  - Ticket length 1029
  DEBUG mpjdaemon  - <MPJProcessInfo>
-<TicketID>dfb0d51d-2c39-4bbd-aed8-9505d77ddf94</TicketID>
-<ClassPath>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</ClassPath>
-<MasterNode>Reemis-MacBook-Pro.local</MasterNode>
-<MasterPort>40002</MasterPort>
-<ProcessCount>10</ProcessCount>
-<StartingRank>0</StartingRank>
-<JvmArgs/>
-<WorkingDirectory>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</WorkingDirectory>
-<ZippedSource>false</ZippedSource>
-<MainClass>HelloWorld</MainClass>
-<DeviceName>niodev</DeviceName>
-<ConfFileContents>#temp line;#Number of Processes;10;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18</ConfFileContents>
-<AppArgs/>
-<UserID>senior</UserID>
-<NetworkProcessCount>-1</NetworkProcessCount>
-<TotalProcessCount>-1</TotalProcessCount>
-<NetworkDevice>niodev</NetworkDevice>
-<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj</MPJ_HOME>
-<Debug>false</Debug>
-<DebugPort>24500</DebugPort>
-<Profiler>false</Profiler>
-</MPJProcessInfo>
-
- DEBUG mpjdaemon  - configFilePath
- DEBUG mpjdaemon  - Config file created :
- DEBUG mpjdaemon  - modified: jArgs[0]=-cp
- DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 0
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 1
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - arguments[5] = 10
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 2
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 3
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 4
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 5
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 6
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 7
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 8
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 9
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - Stopping the output
- DEBUG mpjdaemon  - Job Finished
- DEBUG mpjdaemon  - 
-
- ** .. execution ends .. ** 
-
-
- DEBUG mpjdaemon  - Accepting connection ..
- DEBUG mpjdaemon  - Job Started
- DEBUG mpjdaemon  - Ticket length 1201
- DEBUG mpjdaemon  - <MPJProcessInfo>
-<TicketID>4c42e71b-d906-4a8e-98dd-1c8d89fa68e6</TicketID>
-<ClassPath>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</ClassPath>
-<MasterNode>Reemis-MacBook-Pro.local</MasterNode>
-<MasterPort>40002</MasterPort>
-<ProcessCount>10</ProcessCount>
-<StartingRank>0</StartingRank>
-<JvmArgs/>
-<WorkingDirectory>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</WorkingDirectory>
-<ZippedSource>false</ZippedSource>
-<MainClass>HelloWorld</MainClass>
-<DeviceName>niodev</DeviceName>
-<ConfFileContents>#temp line;#Number of Processes;10;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18</ConfFileContents>
-<AppArgs/>
-<UserID>senior</UserID>
-<NetworkProcessCount>-1</NetworkProcessCount>
-<TotalProcessCount>-1</TotalProcessCount>
-<NetworkDevice>niodev</NetworkDevice>
-<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj</MPJ_HOME>
-<Debug>false</Debug>
-<DebugPort>24500</DebugPort>
-<Profiler>false</Profiler>
-</MPJProcessInfo>
-
- DEBUG mpjdaemon  - configFilePath
- DEBUG mpjdaemon  - Config file created :
- DEBUG mpjdaemon  - modified: jArgs[0]=-cp
- DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 0
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - arguments[9] = 1
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 2
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 3
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 4
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 5
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 6
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 7
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 8
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;10;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;10.134.34.86@0@0@4@8;10.134.34.86@0@0@5@10;10.134.34.86@0@0@6@12;10.134.34.86@0@0@7@14;10.134.34.86@0@0@8@16;10.134.34.86@0@0@9@18
- DEBUG mpjdaemon  - arguments[5] = 10
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 9
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - Stopping the output
- DEBUG mpjdaemon  - Job Finished
- DEBUG mpjdaemon  - 
-
- ** .. execution ends .. ** 
-
-
- DEBUG mpjdaemon  - Accepting connection ..
- DEBUG mpjdaemon  - Job Started
- DEBUG mpjdaemon  - Ticket length 1026
- DEBUG mpjdaemon  - <MPJProcessInfo>
-<TicketID>ea9f4671-e226-4227-b55e-e2ad4f5be47c</TicketID>
+<TicketID>b7b38bb6-f91f-4a26-824f-0bc0c2d62048</TicketID>
 <ClassPath>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</ClassPath>
 <MasterNode>Reemis-MacBook-Pro.local</MasterNode>
 <MasterPort>40002</MasterPort>
@@ -787,13 +409,13 @@
 <ZippedSource>false</ZippedSource>
 <MainClass>HelloWorld</MainClass>
 <DeviceName>niodev</DeviceName>
-<ConfFileContents>#temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2</ConfFileContents>
+<ConfFileContents>#temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2</ConfFileContents>
 <AppArgs/>
 <UserID>senior</UserID>
 <NetworkProcessCount>-1</NetworkProcessCount>
 <TotalProcessCount>-1</TotalProcessCount>
 <NetworkDevice>niodev</NetworkDevice>
-<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj</MPJ_HOME>
+<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/</MPJ_HOME>
 <Debug>false</Debug>
 <DebugPort>24500</DebugPort>
 <Profiler>false</Profiler>
@@ -802,12 +424,12 @@
  DEBUG mpjdaemon  - configFilePath
  DEBUG mpjdaemon  - Config file created :
  DEBUG mpjdaemon  - modified: jArgs[0]=-cp
- DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[0] = java
  DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2
  DEBUG mpjdaemon  - arguments[5] = 2
  DEBUG mpjdaemon  - arguments[6] = niodev
  DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
@@ -818,473 +440,9 @@
  DEBUG mpjdaemon  - started the process 
  DEBUG mpjdaemon  - arguments[0] = java
  DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2
- DEBUG mpjdaemon  - arguments[5] = 2
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 1
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - Stopping the output
- DEBUG mpjdaemon  - Job Finished
- DEBUG mpjdaemon  - 
-
- ** .. execution ends .. ** 
-
-
- DEBUG mpjdaemon  - Accepting connection ..
- DEBUG mpjdaemon  - Job Started
- DEBUG mpjdaemon  - Ticket length 1026
- DEBUG mpjdaemon  - <MPJProcessInfo>
-<TicketID>b5ddf3c4-97f0-4118-b995-ac34a887c629</TicketID>
-<ClassPath>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</ClassPath>
-<MasterNode>Reemis-MacBook-Pro.local</MasterNode>
-<MasterPort>40002</MasterPort>
-<ProcessCount>2</ProcessCount>
-<StartingRank>0</StartingRank>
-<JvmArgs/>
-<WorkingDirectory>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</WorkingDirectory>
-<ZippedSource>false</ZippedSource>
-<MainClass>HelloWorld</MainClass>
-<DeviceName>niodev</DeviceName>
-<ConfFileContents>#temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2</ConfFileContents>
-<AppArgs/>
-<UserID>senior</UserID>
-<NetworkProcessCount>-1</NetworkProcessCount>
-<TotalProcessCount>-1</TotalProcessCount>
-<NetworkDevice>niodev</NetworkDevice>
-<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj</MPJ_HOME>
-<Debug>false</Debug>
-<DebugPort>24500</DebugPort>
-<Profiler>false</Profiler>
-</MPJProcessInfo>
-
- DEBUG mpjdaemon  - configFilePath
- DEBUG mpjdaemon  - Config file created :
- DEBUG mpjdaemon  - modified: jArgs[0]=-cp
- DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2
- DEBUG mpjdaemon  - arguments[5] = 2
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 0
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2
- DEBUG mpjdaemon  - arguments[5] = 2
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 1
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - Stopping the output
- DEBUG mpjdaemon  - Job Finished
- DEBUG mpjdaemon  - 
-
- ** .. execution ends .. ** 
-
-
- DEBUG mpjdaemon  - Accepting connection ..
- DEBUG mpjdaemon  - Job Started
- DEBUG mpjdaemon  - Ticket length 1026
- DEBUG mpjdaemon  - <MPJProcessInfo>
-<TicketID>1da313ce-a955-40d8-a6af-f4aa404ac368</TicketID>
-<ClassPath>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</ClassPath>
-<MasterNode>Reemis-MacBook-Pro.local</MasterNode>
-<MasterPort>40002</MasterPort>
-<ProcessCount>2</ProcessCount>
-<StartingRank>0</StartingRank>
-<JvmArgs/>
-<WorkingDirectory>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</WorkingDirectory>
-<ZippedSource>false</ZippedSource>
-<MainClass>HelloWorld</MainClass>
-<DeviceName>niodev</DeviceName>
-<ConfFileContents>#temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2</ConfFileContents>
-<AppArgs/>
-<UserID>senior</UserID>
-<NetworkProcessCount>-1</NetworkProcessCount>
-<TotalProcessCount>-1</TotalProcessCount>
-<NetworkDevice>niodev</NetworkDevice>
-<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj</MPJ_HOME>
-<Debug>false</Debug>
-<DebugPort>24500</DebugPort>
-<Profiler>false</Profiler>
-</MPJProcessInfo>
-
- DEBUG mpjdaemon  - configFilePath
- DEBUG mpjdaemon  - Config file created :
- DEBUG mpjdaemon  - modified: jArgs[0]=-cp
- DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2
- DEBUG mpjdaemon  - arguments[5] = 2
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 0
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2
- DEBUG mpjdaemon  - arguments[5] = 2
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 1
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - Stopping the output
- DEBUG mpjdaemon  - Job Finished
- DEBUG mpjdaemon  - 
-
- ** .. execution ends .. ** 
-
-
- DEBUG mpjdaemon  - Accepting connection ..
- DEBUG mpjdaemon  - Job Started
- DEBUG mpjdaemon  - Ticket length 1026
- DEBUG mpjdaemon  - <MPJProcessInfo>
-<TicketID>59e0afba-b113-40a9-90c8-240cc5bc8dff</TicketID>
-<ClassPath>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</ClassPath>
-<MasterNode>Reemis-MacBook-Pro.local</MasterNode>
-<MasterPort>40002</MasterPort>
-<ProcessCount>2</ProcessCount>
-<StartingRank>0</StartingRank>
-<JvmArgs/>
-<WorkingDirectory>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</WorkingDirectory>
-<ZippedSource>false</ZippedSource>
-<MainClass>HelloWorld</MainClass>
-<DeviceName>niodev</DeviceName>
-<ConfFileContents>#temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2</ConfFileContents>
-<AppArgs/>
-<UserID>senior</UserID>
-<NetworkProcessCount>-1</NetworkProcessCount>
-<TotalProcessCount>-1</TotalProcessCount>
-<NetworkDevice>niodev</NetworkDevice>
-<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj</MPJ_HOME>
-<Debug>false</Debug>
-<DebugPort>24500</DebugPort>
-<Profiler>false</Profiler>
-</MPJProcessInfo>
-
- DEBUG mpjdaemon  - configFilePath
- DEBUG mpjdaemon  - Config file created :
- DEBUG mpjdaemon  - modified: jArgs[0]=-cp
- DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2
- DEBUG mpjdaemon  - arguments[5] = 2
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 0
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2
- DEBUG mpjdaemon  - arguments[5] = 2
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 1
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - outputHandler =>Broken pipe
- DEBUG mpjdaemon  - outputHandler =>Broken pipe
- DEBUG mpjdaemon  - Stopping the output
- DEBUG mpjdaemon  - 
-
- ** .. execution ends .. ** 
-
-
- DEBUG mpjdaemon  - Accepting connection ..
- DEBUG mpjdaemon  - Job Started
- DEBUG mpjdaemon  - Ticket length 1026
- DEBUG mpjdaemon  - <MPJProcessInfo>
-<TicketID>22a7ffee-5af3-4b70-b853-e55824ad9cc4</TicketID>
-<ClassPath>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</ClassPath>
-<MasterNode>Reemis-MacBook-Pro.local</MasterNode>
-<MasterPort>40002</MasterPort>
-<ProcessCount>2</ProcessCount>
-<StartingRank>0</StartingRank>
-<JvmArgs/>
-<WorkingDirectory>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</WorkingDirectory>
-<ZippedSource>false</ZippedSource>
-<MainClass>HelloWorld</MainClass>
-<DeviceName>niodev</DeviceName>
-<ConfFileContents>#temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2</ConfFileContents>
-<AppArgs/>
-<UserID>senior</UserID>
-<NetworkProcessCount>-1</NetworkProcessCount>
-<TotalProcessCount>-1</TotalProcessCount>
-<NetworkDevice>niodev</NetworkDevice>
-<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj</MPJ_HOME>
-<Debug>false</Debug>
-<DebugPort>24500</DebugPort>
-<Profiler>false</Profiler>
-</MPJProcessInfo>
-
- DEBUG mpjdaemon  - configFilePath
- DEBUG mpjdaemon  - Config file created :
- DEBUG mpjdaemon  - modified: jArgs[0]=-cp
- DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2
- DEBUG mpjdaemon  - arguments[5] = 2
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 0
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2
- DEBUG mpjdaemon  - arguments[5] = 2
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 1
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - Stopping the output
- DEBUG mpjdaemon  - Job Finished
- DEBUG mpjdaemon  - 
-
- ** .. execution ends .. ** 
-
-
- DEBUG mpjdaemon  - Accepting connection ..
- DEBUG mpjdaemon  - Job Started
- DEBUG mpjdaemon  - Ticket length 1026
- DEBUG mpjdaemon  - <MPJProcessInfo>
-<TicketID>73e66c84-9a10-428a-bee2-a6ca2e438fa5</TicketID>
-<ClassPath>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</ClassPath>
-<MasterNode>Reemis-MacBook-Pro.local</MasterNode>
-<MasterPort>40002</MasterPort>
-<ProcessCount>2</ProcessCount>
-<StartingRank>0</StartingRank>
-<JvmArgs/>
-<WorkingDirectory>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</WorkingDirectory>
-<ZippedSource>false</ZippedSource>
-<MainClass>HelloWorld</MainClass>
-<DeviceName>niodev</DeviceName>
-<ConfFileContents>#temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2</ConfFileContents>
-<AppArgs/>
-<UserID>senior</UserID>
-<NetworkProcessCount>-1</NetworkProcessCount>
-<TotalProcessCount>-1</TotalProcessCount>
-<NetworkDevice>niodev</NetworkDevice>
-<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj</MPJ_HOME>
-<Debug>false</Debug>
-<DebugPort>24500</DebugPort>
-<Profiler>false</Profiler>
-</MPJProcessInfo>
-
- DEBUG mpjdaemon  - configFilePath
- DEBUG mpjdaemon  - Config file created :
- DEBUG mpjdaemon  - modified: jArgs[0]=-cp
- DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2
- DEBUG mpjdaemon  - arguments[5] = 2
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 0
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2
- DEBUG mpjdaemon  - arguments[5] = 2
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 1
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - Stopping the output
- DEBUG mpjdaemon  - Job Finished
- DEBUG mpjdaemon  - 
-
- ** .. execution ends .. ** 
-
-
- DEBUG mpjdaemon  - Accepting connection ..
- DEBUG mpjdaemon  - Job Started
- DEBUG mpjdaemon  - Ticket length 1026
- DEBUG mpjdaemon  - <MPJProcessInfo>
-<TicketID>0d959c0d-efd2-4de4-80cb-cc6336830427</TicketID>
-<ClassPath>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</ClassPath>
-<MasterNode>Reemis-MacBook-Pro.local</MasterNode>
-<MasterPort>40002</MasterPort>
-<ProcessCount>2</ProcessCount>
-<StartingRank>0</StartingRank>
-<JvmArgs/>
-<WorkingDirectory>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</WorkingDirectory>
-<ZippedSource>false</ZippedSource>
-<MainClass>HelloWorld</MainClass>
-<DeviceName>niodev</DeviceName>
-<ConfFileContents>#temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2</ConfFileContents>
-<AppArgs/>
-<UserID>senior</UserID>
-<NetworkProcessCount>-1</NetworkProcessCount>
-<TotalProcessCount>-1</TotalProcessCount>
-<NetworkDevice>niodev</NetworkDevice>
-<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj</MPJ_HOME>
-<Debug>false</Debug>
-<DebugPort>24500</DebugPort>
-<Profiler>false</Profiler>
-</MPJProcessInfo>
-
- DEBUG mpjdaemon  - configFilePath
- DEBUG mpjdaemon  - Config file created :
- DEBUG mpjdaemon  - modified: jArgs[0]=-cp
- DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2
- DEBUG mpjdaemon  - arguments[5] = 2
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 0
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2
- DEBUG mpjdaemon  - arguments[5] = 2
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 1
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - outputHandler =>Broken pipe
- DEBUG mpjdaemon  - outputHandler =>Broken pipe
- DEBUG mpjdaemon  - Stopping the output
- DEBUG mpjdaemon  - 
-
- ** .. execution ends .. ** 
-
-
- DEBUG mpjdaemon  - Accepting connection ..
- DEBUG mpjdaemon  - Job Started
- DEBUG mpjdaemon  - Ticket length 1026
- DEBUG mpjdaemon  - <MPJProcessInfo>
-<TicketID>100b8fed-69f2-4dbc-a2ff-02f6d3fc19a5</TicketID>
-<ClassPath>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</ClassPath>
-<MasterNode>Reemis-MacBook-Pro.local</MasterNode>
-<MasterPort>40002</MasterPort>
-<ProcessCount>2</ProcessCount>
-<StartingRank>0</StartingRank>
-<JvmArgs/>
-<WorkingDirectory>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</WorkingDirectory>
-<ZippedSource>false</ZippedSource>
-<MainClass>HelloWorld</MainClass>
-<DeviceName>niodev</DeviceName>
-<ConfFileContents>#temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2</ConfFileContents>
-<AppArgs/>
-<UserID>senior</UserID>
-<NetworkProcessCount>-1</NetworkProcessCount>
-<TotalProcessCount>-1</TotalProcessCount>
-<NetworkDevice>niodev</NetworkDevice>
-<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj</MPJ_HOME>
-<Debug>false</Debug>
-<DebugPort>24500</DebugPort>
-<Profiler>false</Profiler>
-</MPJProcessInfo>
-
- DEBUG mpjdaemon  - configFilePath
- DEBUG mpjdaemon  - Config file created :
- DEBUG mpjdaemon  - modified: jArgs[0]=-cp
- DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2
- DEBUG mpjdaemon  - arguments[5] = 2
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 0
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2
  DEBUG mpjdaemon  - outputting ...
  DEBUG mpjdaemon  - arguments[5] = 2
  DEBUG mpjdaemon  - arguments[6] = niodev
@@ -1304,26 +462,26 @@
 
  DEBUG mpjdaemon  - Accepting connection ..
  DEBUG mpjdaemon  - Job Started
- DEBUG mpjdaemon  - Ticket length 1047
+ DEBUG mpjdaemon  - Ticket length 1030
  DEBUG mpjdaemon  - <MPJProcessInfo>
-<TicketID>f3214b39-19d3-4b7e-9d25-9428ef4eb343</TicketID>
+<TicketID>24c48890-5382-4060-ba9d-7b0313b58e96</TicketID>
 <ClassPath>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</ClassPath>
 <MasterNode>Reemis-MacBook-Pro.local</MasterNode>
 <MasterPort>40002</MasterPort>
-<ProcessCount>3</ProcessCount>
+<ProcessCount>2</ProcessCount>
 <StartingRank>0</StartingRank>
 <JvmArgs/>
 <WorkingDirectory>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</WorkingDirectory>
 <ZippedSource>false</ZippedSource>
-<MainClass>HelloWorld</MainClass>
+<MainClass>HelloWorld2</MainClass>
 <DeviceName>niodev</DeviceName>
-<ConfFileContents>#temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4</ConfFileContents>
+<ConfFileContents>#temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2</ConfFileContents>
 <AppArgs/>
 <UserID>senior</UserID>
 <NetworkProcessCount>-1</NetworkProcessCount>
 <TotalProcessCount>-1</TotalProcessCount>
 <NetworkDevice>niodev</NetworkDevice>
-<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj</MPJ_HOME>
+<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/</MPJ_HOME>
 <Debug>false</Debug>
 <DebugPort>24500</DebugPort>
 <Profiler>false</Profiler>
@@ -1332,47 +490,33 @@
  DEBUG mpjdaemon  - configFilePath
  DEBUG mpjdaemon  - Config file created :
  DEBUG mpjdaemon  - modified: jArgs[0]=-cp
- DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[0] = java
  DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;3;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4
- DEBUG mpjdaemon  - arguments[5] = 3
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
  DEBUG mpjdaemon  - arguments[6] = niodev
  DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
  DEBUG mpjdaemon  - arguments[8] = 40002
  DEBUG mpjdaemon  - arguments[9] = 0
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
  DEBUG mpjdaemon  - starting the process 
  DEBUG mpjdaemon  - started the process 
  DEBUG mpjdaemon  - arguments[0] = java
  DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - outputting ...
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;3;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4
- DEBUG mpjdaemon  - arguments[5] = 3
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
  DEBUG mpjdaemon  - arguments[6] = niodev
  DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
  DEBUG mpjdaemon  - arguments[8] = 40002
  DEBUG mpjdaemon  - arguments[9] = 1
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;3;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4
- DEBUG mpjdaemon  - arguments[5] = 3
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 2
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
  DEBUG mpjdaemon  - outputting ...
+ DEBUG mpjdaemon  - starting the process 
  DEBUG mpjdaemon  - started the process 
  DEBUG mpjdaemon  - outputting ...
  DEBUG mpjdaemon  - Stopping the output
@@ -1384,9 +528,9 @@
 
  DEBUG mpjdaemon  - Accepting connection ..
  DEBUG mpjdaemon  - Job Started
- DEBUG mpjdaemon  - Ticket length 1068
+ DEBUG mpjdaemon  - Ticket length 1073
  DEBUG mpjdaemon  - <MPJProcessInfo>
-<TicketID>21da14f9-e964-4e4d-8843-9541e084b6eb</TicketID>
+<TicketID>8cb28f68-f477-4ee7-8603-b688d12fa702</TicketID>
 <ClassPath>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</ClassPath>
 <MasterNode>Reemis-MacBook-Pro.local</MasterNode>
 <MasterPort>40002</MasterPort>
@@ -1397,13 +541,13 @@
 <ZippedSource>false</ZippedSource>
 <MainClass>HelloWorld</MainClass>
 <DeviceName>niodev</DeviceName>
-<ConfFileContents>#temp line;#Number of Processes;4;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6</ConfFileContents>
+<ConfFileContents>#temp line;#Number of Processes;4;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2;10.132.197.19@0@0@2@4;10.132.197.19@0@0@3@6</ConfFileContents>
 <AppArgs/>
 <UserID>senior</UserID>
 <NetworkProcessCount>-1</NetworkProcessCount>
 <TotalProcessCount>-1</TotalProcessCount>
 <NetworkDevice>niodev</NetworkDevice>
-<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj</MPJ_HOME>
+<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/</MPJ_HOME>
 <Debug>false</Debug>
 <DebugPort>24500</DebugPort>
 <Profiler>false</Profiler>
@@ -1412,12 +556,12 @@
  DEBUG mpjdaemon  - configFilePath
  DEBUG mpjdaemon  - Config file created :
  DEBUG mpjdaemon  - modified: jArgs[0]=-cp
- DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[0] = java
  DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;4;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;4;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2;10.132.197.19@0@0@2@4;10.132.197.19@0@0@3@6
  DEBUG mpjdaemon  - arguments[5] = 4
  DEBUG mpjdaemon  - arguments[6] = niodev
  DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
@@ -1428,23 +572,23 @@
  DEBUG mpjdaemon  - started the process 
  DEBUG mpjdaemon  - arguments[0] = java
  DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;4;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;4;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2;10.132.197.19@0@0@2@4;10.132.197.19@0@0@3@6
  DEBUG mpjdaemon  - arguments[5] = 4
  DEBUG mpjdaemon  - arguments[6] = niodev
  DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - outputting ...
  DEBUG mpjdaemon  - arguments[8] = 40002
  DEBUG mpjdaemon  - arguments[9] = 1
  DEBUG mpjdaemon  - arguments[10] = HelloWorld
  DEBUG mpjdaemon  - starting the process 
+ DEBUG mpjdaemon  - outputting ...
  DEBUG mpjdaemon  - started the process 
  DEBUG mpjdaemon  - arguments[0] = java
  DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;4;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;4;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2;10.132.197.19@0@0@2@4;10.132.197.19@0@0@3@6
  DEBUG mpjdaemon  - arguments[5] = 4
  DEBUG mpjdaemon  - arguments[6] = niodev
  DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
@@ -1456,9 +600,9 @@
  DEBUG mpjdaemon  - started the process 
  DEBUG mpjdaemon  - arguments[0] = java
  DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;4;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;4;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2;10.132.197.19@0@0@2@4;10.132.197.19@0@0@3@6
  DEBUG mpjdaemon  - arguments[5] = 4
  DEBUG mpjdaemon  - arguments[6] = niodev
  DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
@@ -1478,103 +622,9 @@
 
  DEBUG mpjdaemon  - Accepting connection ..
  DEBUG mpjdaemon  - Job Started
- DEBUG mpjdaemon  - Ticket length 1068
+ DEBUG mpjdaemon  - Ticket length 1052
  DEBUG mpjdaemon  - <MPJProcessInfo>
-<TicketID>9f79c1cf-d4b2-467c-ac7e-1698804c5c0f</TicketID>
-<ClassPath>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</ClassPath>
-<MasterNode>Reemis-MacBook-Pro.local</MasterNode>
-<MasterPort>40002</MasterPort>
-<ProcessCount>4</ProcessCount>
-<StartingRank>0</StartingRank>
-<JvmArgs/>
-<WorkingDirectory>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</WorkingDirectory>
-<ZippedSource>false</ZippedSource>
-<MainClass>HelloWorld</MainClass>
-<DeviceName>niodev</DeviceName>
-<ConfFileContents>#temp line;#Number of Processes;4;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6</ConfFileContents>
-<AppArgs/>
-<UserID>senior</UserID>
-<NetworkProcessCount>-1</NetworkProcessCount>
-<TotalProcessCount>-1</TotalProcessCount>
-<NetworkDevice>niodev</NetworkDevice>
-<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj</MPJ_HOME>
-<Debug>false</Debug>
-<DebugPort>24500</DebugPort>
-<Profiler>false</Profiler>
-</MPJProcessInfo>
-
- DEBUG mpjdaemon  - configFilePath
- DEBUG mpjdaemon  - Config file created :
- DEBUG mpjdaemon  - modified: jArgs[0]=-cp
- DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;4;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6
- DEBUG mpjdaemon  - arguments[5] = 4
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 0
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;4;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6
- DEBUG mpjdaemon  - arguments[5] = 4
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - arguments[9] = 1
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;4;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6
- DEBUG mpjdaemon  - arguments[5] = 4
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 2
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - arguments[0] = java
- DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
- DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;4;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6
- DEBUG mpjdaemon  - arguments[5] = 4
- DEBUG mpjdaemon  - arguments[6] = niodev
- DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 3
- DEBUG mpjdaemon  - arguments[10] = HelloWorld
- DEBUG mpjdaemon  - starting the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - started the process 
- DEBUG mpjdaemon  - outputting ...
- DEBUG mpjdaemon  - Stopping the output
- DEBUG mpjdaemon  - Job Finished
- DEBUG mpjdaemon  - 
-
- ** .. execution ends .. ** 
-
-
- DEBUG mpjdaemon  - Accepting connection ..
- DEBUG mpjdaemon  - Job Started
- DEBUG mpjdaemon  - Ticket length 1047
- DEBUG mpjdaemon  - <MPJProcessInfo>
-<TicketID>59c5901b-6c03-4a6f-bed1-2de3ae85c202</TicketID>
+<TicketID>07dc06d0-e0b9-49fa-9166-a5e4e3f09089</TicketID>
 <ClassPath>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</ClassPath>
 <MasterNode>Reemis-MacBook-Pro.local</MasterNode>
 <MasterPort>40002</MasterPort>
@@ -1583,15 +633,15 @@
 <JvmArgs/>
 <WorkingDirectory>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</WorkingDirectory>
 <ZippedSource>false</ZippedSource>
-<MainClass>HelloWorld</MainClass>
+<MainClass>HelloWorld2</MainClass>
 <DeviceName>niodev</DeviceName>
-<ConfFileContents>#temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4</ConfFileContents>
+<ConfFileContents>#temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2;10.132.197.19@0@0@2@4</ConfFileContents>
 <AppArgs/>
 <UserID>senior</UserID>
 <NetworkProcessCount>-1</NetworkProcessCount>
 <TotalProcessCount>-1</TotalProcessCount>
 <NetworkDevice>niodev</NetworkDevice>
-<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj</MPJ_HOME>
+<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/</MPJ_HOME>
 <Debug>false</Debug>
 <DebugPort>24500</DebugPort>
 <Profiler>false</Profiler>
@@ -1600,13 +650,431 @@
  DEBUG mpjdaemon  - configFilePath
  DEBUG mpjdaemon  - Config file created :
  DEBUG mpjdaemon  - modified: jArgs[0]=-cp
- DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[0] = java
  DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;3;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;3;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2;10.132.197.19@0@0@2@4
  DEBUG mpjdaemon  - arguments[5] = 3
+ DEBUG mpjdaemon  - arguments[6] = niodev
+ DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
+ DEBUG mpjdaemon  - arguments[8] = 40002
+ DEBUG mpjdaemon  - arguments[9] = 0
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
+ DEBUG mpjdaemon  - starting the process 
+ DEBUG mpjdaemon  - started the process 
+ DEBUG mpjdaemon  - arguments[0] = java
+ DEBUG mpjdaemon  - arguments[1] = -cp
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;3;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2;10.132.197.19@0@0@2@4
+ DEBUG mpjdaemon  - arguments[5] = 3
+ DEBUG mpjdaemon  - arguments[6] = niodev
+ DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
+ DEBUG mpjdaemon  - arguments[8] = 40002
+ DEBUG mpjdaemon  - arguments[9] = 1
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
+ DEBUG mpjdaemon  - starting the process 
+ DEBUG mpjdaemon  - outputting ...
+ DEBUG mpjdaemon  - started the process 
+ DEBUG mpjdaemon  - arguments[0] = java
+ DEBUG mpjdaemon  - arguments[1] = -cp
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;3;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.132.197.19@0@0@0@0;10.132.197.19@0@0@1@2;10.132.197.19@0@0@2@4
+ DEBUG mpjdaemon  - arguments[5] = 3
+ DEBUG mpjdaemon  - arguments[6] = niodev
+ DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
+ DEBUG mpjdaemon  - arguments[8] = 40002
+ DEBUG mpjdaemon  - arguments[9] = 2
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
+ DEBUG mpjdaemon  - starting the process 
+ DEBUG mpjdaemon  - outputting ...
+ DEBUG mpjdaemon  - started the process 
+ DEBUG mpjdaemon  - outputting ...
+ DEBUG mpjdaemon  - Stopping the output
+ DEBUG mpjdaemon  - Job Finished
+ DEBUG mpjdaemon  - 
+
+ ** .. execution ends .. ** 
+
+
+ DEBUG mpjdaemon  - mpjHomeDir /Users/senior/Desktop/Dilmun/MPJDilmun/mpj/
+ DEBUG mpjdaemon  -  args[0] 40055
+ DEBUG mpjdaemon  - setting daemon port to40055
+ DEBUG mpjdaemon  - Starting PortManager thread .. 
+ DEBUG mpjdaemon  - Starting ConnectionManager thread .. 
+ DEBUG mpjdaemon  - serverSocketInit .. 
+ DEBUG mpjdaemon  - serverSocketInit called .. 
+ DEBUG mpjdaemon  - Accepting connection ..
+ DEBUG mpjdaemon  - Accepting connection ..
+ DEBUG mpjdaemon  - Job Started
+ DEBUG mpjdaemon  - Ticket length 1030
+ DEBUG mpjdaemon  - <MPJProcessInfo>
+<TicketID>53f6c0d7-6e58-4d10-9b8f-504c6dc0b699</TicketID>
+<ClassPath>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</ClassPath>
+<MasterNode>Reemis-MacBook-Pro.local</MasterNode>
+<MasterPort>40002</MasterPort>
+<ProcessCount>2</ProcessCount>
+<StartingRank>0</StartingRank>
+<JvmArgs/>
+<WorkingDirectory>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</WorkingDirectory>
+<ZippedSource>false</ZippedSource>
+<MainClass>HelloWorld2</MainClass>
+<DeviceName>niodev</DeviceName>
+<ConfFileContents>#temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.8.107@0@0@0@0;192.168.8.107@0@0@1@2</ConfFileContents>
+<AppArgs/>
+<UserID>senior</UserID>
+<NetworkProcessCount>-1</NetworkProcessCount>
+<TotalProcessCount>-1</TotalProcessCount>
+<NetworkDevice>niodev</NetworkDevice>
+<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/</MPJ_HOME>
+<Debug>false</Debug>
+<DebugPort>24500</DebugPort>
+<Profiler>false</Profiler>
+</MPJProcessInfo>
+
+ DEBUG mpjdaemon  - configFilePath
+ DEBUG mpjdaemon  - Config file created :
+ DEBUG mpjdaemon  - modified: jArgs[0]=-cp
+ DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[0] = java
+ DEBUG mpjdaemon  - arguments[1] = -cp
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.8.107@0@0@0@0;192.168.8.107@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
+ DEBUG mpjdaemon  - arguments[6] = niodev
+ DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
+ DEBUG mpjdaemon  - arguments[8] = 40002
+ DEBUG mpjdaemon  - arguments[9] = 0
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
+ DEBUG mpjdaemon  - starting the process 
+ DEBUG mpjdaemon  - started the process 
+ DEBUG mpjdaemon  - arguments[0] = java
+ DEBUG mpjdaemon  - arguments[1] = -cp
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - outputting ...
+ DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.8.107@0@0@0@0;192.168.8.107@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
+ DEBUG mpjdaemon  - arguments[6] = niodev
+ DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
+ DEBUG mpjdaemon  - arguments[8] = 40002
+ DEBUG mpjdaemon  - arguments[9] = 1
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
+ DEBUG mpjdaemon  - starting the process 
+ DEBUG mpjdaemon  - started the process 
+ DEBUG mpjdaemon  - outputting ...
+ DEBUG mpjdaemon  - Stopping the output
+ DEBUG mpjdaemon  - Job Finished
+ DEBUG mpjdaemon  - 
+
+ ** .. execution ends .. ** 
+
+
+ DEBUG mpjdaemon  - Accepting connection ..
+ DEBUG mpjdaemon  - Job Started
+ DEBUG mpjdaemon  - Ticket length 1030
+ DEBUG mpjdaemon  - <MPJProcessInfo>
+<TicketID>a938d8ec-70fc-473c-a455-d4a4eed953a0</TicketID>
+<ClassPath>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</ClassPath>
+<MasterNode>Reemis-MacBook-Pro.local</MasterNode>
+<MasterPort>40002</MasterPort>
+<ProcessCount>2</ProcessCount>
+<StartingRank>0</StartingRank>
+<JvmArgs/>
+<WorkingDirectory>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</WorkingDirectory>
+<ZippedSource>false</ZippedSource>
+<MainClass>HelloWorld2</MainClass>
+<DeviceName>niodev</DeviceName>
+<ConfFileContents>#temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.8.107@0@0@0@0;192.168.8.107@0@0@1@2</ConfFileContents>
+<AppArgs/>
+<UserID>senior</UserID>
+<NetworkProcessCount>-1</NetworkProcessCount>
+<TotalProcessCount>-1</TotalProcessCount>
+<NetworkDevice>niodev</NetworkDevice>
+<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/</MPJ_HOME>
+<Debug>false</Debug>
+<DebugPort>24500</DebugPort>
+<Profiler>false</Profiler>
+</MPJProcessInfo>
+
+ DEBUG mpjdaemon  - configFilePath
+ DEBUG mpjdaemon  - Config file created :
+ DEBUG mpjdaemon  - modified: jArgs[0]=-cp
+ DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[0] = java
+ DEBUG mpjdaemon  - arguments[1] = -cp
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.8.107@0@0@0@0;192.168.8.107@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
+ DEBUG mpjdaemon  - arguments[6] = niodev
+ DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
+ DEBUG mpjdaemon  - arguments[8] = 40002
+ DEBUG mpjdaemon  - arguments[9] = 0
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
+ DEBUG mpjdaemon  - starting the process 
+ DEBUG mpjdaemon  - started the process 
+ DEBUG mpjdaemon  - arguments[0] = java
+ DEBUG mpjdaemon  - outputting ...
+ DEBUG mpjdaemon  - arguments[1] = -cp
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.8.107@0@0@0@0;192.168.8.107@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
+ DEBUG mpjdaemon  - arguments[6] = niodev
+ DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
+ DEBUG mpjdaemon  - arguments[8] = 40002
+ DEBUG mpjdaemon  - arguments[9] = 1
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
+ DEBUG mpjdaemon  - starting the process 
+ DEBUG mpjdaemon  - started the process 
+ DEBUG mpjdaemon  - outputting ...
+ DEBUG mpjdaemon  - Stopping the output
+ DEBUG mpjdaemon  - Job Finished
+ DEBUG mpjdaemon  - 
+
+ ** .. execution ends .. ** 
+
+
+ DEBUG mpjdaemon  - Accepting connection ..
+ DEBUG mpjdaemon  - Job Started
+ DEBUG mpjdaemon  - Ticket length 1030
+ DEBUG mpjdaemon  - <MPJProcessInfo>
+<TicketID>ffbb1b4d-9167-453d-ba34-f911931b425c</TicketID>
+<ClassPath>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</ClassPath>
+<MasterNode>Reemis-MacBook-Pro.local</MasterNode>
+<MasterPort>40002</MasterPort>
+<ProcessCount>2</ProcessCount>
+<StartingRank>0</StartingRank>
+<JvmArgs/>
+<WorkingDirectory>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</WorkingDirectory>
+<ZippedSource>false</ZippedSource>
+<MainClass>HelloWorld2</MainClass>
+<DeviceName>niodev</DeviceName>
+<ConfFileContents>#temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.8.107@0@0@0@0;192.168.8.107@0@0@1@2</ConfFileContents>
+<AppArgs/>
+<UserID>senior</UserID>
+<NetworkProcessCount>-1</NetworkProcessCount>
+<TotalProcessCount>-1</TotalProcessCount>
+<NetworkDevice>niodev</NetworkDevice>
+<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/</MPJ_HOME>
+<Debug>false</Debug>
+<DebugPort>24500</DebugPort>
+<Profiler>false</Profiler>
+</MPJProcessInfo>
+
+ DEBUG mpjdaemon  - configFilePath
+ DEBUG mpjdaemon  - Config file created :
+ DEBUG mpjdaemon  - modified: jArgs[0]=-cp
+ DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[0] = java
+ DEBUG mpjdaemon  - arguments[1] = -cp
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.8.107@0@0@0@0;192.168.8.107@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
+ DEBUG mpjdaemon  - arguments[6] = niodev
+ DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
+ DEBUG mpjdaemon  - arguments[8] = 40002
+ DEBUG mpjdaemon  - arguments[9] = 0
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
+ DEBUG mpjdaemon  - starting the process 
+ DEBUG mpjdaemon  - started the process 
+ DEBUG mpjdaemon  - arguments[0] = java
+ DEBUG mpjdaemon  - arguments[1] = -cp
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.8.107@0@0@0@0;192.168.8.107@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
+ DEBUG mpjdaemon  - arguments[6] = niodev
+ DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
+ DEBUG mpjdaemon  - arguments[8] = 40002
+ DEBUG mpjdaemon  - arguments[9] = 1
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
+ DEBUG mpjdaemon  - starting the process 
+ DEBUG mpjdaemon  - outputting ...
+ DEBUG mpjdaemon  - started the process 
+ DEBUG mpjdaemon  - outputting ...
+ DEBUG mpjdaemon  - Stopping the output
+ DEBUG mpjdaemon  - Job Finished
+ DEBUG mpjdaemon  - 
+
+ ** .. execution ends .. ** 
+
+
+ DEBUG mpjdaemon  - Accepting connection ..
+ DEBUG mpjdaemon  - Job Started
+ DEBUG mpjdaemon  - Ticket length 1030
+ DEBUG mpjdaemon  - <MPJProcessInfo>
+<TicketID>1aa7e489-c3a8-4813-bb31-b2fc2b3ab378</TicketID>
+<ClassPath>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</ClassPath>
+<MasterNode>Reemis-MacBook-Pro.local</MasterNode>
+<MasterPort>40002</MasterPort>
+<ProcessCount>2</ProcessCount>
+<StartingRank>0</StartingRank>
+<JvmArgs/>
+<WorkingDirectory>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</WorkingDirectory>
+<ZippedSource>false</ZippedSource>
+<MainClass>HelloWorld2</MainClass>
+<DeviceName>niodev</DeviceName>
+<ConfFileContents>#temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.8.107@0@0@0@0;192.168.8.107@0@0@1@2</ConfFileContents>
+<AppArgs/>
+<UserID>senior</UserID>
+<NetworkProcessCount>-1</NetworkProcessCount>
+<TotalProcessCount>-1</TotalProcessCount>
+<NetworkDevice>niodev</NetworkDevice>
+<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/</MPJ_HOME>
+<Debug>false</Debug>
+<DebugPort>24500</DebugPort>
+<Profiler>false</Profiler>
+</MPJProcessInfo>
+
+ DEBUG mpjdaemon  - configFilePath
+ DEBUG mpjdaemon  - Config file created :
+ DEBUG mpjdaemon  - modified: jArgs[0]=-cp
+ DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[0] = java
+ DEBUG mpjdaemon  - arguments[1] = -cp
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.8.107@0@0@0@0;192.168.8.107@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
+ DEBUG mpjdaemon  - arguments[6] = niodev
+ DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
+ DEBUG mpjdaemon  - arguments[8] = 40002
+ DEBUG mpjdaemon  - arguments[9] = 0
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
+ DEBUG mpjdaemon  - starting the process 
+ DEBUG mpjdaemon  - started the process 
+ DEBUG mpjdaemon  - arguments[0] = java
+ DEBUG mpjdaemon  - outputting ...
+ DEBUG mpjdaemon  - arguments[1] = -cp
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.8.107@0@0@0@0;192.168.8.107@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
+ DEBUG mpjdaemon  - arguments[6] = niodev
+ DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
+ DEBUG mpjdaemon  - arguments[8] = 40002
+ DEBUG mpjdaemon  - arguments[9] = 1
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
+ DEBUG mpjdaemon  - starting the process 
+ DEBUG mpjdaemon  - outputting ...
+ DEBUG mpjdaemon  - started the process 
+ DEBUG mpjdaemon  - Stopping the output
+ DEBUG mpjdaemon  - Job Finished
+ DEBUG mpjdaemon  - 
+
+ ** .. execution ends .. ** 
+
+
+ DEBUG mpjdaemon  - Accepting connection ..
+ DEBUG mpjdaemon  - Job Started
+ DEBUG mpjdaemon  - Ticket length 1030
+ DEBUG mpjdaemon  - <MPJProcessInfo>
+<TicketID>91b3e75c-f208-4176-a620-6c851fc03338</TicketID>
+<ClassPath>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</ClassPath>
+<MasterNode>Reemis-MacBook-Pro.local</MasterNode>
+<MasterPort>40002</MasterPort>
+<ProcessCount>2</ProcessCount>
+<StartingRank>0</StartingRank>
+<JvmArgs/>
+<WorkingDirectory>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</WorkingDirectory>
+<ZippedSource>false</ZippedSource>
+<MainClass>HelloWorld2</MainClass>
+<DeviceName>niodev</DeviceName>
+<ConfFileContents>#temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.8.107@0@0@0@0;192.168.8.107@0@0@1@2</ConfFileContents>
+<AppArgs/>
+<UserID>senior</UserID>
+<NetworkProcessCount>-1</NetworkProcessCount>
+<TotalProcessCount>-1</TotalProcessCount>
+<NetworkDevice>niodev</NetworkDevice>
+<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/</MPJ_HOME>
+<Debug>false</Debug>
+<DebugPort>24500</DebugPort>
+<Profiler>false</Profiler>
+</MPJProcessInfo>
+
+ DEBUG mpjdaemon  - configFilePath
+ DEBUG mpjdaemon  - Config file created :
+ DEBUG mpjdaemon  - modified: jArgs[0]=-cp
+ DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[0] = java
+ DEBUG mpjdaemon  - arguments[1] = -cp
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.8.107@0@0@0@0;192.168.8.107@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
+ DEBUG mpjdaemon  - arguments[6] = niodev
+ DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
+ DEBUG mpjdaemon  - arguments[8] = 40002
+ DEBUG mpjdaemon  - arguments[9] = 0
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
+ DEBUG mpjdaemon  - starting the process 
+ DEBUG mpjdaemon  - started the process 
+ DEBUG mpjdaemon  - arguments[0] = java
+ DEBUG mpjdaemon  - arguments[1] = -cp
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - outputting ...
+ DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.8.107@0@0@0@0;192.168.8.107@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
+ DEBUG mpjdaemon  - arguments[6] = niodev
+ DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
+ DEBUG mpjdaemon  - arguments[8] = 40002
+ DEBUG mpjdaemon  - arguments[9] = 1
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
+ DEBUG mpjdaemon  - starting the process 
+ DEBUG mpjdaemon  - outputting ...
+ DEBUG mpjdaemon  - started the process 
+ DEBUG mpjdaemon  - Stopping the output
+ DEBUG mpjdaemon  - Job Finished
+ DEBUG mpjdaemon  - 
+
+ ** .. execution ends .. ** 
+
+
+ DEBUG mpjdaemon  - Accepting connection ..
+ DEBUG mpjdaemon  - Job Started
+ DEBUG mpjdaemon  - Ticket length 1029
+ DEBUG mpjdaemon  - <MPJProcessInfo>
+<TicketID>8cf51e95-eb61-4f26-aeff-e9be88f034a2</TicketID>
+<ClassPath>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</ClassPath>
+<MasterNode>Reemis-MacBook-Pro.local</MasterNode>
+<MasterPort>40002</MasterPort>
+<ProcessCount>2</ProcessCount>
+<StartingRank>0</StartingRank>
+<JvmArgs/>
+<WorkingDirectory>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</WorkingDirectory>
+<ZippedSource>false</ZippedSource>
+<MainClass>HelloWorld</MainClass>
+<DeviceName>niodev</DeviceName>
+<ConfFileContents>#temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.8.107@0@0@0@0;192.168.8.107@0@0@1@2</ConfFileContents>
+<AppArgs/>
+<UserID>senior</UserID>
+<NetworkProcessCount>-1</NetworkProcessCount>
+<TotalProcessCount>-1</TotalProcessCount>
+<NetworkDevice>niodev</NetworkDevice>
+<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/</MPJ_HOME>
+<Debug>false</Debug>
+<DebugPort>24500</DebugPort>
+<Profiler>false</Profiler>
+</MPJProcessInfo>
+
+ DEBUG mpjdaemon  - configFilePath
+ DEBUG mpjdaemon  - Config file created :
+ DEBUG mpjdaemon  - modified: jArgs[0]=-cp
+ DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[0] = java
+ DEBUG mpjdaemon  - arguments[1] = -cp
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.8.107@0@0@0@0;192.168.8.107@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
  DEBUG mpjdaemon  - arguments[6] = niodev
  DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
  DEBUG mpjdaemon  - arguments[8] = 40002
@@ -1616,30 +1084,148 @@
  DEBUG mpjdaemon  - started the process 
  DEBUG mpjdaemon  - arguments[0] = java
  DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - outputting ...
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;3;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4
- DEBUG mpjdaemon  - arguments[5] = 3
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.8.107@0@0@0@0;192.168.8.107@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
  DEBUG mpjdaemon  - arguments[6] = niodev
  DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
- DEBUG mpjdaemon  - outputting ...
  DEBUG mpjdaemon  - arguments[8] = 40002
  DEBUG mpjdaemon  - arguments[9] = 1
  DEBUG mpjdaemon  - arguments[10] = HelloWorld
  DEBUG mpjdaemon  - starting the process 
  DEBUG mpjdaemon  - started the process 
+ DEBUG mpjdaemon  - outputting ...
+ DEBUG mpjdaemon  - Stopping the output
+ DEBUG mpjdaemon  - Job Finished
+ DEBUG mpjdaemon  - 
+
+ ** .. execution ends .. ** 
+
+
+ DEBUG mpjdaemon  - Accepting connection ..
+ DEBUG mpjdaemon  - Job Started
+ DEBUG mpjdaemon  - Ticket length 1029
+ DEBUG mpjdaemon  - <MPJProcessInfo>
+<TicketID>20e4a166-9fec-469e-a815-bd3a300388fc</TicketID>
+<ClassPath>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</ClassPath>
+<MasterNode>Reemis-MacBook-Pro.local</MasterNode>
+<MasterPort>40002</MasterPort>
+<ProcessCount>2</ProcessCount>
+<StartingRank>0</StartingRank>
+<JvmArgs/>
+<WorkingDirectory>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</WorkingDirectory>
+<ZippedSource>false</ZippedSource>
+<MainClass>HelloWorld</MainClass>
+<DeviceName>niodev</DeviceName>
+<ConfFileContents>#temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.8.107@0@0@0@0;192.168.8.107@0@0@1@2</ConfFileContents>
+<AppArgs/>
+<UserID>senior</UserID>
+<NetworkProcessCount>-1</NetworkProcessCount>
+<TotalProcessCount>-1</TotalProcessCount>
+<NetworkDevice>niodev</NetworkDevice>
+<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/</MPJ_HOME>
+<Debug>false</Debug>
+<DebugPort>24500</DebugPort>
+<Profiler>false</Profiler>
+</MPJProcessInfo>
+
+ DEBUG mpjdaemon  - configFilePath
+ DEBUG mpjdaemon  - Config file created :
+ DEBUG mpjdaemon  - modified: jArgs[0]=-cp
+ DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[0] = java
  DEBUG mpjdaemon  - arguments[1] = -cp
- DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
  DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
- DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;3;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4
- DEBUG mpjdaemon  - arguments[5] = 3
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.8.107@0@0@0@0;192.168.8.107@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
  DEBUG mpjdaemon  - arguments[6] = niodev
  DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
  DEBUG mpjdaemon  - arguments[8] = 40002
- DEBUG mpjdaemon  - arguments[9] = 2
+ DEBUG mpjdaemon  - arguments[9] = 0
  DEBUG mpjdaemon  - arguments[10] = HelloWorld
+ DEBUG mpjdaemon  - starting the process 
+ DEBUG mpjdaemon  - started the process 
+ DEBUG mpjdaemon  - arguments[0] = java
+ DEBUG mpjdaemon  - arguments[1] = -cp
  DEBUG mpjdaemon  - outputting ...
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.8.107@0@0@0@0;192.168.8.107@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
+ DEBUG mpjdaemon  - arguments[6] = niodev
+ DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
+ DEBUG mpjdaemon  - arguments[8] = 40002
+ DEBUG mpjdaemon  - arguments[9] = 1
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld
+ DEBUG mpjdaemon  - starting the process 
+ DEBUG mpjdaemon  - started the process 
+ DEBUG mpjdaemon  - outputting ...
+ DEBUG mpjdaemon  - Stopping the output
+ DEBUG mpjdaemon  - Job Finished
+ DEBUG mpjdaemon  - 
+
+ ** .. execution ends .. ** 
+
+
+ DEBUG mpjdaemon  - Accepting connection ..
+ DEBUG mpjdaemon  - Job Started
+ DEBUG mpjdaemon  - Ticket length 1030
+ DEBUG mpjdaemon  - <MPJProcessInfo>
+<TicketID>a095c7e4-6a50-4d90-aa77-3ad887d45665</TicketID>
+<ClassPath>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</ClassPath>
+<MasterNode>Reemis-MacBook-Pro.local</MasterNode>
+<MasterPort>40002</MasterPort>
+<ProcessCount>2</ProcessCount>
+<StartingRank>0</StartingRank>
+<JvmArgs/>
+<WorkingDirectory>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user</WorkingDirectory>
+<ZippedSource>false</ZippedSource>
+<MainClass>HelloWorld2</MainClass>
+<DeviceName>niodev</DeviceName>
+<ConfFileContents>#temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.8.107@0@0@0@0;192.168.8.107@0@0@1@2</ConfFileContents>
+<AppArgs/>
+<UserID>senior</UserID>
+<NetworkProcessCount>-1</NetworkProcessCount>
+<TotalProcessCount>-1</TotalProcessCount>
+<NetworkDevice>niodev</NetworkDevice>
+<MPJ_HOME>/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/</MPJ_HOME>
+<Debug>false</Debug>
+<DebugPort>24500</DebugPort>
+<Profiler>false</Profiler>
+</MPJProcessInfo>
+
+ DEBUG mpjdaemon  - configFilePath
+ DEBUG mpjdaemon  - Config file created :
+ DEBUG mpjdaemon  - modified: jArgs[0]=-cp
+ DEBUG mpjdaemon  - modified: jArgs[1]=.:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[0] = java
+ DEBUG mpjdaemon  - arguments[1] = -cp
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.8.107@0@0@0@0;192.168.8.107@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
+ DEBUG mpjdaemon  - arguments[6] = niodev
+ DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
+ DEBUG mpjdaemon  - arguments[8] = 40002
+ DEBUG mpjdaemon  - arguments[9] = 0
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
+ DEBUG mpjdaemon  - starting the process 
+ DEBUG mpjdaemon  - started the process 
+ DEBUG mpjdaemon  - arguments[0] = java
+ DEBUG mpjdaemon  - arguments[1] = -cp
+ DEBUG mpjdaemon  - arguments[2] = .:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/loader1.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/mpj.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/log4j-1.2.11.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj//lib/wrapper.jar:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user:/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user
+ DEBUG mpjdaemon  - outputting ...
+ DEBUG mpjdaemon  - arguments[3] = runtime.daemon.Wrapper
+ DEBUG mpjdaemon  - arguments[4] = #temp|line;#Number|of|Processes;2;#Protocol|Switch|Limit;131072;#Entry,|HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.8.107@0@0@0@0;192.168.8.107@0@0@1@2
+ DEBUG mpjdaemon  - arguments[5] = 2
+ DEBUG mpjdaemon  - arguments[6] = niodev
+ DEBUG mpjdaemon  - arguments[7] = Reemis-MacBook-Pro.local
+ DEBUG mpjdaemon  - arguments[8] = 40002
+ DEBUG mpjdaemon  - arguments[9] = 1
+ DEBUG mpjdaemon  - arguments[10] = HelloWorld2
  DEBUG mpjdaemon  - starting the process 
  DEBUG mpjdaemon  - started the process 
  DEBUG mpjdaemon  - outputting ...

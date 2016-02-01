@@ -55,7 +55,7 @@ public static boolean runtimeStatus = false;
 // (Daemon)Process ID 
 public static String ProcessID="";
 //Daemon port number 
-private static int daemonPort = 0;
+//private static int daemonPort = 0;
  // The size of the machine list 
 public static int sizeOfMachineList;
 //status of Cluster (array list to save the status of each daemon in the cluster)
@@ -65,9 +65,9 @@ public static boolean clusterStatusValue = false;
  // Total number of daemons.
 public static int numberOfDaemons;
 // Set the message of runtime Status
-public static String runtimeStatusMessage = "";
+//public static String runtimeStatusMessage = "";
 // Set the message of cluster Status Value
-public static String clusterStatusMMessage = "";
+//public static String clusterStatusMMessage = "";
 
 
 //end of dilmun
@@ -120,8 +120,11 @@ public static ArrayList<String> machineMsgList;
 
 	if (type.equals(DMConstants.BOOT)) { 
 	  thread = new BootThread(host, options.getPort());
+	  runtimeStatus=true;
 	} else if (type.equals(DMConstants.HALT)) {
 	  thread = new HaltThread(host);
+	  runtimeStatus= false;
+	  numberOfDaemons = 0;
 	} else if (type.equals(DMConstants.CLEAN)) {
 	  thread = new CleanUpThread(host);
 	} else if (type.equals(DMConstants.STATUS)) {
@@ -143,15 +146,9 @@ public static ArrayList<String> machineMsgList;
       
       // set the number of machines in the machineList file 
      
-       sizeOfMachineList=machinesList.size();
+      // sizeOfMachineList=machinesList.size();
       
       /*test*/
-      if(type.equals(DMConstants.BOOT)){
-     		runtimeStatus=true;
-     	} else if (type.equals(DMConstants.HALT)){
-     		runtimeStatus= false;
-     		numberOfDaemons = 0;
-     	}
        //check if the status is required and print
      if (type.equals(DMConstants.DATA) || type.equals(DMConstants.BOOT) || type.equals(DMConstants.HALT) ) {
      	//status of cluster

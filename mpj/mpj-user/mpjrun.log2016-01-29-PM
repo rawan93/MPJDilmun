@@ -1,0 +1,1974 @@
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <2>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 2 are greater than than machines 1
+ DEBUG runtime  - divisor 2
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.9=2}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.9@0@0@0@0;192.168.1.9@0@0@1@2
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=2}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 2
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.9,port=40055,localport=58925]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=2}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <2> to connect
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <2>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 2 are greater than than machines 1
+ DEBUG runtime  - divisor 2
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.9=2}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.9@0@0@0@0;192.168.1.9@0@0@1@2
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=2}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 2
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.9,port=40055,localport=58932]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=2}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <2> to connect
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <2>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 2 are greater than than machines 1
+ DEBUG runtime  - divisor 2
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.9=2}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.9@0@0@0@0;192.168.1.9@0@0@1@2
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=2}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 2
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.9,port=40055,localport=58933]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=2}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <2> to connect
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@38705@27974@0@0;192.168.1.9@26030@34378@1@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@38705@27974@0@0;192.168.1.9@26030@34378@1@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <2>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 2 are greater than than machines 1
+ DEBUG runtime  - divisor 2
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.9=2}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.9@0@0@0@0;192.168.1.9@0@0@1@2
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=2}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 2
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.9,port=40055,localport=58962]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=2}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <2> to connect
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@34214@30751@0@0;192.168.1.9@25190@36262@1@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@34214@30751@0@0;192.168.1.9@25190@36262@1@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <2>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 2 are greater than than machines 1
+ DEBUG runtime  - divisor 2
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.9=2}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.9@0@0@0@0;192.168.1.9@0@0@1@2
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=2}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 2
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.9,port=40055,localport=58973]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=2}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <2> to connect
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@35247@38265@0@0;192.168.1.9@33632@31032@1@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@35247@38265@0@0;192.168.1.9@33632@31032@1@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <2>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 2 are greater than than machines 1
+ DEBUG runtime  - divisor 2
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.9=2}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.9@0@0@0@0;192.168.1.9@0@0@1@2
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=2}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 2
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.9,port=40055,localport=58982]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=2}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <2> to connect
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@30001@33333@0@0;192.168.1.9@35698@38831@1@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@30001@33333@0@0;192.168.1.9@35698@38831@1@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <2>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 2 are greater than than machines 1
+ DEBUG runtime  - divisor 2
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.9=2}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.9@0@0@0@0;192.168.1.9@0@0@1@2
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=2}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 2
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.9,port=40055,localport=59019]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=2}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <2> to connect
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@26472@26091@0@0;192.168.1.9@28001@25443@1@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@26472@26091@0@0;192.168.1.9@28001@25443@1@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <2>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 2 are greater than than machines 1
+ DEBUG runtime  - divisor 2
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.9=2}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.9@0@0@0@0;192.168.1.9@0@0@1@2
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=2}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 2
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.9,port=40055,localport=59024]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=2}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <2> to connect
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@26404@28882@0@0;192.168.1.9@36661@25871@1@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@26404@28882@0@0;192.168.1.9@36661@25871@1@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <3>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 3 are greater than than machines 1
+ DEBUG runtime  - divisor 3
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.9=3}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.9@0@0@0@0;192.168.1.9@0@0@1@2;192.168.1.9@0@0@2@4
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=3}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 3
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.9,port=40055,localport=59031]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=3}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <3> to connect
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@38032@26980@0@0;192.168.1.9@39949@35205@1@0;192.168.1.9@25532@39703@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@38032@26980@0@0;192.168.1.9@39949@35205@1@0;192.168.1.9@25532@39703@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@38032@26980@0@0;192.168.1.9@39949@35205@1@0;192.168.1.9@25532@39703@2@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <3>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 3 are greater than than machines 1
+ DEBUG runtime  - divisor 3
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.9=3}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.9@0@0@0@0;192.168.1.9@0@0@1@2;192.168.1.9@0@0@2@4
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=3}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 3
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.9,port=40055,localport=59071]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=3}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <3> to connect
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@32176@27386@0@0;192.168.1.9@27369@33331@1@0;192.168.1.9@28195@25345@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@32176@27386@0@0;192.168.1.9@27369@33331@1@0;192.168.1.9@28195@25345@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@32176@27386@0@0;192.168.1.9@27369@33331@1@0;192.168.1.9@28195@25345@2@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <3>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 3 are greater than than machines 1
+ DEBUG runtime  - divisor 3
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.9=3}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.9@0@0@0@0;192.168.1.9@0@0@1@2;192.168.1.9@0@0@2@4
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=3}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 3
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.9,port=40055,localport=59085]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=3}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <3> to connect
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@39651@31689@0@0;192.168.1.9@30118@31140@1@0;192.168.1.9@32465@31653@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@39651@31689@0@0;192.168.1.9@30118@31140@1@0;192.168.1.9@32465@31653@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@39651@31689@0@0;192.168.1.9@30118@31140@1@0;192.168.1.9@32465@31653@2@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <3>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 3 are greater than than machines 1
+ DEBUG runtime  - divisor 3
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.9=3}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.9@0@0@0@0;192.168.1.9@0@0@1@2;192.168.1.9@0@0@2@4
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=3}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 3
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.9,port=40055,localport=59095]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=3}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <3> to connect
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@34166@34585@0@0;192.168.1.9@27323@29898@1@0;192.168.1.9@31130@37212@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@34166@34585@0@0;192.168.1.9@27323@29898@1@0;192.168.1.9@31130@37212@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@34166@34585@0@0;192.168.1.9@27323@29898@1@0;192.168.1.9@31130@37212@2@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <3>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 3 are greater than than machines 1
+ DEBUG runtime  - divisor 3
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.9=3}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.9@0@0@0@0;192.168.1.9@0@0@1@2;192.168.1.9@0@0@2@4
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=3}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 3
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.9,port=40055,localport=59127]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=3}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <3> to connect
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@29097@33921@0@0;192.168.1.9@32551@30718@1@0;192.168.1.9@26792@34533@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@29097@33921@0@0;192.168.1.9@32551@30718@1@0;192.168.1.9@26792@34533@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@29097@33921@0@0;192.168.1.9@32551@30718@1@0;192.168.1.9@26792@34533@2@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <3>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 3 are greater than than machines 1
+ DEBUG runtime  - divisor 3
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.9=3}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.9@0@0@0@0;192.168.1.9@0@0@1@2;192.168.1.9@0@0@2@4
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=3}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 3
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.9,port=40055,localport=59137]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=3}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <3> to connect
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@32235@34024@0@0;192.168.1.9@30953@36734@1@0;192.168.1.9@35406@39385@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@32235@34024@0@0;192.168.1.9@30953@36734@1@0;192.168.1.9@35406@39385@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@32235@34024@0@0;192.168.1.9@30953@36734@1@0;192.168.1.9@35406@39385@2@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <3>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 3 are greater than than machines 1
+ DEBUG runtime  - divisor 3
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.9=3}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.9@0@0@0@0;192.168.1.9@0@0@1@2;192.168.1.9@0@0@2@4
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=3}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 3
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.9,port=40055,localport=59178]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=3}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <3> to connect
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@38069@25110@0@0;192.168.1.9@36209@33524@1@0;192.168.1.9@28397@34352@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@38069@25110@0@0;192.168.1.9@36209@33524@1@0;192.168.1.9@28397@34352@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@38069@25110@0@0;192.168.1.9@36209@33524@1@0;192.168.1.9@28397@34352@2@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <5>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 5 are greater than than machines 1
+ DEBUG runtime  - divisor 5
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.9=5}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;5;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.9@0@0@0@0;192.168.1.9@0@0@1@2;192.168.1.9@0@0@2@4;192.168.1.9@0@0@3@6;192.168.1.9@0@0@4@8
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=5}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 5
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.9,port=40055,localport=59188]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=5}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <5> to connect
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@28514@27106@0@0;192.168.1.9@26525@37446@1@0;192.168.1.9@28417@26630@2@0;192.168.1.9@35967@38602@3@0;192.168.1.9@36039@35002@4@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@28514@27106@0@0;192.168.1.9@26525@37446@1@0;192.168.1.9@28417@26630@2@0;192.168.1.9@35967@38602@3@0;192.168.1.9@36039@35002@4@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@28514@27106@0@0;192.168.1.9@26525@37446@1@0;192.168.1.9@28417@26630@2@0;192.168.1.9@35967@38602@3@0;192.168.1.9@36039@35002@4@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@28514@27106@0@0;192.168.1.9@26525@37446@1@0;192.168.1.9@28417@26630@2@0;192.168.1.9@35967@38602@3@0;192.168.1.9@36039@35002@4@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@28514@27106@0@0;192.168.1.9@26525@37446@1@0;192.168.1.9@28417@26630@2@0;192.168.1.9@35967@38602@3@0;192.168.1.9@36039@35002@4@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <20>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 20 are greater than than machines 1
+ DEBUG runtime  - divisor 20
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.9=20}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;20;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.9@0@0@0@0;192.168.1.9@0@0@1@2;192.168.1.9@0@0@2@4;192.168.1.9@0@0@3@6;192.168.1.9@0@0@4@8;192.168.1.9@0@0@5@10;192.168.1.9@0@0@6@12;192.168.1.9@0@0@7@14;192.168.1.9@0@0@8@16;192.168.1.9@0@0@9@18;192.168.1.9@0@0@10@20;192.168.1.9@0@0@11@22;192.168.1.9@0@0@12@24;192.168.1.9@0@0@13@26;192.168.1.9@0@0@14@28;192.168.1.9@0@0@15@30;192.168.1.9@0@0@16@32;192.168.1.9@0@0@17@34;192.168.1.9@0@0@18@36;192.168.1.9@0@0@19@38
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=20}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 20
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.9,port=40055,localport=59214]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=20}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <20> to connect
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25956@38254@0@0;192.168.1.9@27682@37051@1@0;192.168.1.9@37828@32384@2@0;192.168.1.9@25497@32700@3@0;192.168.1.9@36688@33682@4@0;192.168.1.9@34865@34592@5@0;192.168.1.9@38859@30373@6@0;192.168.1.9@26238@33901@7@0;192.168.1.9@35284@38190@8@0;192.168.1.9@32076@25254@9@0;192.168.1.9@36414@37490@10@0;192.168.1.9@25069@33309@11@0;192.168.1.9@30214@26185@12@0;192.168.1.9@37252@25791@13@0;192.168.1.9@28737@29970@14@0;192.168.1.9@29569@29482@15@0;192.168.1.9@34655@36989@16@0;192.168.1.9@35297@36499@17@0;192.168.1.9@28581@31370@18@0;192.168.1.9@28865@33011@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25956@38254@0@0;192.168.1.9@27682@37051@1@0;192.168.1.9@37828@32384@2@0;192.168.1.9@25497@32700@3@0;192.168.1.9@36688@33682@4@0;192.168.1.9@34865@34592@5@0;192.168.1.9@38859@30373@6@0;192.168.1.9@26238@33901@7@0;192.168.1.9@35284@38190@8@0;192.168.1.9@32076@25254@9@0;192.168.1.9@36414@37490@10@0;192.168.1.9@25069@33309@11@0;192.168.1.9@30214@26185@12@0;192.168.1.9@37252@25791@13@0;192.168.1.9@28737@29970@14@0;192.168.1.9@29569@29482@15@0;192.168.1.9@34655@36989@16@0;192.168.1.9@35297@36499@17@0;192.168.1.9@28581@31370@18@0;192.168.1.9@28865@33011@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25956@38254@0@0;192.168.1.9@27682@37051@1@0;192.168.1.9@37828@32384@2@0;192.168.1.9@25497@32700@3@0;192.168.1.9@36688@33682@4@0;192.168.1.9@34865@34592@5@0;192.168.1.9@38859@30373@6@0;192.168.1.9@26238@33901@7@0;192.168.1.9@35284@38190@8@0;192.168.1.9@32076@25254@9@0;192.168.1.9@36414@37490@10@0;192.168.1.9@25069@33309@11@0;192.168.1.9@30214@26185@12@0;192.168.1.9@37252@25791@13@0;192.168.1.9@28737@29970@14@0;192.168.1.9@29569@29482@15@0;192.168.1.9@34655@36989@16@0;192.168.1.9@35297@36499@17@0;192.168.1.9@28581@31370@18@0;192.168.1.9@28865@33011@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25956@38254@0@0;192.168.1.9@27682@37051@1@0;192.168.1.9@37828@32384@2@0;192.168.1.9@25497@32700@3@0;192.168.1.9@36688@33682@4@0;192.168.1.9@34865@34592@5@0;192.168.1.9@38859@30373@6@0;192.168.1.9@26238@33901@7@0;192.168.1.9@35284@38190@8@0;192.168.1.9@32076@25254@9@0;192.168.1.9@36414@37490@10@0;192.168.1.9@25069@33309@11@0;192.168.1.9@30214@26185@12@0;192.168.1.9@37252@25791@13@0;192.168.1.9@28737@29970@14@0;192.168.1.9@29569@29482@15@0;192.168.1.9@34655@36989@16@0;192.168.1.9@35297@36499@17@0;192.168.1.9@28581@31370@18@0;192.168.1.9@28865@33011@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25956@38254@0@0;192.168.1.9@27682@37051@1@0;192.168.1.9@37828@32384@2@0;192.168.1.9@25497@32700@3@0;192.168.1.9@36688@33682@4@0;192.168.1.9@34865@34592@5@0;192.168.1.9@38859@30373@6@0;192.168.1.9@26238@33901@7@0;192.168.1.9@35284@38190@8@0;192.168.1.9@32076@25254@9@0;192.168.1.9@36414@37490@10@0;192.168.1.9@25069@33309@11@0;192.168.1.9@30214@26185@12@0;192.168.1.9@37252@25791@13@0;192.168.1.9@28737@29970@14@0;192.168.1.9@29569@29482@15@0;192.168.1.9@34655@36989@16@0;192.168.1.9@35297@36499@17@0;192.168.1.9@28581@31370@18@0;192.168.1.9@28865@33011@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25956@38254@0@0;192.168.1.9@27682@37051@1@0;192.168.1.9@37828@32384@2@0;192.168.1.9@25497@32700@3@0;192.168.1.9@36688@33682@4@0;192.168.1.9@34865@34592@5@0;192.168.1.9@38859@30373@6@0;192.168.1.9@26238@33901@7@0;192.168.1.9@35284@38190@8@0;192.168.1.9@32076@25254@9@0;192.168.1.9@36414@37490@10@0;192.168.1.9@25069@33309@11@0;192.168.1.9@30214@26185@12@0;192.168.1.9@37252@25791@13@0;192.168.1.9@28737@29970@14@0;192.168.1.9@29569@29482@15@0;192.168.1.9@34655@36989@16@0;192.168.1.9@35297@36499@17@0;192.168.1.9@28581@31370@18@0;192.168.1.9@28865@33011@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25956@38254@0@0;192.168.1.9@27682@37051@1@0;192.168.1.9@37828@32384@2@0;192.168.1.9@25497@32700@3@0;192.168.1.9@36688@33682@4@0;192.168.1.9@34865@34592@5@0;192.168.1.9@38859@30373@6@0;192.168.1.9@26238@33901@7@0;192.168.1.9@35284@38190@8@0;192.168.1.9@32076@25254@9@0;192.168.1.9@36414@37490@10@0;192.168.1.9@25069@33309@11@0;192.168.1.9@30214@26185@12@0;192.168.1.9@37252@25791@13@0;192.168.1.9@28737@29970@14@0;192.168.1.9@29569@29482@15@0;192.168.1.9@34655@36989@16@0;192.168.1.9@35297@36499@17@0;192.168.1.9@28581@31370@18@0;192.168.1.9@28865@33011@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25956@38254@0@0;192.168.1.9@27682@37051@1@0;192.168.1.9@37828@32384@2@0;192.168.1.9@25497@32700@3@0;192.168.1.9@36688@33682@4@0;192.168.1.9@34865@34592@5@0;192.168.1.9@38859@30373@6@0;192.168.1.9@26238@33901@7@0;192.168.1.9@35284@38190@8@0;192.168.1.9@32076@25254@9@0;192.168.1.9@36414@37490@10@0;192.168.1.9@25069@33309@11@0;192.168.1.9@30214@26185@12@0;192.168.1.9@37252@25791@13@0;192.168.1.9@28737@29970@14@0;192.168.1.9@29569@29482@15@0;192.168.1.9@34655@36989@16@0;192.168.1.9@35297@36499@17@0;192.168.1.9@28581@31370@18@0;192.168.1.9@28865@33011@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25956@38254@0@0;192.168.1.9@27682@37051@1@0;192.168.1.9@37828@32384@2@0;192.168.1.9@25497@32700@3@0;192.168.1.9@36688@33682@4@0;192.168.1.9@34865@34592@5@0;192.168.1.9@38859@30373@6@0;192.168.1.9@26238@33901@7@0;192.168.1.9@35284@38190@8@0;192.168.1.9@32076@25254@9@0;192.168.1.9@36414@37490@10@0;192.168.1.9@25069@33309@11@0;192.168.1.9@30214@26185@12@0;192.168.1.9@37252@25791@13@0;192.168.1.9@28737@29970@14@0;192.168.1.9@29569@29482@15@0;192.168.1.9@34655@36989@16@0;192.168.1.9@35297@36499@17@0;192.168.1.9@28581@31370@18@0;192.168.1.9@28865@33011@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25956@38254@0@0;192.168.1.9@27682@37051@1@0;192.168.1.9@37828@32384@2@0;192.168.1.9@25497@32700@3@0;192.168.1.9@36688@33682@4@0;192.168.1.9@34865@34592@5@0;192.168.1.9@38859@30373@6@0;192.168.1.9@26238@33901@7@0;192.168.1.9@35284@38190@8@0;192.168.1.9@32076@25254@9@0;192.168.1.9@36414@37490@10@0;192.168.1.9@25069@33309@11@0;192.168.1.9@30214@26185@12@0;192.168.1.9@37252@25791@13@0;192.168.1.9@28737@29970@14@0;192.168.1.9@29569@29482@15@0;192.168.1.9@34655@36989@16@0;192.168.1.9@35297@36499@17@0;192.168.1.9@28581@31370@18@0;192.168.1.9@28865@33011@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25956@38254@0@0;192.168.1.9@27682@37051@1@0;192.168.1.9@37828@32384@2@0;192.168.1.9@25497@32700@3@0;192.168.1.9@36688@33682@4@0;192.168.1.9@34865@34592@5@0;192.168.1.9@38859@30373@6@0;192.168.1.9@26238@33901@7@0;192.168.1.9@35284@38190@8@0;192.168.1.9@32076@25254@9@0;192.168.1.9@36414@37490@10@0;192.168.1.9@25069@33309@11@0;192.168.1.9@30214@26185@12@0;192.168.1.9@37252@25791@13@0;192.168.1.9@28737@29970@14@0;192.168.1.9@29569@29482@15@0;192.168.1.9@34655@36989@16@0;192.168.1.9@35297@36499@17@0;192.168.1.9@28581@31370@18@0;192.168.1.9@28865@33011@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25956@38254@0@0;192.168.1.9@27682@37051@1@0;192.168.1.9@37828@32384@2@0;192.168.1.9@25497@32700@3@0;192.168.1.9@36688@33682@4@0;192.168.1.9@34865@34592@5@0;192.168.1.9@38859@30373@6@0;192.168.1.9@26238@33901@7@0;192.168.1.9@35284@38190@8@0;192.168.1.9@32076@25254@9@0;192.168.1.9@36414@37490@10@0;192.168.1.9@25069@33309@11@0;192.168.1.9@30214@26185@12@0;192.168.1.9@37252@25791@13@0;192.168.1.9@28737@29970@14@0;192.168.1.9@29569@29482@15@0;192.168.1.9@34655@36989@16@0;192.168.1.9@35297@36499@17@0;192.168.1.9@28581@31370@18@0;192.168.1.9@28865@33011@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25956@38254@0@0;192.168.1.9@27682@37051@1@0;192.168.1.9@37828@32384@2@0;192.168.1.9@25497@32700@3@0;192.168.1.9@36688@33682@4@0;192.168.1.9@34865@34592@5@0;192.168.1.9@38859@30373@6@0;192.168.1.9@26238@33901@7@0;192.168.1.9@35284@38190@8@0;192.168.1.9@32076@25254@9@0;192.168.1.9@36414@37490@10@0;192.168.1.9@25069@33309@11@0;192.168.1.9@30214@26185@12@0;192.168.1.9@37252@25791@13@0;192.168.1.9@28737@29970@14@0;192.168.1.9@29569@29482@15@0;192.168.1.9@34655@36989@16@0;192.168.1.9@35297@36499@17@0;192.168.1.9@28581@31370@18@0;192.168.1.9@28865@33011@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25956@38254@0@0;192.168.1.9@27682@37051@1@0;192.168.1.9@37828@32384@2@0;192.168.1.9@25497@32700@3@0;192.168.1.9@36688@33682@4@0;192.168.1.9@34865@34592@5@0;192.168.1.9@38859@30373@6@0;192.168.1.9@26238@33901@7@0;192.168.1.9@35284@38190@8@0;192.168.1.9@32076@25254@9@0;192.168.1.9@36414@37490@10@0;192.168.1.9@25069@33309@11@0;192.168.1.9@30214@26185@12@0;192.168.1.9@37252@25791@13@0;192.168.1.9@28737@29970@14@0;192.168.1.9@29569@29482@15@0;192.168.1.9@34655@36989@16@0;192.168.1.9@35297@36499@17@0;192.168.1.9@28581@31370@18@0;192.168.1.9@28865@33011@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25956@38254@0@0;192.168.1.9@27682@37051@1@0;192.168.1.9@37828@32384@2@0;192.168.1.9@25497@32700@3@0;192.168.1.9@36688@33682@4@0;192.168.1.9@34865@34592@5@0;192.168.1.9@38859@30373@6@0;192.168.1.9@26238@33901@7@0;192.168.1.9@35284@38190@8@0;192.168.1.9@32076@25254@9@0;192.168.1.9@36414@37490@10@0;192.168.1.9@25069@33309@11@0;192.168.1.9@30214@26185@12@0;192.168.1.9@37252@25791@13@0;192.168.1.9@28737@29970@14@0;192.168.1.9@29569@29482@15@0;192.168.1.9@34655@36989@16@0;192.168.1.9@35297@36499@17@0;192.168.1.9@28581@31370@18@0;192.168.1.9@28865@33011@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25956@38254@0@0;192.168.1.9@27682@37051@1@0;192.168.1.9@37828@32384@2@0;192.168.1.9@25497@32700@3@0;192.168.1.9@36688@33682@4@0;192.168.1.9@34865@34592@5@0;192.168.1.9@38859@30373@6@0;192.168.1.9@26238@33901@7@0;192.168.1.9@35284@38190@8@0;192.168.1.9@32076@25254@9@0;192.168.1.9@36414@37490@10@0;192.168.1.9@25069@33309@11@0;192.168.1.9@30214@26185@12@0;192.168.1.9@37252@25791@13@0;192.168.1.9@28737@29970@14@0;192.168.1.9@29569@29482@15@0;192.168.1.9@34655@36989@16@0;192.168.1.9@35297@36499@17@0;192.168.1.9@28581@31370@18@0;192.168.1.9@28865@33011@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25956@38254@0@0;192.168.1.9@27682@37051@1@0;192.168.1.9@37828@32384@2@0;192.168.1.9@25497@32700@3@0;192.168.1.9@36688@33682@4@0;192.168.1.9@34865@34592@5@0;192.168.1.9@38859@30373@6@0;192.168.1.9@26238@33901@7@0;192.168.1.9@35284@38190@8@0;192.168.1.9@32076@25254@9@0;192.168.1.9@36414@37490@10@0;192.168.1.9@25069@33309@11@0;192.168.1.9@30214@26185@12@0;192.168.1.9@37252@25791@13@0;192.168.1.9@28737@29970@14@0;192.168.1.9@29569@29482@15@0;192.168.1.9@34655@36989@16@0;192.168.1.9@35297@36499@17@0;192.168.1.9@28581@31370@18@0;192.168.1.9@28865@33011@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25956@38254@0@0;192.168.1.9@27682@37051@1@0;192.168.1.9@37828@32384@2@0;192.168.1.9@25497@32700@3@0;192.168.1.9@36688@33682@4@0;192.168.1.9@34865@34592@5@0;192.168.1.9@38859@30373@6@0;192.168.1.9@26238@33901@7@0;192.168.1.9@35284@38190@8@0;192.168.1.9@32076@25254@9@0;192.168.1.9@36414@37490@10@0;192.168.1.9@25069@33309@11@0;192.168.1.9@30214@26185@12@0;192.168.1.9@37252@25791@13@0;192.168.1.9@28737@29970@14@0;192.168.1.9@29569@29482@15@0;192.168.1.9@34655@36989@16@0;192.168.1.9@35297@36499@17@0;192.168.1.9@28581@31370@18@0;192.168.1.9@28865@33011@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25956@38254@0@0;192.168.1.9@27682@37051@1@0;192.168.1.9@37828@32384@2@0;192.168.1.9@25497@32700@3@0;192.168.1.9@36688@33682@4@0;192.168.1.9@34865@34592@5@0;192.168.1.9@38859@30373@6@0;192.168.1.9@26238@33901@7@0;192.168.1.9@35284@38190@8@0;192.168.1.9@32076@25254@9@0;192.168.1.9@36414@37490@10@0;192.168.1.9@25069@33309@11@0;192.168.1.9@30214@26185@12@0;192.168.1.9@37252@25791@13@0;192.168.1.9@28737@29970@14@0;192.168.1.9@29569@29482@15@0;192.168.1.9@34655@36989@16@0;192.168.1.9@35297@36499@17@0;192.168.1.9@28581@31370@18@0;192.168.1.9@28865@33011@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25956@38254@0@0;192.168.1.9@27682@37051@1@0;192.168.1.9@37828@32384@2@0;192.168.1.9@25497@32700@3@0;192.168.1.9@36688@33682@4@0;192.168.1.9@34865@34592@5@0;192.168.1.9@38859@30373@6@0;192.168.1.9@26238@33901@7@0;192.168.1.9@35284@38190@8@0;192.168.1.9@32076@25254@9@0;192.168.1.9@36414@37490@10@0;192.168.1.9@25069@33309@11@0;192.168.1.9@30214@26185@12@0;192.168.1.9@37252@25791@13@0;192.168.1.9@28737@29970@14@0;192.168.1.9@29569@29482@15@0;192.168.1.9@34655@36989@16@0;192.168.1.9@35297@36499@17@0;192.168.1.9@28581@31370@18@0;192.168.1.9@28865@33011@19@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <20>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 20 are greater than than machines 1
+ DEBUG runtime  - divisor 20
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.9=20}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;20;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.9@0@0@0@0;192.168.1.9@0@0@1@2;192.168.1.9@0@0@2@4;192.168.1.9@0@0@3@6;192.168.1.9@0@0@4@8;192.168.1.9@0@0@5@10;192.168.1.9@0@0@6@12;192.168.1.9@0@0@7@14;192.168.1.9@0@0@8@16;192.168.1.9@0@0@9@18;192.168.1.9@0@0@10@20;192.168.1.9@0@0@11@22;192.168.1.9@0@0@12@24;192.168.1.9@0@0@13@26;192.168.1.9@0@0@14@28;192.168.1.9@0@0@15@30;192.168.1.9@0@0@16@32;192.168.1.9@0@0@17@34;192.168.1.9@0@0@18@36;192.168.1.9@0@0@19@38
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=20}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 20
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.9,port=40055,localport=59621]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=20}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <20> to connect
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25873@35251@0@0;192.168.1.9@25175@35603@1@0;192.168.1.9@37821@28656@2@0;192.168.1.9@38245@31766@3@0;192.168.1.9@26929@26507@4@0;192.168.1.9@39142@29667@5@0;192.168.1.9@38822@36750@6@0;192.168.1.9@35621@28451@7@0;192.168.1.9@35407@38136@8@0;192.168.1.9@35376@33389@9@0;192.168.1.9@31730@31160@10@0;192.168.1.9@30151@32472@11@0;192.168.1.9@39778@32970@12@0;192.168.1.9@26267@39518@13@0;192.168.1.9@27544@33076@14@0;192.168.1.9@38239@25490@15@0;192.168.1.9@25157@28386@16@0;192.168.1.9@31070@31339@17@0;192.168.1.9@25989@31016@18@0;192.168.1.9@25359@37321@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25873@35251@0@0;192.168.1.9@25175@35603@1@0;192.168.1.9@37821@28656@2@0;192.168.1.9@38245@31766@3@0;192.168.1.9@26929@26507@4@0;192.168.1.9@39142@29667@5@0;192.168.1.9@38822@36750@6@0;192.168.1.9@35621@28451@7@0;192.168.1.9@35407@38136@8@0;192.168.1.9@35376@33389@9@0;192.168.1.9@31730@31160@10@0;192.168.1.9@30151@32472@11@0;192.168.1.9@39778@32970@12@0;192.168.1.9@26267@39518@13@0;192.168.1.9@27544@33076@14@0;192.168.1.9@38239@25490@15@0;192.168.1.9@25157@28386@16@0;192.168.1.9@31070@31339@17@0;192.168.1.9@25989@31016@18@0;192.168.1.9@25359@37321@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25873@35251@0@0;192.168.1.9@25175@35603@1@0;192.168.1.9@37821@28656@2@0;192.168.1.9@38245@31766@3@0;192.168.1.9@26929@26507@4@0;192.168.1.9@39142@29667@5@0;192.168.1.9@38822@36750@6@0;192.168.1.9@35621@28451@7@0;192.168.1.9@35407@38136@8@0;192.168.1.9@35376@33389@9@0;192.168.1.9@31730@31160@10@0;192.168.1.9@30151@32472@11@0;192.168.1.9@39778@32970@12@0;192.168.1.9@26267@39518@13@0;192.168.1.9@27544@33076@14@0;192.168.1.9@38239@25490@15@0;192.168.1.9@25157@28386@16@0;192.168.1.9@31070@31339@17@0;192.168.1.9@25989@31016@18@0;192.168.1.9@25359@37321@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25873@35251@0@0;192.168.1.9@25175@35603@1@0;192.168.1.9@37821@28656@2@0;192.168.1.9@38245@31766@3@0;192.168.1.9@26929@26507@4@0;192.168.1.9@39142@29667@5@0;192.168.1.9@38822@36750@6@0;192.168.1.9@35621@28451@7@0;192.168.1.9@35407@38136@8@0;192.168.1.9@35376@33389@9@0;192.168.1.9@31730@31160@10@0;192.168.1.9@30151@32472@11@0;192.168.1.9@39778@32970@12@0;192.168.1.9@26267@39518@13@0;192.168.1.9@27544@33076@14@0;192.168.1.9@38239@25490@15@0;192.168.1.9@25157@28386@16@0;192.168.1.9@31070@31339@17@0;192.168.1.9@25989@31016@18@0;192.168.1.9@25359@37321@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25873@35251@0@0;192.168.1.9@25175@35603@1@0;192.168.1.9@37821@28656@2@0;192.168.1.9@38245@31766@3@0;192.168.1.9@26929@26507@4@0;192.168.1.9@39142@29667@5@0;192.168.1.9@38822@36750@6@0;192.168.1.9@35621@28451@7@0;192.168.1.9@35407@38136@8@0;192.168.1.9@35376@33389@9@0;192.168.1.9@31730@31160@10@0;192.168.1.9@30151@32472@11@0;192.168.1.9@39778@32970@12@0;192.168.1.9@26267@39518@13@0;192.168.1.9@27544@33076@14@0;192.168.1.9@38239@25490@15@0;192.168.1.9@25157@28386@16@0;192.168.1.9@31070@31339@17@0;192.168.1.9@25989@31016@18@0;192.168.1.9@25359@37321@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25873@35251@0@0;192.168.1.9@25175@35603@1@0;192.168.1.9@37821@28656@2@0;192.168.1.9@38245@31766@3@0;192.168.1.9@26929@26507@4@0;192.168.1.9@39142@29667@5@0;192.168.1.9@38822@36750@6@0;192.168.1.9@35621@28451@7@0;192.168.1.9@35407@38136@8@0;192.168.1.9@35376@33389@9@0;192.168.1.9@31730@31160@10@0;192.168.1.9@30151@32472@11@0;192.168.1.9@39778@32970@12@0;192.168.1.9@26267@39518@13@0;192.168.1.9@27544@33076@14@0;192.168.1.9@38239@25490@15@0;192.168.1.9@25157@28386@16@0;192.168.1.9@31070@31339@17@0;192.168.1.9@25989@31016@18@0;192.168.1.9@25359@37321@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25873@35251@0@0;192.168.1.9@25175@35603@1@0;192.168.1.9@37821@28656@2@0;192.168.1.9@38245@31766@3@0;192.168.1.9@26929@26507@4@0;192.168.1.9@39142@29667@5@0;192.168.1.9@38822@36750@6@0;192.168.1.9@35621@28451@7@0;192.168.1.9@35407@38136@8@0;192.168.1.9@35376@33389@9@0;192.168.1.9@31730@31160@10@0;192.168.1.9@30151@32472@11@0;192.168.1.9@39778@32970@12@0;192.168.1.9@26267@39518@13@0;192.168.1.9@27544@33076@14@0;192.168.1.9@38239@25490@15@0;192.168.1.9@25157@28386@16@0;192.168.1.9@31070@31339@17@0;192.168.1.9@25989@31016@18@0;192.168.1.9@25359@37321@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25873@35251@0@0;192.168.1.9@25175@35603@1@0;192.168.1.9@37821@28656@2@0;192.168.1.9@38245@31766@3@0;192.168.1.9@26929@26507@4@0;192.168.1.9@39142@29667@5@0;192.168.1.9@38822@36750@6@0;192.168.1.9@35621@28451@7@0;192.168.1.9@35407@38136@8@0;192.168.1.9@35376@33389@9@0;192.168.1.9@31730@31160@10@0;192.168.1.9@30151@32472@11@0;192.168.1.9@39778@32970@12@0;192.168.1.9@26267@39518@13@0;192.168.1.9@27544@33076@14@0;192.168.1.9@38239@25490@15@0;192.168.1.9@25157@28386@16@0;192.168.1.9@31070@31339@17@0;192.168.1.9@25989@31016@18@0;192.168.1.9@25359@37321@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25873@35251@0@0;192.168.1.9@25175@35603@1@0;192.168.1.9@37821@28656@2@0;192.168.1.9@38245@31766@3@0;192.168.1.9@26929@26507@4@0;192.168.1.9@39142@29667@5@0;192.168.1.9@38822@36750@6@0;192.168.1.9@35621@28451@7@0;192.168.1.9@35407@38136@8@0;192.168.1.9@35376@33389@9@0;192.168.1.9@31730@31160@10@0;192.168.1.9@30151@32472@11@0;192.168.1.9@39778@32970@12@0;192.168.1.9@26267@39518@13@0;192.168.1.9@27544@33076@14@0;192.168.1.9@38239@25490@15@0;192.168.1.9@25157@28386@16@0;192.168.1.9@31070@31339@17@0;192.168.1.9@25989@31016@18@0;192.168.1.9@25359@37321@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25873@35251@0@0;192.168.1.9@25175@35603@1@0;192.168.1.9@37821@28656@2@0;192.168.1.9@38245@31766@3@0;192.168.1.9@26929@26507@4@0;192.168.1.9@39142@29667@5@0;192.168.1.9@38822@36750@6@0;192.168.1.9@35621@28451@7@0;192.168.1.9@35407@38136@8@0;192.168.1.9@35376@33389@9@0;192.168.1.9@31730@31160@10@0;192.168.1.9@30151@32472@11@0;192.168.1.9@39778@32970@12@0;192.168.1.9@26267@39518@13@0;192.168.1.9@27544@33076@14@0;192.168.1.9@38239@25490@15@0;192.168.1.9@25157@28386@16@0;192.168.1.9@31070@31339@17@0;192.168.1.9@25989@31016@18@0;192.168.1.9@25359@37321@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25873@35251@0@0;192.168.1.9@25175@35603@1@0;192.168.1.9@37821@28656@2@0;192.168.1.9@38245@31766@3@0;192.168.1.9@26929@26507@4@0;192.168.1.9@39142@29667@5@0;192.168.1.9@38822@36750@6@0;192.168.1.9@35621@28451@7@0;192.168.1.9@35407@38136@8@0;192.168.1.9@35376@33389@9@0;192.168.1.9@31730@31160@10@0;192.168.1.9@30151@32472@11@0;192.168.1.9@39778@32970@12@0;192.168.1.9@26267@39518@13@0;192.168.1.9@27544@33076@14@0;192.168.1.9@38239@25490@15@0;192.168.1.9@25157@28386@16@0;192.168.1.9@31070@31339@17@0;192.168.1.9@25989@31016@18@0;192.168.1.9@25359@37321@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25873@35251@0@0;192.168.1.9@25175@35603@1@0;192.168.1.9@37821@28656@2@0;192.168.1.9@38245@31766@3@0;192.168.1.9@26929@26507@4@0;192.168.1.9@39142@29667@5@0;192.168.1.9@38822@36750@6@0;192.168.1.9@35621@28451@7@0;192.168.1.9@35407@38136@8@0;192.168.1.9@35376@33389@9@0;192.168.1.9@31730@31160@10@0;192.168.1.9@30151@32472@11@0;192.168.1.9@39778@32970@12@0;192.168.1.9@26267@39518@13@0;192.168.1.9@27544@33076@14@0;192.168.1.9@38239@25490@15@0;192.168.1.9@25157@28386@16@0;192.168.1.9@31070@31339@17@0;192.168.1.9@25989@31016@18@0;192.168.1.9@25359@37321@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25873@35251@0@0;192.168.1.9@25175@35603@1@0;192.168.1.9@37821@28656@2@0;192.168.1.9@38245@31766@3@0;192.168.1.9@26929@26507@4@0;192.168.1.9@39142@29667@5@0;192.168.1.9@38822@36750@6@0;192.168.1.9@35621@28451@7@0;192.168.1.9@35407@38136@8@0;192.168.1.9@35376@33389@9@0;192.168.1.9@31730@31160@10@0;192.168.1.9@30151@32472@11@0;192.168.1.9@39778@32970@12@0;192.168.1.9@26267@39518@13@0;192.168.1.9@27544@33076@14@0;192.168.1.9@38239@25490@15@0;192.168.1.9@25157@28386@16@0;192.168.1.9@31070@31339@17@0;192.168.1.9@25989@31016@18@0;192.168.1.9@25359@37321@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25873@35251@0@0;192.168.1.9@25175@35603@1@0;192.168.1.9@37821@28656@2@0;192.168.1.9@38245@31766@3@0;192.168.1.9@26929@26507@4@0;192.168.1.9@39142@29667@5@0;192.168.1.9@38822@36750@6@0;192.168.1.9@35621@28451@7@0;192.168.1.9@35407@38136@8@0;192.168.1.9@35376@33389@9@0;192.168.1.9@31730@31160@10@0;192.168.1.9@30151@32472@11@0;192.168.1.9@39778@32970@12@0;192.168.1.9@26267@39518@13@0;192.168.1.9@27544@33076@14@0;192.168.1.9@38239@25490@15@0;192.168.1.9@25157@28386@16@0;192.168.1.9@31070@31339@17@0;192.168.1.9@25989@31016@18@0;192.168.1.9@25359@37321@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25873@35251@0@0;192.168.1.9@25175@35603@1@0;192.168.1.9@37821@28656@2@0;192.168.1.9@38245@31766@3@0;192.168.1.9@26929@26507@4@0;192.168.1.9@39142@29667@5@0;192.168.1.9@38822@36750@6@0;192.168.1.9@35621@28451@7@0;192.168.1.9@35407@38136@8@0;192.168.1.9@35376@33389@9@0;192.168.1.9@31730@31160@10@0;192.168.1.9@30151@32472@11@0;192.168.1.9@39778@32970@12@0;192.168.1.9@26267@39518@13@0;192.168.1.9@27544@33076@14@0;192.168.1.9@38239@25490@15@0;192.168.1.9@25157@28386@16@0;192.168.1.9@31070@31339@17@0;192.168.1.9@25989@31016@18@0;192.168.1.9@25359@37321@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25873@35251@0@0;192.168.1.9@25175@35603@1@0;192.168.1.9@37821@28656@2@0;192.168.1.9@38245@31766@3@0;192.168.1.9@26929@26507@4@0;192.168.1.9@39142@29667@5@0;192.168.1.9@38822@36750@6@0;192.168.1.9@35621@28451@7@0;192.168.1.9@35407@38136@8@0;192.168.1.9@35376@33389@9@0;192.168.1.9@31730@31160@10@0;192.168.1.9@30151@32472@11@0;192.168.1.9@39778@32970@12@0;192.168.1.9@26267@39518@13@0;192.168.1.9@27544@33076@14@0;192.168.1.9@38239@25490@15@0;192.168.1.9@25157@28386@16@0;192.168.1.9@31070@31339@17@0;192.168.1.9@25989@31016@18@0;192.168.1.9@25359@37321@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25873@35251@0@0;192.168.1.9@25175@35603@1@0;192.168.1.9@37821@28656@2@0;192.168.1.9@38245@31766@3@0;192.168.1.9@26929@26507@4@0;192.168.1.9@39142@29667@5@0;192.168.1.9@38822@36750@6@0;192.168.1.9@35621@28451@7@0;192.168.1.9@35407@38136@8@0;192.168.1.9@35376@33389@9@0;192.168.1.9@31730@31160@10@0;192.168.1.9@30151@32472@11@0;192.168.1.9@39778@32970@12@0;192.168.1.9@26267@39518@13@0;192.168.1.9@27544@33076@14@0;192.168.1.9@38239@25490@15@0;192.168.1.9@25157@28386@16@0;192.168.1.9@31070@31339@17@0;192.168.1.9@25989@31016@18@0;192.168.1.9@25359@37321@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25873@35251@0@0;192.168.1.9@25175@35603@1@0;192.168.1.9@37821@28656@2@0;192.168.1.9@38245@31766@3@0;192.168.1.9@26929@26507@4@0;192.168.1.9@39142@29667@5@0;192.168.1.9@38822@36750@6@0;192.168.1.9@35621@28451@7@0;192.168.1.9@35407@38136@8@0;192.168.1.9@35376@33389@9@0;192.168.1.9@31730@31160@10@0;192.168.1.9@30151@32472@11@0;192.168.1.9@39778@32970@12@0;192.168.1.9@26267@39518@13@0;192.168.1.9@27544@33076@14@0;192.168.1.9@38239@25490@15@0;192.168.1.9@25157@28386@16@0;192.168.1.9@31070@31339@17@0;192.168.1.9@25989@31016@18@0;192.168.1.9@25359@37321@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25873@35251@0@0;192.168.1.9@25175@35603@1@0;192.168.1.9@37821@28656@2@0;192.168.1.9@38245@31766@3@0;192.168.1.9@26929@26507@4@0;192.168.1.9@39142@29667@5@0;192.168.1.9@38822@36750@6@0;192.168.1.9@35621@28451@7@0;192.168.1.9@35407@38136@8@0;192.168.1.9@35376@33389@9@0;192.168.1.9@31730@31160@10@0;192.168.1.9@30151@32472@11@0;192.168.1.9@39778@32970@12@0;192.168.1.9@26267@39518@13@0;192.168.1.9@27544@33076@14@0;192.168.1.9@38239@25490@15@0;192.168.1.9@25157@28386@16@0;192.168.1.9@31070@31339@17@0;192.168.1.9@25989@31016@18@0;192.168.1.9@25359@37321@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25873@35251@0@0;192.168.1.9@25175@35603@1@0;192.168.1.9@37821@28656@2@0;192.168.1.9@38245@31766@3@0;192.168.1.9@26929@26507@4@0;192.168.1.9@39142@29667@5@0;192.168.1.9@38822@36750@6@0;192.168.1.9@35621@28451@7@0;192.168.1.9@35407@38136@8@0;192.168.1.9@35376@33389@9@0;192.168.1.9@31730@31160@10@0;192.168.1.9@30151@32472@11@0;192.168.1.9@39778@32970@12@0;192.168.1.9@26267@39518@13@0;192.168.1.9@27544@33076@14@0;192.168.1.9@38239@25490@15@0;192.168.1.9@25157@28386@16@0;192.168.1.9@31070@31339@17@0;192.168.1.9@25989@31016@18@0;192.168.1.9@25359@37321@19@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <20>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 20 are greater than than machines 1
+ DEBUG runtime  - divisor 20
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.9=20}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;20;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.9@0@0@0@0;192.168.1.9@0@0@1@2;192.168.1.9@0@0@2@4;192.168.1.9@0@0@3@6;192.168.1.9@0@0@4@8;192.168.1.9@0@0@5@10;192.168.1.9@0@0@6@12;192.168.1.9@0@0@7@14;192.168.1.9@0@0@8@16;192.168.1.9@0@0@9@18;192.168.1.9@0@0@10@20;192.168.1.9@0@0@11@22;192.168.1.9@0@0@12@24;192.168.1.9@0@0@13@26;192.168.1.9@0@0@14@28;192.168.1.9@0@0@15@30;192.168.1.9@0@0@16@32;192.168.1.9@0@0@17@34;192.168.1.9@0@0@18@36;192.168.1.9@0@0@19@38
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=20}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 20
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.9,port=40055,localport=60022]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=20}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <20> to connect
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@27783@37283@0@0;192.168.1.9@27568@25731@1@0;192.168.1.9@28211@33543@2@0;192.168.1.9@33725@25428@3@0;192.168.1.9@38811@30230@4@0;192.168.1.9@25954@35647@5@0;192.168.1.9@30455@28770@6@0;192.168.1.9@25006@31071@7@0;192.168.1.9@34487@25753@8@0;192.168.1.9@32162@26228@9@0;192.168.1.9@26420@36884@10@0;192.168.1.9@35179@29345@11@0;192.168.1.9@34407@36371@12@0;192.168.1.9@36625@35168@13@0;192.168.1.9@28898@33272@14@0;192.168.1.9@31279@38054@15@0;192.168.1.9@34708@25226@16@0;192.168.1.9@35498@33448@17@0;192.168.1.9@38593@29150@18@0;192.168.1.9@31885@26654@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@27783@37283@0@0;192.168.1.9@27568@25731@1@0;192.168.1.9@28211@33543@2@0;192.168.1.9@33725@25428@3@0;192.168.1.9@38811@30230@4@0;192.168.1.9@25954@35647@5@0;192.168.1.9@30455@28770@6@0;192.168.1.9@25006@31071@7@0;192.168.1.9@34487@25753@8@0;192.168.1.9@32162@26228@9@0;192.168.1.9@26420@36884@10@0;192.168.1.9@35179@29345@11@0;192.168.1.9@34407@36371@12@0;192.168.1.9@36625@35168@13@0;192.168.1.9@28898@33272@14@0;192.168.1.9@31279@38054@15@0;192.168.1.9@34708@25226@16@0;192.168.1.9@35498@33448@17@0;192.168.1.9@38593@29150@18@0;192.168.1.9@31885@26654@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@27783@37283@0@0;192.168.1.9@27568@25731@1@0;192.168.1.9@28211@33543@2@0;192.168.1.9@33725@25428@3@0;192.168.1.9@38811@30230@4@0;192.168.1.9@25954@35647@5@0;192.168.1.9@30455@28770@6@0;192.168.1.9@25006@31071@7@0;192.168.1.9@34487@25753@8@0;192.168.1.9@32162@26228@9@0;192.168.1.9@26420@36884@10@0;192.168.1.9@35179@29345@11@0;192.168.1.9@34407@36371@12@0;192.168.1.9@36625@35168@13@0;192.168.1.9@28898@33272@14@0;192.168.1.9@31279@38054@15@0;192.168.1.9@34708@25226@16@0;192.168.1.9@35498@33448@17@0;192.168.1.9@38593@29150@18@0;192.168.1.9@31885@26654@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@27783@37283@0@0;192.168.1.9@27568@25731@1@0;192.168.1.9@28211@33543@2@0;192.168.1.9@33725@25428@3@0;192.168.1.9@38811@30230@4@0;192.168.1.9@25954@35647@5@0;192.168.1.9@30455@28770@6@0;192.168.1.9@25006@31071@7@0;192.168.1.9@34487@25753@8@0;192.168.1.9@32162@26228@9@0;192.168.1.9@26420@36884@10@0;192.168.1.9@35179@29345@11@0;192.168.1.9@34407@36371@12@0;192.168.1.9@36625@35168@13@0;192.168.1.9@28898@33272@14@0;192.168.1.9@31279@38054@15@0;192.168.1.9@34708@25226@16@0;192.168.1.9@35498@33448@17@0;192.168.1.9@38593@29150@18@0;192.168.1.9@31885@26654@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@27783@37283@0@0;192.168.1.9@27568@25731@1@0;192.168.1.9@28211@33543@2@0;192.168.1.9@33725@25428@3@0;192.168.1.9@38811@30230@4@0;192.168.1.9@25954@35647@5@0;192.168.1.9@30455@28770@6@0;192.168.1.9@25006@31071@7@0;192.168.1.9@34487@25753@8@0;192.168.1.9@32162@26228@9@0;192.168.1.9@26420@36884@10@0;192.168.1.9@35179@29345@11@0;192.168.1.9@34407@36371@12@0;192.168.1.9@36625@35168@13@0;192.168.1.9@28898@33272@14@0;192.168.1.9@31279@38054@15@0;192.168.1.9@34708@25226@16@0;192.168.1.9@35498@33448@17@0;192.168.1.9@38593@29150@18@0;192.168.1.9@31885@26654@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@27783@37283@0@0;192.168.1.9@27568@25731@1@0;192.168.1.9@28211@33543@2@0;192.168.1.9@33725@25428@3@0;192.168.1.9@38811@30230@4@0;192.168.1.9@25954@35647@5@0;192.168.1.9@30455@28770@6@0;192.168.1.9@25006@31071@7@0;192.168.1.9@34487@25753@8@0;192.168.1.9@32162@26228@9@0;192.168.1.9@26420@36884@10@0;192.168.1.9@35179@29345@11@0;192.168.1.9@34407@36371@12@0;192.168.1.9@36625@35168@13@0;192.168.1.9@28898@33272@14@0;192.168.1.9@31279@38054@15@0;192.168.1.9@34708@25226@16@0;192.168.1.9@35498@33448@17@0;192.168.1.9@38593@29150@18@0;192.168.1.9@31885@26654@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@27783@37283@0@0;192.168.1.9@27568@25731@1@0;192.168.1.9@28211@33543@2@0;192.168.1.9@33725@25428@3@0;192.168.1.9@38811@30230@4@0;192.168.1.9@25954@35647@5@0;192.168.1.9@30455@28770@6@0;192.168.1.9@25006@31071@7@0;192.168.1.9@34487@25753@8@0;192.168.1.9@32162@26228@9@0;192.168.1.9@26420@36884@10@0;192.168.1.9@35179@29345@11@0;192.168.1.9@34407@36371@12@0;192.168.1.9@36625@35168@13@0;192.168.1.9@28898@33272@14@0;192.168.1.9@31279@38054@15@0;192.168.1.9@34708@25226@16@0;192.168.1.9@35498@33448@17@0;192.168.1.9@38593@29150@18@0;192.168.1.9@31885@26654@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@27783@37283@0@0;192.168.1.9@27568@25731@1@0;192.168.1.9@28211@33543@2@0;192.168.1.9@33725@25428@3@0;192.168.1.9@38811@30230@4@0;192.168.1.9@25954@35647@5@0;192.168.1.9@30455@28770@6@0;192.168.1.9@25006@31071@7@0;192.168.1.9@34487@25753@8@0;192.168.1.9@32162@26228@9@0;192.168.1.9@26420@36884@10@0;192.168.1.9@35179@29345@11@0;192.168.1.9@34407@36371@12@0;192.168.1.9@36625@35168@13@0;192.168.1.9@28898@33272@14@0;192.168.1.9@31279@38054@15@0;192.168.1.9@34708@25226@16@0;192.168.1.9@35498@33448@17@0;192.168.1.9@38593@29150@18@0;192.168.1.9@31885@26654@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@27783@37283@0@0;192.168.1.9@27568@25731@1@0;192.168.1.9@28211@33543@2@0;192.168.1.9@33725@25428@3@0;192.168.1.9@38811@30230@4@0;192.168.1.9@25954@35647@5@0;192.168.1.9@30455@28770@6@0;192.168.1.9@25006@31071@7@0;192.168.1.9@34487@25753@8@0;192.168.1.9@32162@26228@9@0;192.168.1.9@26420@36884@10@0;192.168.1.9@35179@29345@11@0;192.168.1.9@34407@36371@12@0;192.168.1.9@36625@35168@13@0;192.168.1.9@28898@33272@14@0;192.168.1.9@31279@38054@15@0;192.168.1.9@34708@25226@16@0;192.168.1.9@35498@33448@17@0;192.168.1.9@38593@29150@18@0;192.168.1.9@31885@26654@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@27783@37283@0@0;192.168.1.9@27568@25731@1@0;192.168.1.9@28211@33543@2@0;192.168.1.9@33725@25428@3@0;192.168.1.9@38811@30230@4@0;192.168.1.9@25954@35647@5@0;192.168.1.9@30455@28770@6@0;192.168.1.9@25006@31071@7@0;192.168.1.9@34487@25753@8@0;192.168.1.9@32162@26228@9@0;192.168.1.9@26420@36884@10@0;192.168.1.9@35179@29345@11@0;192.168.1.9@34407@36371@12@0;192.168.1.9@36625@35168@13@0;192.168.1.9@28898@33272@14@0;192.168.1.9@31279@38054@15@0;192.168.1.9@34708@25226@16@0;192.168.1.9@35498@33448@17@0;192.168.1.9@38593@29150@18@0;192.168.1.9@31885@26654@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@27783@37283@0@0;192.168.1.9@27568@25731@1@0;192.168.1.9@28211@33543@2@0;192.168.1.9@33725@25428@3@0;192.168.1.9@38811@30230@4@0;192.168.1.9@25954@35647@5@0;192.168.1.9@30455@28770@6@0;192.168.1.9@25006@31071@7@0;192.168.1.9@34487@25753@8@0;192.168.1.9@32162@26228@9@0;192.168.1.9@26420@36884@10@0;192.168.1.9@35179@29345@11@0;192.168.1.9@34407@36371@12@0;192.168.1.9@36625@35168@13@0;192.168.1.9@28898@33272@14@0;192.168.1.9@31279@38054@15@0;192.168.1.9@34708@25226@16@0;192.168.1.9@35498@33448@17@0;192.168.1.9@38593@29150@18@0;192.168.1.9@31885@26654@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@27783@37283@0@0;192.168.1.9@27568@25731@1@0;192.168.1.9@28211@33543@2@0;192.168.1.9@33725@25428@3@0;192.168.1.9@38811@30230@4@0;192.168.1.9@25954@35647@5@0;192.168.1.9@30455@28770@6@0;192.168.1.9@25006@31071@7@0;192.168.1.9@34487@25753@8@0;192.168.1.9@32162@26228@9@0;192.168.1.9@26420@36884@10@0;192.168.1.9@35179@29345@11@0;192.168.1.9@34407@36371@12@0;192.168.1.9@36625@35168@13@0;192.168.1.9@28898@33272@14@0;192.168.1.9@31279@38054@15@0;192.168.1.9@34708@25226@16@0;192.168.1.9@35498@33448@17@0;192.168.1.9@38593@29150@18@0;192.168.1.9@31885@26654@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@27783@37283@0@0;192.168.1.9@27568@25731@1@0;192.168.1.9@28211@33543@2@0;192.168.1.9@33725@25428@3@0;192.168.1.9@38811@30230@4@0;192.168.1.9@25954@35647@5@0;192.168.1.9@30455@28770@6@0;192.168.1.9@25006@31071@7@0;192.168.1.9@34487@25753@8@0;192.168.1.9@32162@26228@9@0;192.168.1.9@26420@36884@10@0;192.168.1.9@35179@29345@11@0;192.168.1.9@34407@36371@12@0;192.168.1.9@36625@35168@13@0;192.168.1.9@28898@33272@14@0;192.168.1.9@31279@38054@15@0;192.168.1.9@34708@25226@16@0;192.168.1.9@35498@33448@17@0;192.168.1.9@38593@29150@18@0;192.168.1.9@31885@26654@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@27783@37283@0@0;192.168.1.9@27568@25731@1@0;192.168.1.9@28211@33543@2@0;192.168.1.9@33725@25428@3@0;192.168.1.9@38811@30230@4@0;192.168.1.9@25954@35647@5@0;192.168.1.9@30455@28770@6@0;192.168.1.9@25006@31071@7@0;192.168.1.9@34487@25753@8@0;192.168.1.9@32162@26228@9@0;192.168.1.9@26420@36884@10@0;192.168.1.9@35179@29345@11@0;192.168.1.9@34407@36371@12@0;192.168.1.9@36625@35168@13@0;192.168.1.9@28898@33272@14@0;192.168.1.9@31279@38054@15@0;192.168.1.9@34708@25226@16@0;192.168.1.9@35498@33448@17@0;192.168.1.9@38593@29150@18@0;192.168.1.9@31885@26654@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@27783@37283@0@0;192.168.1.9@27568@25731@1@0;192.168.1.9@28211@33543@2@0;192.168.1.9@33725@25428@3@0;192.168.1.9@38811@30230@4@0;192.168.1.9@25954@35647@5@0;192.168.1.9@30455@28770@6@0;192.168.1.9@25006@31071@7@0;192.168.1.9@34487@25753@8@0;192.168.1.9@32162@26228@9@0;192.168.1.9@26420@36884@10@0;192.168.1.9@35179@29345@11@0;192.168.1.9@34407@36371@12@0;192.168.1.9@36625@35168@13@0;192.168.1.9@28898@33272@14@0;192.168.1.9@31279@38054@15@0;192.168.1.9@34708@25226@16@0;192.168.1.9@35498@33448@17@0;192.168.1.9@38593@29150@18@0;192.168.1.9@31885@26654@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@27783@37283@0@0;192.168.1.9@27568@25731@1@0;192.168.1.9@28211@33543@2@0;192.168.1.9@33725@25428@3@0;192.168.1.9@38811@30230@4@0;192.168.1.9@25954@35647@5@0;192.168.1.9@30455@28770@6@0;192.168.1.9@25006@31071@7@0;192.168.1.9@34487@25753@8@0;192.168.1.9@32162@26228@9@0;192.168.1.9@26420@36884@10@0;192.168.1.9@35179@29345@11@0;192.168.1.9@34407@36371@12@0;192.168.1.9@36625@35168@13@0;192.168.1.9@28898@33272@14@0;192.168.1.9@31279@38054@15@0;192.168.1.9@34708@25226@16@0;192.168.1.9@35498@33448@17@0;192.168.1.9@38593@29150@18@0;192.168.1.9@31885@26654@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@27783@37283@0@0;192.168.1.9@27568@25731@1@0;192.168.1.9@28211@33543@2@0;192.168.1.9@33725@25428@3@0;192.168.1.9@38811@30230@4@0;192.168.1.9@25954@35647@5@0;192.168.1.9@30455@28770@6@0;192.168.1.9@25006@31071@7@0;192.168.1.9@34487@25753@8@0;192.168.1.9@32162@26228@9@0;192.168.1.9@26420@36884@10@0;192.168.1.9@35179@29345@11@0;192.168.1.9@34407@36371@12@0;192.168.1.9@36625@35168@13@0;192.168.1.9@28898@33272@14@0;192.168.1.9@31279@38054@15@0;192.168.1.9@34708@25226@16@0;192.168.1.9@35498@33448@17@0;192.168.1.9@38593@29150@18@0;192.168.1.9@31885@26654@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@27783@37283@0@0;192.168.1.9@27568@25731@1@0;192.168.1.9@28211@33543@2@0;192.168.1.9@33725@25428@3@0;192.168.1.9@38811@30230@4@0;192.168.1.9@25954@35647@5@0;192.168.1.9@30455@28770@6@0;192.168.1.9@25006@31071@7@0;192.168.1.9@34487@25753@8@0;192.168.1.9@32162@26228@9@0;192.168.1.9@26420@36884@10@0;192.168.1.9@35179@29345@11@0;192.168.1.9@34407@36371@12@0;192.168.1.9@36625@35168@13@0;192.168.1.9@28898@33272@14@0;192.168.1.9@31279@38054@15@0;192.168.1.9@34708@25226@16@0;192.168.1.9@35498@33448@17@0;192.168.1.9@38593@29150@18@0;192.168.1.9@31885@26654@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@27783@37283@0@0;192.168.1.9@27568@25731@1@0;192.168.1.9@28211@33543@2@0;192.168.1.9@33725@25428@3@0;192.168.1.9@38811@30230@4@0;192.168.1.9@25954@35647@5@0;192.168.1.9@30455@28770@6@0;192.168.1.9@25006@31071@7@0;192.168.1.9@34487@25753@8@0;192.168.1.9@32162@26228@9@0;192.168.1.9@26420@36884@10@0;192.168.1.9@35179@29345@11@0;192.168.1.9@34407@36371@12@0;192.168.1.9@36625@35168@13@0;192.168.1.9@28898@33272@14@0;192.168.1.9@31279@38054@15@0;192.168.1.9@34708@25226@16@0;192.168.1.9@35498@33448@17@0;192.168.1.9@38593@29150@18@0;192.168.1.9@31885@26654@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@27783@37283@0@0;192.168.1.9@27568@25731@1@0;192.168.1.9@28211@33543@2@0;192.168.1.9@33725@25428@3@0;192.168.1.9@38811@30230@4@0;192.168.1.9@25954@35647@5@0;192.168.1.9@30455@28770@6@0;192.168.1.9@25006@31071@7@0;192.168.1.9@34487@25753@8@0;192.168.1.9@32162@26228@9@0;192.168.1.9@26420@36884@10@0;192.168.1.9@35179@29345@11@0;192.168.1.9@34407@36371@12@0;192.168.1.9@36625@35168@13@0;192.168.1.9@28898@33272@14@0;192.168.1.9@31279@38054@15@0;192.168.1.9@34708@25226@16@0;192.168.1.9@35498@33448@17@0;192.168.1.9@38593@29150@18@0;192.168.1.9@31885@26654@19@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <3>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 3 are greater than than machines 1
+ DEBUG runtime  - divisor 3
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.9=3}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.9@0@0@0@0;192.168.1.9@0@0@1@2;192.168.1.9@0@0@2@4
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=3}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 3
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.9,port=40055,localport=60648]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=3}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <3> to connect
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@38479@31897@0@0;192.168.1.9@33809@35851@1@0;192.168.1.9@29543@29520@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@38479@31897@0@0;192.168.1.9@33809@35851@1@0;192.168.1.9@29543@29520@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@38479@31897@0@0;192.168.1.9@33809@35851@1@0;192.168.1.9@29543@29520@2@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <3>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 3 are greater than than machines 1
+ DEBUG runtime  - divisor 3
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.9=3}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.9@0@0@0@0;192.168.1.9@0@0@1@2;192.168.1.9@0@0@2@4
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=3}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 3
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.9,port=40055,localport=60658]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=3}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <3> to connect
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@27464@30632@0@0;192.168.1.9@27772@27898@1@0;192.168.1.9@32317@27679@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@27464@30632@0@0;192.168.1.9@27772@27898@1@0;192.168.1.9@32317@27679@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@27464@30632@0@0;192.168.1.9@27772@27898@1@0;192.168.1.9@32317@27679@2@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <3>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 3 are greater than than machines 1
+ DEBUG runtime  - divisor 3
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.9=3}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.9@0@0@0@0;192.168.1.9@0@0@1@2;192.168.1.9@0@0@2@4
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=3}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 3
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.9,port=40055,localport=60668]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=3}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <3> to connect
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@32074@28232@0@0;192.168.1.9@34364@34559@1@0;192.168.1.9@31133@26097@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@32074@28232@0@0;192.168.1.9@34364@34559@1@0;192.168.1.9@31133@26097@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@32074@28232@0@0;192.168.1.9@34364@34559@1@0;192.168.1.9@31133@26097@2@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <20>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 20 are greater than than machines 1
+ DEBUG runtime  - divisor 20
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.9=20}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;20;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.9@0@0@0@0;192.168.1.9@0@0@1@2;192.168.1.9@0@0@2@4;192.168.1.9@0@0@3@6;192.168.1.9@0@0@4@8;192.168.1.9@0@0@5@10;192.168.1.9@0@0@6@12;192.168.1.9@0@0@7@14;192.168.1.9@0@0@8@16;192.168.1.9@0@0@9@18;192.168.1.9@0@0@10@20;192.168.1.9@0@0@11@22;192.168.1.9@0@0@12@24;192.168.1.9@0@0@13@26;192.168.1.9@0@0@14@28;192.168.1.9@0@0@15@30;192.168.1.9@0@0@16@32;192.168.1.9@0@0@17@34;192.168.1.9@0@0@18@36;192.168.1.9@0@0@19@38
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=20}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 20
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.9,port=40055,localport=60678]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=20}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <20> to connect
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@29196@33727@0@0;192.168.1.9@39422@38140@1@0;192.168.1.9@36361@31094@2@0;192.168.1.9@27833@35249@3@0;192.168.1.9@35027@28280@4@0;192.168.1.9@35182@37726@5@0;192.168.1.9@37732@38883@6@0;192.168.1.9@28129@30410@7@0;192.168.1.9@28263@28529@8@0;192.168.1.9@25022@30247@9@0;192.168.1.9@33379@38022@10@0;192.168.1.9@38492@37444@11@0;192.168.1.9@28684@37462@12@0;192.168.1.9@30672@34262@13@0;192.168.1.9@32806@34455@14@0;192.168.1.9@28360@34444@15@0;192.168.1.9@25911@35042@16@0;192.168.1.9@38965@26804@17@0;192.168.1.9@36278@32191@18@0;192.168.1.9@28861@29209@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@29196@33727@0@0;192.168.1.9@39422@38140@1@0;192.168.1.9@36361@31094@2@0;192.168.1.9@27833@35249@3@0;192.168.1.9@35027@28280@4@0;192.168.1.9@35182@37726@5@0;192.168.1.9@37732@38883@6@0;192.168.1.9@28129@30410@7@0;192.168.1.9@28263@28529@8@0;192.168.1.9@25022@30247@9@0;192.168.1.9@33379@38022@10@0;192.168.1.9@38492@37444@11@0;192.168.1.9@28684@37462@12@0;192.168.1.9@30672@34262@13@0;192.168.1.9@32806@34455@14@0;192.168.1.9@28360@34444@15@0;192.168.1.9@25911@35042@16@0;192.168.1.9@38965@26804@17@0;192.168.1.9@36278@32191@18@0;192.168.1.9@28861@29209@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@29196@33727@0@0;192.168.1.9@39422@38140@1@0;192.168.1.9@36361@31094@2@0;192.168.1.9@27833@35249@3@0;192.168.1.9@35027@28280@4@0;192.168.1.9@35182@37726@5@0;192.168.1.9@37732@38883@6@0;192.168.1.9@28129@30410@7@0;192.168.1.9@28263@28529@8@0;192.168.1.9@25022@30247@9@0;192.168.1.9@33379@38022@10@0;192.168.1.9@38492@37444@11@0;192.168.1.9@28684@37462@12@0;192.168.1.9@30672@34262@13@0;192.168.1.9@32806@34455@14@0;192.168.1.9@28360@34444@15@0;192.168.1.9@25911@35042@16@0;192.168.1.9@38965@26804@17@0;192.168.1.9@36278@32191@18@0;192.168.1.9@28861@29209@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@29196@33727@0@0;192.168.1.9@39422@38140@1@0;192.168.1.9@36361@31094@2@0;192.168.1.9@27833@35249@3@0;192.168.1.9@35027@28280@4@0;192.168.1.9@35182@37726@5@0;192.168.1.9@37732@38883@6@0;192.168.1.9@28129@30410@7@0;192.168.1.9@28263@28529@8@0;192.168.1.9@25022@30247@9@0;192.168.1.9@33379@38022@10@0;192.168.1.9@38492@37444@11@0;192.168.1.9@28684@37462@12@0;192.168.1.9@30672@34262@13@0;192.168.1.9@32806@34455@14@0;192.168.1.9@28360@34444@15@0;192.168.1.9@25911@35042@16@0;192.168.1.9@38965@26804@17@0;192.168.1.9@36278@32191@18@0;192.168.1.9@28861@29209@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@29196@33727@0@0;192.168.1.9@39422@38140@1@0;192.168.1.9@36361@31094@2@0;192.168.1.9@27833@35249@3@0;192.168.1.9@35027@28280@4@0;192.168.1.9@35182@37726@5@0;192.168.1.9@37732@38883@6@0;192.168.1.9@28129@30410@7@0;192.168.1.9@28263@28529@8@0;192.168.1.9@25022@30247@9@0;192.168.1.9@33379@38022@10@0;192.168.1.9@38492@37444@11@0;192.168.1.9@28684@37462@12@0;192.168.1.9@30672@34262@13@0;192.168.1.9@32806@34455@14@0;192.168.1.9@28360@34444@15@0;192.168.1.9@25911@35042@16@0;192.168.1.9@38965@26804@17@0;192.168.1.9@36278@32191@18@0;192.168.1.9@28861@29209@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@29196@33727@0@0;192.168.1.9@39422@38140@1@0;192.168.1.9@36361@31094@2@0;192.168.1.9@27833@35249@3@0;192.168.1.9@35027@28280@4@0;192.168.1.9@35182@37726@5@0;192.168.1.9@37732@38883@6@0;192.168.1.9@28129@30410@7@0;192.168.1.9@28263@28529@8@0;192.168.1.9@25022@30247@9@0;192.168.1.9@33379@38022@10@0;192.168.1.9@38492@37444@11@0;192.168.1.9@28684@37462@12@0;192.168.1.9@30672@34262@13@0;192.168.1.9@32806@34455@14@0;192.168.1.9@28360@34444@15@0;192.168.1.9@25911@35042@16@0;192.168.1.9@38965@26804@17@0;192.168.1.9@36278@32191@18@0;192.168.1.9@28861@29209@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@29196@33727@0@0;192.168.1.9@39422@38140@1@0;192.168.1.9@36361@31094@2@0;192.168.1.9@27833@35249@3@0;192.168.1.9@35027@28280@4@0;192.168.1.9@35182@37726@5@0;192.168.1.9@37732@38883@6@0;192.168.1.9@28129@30410@7@0;192.168.1.9@28263@28529@8@0;192.168.1.9@25022@30247@9@0;192.168.1.9@33379@38022@10@0;192.168.1.9@38492@37444@11@0;192.168.1.9@28684@37462@12@0;192.168.1.9@30672@34262@13@0;192.168.1.9@32806@34455@14@0;192.168.1.9@28360@34444@15@0;192.168.1.9@25911@35042@16@0;192.168.1.9@38965@26804@17@0;192.168.1.9@36278@32191@18@0;192.168.1.9@28861@29209@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@29196@33727@0@0;192.168.1.9@39422@38140@1@0;192.168.1.9@36361@31094@2@0;192.168.1.9@27833@35249@3@0;192.168.1.9@35027@28280@4@0;192.168.1.9@35182@37726@5@0;192.168.1.9@37732@38883@6@0;192.168.1.9@28129@30410@7@0;192.168.1.9@28263@28529@8@0;192.168.1.9@25022@30247@9@0;192.168.1.9@33379@38022@10@0;192.168.1.9@38492@37444@11@0;192.168.1.9@28684@37462@12@0;192.168.1.9@30672@34262@13@0;192.168.1.9@32806@34455@14@0;192.168.1.9@28360@34444@15@0;192.168.1.9@25911@35042@16@0;192.168.1.9@38965@26804@17@0;192.168.1.9@36278@32191@18@0;192.168.1.9@28861@29209@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@29196@33727@0@0;192.168.1.9@39422@38140@1@0;192.168.1.9@36361@31094@2@0;192.168.1.9@27833@35249@3@0;192.168.1.9@35027@28280@4@0;192.168.1.9@35182@37726@5@0;192.168.1.9@37732@38883@6@0;192.168.1.9@28129@30410@7@0;192.168.1.9@28263@28529@8@0;192.168.1.9@25022@30247@9@0;192.168.1.9@33379@38022@10@0;192.168.1.9@38492@37444@11@0;192.168.1.9@28684@37462@12@0;192.168.1.9@30672@34262@13@0;192.168.1.9@32806@34455@14@0;192.168.1.9@28360@34444@15@0;192.168.1.9@25911@35042@16@0;192.168.1.9@38965@26804@17@0;192.168.1.9@36278@32191@18@0;192.168.1.9@28861@29209@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@29196@33727@0@0;192.168.1.9@39422@38140@1@0;192.168.1.9@36361@31094@2@0;192.168.1.9@27833@35249@3@0;192.168.1.9@35027@28280@4@0;192.168.1.9@35182@37726@5@0;192.168.1.9@37732@38883@6@0;192.168.1.9@28129@30410@7@0;192.168.1.9@28263@28529@8@0;192.168.1.9@25022@30247@9@0;192.168.1.9@33379@38022@10@0;192.168.1.9@38492@37444@11@0;192.168.1.9@28684@37462@12@0;192.168.1.9@30672@34262@13@0;192.168.1.9@32806@34455@14@0;192.168.1.9@28360@34444@15@0;192.168.1.9@25911@35042@16@0;192.168.1.9@38965@26804@17@0;192.168.1.9@36278@32191@18@0;192.168.1.9@28861@29209@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@29196@33727@0@0;192.168.1.9@39422@38140@1@0;192.168.1.9@36361@31094@2@0;192.168.1.9@27833@35249@3@0;192.168.1.9@35027@28280@4@0;192.168.1.9@35182@37726@5@0;192.168.1.9@37732@38883@6@0;192.168.1.9@28129@30410@7@0;192.168.1.9@28263@28529@8@0;192.168.1.9@25022@30247@9@0;192.168.1.9@33379@38022@10@0;192.168.1.9@38492@37444@11@0;192.168.1.9@28684@37462@12@0;192.168.1.9@30672@34262@13@0;192.168.1.9@32806@34455@14@0;192.168.1.9@28360@34444@15@0;192.168.1.9@25911@35042@16@0;192.168.1.9@38965@26804@17@0;192.168.1.9@36278@32191@18@0;192.168.1.9@28861@29209@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@29196@33727@0@0;192.168.1.9@39422@38140@1@0;192.168.1.9@36361@31094@2@0;192.168.1.9@27833@35249@3@0;192.168.1.9@35027@28280@4@0;192.168.1.9@35182@37726@5@0;192.168.1.9@37732@38883@6@0;192.168.1.9@28129@30410@7@0;192.168.1.9@28263@28529@8@0;192.168.1.9@25022@30247@9@0;192.168.1.9@33379@38022@10@0;192.168.1.9@38492@37444@11@0;192.168.1.9@28684@37462@12@0;192.168.1.9@30672@34262@13@0;192.168.1.9@32806@34455@14@0;192.168.1.9@28360@34444@15@0;192.168.1.9@25911@35042@16@0;192.168.1.9@38965@26804@17@0;192.168.1.9@36278@32191@18@0;192.168.1.9@28861@29209@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@29196@33727@0@0;192.168.1.9@39422@38140@1@0;192.168.1.9@36361@31094@2@0;192.168.1.9@27833@35249@3@0;192.168.1.9@35027@28280@4@0;192.168.1.9@35182@37726@5@0;192.168.1.9@37732@38883@6@0;192.168.1.9@28129@30410@7@0;192.168.1.9@28263@28529@8@0;192.168.1.9@25022@30247@9@0;192.168.1.9@33379@38022@10@0;192.168.1.9@38492@37444@11@0;192.168.1.9@28684@37462@12@0;192.168.1.9@30672@34262@13@0;192.168.1.9@32806@34455@14@0;192.168.1.9@28360@34444@15@0;192.168.1.9@25911@35042@16@0;192.168.1.9@38965@26804@17@0;192.168.1.9@36278@32191@18@0;192.168.1.9@28861@29209@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@29196@33727@0@0;192.168.1.9@39422@38140@1@0;192.168.1.9@36361@31094@2@0;192.168.1.9@27833@35249@3@0;192.168.1.9@35027@28280@4@0;192.168.1.9@35182@37726@5@0;192.168.1.9@37732@38883@6@0;192.168.1.9@28129@30410@7@0;192.168.1.9@28263@28529@8@0;192.168.1.9@25022@30247@9@0;192.168.1.9@33379@38022@10@0;192.168.1.9@38492@37444@11@0;192.168.1.9@28684@37462@12@0;192.168.1.9@30672@34262@13@0;192.168.1.9@32806@34455@14@0;192.168.1.9@28360@34444@15@0;192.168.1.9@25911@35042@16@0;192.168.1.9@38965@26804@17@0;192.168.1.9@36278@32191@18@0;192.168.1.9@28861@29209@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@29196@33727@0@0;192.168.1.9@39422@38140@1@0;192.168.1.9@36361@31094@2@0;192.168.1.9@27833@35249@3@0;192.168.1.9@35027@28280@4@0;192.168.1.9@35182@37726@5@0;192.168.1.9@37732@38883@6@0;192.168.1.9@28129@30410@7@0;192.168.1.9@28263@28529@8@0;192.168.1.9@25022@30247@9@0;192.168.1.9@33379@38022@10@0;192.168.1.9@38492@37444@11@0;192.168.1.9@28684@37462@12@0;192.168.1.9@30672@34262@13@0;192.168.1.9@32806@34455@14@0;192.168.1.9@28360@34444@15@0;192.168.1.9@25911@35042@16@0;192.168.1.9@38965@26804@17@0;192.168.1.9@36278@32191@18@0;192.168.1.9@28861@29209@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@29196@33727@0@0;192.168.1.9@39422@38140@1@0;192.168.1.9@36361@31094@2@0;192.168.1.9@27833@35249@3@0;192.168.1.9@35027@28280@4@0;192.168.1.9@35182@37726@5@0;192.168.1.9@37732@38883@6@0;192.168.1.9@28129@30410@7@0;192.168.1.9@28263@28529@8@0;192.168.1.9@25022@30247@9@0;192.168.1.9@33379@38022@10@0;192.168.1.9@38492@37444@11@0;192.168.1.9@28684@37462@12@0;192.168.1.9@30672@34262@13@0;192.168.1.9@32806@34455@14@0;192.168.1.9@28360@34444@15@0;192.168.1.9@25911@35042@16@0;192.168.1.9@38965@26804@17@0;192.168.1.9@36278@32191@18@0;192.168.1.9@28861@29209@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@29196@33727@0@0;192.168.1.9@39422@38140@1@0;192.168.1.9@36361@31094@2@0;192.168.1.9@27833@35249@3@0;192.168.1.9@35027@28280@4@0;192.168.1.9@35182@37726@5@0;192.168.1.9@37732@38883@6@0;192.168.1.9@28129@30410@7@0;192.168.1.9@28263@28529@8@0;192.168.1.9@25022@30247@9@0;192.168.1.9@33379@38022@10@0;192.168.1.9@38492@37444@11@0;192.168.1.9@28684@37462@12@0;192.168.1.9@30672@34262@13@0;192.168.1.9@32806@34455@14@0;192.168.1.9@28360@34444@15@0;192.168.1.9@25911@35042@16@0;192.168.1.9@38965@26804@17@0;192.168.1.9@36278@32191@18@0;192.168.1.9@28861@29209@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@29196@33727@0@0;192.168.1.9@39422@38140@1@0;192.168.1.9@36361@31094@2@0;192.168.1.9@27833@35249@3@0;192.168.1.9@35027@28280@4@0;192.168.1.9@35182@37726@5@0;192.168.1.9@37732@38883@6@0;192.168.1.9@28129@30410@7@0;192.168.1.9@28263@28529@8@0;192.168.1.9@25022@30247@9@0;192.168.1.9@33379@38022@10@0;192.168.1.9@38492@37444@11@0;192.168.1.9@28684@37462@12@0;192.168.1.9@30672@34262@13@0;192.168.1.9@32806@34455@14@0;192.168.1.9@28360@34444@15@0;192.168.1.9@25911@35042@16@0;192.168.1.9@38965@26804@17@0;192.168.1.9@36278@32191@18@0;192.168.1.9@28861@29209@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@29196@33727@0@0;192.168.1.9@39422@38140@1@0;192.168.1.9@36361@31094@2@0;192.168.1.9@27833@35249@3@0;192.168.1.9@35027@28280@4@0;192.168.1.9@35182@37726@5@0;192.168.1.9@37732@38883@6@0;192.168.1.9@28129@30410@7@0;192.168.1.9@28263@28529@8@0;192.168.1.9@25022@30247@9@0;192.168.1.9@33379@38022@10@0;192.168.1.9@38492@37444@11@0;192.168.1.9@28684@37462@12@0;192.168.1.9@30672@34262@13@0;192.168.1.9@32806@34455@14@0;192.168.1.9@28360@34444@15@0;192.168.1.9@25911@35042@16@0;192.168.1.9@38965@26804@17@0;192.168.1.9@36278@32191@18@0;192.168.1.9@28861@29209@19@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@29196@33727@0@0;192.168.1.9@39422@38140@1@0;192.168.1.9@36361@31094@2@0;192.168.1.9@27833@35249@3@0;192.168.1.9@35027@28280@4@0;192.168.1.9@35182@37726@5@0;192.168.1.9@37732@38883@6@0;192.168.1.9@28129@30410@7@0;192.168.1.9@28263@28529@8@0;192.168.1.9@25022@30247@9@0;192.168.1.9@33379@38022@10@0;192.168.1.9@38492@37444@11@0;192.168.1.9@28684@37462@12@0;192.168.1.9@30672@34262@13@0;192.168.1.9@32806@34455@14@0;192.168.1.9@28360@34444@15@0;192.168.1.9@25911@35042@16@0;192.168.1.9@38965@26804@17@0;192.168.1.9@36278@32191@18@0;192.168.1.9@28861@29209@19@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <3>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 3 are greater than than machines 1
+ DEBUG runtime  - divisor 3
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.9=3}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.9@0@0@0@0;192.168.1.9@0@0@1@2;192.168.1.9@0@0@2@4
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=3}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 3
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.9,port=40055,localport=61083]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=3}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <3> to connect
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25220@30421@0@0;192.168.1.9@28838@25457@1@0;192.168.1.9@30257@29799@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25220@30421@0@0;192.168.1.9@28838@25457@1@0;192.168.1.9@30257@29799@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@25220@30421@0@0;192.168.1.9@28838@25457@1@0;192.168.1.9@30257@29799@2@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <3>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 3 are greater than than machines 1
+ DEBUG runtime  - divisor 3
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.9=3}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.9@0@0@0@0;192.168.1.9@0@0@1@2;192.168.1.9@0@0@2@4
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=3}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 3
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.9,port=40055,localport=61093]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=3}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <3> to connect
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@38995@31188@0@0;192.168.1.9@27003@36624@1@0;192.168.1.9@28455@26751@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@38995@31188@0@0;192.168.1.9@27003@36624@1@0;192.168.1.9@28455@26751@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@38995@31188@0@0;192.168.1.9@27003@36624@1@0;192.168.1.9@28455@26751@2@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <3>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 3 are greater than than machines 1
+ DEBUG runtime  - divisor 3
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.9=3}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.9@0@0@0@0;192.168.1.9@0@0@1@2;192.168.1.9@0@0@2@4
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=3}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 3
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.9,port=40055,localport=61407]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=3}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <3> to connect
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@26536@37201@0@0;192.168.1.9@34654@25287@1@0;192.168.1.9@32740@35806@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@26536@37201@0@0;192.168.1.9@34654@25287@1@0;192.168.1.9@32740@35806@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@26536@37201@0@0;192.168.1.9@34654@25287@1@0;192.168.1.9@32740@35806@2@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <3>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 3 are greater than than machines 1
+ DEBUG runtime  - divisor 3
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.9=3}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.9@0@0@0@0;192.168.1.9@0@0@1@2;192.168.1.9@0@0@2@4
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=3}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 3
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.9,port=40055,localport=61560]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.9=3}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <3> to connect
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.9 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@31604@26172@0@0;192.168.1.9@36980@31479@1@0;192.168.1.9@25579@39286@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@31604@26172@0@0;192.168.1.9@36980@31479@1@0;192.168.1.9@25579@39286@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.9
+Info: #Peer Information;192.168.1.9@31604@26172@0@0;192.168.1.9@36980@31479@1@0;192.168.1.9@25579@39286@2@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <3>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 3 are greater than than machines 1
+ DEBUG runtime  - divisor 3
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{127.0.0.1=3}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;127.0.0.1@0@0@0@0;127.0.0.1@0@0@1@2;127.0.0.1@0@0@2@4
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {127.0.0.1=3}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 3
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/127.0.0.1,port=40055,localport=61622]
+ DEBUG runtime  - procsPerMachineTable {127.0.0.1=3}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <3> to connect
+ DEBUG runtime  - Socket localhost connected to share Rank and Ports
+ DEBUG runtime  - Socket localhost connected to share Rank and Ports
+ DEBUG runtime  - Socket localhost connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket localhost
+Info: #Peer Information;127.0.0.1@29343@29737@0@0;127.0.0.1@36092@37217@1@0;127.0.0.1@38634@36922@2@0
+ DEBUG runtime  - Sending info to Socket localhost
+Info: #Peer Information;127.0.0.1@29343@29737@0@0;127.0.0.1@36092@37217@1@0;127.0.0.1@38634@36922@2@0
+ DEBUG runtime  - Sending info to Socket localhost
+Info: #Peer Information;127.0.0.1@29343@29737@0@0;127.0.0.1@36092@37217@1@0;127.0.0.1@38634@36922@2@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <3>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 3 are greater than than machines 1
+ DEBUG runtime  - divisor 3
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{127.0.0.1=3}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;127.0.0.1@0@0@0@0;127.0.0.1@0@0@1@2;127.0.0.1@0@0@2@4
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {127.0.0.1=3}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 3
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/127.0.0.1,port=40055,localport=61632]
+ DEBUG runtime  - procsPerMachineTable {127.0.0.1=3}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <3> to connect
+ DEBUG runtime  - Socket localhost connected to share Rank and Ports
+ DEBUG runtime  - Socket localhost connected to share Rank and Ports
+ DEBUG runtime  - Socket localhost connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket localhost
+Info: #Peer Information;127.0.0.1@36676@31370@0@0;127.0.0.1@39025@28111@1@0;127.0.0.1@30007@36436@2@0
+ DEBUG runtime  - Sending info to Socket localhost
+Info: #Peer Information;127.0.0.1@36676@31370@0@0;127.0.0.1@39025@28111@1@0;127.0.0.1@30007@36436@2@0
+ DEBUG runtime  - Sending info to Socket localhost
+Info: #Peer Information;127.0.0.1@36676@31370@0@0;127.0.0.1@39025@28111@1@0;127.0.0.1@30007@36436@2@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <3>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 3 are greater than than machines 1
+ DEBUG runtime  - divisor 3
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.6=3}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.6@0@0@0@0;192.168.1.6@0@0@1@2;192.168.1.6@0@0@2@4
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.6=3}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 3
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.6,port=40055,localport=61707]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.6=3}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <3> to connect
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@34994@35585@0@0;192.168.1.6@36547@33160@1@0;192.168.1.6@28605@36245@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@34994@35585@0@0;192.168.1.6@36547@33160@1@0;192.168.1.6@28605@36245@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@34994@35585@0@0;192.168.1.6@36547@33160@1@0;192.168.1.6@28605@36245@2@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <3>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 3 are greater than than machines 1
+ DEBUG runtime  - divisor 3
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.6=3}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.6@0@0@0@0;192.168.1.6@0@0@1@2;192.168.1.6@0@0@2@4
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.6=3}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 3
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.6,port=40055,localport=61717]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.6=3}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <3> to connect
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@32270@27665@0@0;192.168.1.6@38490@30437@1@0;192.168.1.6@37463@30522@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@32270@27665@0@0;192.168.1.6@38490@30437@1@0;192.168.1.6@37463@30522@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@32270@27665@0@0;192.168.1.6@38490@30437@1@0;192.168.1.6@37463@30522@2@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <3>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld2>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 3 are greater than than machines 1
+ DEBUG runtime  - divisor 3
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.6=3}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.6@0@0@0@0;192.168.1.6@0@0@1@2;192.168.1.6@0@0@2@4
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.6=3}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 3
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.6,port=40055,localport=61727]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.6=3}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <3> to connect
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@27544@30344@0@0;192.168.1.6@26666@31787@1@0;192.168.1.6@34447@26232@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@27544@30344@0@0;192.168.1.6@26666@31787@1@0;192.168.1.6@34447@26232@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@27544@30344@0@0;192.168.1.6@26666@31787@1@0;192.168.1.6@34447@26232@2@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <3>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld2>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 3 are greater than than machines 1
+ DEBUG runtime  - divisor 3
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.6=3}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.6@0@0@0@0;192.168.1.6@0@0@1@2;192.168.1.6@0@0@2@4
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.6=3}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 3
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.6,port=40055,localport=61744]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.6=3}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <3> to connect
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@37867@31288@0@0;192.168.1.6@31557@27614@1@0;192.168.1.6@25720@31979@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@37867@31288@0@0;192.168.1.6@31557@27614@1@0;192.168.1.6@25720@31979@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@37867@31288@0@0;192.168.1.6@31557@27614@1@0;192.168.1.6@25720@31979@2@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <3>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld2>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 3 are greater than than machines 1
+ DEBUG runtime  - divisor 3
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.6=3}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.6@0@0@0@0;192.168.1.6@0@0@1@2;192.168.1.6@0@0@2@4
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.6=3}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 3
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.6,port=40055,localport=61762]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.6=3}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <3> to connect
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@36677@32134@0@0;192.168.1.6@25968@29387@1@0;192.168.1.6@39052@25286@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@36677@32134@0@0;192.168.1.6@25968@29387@1@0;192.168.1.6@39052@25286@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@36677@32134@0@0;192.168.1.6@25968@29387@1@0;192.168.1.6@39052@25286@2@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <3>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld2>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 3 are greater than than machines 1
+ DEBUG runtime  - divisor 3
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.6=3}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.6@0@0@0@0;192.168.1.6@0@0@1@2;192.168.1.6@0@0@2@4
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.6=3}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 3
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.6,port=40055,localport=61795]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.6=3}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <3> to connect
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@30147@35606@0@0;192.168.1.6@29257@30772@1@0;192.168.1.6@38427@29070@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@30147@35606@0@0;192.168.1.6@29257@30772@1@0;192.168.1.6@38427@29070@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@30147@35606@0@0;192.168.1.6@29257@30772@1@0;192.168.1.6@38427@29070@2@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <3>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 3 are greater than than machines 1
+ DEBUG runtime  - divisor 3
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.6=3}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.6@0@0@0@0;192.168.1.6@0@0@1@2;192.168.1.6@0@0@2@4
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.6=3}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 3
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.6,port=40055,localport=61805]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.6=3}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <3> to connect
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@32084@32625@0@0;192.168.1.6@33374@34027@1@0;192.168.1.6@30408@30958@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@32084@32625@0@0;192.168.1.6@33374@34027@1@0;192.168.1.6@30408@30958@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@32084@32625@0@0;192.168.1.6@33374@34027@1@0;192.168.1.6@30408@30958@2@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <3>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 3 are greater than than machines 1
+ DEBUG runtime  - divisor 3
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.6=3}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.6@0@0@0@0;192.168.1.6@0@0@1@2;192.168.1.6@0@0@2@4
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.6=3}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 3
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.6,port=40055,localport=61815]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.6=3}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <3> to connect
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@34863@32521@0@0;192.168.1.6@37555@29239@1@0;192.168.1.6@30753@34608@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@34863@32521@0@0;192.168.1.6@37555@29239@1@0;192.168.1.6@30753@34608@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@34863@32521@0@0;192.168.1.6@37555@29239@1@0;192.168.1.6@30753@34608@2@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <3>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 3 are greater than than machines 1
+ DEBUG runtime  - divisor 3
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.6=3}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.6@0@0@0@0;192.168.1.6@0@0@1@2;192.168.1.6@0@0@2@4
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.6=3}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 3
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.6,port=40055,localport=61830]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.6=3}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <3> to connect
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@34916@39798@0@0;192.168.1.6@27824@28870@1@0;192.168.1.6@30590@27507@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@34916@39798@0@0;192.168.1.6@27824@28870@1@0;192.168.1.6@30590@27507@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@34916@39798@0@0;192.168.1.6@27824@28870@1@0;192.168.1.6@30590@27507@2@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <3>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 3 are greater than than machines 1
+ DEBUG runtime  - divisor 3
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.6=3}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.6@0@0@0@0;192.168.1.6@0@0@1@2;192.168.1.6@0@0@2@4
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.6=3}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 3
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.6,port=40055,localport=61840]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.6=3}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <3> to connect
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@30398@25634@0@0;192.168.1.6@29200@35986@1@0;192.168.1.6@28530@28465@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@30398@25634@0@0;192.168.1.6@29200@35986@1@0;192.168.1.6@28530@28465@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@30398@25634@0@0;192.168.1.6@29200@35986@1@0;192.168.1.6@28530@28465@2@0
+ DEBUG runtime  -  --MPJRun.java invoked--
+ DEBUG runtime  - [MPJRun.java]: processInput called ...
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - -dport: <40055>
+ DEBUG runtime  - -np: <3>
+ DEBUG runtime  - $MPJ_HOME: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/>
+ DEBUG runtime  - -dir: <null>
+ DEBUG runtime  - -dev: <niodev>
+ DEBUG runtime  - -psl: <131072>
+ DEBUG runtime  - jvmArgs.length: <0>
+ DEBUG runtime  - className : <HelloWorld>
+ DEBUG runtime  - applicationClassPathEntry: </Users/senior/Desktop/Dilmun/MPJDilmun/mpj/mpj-user>
+ DEBUG runtime  - -yarn: <false>
+ DEBUG runtime  - $HADOOP_HOME: <null>
+ DEBUG runtime  - -amMem: <null>
+ DEBUG runtime  - -amCores: <null>
+ DEBUG runtime  - -containerMem: <null>
+ DEBUG runtime  - -yarnQueue: <null>
+ DEBUG runtime  - -appName: <null>
+ DEBUG runtime  - -amPriority: <null>
+ DEBUG runtime  - -mpjContainerPriority: <null>
+ DEBUG runtime  - -hdfsFolder: <null>
+ DEBUG runtime  - appArgs.length: <0>
+ DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 3 are greater than than machines 1
+ DEBUG runtime  - divisor 3
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.1.6=3}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;3;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.6@0@0@0@0;192.168.1.6@0@0@1@2;192.168.1.6@0@0@2@4
+ DEBUG runtime  - Connecting to Reemis-MacBook-Pro.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.1.6=3}
+ INFO  runtime  - Machine Name: Reemis-MacBook-Pro.local Starting Rank: 0 Process Count: 3
+ DEBUG runtime  - Sending to Socket[addr=Reemis-MacBook-Pro.local/192.168.1.6,port=40055,localport=61934]
+ DEBUG runtime  - procsPerMachineTable {192.168.1.6=3}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <3> to connect
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.1.6 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@30135@34667@0@0;192.168.1.6@36742@37212@1@0;192.168.1.6@34801@37091@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@30135@34667@0@0;192.168.1.6@36742@37212@1@0;192.168.1.6@34801@37091@2@0
+ DEBUG runtime  - Sending info to Socket 192.168.1.6
+Info: #Peer Information;192.168.1.6@30135@34667@0@0;192.168.1.6@36742@37212@1@0;192.168.1.6@34801@37091@2@0

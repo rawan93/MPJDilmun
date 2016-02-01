@@ -1,0 +1,16 @@
+Device name: 
+Reemis-MacBook-Pro.local
+Name of job: 
+HelloWorld
+Length = 
+0.9470000267028809
+---------- 
+Device name: 
+Reemis-MacBook-Pro.local
+Name of job: 
+HelloWorld2
+Length = 
+0.6210000514984131
+---------- 
+AVG Length = 0.784000039100647
+Name of running job now: HelloWorld2
