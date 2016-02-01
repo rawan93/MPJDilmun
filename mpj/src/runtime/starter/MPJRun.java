@@ -74,7 +74,7 @@ import java.lang.Process;
 //import runtime.daemon.Wrapper;
 public class MPJRun {
 
-<<<<<<< HEAD
+
   final String DEFAULT_MACHINES_FILE_NAME = "machines";
   final int DEFAULT_PROTOCOL_SWITCH_LIMIT = 128 * 1024; // 128K
   private String CONF_FILE_CONTENTS="";
@@ -149,7 +149,7 @@ public class MPJRun {
     for (java.util.logging.Handler h : logger1.getHandlers()) {
       logger1.removeHandler(h);
     }
-=======
+
     final String DEFAULT_MACHINES_FILE_NAME = "machines";
     final int DEFAULT_PROTOCOL_SWITCH_LIMIT = 128 * 1024; // 128K
     private String CONF_FILE_CONTENTS = "";
@@ -182,7 +182,7 @@ public class MPJRun {
 
     String machinesFile = DEFAULT_MACHINES_FILE_NAME;
     private int psl = DEFAULT_PROTOCOL_SWITCH_LIMIT;
->>>>>>> 17b3e146b69ae22aa894e2b431a2633a533ace44
+
 
     ArrayList<String> jvmArgs = new ArrayList<String>();
     ArrayList<String> appArgs = new ArrayList<String>();
