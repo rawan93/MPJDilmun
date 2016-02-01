@@ -37,6 +37,8 @@
 
 package runtime.starter;
 
+import java.lang.*;
+import java.util.Scanner;
 //import org.apache.hadoop.yarn.api.ApplicationConstants;
 
 import java.io.*;
@@ -69,6 +71,8 @@ import runtime.common.RTConstants;
 
 import java.lang.ProcessBuilder;
 import java.lang.Process;
+
+//import runtime.daemon.Wrapper;
 
 public class MPJRun {
 
@@ -140,7 +144,8 @@ public class MPJRun {
   private String logLevel = "DEBUG";
 
   public MPJRun(String args[]) throws Exception {
-
+//System.out.println(" ");
+ 
     java.util.logging.Logger logger1 = java.util.logging.Logger.getLogger("");
 
     // remove all existing log handlers: remove the ERR handler
@@ -344,11 +349,10 @@ public class MPJRun {
           applicationClassPathEntry, jarOrClass, nprocs, wdir, jvmArgs,
           appArgs, mpjHomeDir, ADEBUG, APROFILE, DEBUG_PORT);
 
-     //     long lEndTime = System.currentTimeMillis();
+     	//	long lEndTime = System.currentTimeMillis();
 		//  long difference = lEndTime - lStartTime;
 
 		//System.out.println("Length of job = " + difference/100 + " second");
-
           
        // Dilmun Code 
 
@@ -357,7 +361,6 @@ public class MPJRun {
 
     }
     
-    
     // Cluster mode
    
     System.out.println("MPJ Express (" + VERSION + ") is started in the "
@@ -365,18 +368,9 @@ public class MPJRun {
 
    
     System.out.println ("Name of job: " + className); 
-	long ST = System.currentTimeMillis();
-	// write in text file
-		//String fileName = "outt.txt";
-		//try{
-		//PrintWriter outputStream = new PrintWriter(fileName);
-		//outputStream.println(className);
-		//outputStream.close();
+	
+	double ST = (double) System.currentTimeMillis()/1000;
 
-		//} catch(FileNotFoundException e) {
-		//e.printStackTrace();
-		//}
-		
 
        // Dilmun Code
        //print  Daemon Prot number    
@@ -470,11 +464,131 @@ public class MPJRun {
     if(!deviceName.equals("mxdev")){
       collectPortInfo();
     }
-  	    long ET = System.currentTimeMillis();
-        long DIF = ET - ST;
-        System.out.println("Length of job = " + DIF/100 + " second");
+    
+    
+    //****test****//
+    
+    // end time & difference (ET - ST)
+	 double ET = (double)System.currentTimeMillis()/1000;
+   		double DIF = ET - ST;
+   		System.out.print ("DIF in MPJRun = ");
+   		//System.out.print (className);
+   		System.out.printf("%.2f%n" , DIF);
 
-  }
+       
+	// write in a text file -- Name of job & length of each --
+	        File f = new File("test.txt");
+    try {
+        if(!f.exists()) {
+        f.createNewFile();
+        FileWriter writer = new FileWriter(f, true); 
+        writer.write("Name of job: \n");
+        writer.write(className + "\n");
+        writer.write("Length = \n");
+        writer.write(""+DIF + "\n");
+        writer.write("---------- \n");
+        writer.close();
+         }
+   
+       else {
+       FileWriter writer = new FileWriter(f, true); 
+       writer.write("Name of job: \n");
+       writer.write(className + "\n");
+       writer.write("Length = \n");
+       writer.write(""+DIF + "\n");
+       writer.write("---------- \n");
+       writer.close();
+       }
+
+    } catch (IOException ex) {
+        System.out.println(ex.getMessage());
+    }
+    
+    //read the file and calculate the average..
+        double total = 0.0;
+        double d ;
+        BufferedReader reader;
+        int number_of_E_jobs = 0;
+        try{
+        	reader = new BufferedReader(new FileReader("test.txt"));
+        	String line= reader.readLine();
+       		while(line !=null){
+        		try{
+                    d=Double.valueOf(line);
+                    total += d;
+                    number_of_E_jobs = number_of_E_jobs + 1;
+                
+                }catch(NumberFormatException e){
+                }
+                line=reader.readLine();
+                }
+                
+    	  }catch(Exception ex){
+        	System.out.println(ex.getMessage());
+          } 
+         
+         
+        FileWriter writer2 = new FileWriter(f, true); 
+		writer2.write("AVG Length = " + total/number_of_E_jobs + "\n");
+		writer2.write("Name of running job now :" + className + "\n");
+		writer2.close();
+ 
+
+		File inputFile = new File("test.txt");
+        File tempFile = new File("myTempFile.txt");
+        BufferedReader reader6 = null;
+        try {
+            reader6 = new BufferedReader(new FileReader(inputFile));
+        } catch (FileNotFoundException e2) {
+            // TODO Auto-generated catch block
+           // e2.printStackTrace();
+        }
+        BufferedWriter writer6 = null;
+        try {
+            writer6 = new BufferedWriter(new FileWriter(tempFile));
+        } catch (IOException e1) {
+            // TODO Auto-generated catch block
+           // e1.printStackTrace();
+        }
+        String currentLine;
+
+        try {
+            while((currentLine = reader6.readLine()) != null)
+            {
+                String trimmedLine = currentLine.trim();
+                if(trimmedLine.contains("AVG Length = "))
+                    continue;
+                    else if(trimmedLine.contains("Name of running job now :"))
+                    continue;
+                try {
+                    writer6.write(currentLine + "\n");
+                } catch (IOException e) {
+                    // TODO Auto-generated catch block
+                   // e.printStackTrace();
+                }
+            }
+            
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+           // e.printStackTrace();
+        }
+        writer6.write("AVG Length = " + total/number_of_E_jobs + "\n");
+        writer6.write("Name of running job now :" + className + "\n");
+         
+
+ 		boolean rename = tempFile.renameTo(inputFile);
+ 
+ 		/*RandomAccessFile ff = new RandomAccessFile(new File("test.txt"), "rw");
+		ff.seek(0); // to the beginning
+		ff.write("Running Job: ".getBytes());
+		ff.close();*/
+ 		writer6.close();
+		reader6.close();
+          //  System.out.println("File renamed");
+         
+    //********test*********//
+   }
+   
 
   // Parses the input ...
   private void processInput(String args[]) {
@@ -1152,9 +1266,7 @@ public class MPJRun {
           SERVER_PORT = Integer.parseInt(MPJUtil.confValue(line));
         }
       }
-
       in.close();
-
     }
     catch (Exception e) {
       e.printStackTrace();
@@ -1181,7 +1293,6 @@ public class MPJRun {
                 + "at machine <" + daemon + "> and port <" + D_SER_PORT + ">."
                 + "Please make sure that the machine is reachable "
                 + "and running the daemon in 'sane' state");
-
           }
         }
         catch (IOException e3) {
@@ -1198,7 +1309,6 @@ public class MPJRun {
         throw ccn1;
       }
     }
-
   }
 
   private void writeFile(String configurationFileData) {
@@ -1211,9 +1321,7 @@ public class MPJRun {
       out.close();
     }
     catch (IOException e) {
-
     }
-
   }
 
    // collect and share port information from all wrapper's NIODevice
