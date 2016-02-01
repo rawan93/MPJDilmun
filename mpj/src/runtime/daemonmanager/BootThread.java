@@ -54,9 +54,6 @@ public class BootThread extends DMThread {
   public BootThread(String machineName, String daemonPort) {
     host = machineName;
     port = daemonPort;
-    
-         
-
   }
 
   public void run() {
@@ -88,9 +85,10 @@ public class BootThread extends DMThread {
 	if (!pid.equals("") && Integer.parseInt(pid) > -1) {
 	  System.out.println(MPJUtil.FormatMessage(host,
 	      DMMessages.MPJDAEMON_STARTED + pid));
-	      //test
-	  msg = MPJUtil.FormatMachineMessage(host,"MPJ Daemon is running", pid, port);
-	  DMThreadUtil.numberOfDaemons++;
+	  //test
+	  writeMessage(true);
+	  //msg = MPJUtil.FormatMachineMessage(host,"MPJ Daemon is running", pid, port);
+	  //DMThreadUtil.numberOfDaemons++;
 	} else {
 	
 	  System.out.println(MPJUtil.FormatMessage(host,
@@ -139,4 +137,11 @@ public class BootThread extends DMThread {
     return true;
   }
 
+  public void writeMessage(boolean availability, string pid){
+  	if (availability == true){
+  		msg = MPJUtil.FormatMachineMessage(host,"MPJ Daemon is running", pid, port);
+  		DMThreadUtil.numberOfDaemons++;
+  	} else if (availability == false){
+  	}
+  }
 }
