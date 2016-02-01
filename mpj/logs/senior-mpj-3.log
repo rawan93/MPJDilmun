@@ -1,76 +1,184 @@
  INFO  mpj  - --init method of niodev is called--
- INFO  mpj  - Address: Reemis-MacBook-Pro.local/10.134.34.86
+ INFO  mpj  - Address: Reemis-MacBook-Pro.local/192.168.1.13
  INFO  mpj  - Name :Reemis-MacBook-Pro.local
  INFO  mpj  - rank :3
- INFO  mpj  - Orignal string: #temp line;#Number of Processes;4;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;#Server Name;Reemis-MacBook-Pro.local;#Server Port;40002
- DEBUG mpj  - created writableServerChannel on port 30024
- DEBUG mpj  - created readableServerChannel on port 36574
+ INFO  mpj  - Orignal string: #temp line;#Number of Processes;7;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.13@0@0@0@0;192.168.1.13@0@0@1@2;192.168.1.13@0@0@2@4;192.168.1.13@0@0@3@6;192.168.1.13@0@0@4@8;192.168.1.13@0@0@5@10;192.168.1.13@0@0@6@12;#Server Name;Reemis-MacBook-Pro.local;#Server Port;40002
+ DEBUG mpj  - created writableServerChannel on port 26274
+ DEBUG mpj  - created readableServerChannel on port 26601
  DEBUG mpj  - Connecting to :ServerName Reemis-MacBook-Pro.local ServerPort 40002
- DEBUG mpj  - Socket Connected Reemis-MacBook-Pro.local/10.134.34.86
- DEBUG mpj  - Sending Write Port 30024
- DEBUG mpj  - Sending Read Port36574
- INFO  mpj  - Peer Processes Info #Peer Information;10.134.34.86@38455@30192@0@0;10.134.34.86@31533@30385@1@0;10.134.34.86@27085@34790@2@0;10.134.34.86@36574@30024@3@0
+ DEBUG mpj  - Socket Connected Reemis-MacBook-Pro.local/192.168.1.13
+ DEBUG mpj  - Sending Write Port 26274
+ DEBUG mpj  - Sending Read Port26601
+ INFO  mpj  - Peer Processes Info #Peer Information;192.168.1.13@26179@31879@0@0;192.168.1.13@38248@29620@1@0;192.168.1.13@38107@32805@2@0;192.168.1.13@26601@26274@3@0;192.168.1.13@33978@26472@4@0;192.168.1.13@31321@26616@5@0;192.168.1.13@33867@34590@6@0
  DEBUG mpj  - Nodes list
- DEBUG mpj  - node[0] 10.134.34.86
- DEBUG mpj  - node[1] 10.134.34.86
- DEBUG mpj  - node[2] 10.134.34.86
- DEBUG mpj  - node[3] 10.134.34.86
+ DEBUG mpj  - node[0] 192.168.1.13
+ DEBUG mpj  - node[1] 192.168.1.13
+ DEBUG mpj  - node[2] 192.168.1.13
+ DEBUG mpj  - node[3] 192.168.1.13
+ DEBUG mpj  - node[4] 192.168.1.13
+ DEBUG mpj  - node[5] 192.168.1.13
+ DEBUG mpj  - node[6] 192.168.1.13
  DEBUG mpj  - Read Ports List
- DEBUG mpj  - rPortList[0] 38455
- DEBUG mpj  - rPortList[1] 31533
- DEBUG mpj  - rPortList[2] 27085
- DEBUG mpj  - rPortList[3] 36574
+ DEBUG mpj  - rPortList[0] 26179
+ DEBUG mpj  - rPortList[1] 38248
+ DEBUG mpj  - rPortList[2] 38107
+ DEBUG mpj  - rPortList[3] 26601
+ DEBUG mpj  - rPortList[4] 33978
+ DEBUG mpj  - rPortList[5] 31321
+ DEBUG mpj  - rPortList[6] 33867
  DEBUG mpj  - Write Ports List
- DEBUG mpj  - wPortList[0] 30192
- DEBUG mpj  - wPortList[1] 30385
- DEBUG mpj  - wPortList[2] 34790
- DEBUG mpj  - wPortList[3] 30024
+ DEBUG mpj  - wPortList[0] 31879
+ DEBUG mpj  - wPortList[1] 29620
+ DEBUG mpj  - wPortList[2] 32805
+ DEBUG mpj  - wPortList[3] 26274
+ DEBUG mpj  - wPortList[4] 26472
+ DEBUG mpj  - wPortList[5] 26616
+ DEBUG mpj  - wPortList[6] 34590
  DEBUG mpj  - Ranks List
  DEBUG mpj  - ranks[0] 0
  DEBUG mpj  - ranks[1] 1
  DEBUG mpj  - ranks[2] 2
  DEBUG mpj  - ranks[3] 3
- DEBUG mpj  - Connecting to 10.134.34.86@30192
- DEBUG mpj  - Connecting to 10.134.34.86@30385
- DEBUG mpj  - Connecting to 10.134.34.86@34790
- DEBUG mpj  - Connecting to 10.134.34.86@38455
- DEBUG mpj  - Connecting to 10.134.34.86@31533
- DEBUG mpj  - Connecting to 10.134.34.86@27085
+ DEBUG mpj  - ranks[4] 4
+ DEBUG mpj  - ranks[5] 5
+ DEBUG mpj  - ranks[6] 6
+ DEBUG mpj  - Connecting to 192.168.1.13@31879
+ DEBUG mpj  - Connecting to 192.168.1.13@29620
+ DEBUG mpj  - Connecting to 192.168.1.13@32805
+ DEBUG mpj  - Connecting to 192.168.1.13@26179
+ DEBUG mpj  - Connecting to 192.168.1.13@38248
+ DEBUG mpj  - Connecting to 192.168.1.13@38107
+ DEBUG mpj  - Dont connect to itself, so contine;
  DEBUG mpj  - Starting the selector thread 
  INFO  mpj  - selector Thread started 
  DEBUG mpj  - testing if all peers are connected?
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - selector calling doAccept (data-channel) 
+ DEBUG mpj  - ---doAccept---
+ DEBUG mpj  - Added channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:26274 remote=/192.168.1.13:63889]
+ DEBUG mpj  - Now the size is <4>
+ DEBUG mpj  - --doAccept ends--
+ DEBUG mpj  -  returning false
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - selector calling doAccept (ctrl-channel) 
+ DEBUG mpj  - ---doAccept---
+ DEBUG mpj  - Added channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:26601 remote=/192.168.1.13:63895]
+ DEBUG mpj  - Now the size is <4>
+ DEBUG mpj  - --doAccept ends--
+ DEBUG mpj  -  returning false
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - WRITE_EVENT (should not see it)
+ DEBUG mpj  - In, WRITABLE, changing interestOps to READ_ONLY
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - ---READ_EVENT----21
+ DEBUG mpj  - ---barrierRead---
+ DEBUG mpj  - (after ck) trying to add rank 6into table {}
+ DEBUG mpj  - Adding rank 6into table {6d3c74bb-3515-41e6-a37d-cd02d4755ebd=java.nio.channels.SocketChannel[connected local=/192.168.1.13:26601 remote=/192.168.1.13:63895]}
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - selector calling doAccept (data-channel) 
+ DEBUG mpj  - ---doAccept---
+ DEBUG mpj  - Added channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:26274 remote=/192.168.1.13:63900]
+ DEBUG mpj  - Now the size is <5>
+ DEBUG mpj  - --doAccept ends--
+ DEBUG mpj  -  returning false
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - selector calling doAccept (ctrl-channel) 
+ DEBUG mpj  - ---doAccept---
+ DEBUG mpj  - Added channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:26601 remote=/192.168.1.13:63904]
+ DEBUG mpj  - Now the size is <5>
+ DEBUG mpj  - --doAccept ends--
+ DEBUG mpj  -  returning false
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - WRITE_EVENT (should not see it)
+ DEBUG mpj  - In, WRITABLE, changing interestOps to READ_ONLY
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - selector calling doAccept (data-channel) 
+ DEBUG mpj  - ---doAccept---
+ DEBUG mpj  - Added channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:26274 remote=/192.168.1.13:63908]
+ DEBUG mpj  - Now the size is <6>
+ DEBUG mpj  -  notifying and returning true
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - ---READ_EVENT----21
+ DEBUG mpj  - ---barrierRead---
+ DEBUG mpj  - (after ck) trying to add rank 0into table {6d3c74bb-3515-41e6-a37d-cd02d4755ebd=java.nio.channels.SocketChannel[connected local=/192.168.1.13:26601 remote=/192.168.1.13:63895]}
+ DEBUG mpj  - Adding rank 0into table {9921b031-fbf6-4ccb-9469-28baf5b221d5=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63873 remote=/192.168.1.13:31879], 6d3c74bb-3515-41e6-a37d-cd02d4755ebd=java.nio.channels.SocketChannel[connected local=/192.168.1.13:26601 remote=/192.168.1.13:63895]}
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - selector calling doAccept (ctrl-channel) 
+ DEBUG mpj  - ---doAccept---
+ DEBUG mpj  - Added channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:26601 remote=/192.168.1.13:63913]
+ DEBUG mpj  - Now the size is <6>
+ DEBUG mpj  -  notifying and returning true
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - WRITE_EVENT (should not see it)
+ DEBUG mpj  - In, WRITABLE, changing interestOps to READ_ONLY
  INFO  mpj  -  Yes all nodes are connected to each other 
  DEBUG mpj  - rank<3>is sending its rank,msb,lsb, to all data channels
  DEBUG mpj  - rank<3> testing if everything is received? 
  DEBUG mpj  - ---selector EVENT---
  DEBUG mpj  - ---READ_EVENT----21
  DEBUG mpj  - ---barrierRead---
- DEBUG mpj  - (after ck) trying to add rank 1into table {}
- DEBUG mpj  - Adding rank 1into table {1a4777b0-20ea-4c24-8333-a2267bdce0b3=java.nio.channels.SocketChannel[connected local=/10.134.34.86:65497 remote=/10.134.34.86:30385]}
+ DEBUG mpj  - (after ck) trying to add rank 1into table {9921b031-fbf6-4ccb-9469-28baf5b221d5=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63873 remote=/192.168.1.13:31879], 6d3c74bb-3515-41e6-a37d-cd02d4755ebd=java.nio.channels.SocketChannel[connected local=/192.168.1.13:26601 remote=/192.168.1.13:63895]}
+ DEBUG mpj  - Adding rank 1into table {b8b6f32a-87dc-406e-8c7f-70f2a22ee5f9=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63879 remote=/192.168.1.13:29620], 9921b031-fbf6-4ccb-9469-28baf5b221d5=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63873 remote=/192.168.1.13:31879], 6d3c74bb-3515-41e6-a37d-cd02d4755ebd=java.nio.channels.SocketChannel[connected local=/192.168.1.13:26601 remote=/192.168.1.13:63895]}
  DEBUG mpj  - ---selector EVENT---
  DEBUG mpj  - ---READ_EVENT----21
  DEBUG mpj  - ---barrierRead---
- DEBUG mpj  - (after ck) trying to add rank 0into table {1a4777b0-20ea-4c24-8333-a2267bdce0b3=java.nio.channels.SocketChannel[connected local=/10.134.34.86:65497 remote=/10.134.34.86:30385]}
- DEBUG mpj  - Adding rank 0into table {39558805-ac8d-4988-a05a-728d8ecf46ea=java.nio.channels.SocketChannel[connected local=/10.134.34.86:65493 remote=/10.134.34.86:30192], 1a4777b0-20ea-4c24-8333-a2267bdce0b3=java.nio.channels.SocketChannel[connected local=/10.134.34.86:65497 remote=/10.134.34.86:30385]}
+ DEBUG mpj  - (after ck) trying to add rank 2into table {b8b6f32a-87dc-406e-8c7f-70f2a22ee5f9=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63879 remote=/192.168.1.13:29620], 9921b031-fbf6-4ccb-9469-28baf5b221d5=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63873 remote=/192.168.1.13:31879], 6d3c74bb-3515-41e6-a37d-cd02d4755ebd=java.nio.channels.SocketChannel[connected local=/192.168.1.13:26601 remote=/192.168.1.13:63895]}
+ DEBUG mpj  - Adding rank 2into table {459f00e7-c7aa-49d3-b07d-67dd95b717d7=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63880 remote=/192.168.1.13:32805], b8b6f32a-87dc-406e-8c7f-70f2a22ee5f9=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63879 remote=/192.168.1.13:29620], 9921b031-fbf6-4ccb-9469-28baf5b221d5=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63873 remote=/192.168.1.13:31879], 6d3c74bb-3515-41e6-a37d-cd02d4755ebd=java.nio.channels.SocketChannel[connected local=/192.168.1.13:26601 remote=/192.168.1.13:63895]}
  DEBUG mpj  - ---selector EVENT---
  DEBUG mpj  - ---READ_EVENT----21
  DEBUG mpj  - ---barrierRead---
- DEBUG mpj  - (after ck) trying to add rank 2into table {39558805-ac8d-4988-a05a-728d8ecf46ea=java.nio.channels.SocketChannel[connected local=/10.134.34.86:65493 remote=/10.134.34.86:30192], 1a4777b0-20ea-4c24-8333-a2267bdce0b3=java.nio.channels.SocketChannel[connected local=/10.134.34.86:65497 remote=/10.134.34.86:30385]}
- DEBUG mpj  - Adding rank 2into table {5bc8c651-0e5e-4a56-b496-ace2a0372c37=java.nio.channels.SocketChannel[connected local=/10.134.34.86:65498 remote=/10.134.34.86:34790], 39558805-ac8d-4988-a05a-728d8ecf46ea=java.nio.channels.SocketChannel[connected local=/10.134.34.86:65493 remote=/10.134.34.86:30192], 1a4777b0-20ea-4c24-8333-a2267bdce0b3=java.nio.channels.SocketChannel[connected local=/10.134.34.86:65497 remote=/10.134.34.86:30385]}
+ DEBUG mpj  - (after ck) trying to add rank 4into table {459f00e7-c7aa-49d3-b07d-67dd95b717d7=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63880 remote=/192.168.1.13:32805], b8b6f32a-87dc-406e-8c7f-70f2a22ee5f9=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63879 remote=/192.168.1.13:29620], 9921b031-fbf6-4ccb-9469-28baf5b221d5=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63873 remote=/192.168.1.13:31879], 6d3c74bb-3515-41e6-a37d-cd02d4755ebd=java.nio.channels.SocketChannel[connected local=/192.168.1.13:26601 remote=/192.168.1.13:63895]}
+ DEBUG mpj  - Adding rank 4into table {459f00e7-c7aa-49d3-b07d-67dd95b717d7=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63880 remote=/192.168.1.13:32805], b8b6f32a-87dc-406e-8c7f-70f2a22ee5f9=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63879 remote=/192.168.1.13:29620], 9921b031-fbf6-4ccb-9469-28baf5b221d5=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63873 remote=/192.168.1.13:31879], c0ba35db-5f77-4ea2-874e-a9d79db818bc=java.nio.channels.SocketChannel[connected local=/192.168.1.13:26601 remote=/192.168.1.13:63904], 6d3c74bb-3515-41e6-a37d-cd02d4755ebd=java.nio.channels.SocketChannel[connected local=/192.168.1.13:26601 remote=/192.168.1.13:63895]}
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - ---READ_EVENT----21
+ DEBUG mpj  - ---barrierRead---
+ DEBUG mpj  - (after ck) trying to add rank 5into table {459f00e7-c7aa-49d3-b07d-67dd95b717d7=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63880 remote=/192.168.1.13:32805], b8b6f32a-87dc-406e-8c7f-70f2a22ee5f9=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63879 remote=/192.168.1.13:29620], 9921b031-fbf6-4ccb-9469-28baf5b221d5=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63873 remote=/192.168.1.13:31879], c0ba35db-5f77-4ea2-874e-a9d79db818bc=java.nio.channels.SocketChannel[connected local=/192.168.1.13:26601 remote=/192.168.1.13:63904], 6d3c74bb-3515-41e6-a37d-cd02d4755ebd=java.nio.channels.SocketChannel[connected local=/192.168.1.13:26601 remote=/192.168.1.13:63895]}
+ DEBUG mpj  - Adding rank 5into table {300da2ef-ccea-452b-8fb7-ea2e70a1088a=java.nio.channels.SocketChannel[connected local=/192.168.1.13:26601 remote=/192.168.1.13:63913], 459f00e7-c7aa-49d3-b07d-67dd95b717d7=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63880 remote=/192.168.1.13:32805], b8b6f32a-87dc-406e-8c7f-70f2a22ee5f9=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63879 remote=/192.168.1.13:29620], 9921b031-fbf6-4ccb-9469-28baf5b221d5=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63873 remote=/192.168.1.13:31879], c0ba35db-5f77-4ea2-874e-a9d79db818bc=java.nio.channels.SocketChannel[connected local=/192.168.1.13:26601 remote=/192.168.1.13:63904], 6d3c74bb-3515-41e6-a37d-cd02d4755ebd=java.nio.channels.SocketChannel[connected local=/192.168.1.13:26601 remote=/192.168.1.13:63895]}
  DEBUG mpj  - worldReadableTable is filled 
  DEBUG mpj  - ---barrierRead---
  DEBUG mpj  - (after ck) trying to add rank 0into table {}
- DEBUG mpj  - Adding rank 0into table {39558805-ac8d-4988-a05a-728d8ecf46ea=java.nio.channels.SocketChannel[connected local=/10.134.34.86:65499 remote=/10.134.34.86:38455]}
+ DEBUG mpj  - Adding rank 0into table {9921b031-fbf6-4ccb-9469-28baf5b221d5=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63882 remote=/192.168.1.13:26179]}
  DEBUG mpj  - ---barrierRead---
- DEBUG mpj  - (after ck) trying to add rank 1into table {39558805-ac8d-4988-a05a-728d8ecf46ea=java.nio.channels.SocketChannel[connected local=/10.134.34.86:65499 remote=/10.134.34.86:38455]}
- DEBUG mpj  - Adding rank 1into table {39558805-ac8d-4988-a05a-728d8ecf46ea=java.nio.channels.SocketChannel[connected local=/10.134.34.86:65499 remote=/10.134.34.86:38455], 1a4777b0-20ea-4c24-8333-a2267bdce0b3=java.nio.channels.SocketChannel[connected local=/10.134.34.86:65500 remote=/10.134.34.86:31533]}
+ DEBUG mpj  - (after ck) trying to add rank 1into table {9921b031-fbf6-4ccb-9469-28baf5b221d5=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63882 remote=/192.168.1.13:26179]}
+ DEBUG mpj  - Adding rank 1into table {b8b6f32a-87dc-406e-8c7f-70f2a22ee5f9=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63885 remote=/192.168.1.13:38248], 9921b031-fbf6-4ccb-9469-28baf5b221d5=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63882 remote=/192.168.1.13:26179]}
  DEBUG mpj  - ---barrierRead---
- DEBUG mpj  - (after ck) trying to add rank 2into table {39558805-ac8d-4988-a05a-728d8ecf46ea=java.nio.channels.SocketChannel[connected local=/10.134.34.86:65499 remote=/10.134.34.86:38455], 1a4777b0-20ea-4c24-8333-a2267bdce0b3=java.nio.channels.SocketChannel[connected local=/10.134.34.86:65500 remote=/10.134.34.86:31533]}
- DEBUG mpj  - Adding rank 2into table {5bc8c651-0e5e-4a56-b496-ace2a0372c37=java.nio.channels.SocketChannel[connected local=/10.134.34.86:65501 remote=/10.134.34.86:27085], 39558805-ac8d-4988-a05a-728d8ecf46ea=java.nio.channels.SocketChannel[connected local=/10.134.34.86:65499 remote=/10.134.34.86:38455], 1a4777b0-20ea-4c24-8333-a2267bdce0b3=java.nio.channels.SocketChannel[connected local=/10.134.34.86:65500 remote=/10.134.34.86:31533]}
+ DEBUG mpj  - (after ck) trying to add rank 2into table {b8b6f32a-87dc-406e-8c7f-70f2a22ee5f9=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63885 remote=/192.168.1.13:38248], 9921b031-fbf6-4ccb-9469-28baf5b221d5=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63882 remote=/192.168.1.13:26179]}
+ DEBUG mpj  - Adding rank 2into table {459f00e7-c7aa-49d3-b07d-67dd95b717d7=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63886 remote=/192.168.1.13:38107], b8b6f32a-87dc-406e-8c7f-70f2a22ee5f9=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63885 remote=/192.168.1.13:38248], 9921b031-fbf6-4ccb-9469-28baf5b221d5=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63882 remote=/192.168.1.13:26179]}
+ DEBUG mpj  - ---barrierRead---
+ DEBUG mpj  - (after ck) trying to add rank 6into table {459f00e7-c7aa-49d3-b07d-67dd95b717d7=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63886 remote=/192.168.1.13:38107], b8b6f32a-87dc-406e-8c7f-70f2a22ee5f9=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63885 remote=/192.168.1.13:38248], 9921b031-fbf6-4ccb-9469-28baf5b221d5=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63882 remote=/192.168.1.13:26179]}
+ DEBUG mpj  - Adding rank 6into table {459f00e7-c7aa-49d3-b07d-67dd95b717d7=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63886 remote=/192.168.1.13:38107], b8b6f32a-87dc-406e-8c7f-70f2a22ee5f9=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63885 remote=/192.168.1.13:38248], 9921b031-fbf6-4ccb-9469-28baf5b221d5=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63882 remote=/192.168.1.13:26179], 6d3c74bb-3515-41e6-a37d-cd02d4755ebd=java.nio.channels.SocketChannel[connected local=/192.168.1.13:26274 remote=/192.168.1.13:63889]}
+ DEBUG mpj  - ---barrierRead---
+ DEBUG mpj  - (after ck) trying to add rank 4into table {459f00e7-c7aa-49d3-b07d-67dd95b717d7=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63886 remote=/192.168.1.13:38107], b8b6f32a-87dc-406e-8c7f-70f2a22ee5f9=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63885 remote=/192.168.1.13:38248], 9921b031-fbf6-4ccb-9469-28baf5b221d5=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63882 remote=/192.168.1.13:26179], 6d3c74bb-3515-41e6-a37d-cd02d4755ebd=java.nio.channels.SocketChannel[connected local=/192.168.1.13:26274 remote=/192.168.1.13:63889]}
+ DEBUG mpj  - Adding rank 4into table {459f00e7-c7aa-49d3-b07d-67dd95b717d7=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63886 remote=/192.168.1.13:38107], b8b6f32a-87dc-406e-8c7f-70f2a22ee5f9=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63885 remote=/192.168.1.13:38248], 9921b031-fbf6-4ccb-9469-28baf5b221d5=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63882 remote=/192.168.1.13:26179], c0ba35db-5f77-4ea2-874e-a9d79db818bc=java.nio.channels.SocketChannel[connected local=/192.168.1.13:26274 remote=/192.168.1.13:63900], 6d3c74bb-3515-41e6-a37d-cd02d4755ebd=java.nio.channels.SocketChannel[connected local=/192.168.1.13:26274 remote=/192.168.1.13:63889]}
+ DEBUG mpj  - ---barrierRead---
+ DEBUG mpj  - (after ck) trying to add rank 5into table {459f00e7-c7aa-49d3-b07d-67dd95b717d7=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63886 remote=/192.168.1.13:38107], b8b6f32a-87dc-406e-8c7f-70f2a22ee5f9=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63885 remote=/192.168.1.13:38248], 9921b031-fbf6-4ccb-9469-28baf5b221d5=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63882 remote=/192.168.1.13:26179], c0ba35db-5f77-4ea2-874e-a9d79db818bc=java.nio.channels.SocketChannel[connected local=/192.168.1.13:26274 remote=/192.168.1.13:63900], 6d3c74bb-3515-41e6-a37d-cd02d4755ebd=java.nio.channels.SocketChannel[connected local=/192.168.1.13:26274 remote=/192.168.1.13:63889]}
+ DEBUG mpj  - Adding rank 5into table {300da2ef-ccea-452b-8fb7-ea2e70a1088a=java.nio.channels.SocketChannel[connected local=/192.168.1.13:26274 remote=/192.168.1.13:63908], 459f00e7-c7aa-49d3-b07d-67dd95b717d7=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63886 remote=/192.168.1.13:38107], b8b6f32a-87dc-406e-8c7f-70f2a22ee5f9=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63885 remote=/192.168.1.13:38248], 9921b031-fbf6-4ccb-9469-28baf5b221d5=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63882 remote=/192.168.1.13:26179], c0ba35db-5f77-4ea2-874e-a9d79db818bc=java.nio.channels.SocketChannel[connected local=/192.168.1.13:26274 remote=/192.168.1.13:63900], 6d3c74bb-3515-41e6-a37d-cd02d4755ebd=java.nio.channels.SocketChannel[connected local=/192.168.1.13:26274 remote=/192.168.1.13:63889]}
  DEBUG mpj  - worldWritable is filled 
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - ---READ_EVENT----24
+ DEBUG mpj  -  received READY_TO_SEND or  READY_TO_RECV
+ DEBUG mpj  - -- recvCtrlMsgFromSender ---
+ DEBUG mpj  - Receiver getting the control message
+ DEBUG mpj  - Could be rend, eager, posted b4 or not
+ DEBUG mpj  - msb :-7412449782948016949
+ DEBUG mpj  - lsb :-7752620500090478123
+ DEBUG mpj  - sendCounter :3
+ DEBUG mpj  - tag :34023
+ DEBUG mpj  - staBufferSize :12
+ DEBUG mpj  - dynaBufferSize :0
+ DEBUG mpj  - context :10
+ DEBUG mpj  - commMode :3
+ DEBUG mpj  - type :mpjbuf.Type@6fcb7bfa
+ DEBUG mpj  - sendCounter :3
+ DEBUG mpj  - numEls :1
+ DEBUG mpj  - setting the request.code to RECV_IN_DEV_MEMORY
+ DEBUG mpj  - Calling eagerRecv2mpjMem
+ DEBUG mpj  - ---eagerRecv2mpjMem_34023
+ DEBUG mpj  - static section ...
+ DEBUG mpj  -  creating eager buffer 
  DEBUG mpj  - 
 
- createBuffer 104
+ createBuffer 12
  DEBUG mpj  - required level 0
  DEBUG mpj  - finding the right level 
  DEBUG mpj  - freeList.size() 0
@@ -80,7 +188,7 @@
  DEBUG mpj  - calling allocate ...
  DEBUG mpj  - --allocate--
  DEBUG mpj  -  level :0
- DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@2a074bef
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@9171a3b
  DEBUG mpj  - position 0
  DEBUG mpj  - list.blockSize 4194304
  DEBUG mpj  - Adding buddy @ 4194304
@@ -131,15 +239,34 @@
  DEBUG mpj  - Adding buddy @ 128
  DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
  DEBUG mpj  -  cap 128
- DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@70dc9c35
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@4ac3b755
  DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=1 lim=128 cap=8388608]
  DEBUG mpj  - position 0
+ DEBUG mpj  -  creating eager bufferjava.nio.DirectByteBuffer[pos=0 lim=12 cap=127]
+ DEBUG mpj  - Adding the request
+ DEBUG mpj  - time_ready_sendrecv=0.045772928
+ DEBUG mpj  - 
+
+ createBuffer 104
+ DEBUG mpj  - required level 0
+ DEBUG mpj  - finding the right level 
+ DEBUG mpj  - freeList.size() 17
+ DEBUG mpj  - list @level <0>=mpjbuf.Buddy1RegionFreeList@4ac3b755
+ DEBUG mpj  - calling allocate ...
+ DEBUG mpj  - --allocate--
+ DEBUG mpj  -  level :0
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@4ac3b755
+ DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
+ DEBUG mpj  -  cap 128
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@4ac3b755
+ DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=129 lim=256 cap=8388608]
+ DEBUG mpj  - position 128
  INFO  mpj  - ---isend---<34020>
- DEBUG mpj  - sender :bc348693-1006-4769-a300-f1cac4c6ece1
- DEBUG mpj  - receiver :39558805-ac8d-4988-a05a-728d8ecf46ea
+ DEBUG mpj  - sender :8bf57e7e-edee-48a0-aa9b-29a8a10560bf
+ DEBUG mpj  - receiver :9921b031-fbf6-4ccb-9469-28baf5b221d5
  DEBUG mpj  - tag :34020
  DEBUG mpj  - isend with remote process connections
- DEBUG mpj  - channel :java.nio.channels.SocketChannel[connected local=/10.134.34.86:65499 remote=/10.134.34.86:38455]
+ DEBUG mpj  - channel :java.nio.channels.SocketChannel[connected local=/192.168.1.13:63882 remote=/192.168.1.13:26179]
  DEBUG mpj  - get writeLock for this channel
  DEBUG mpj  - ---eagerSend---
  DEBUG mpj  -  request.bufoffset 81
@@ -155,67 +282,26 @@
  DEBUG mpj  - required level 0
  DEBUG mpj  - finding the right level 
  DEBUG mpj  - freeList.size() 17
- DEBUG mpj  - ---selector EVENT---
- DEBUG mpj  - ---READ_EVENT----24
- DEBUG mpj  -  received READY_TO_SEND or  READY_TO_RECV
- DEBUG mpj  - -- recvCtrlMsgFromSender ---
- DEBUG mpj  - Receiver getting the control message
- DEBUG mpj  - Could be rend, eager, posted b4 or not
- DEBUG mpj  - msb :4131357791133452680
- DEBUG mpj  - lsb :-6892070327425218838
- DEBUG mpj  - sendCounter :3
- DEBUG mpj  - tag :34023
- DEBUG mpj  - staBufferSize :12
- DEBUG mpj  - dynaBufferSize :0
- DEBUG mpj  - context :10
- DEBUG mpj  - commMode :3
- DEBUG mpj  - type :mpjbuf.Type@6df3ec5c
- DEBUG mpj  - sendCounter :3
- DEBUG mpj  - numEls :1
- DEBUG mpj  - setting the request.code to RECV_IN_DEV_MEMORY
- DEBUG mpj  - Calling eagerRecv2mpjMem
- DEBUG mpj  - ---eagerRecv2mpjMem_34023
- DEBUG mpj  - static section ...
- DEBUG mpj  -  creating eager buffer 
- DEBUG mpj  - list @level <0>=mpjbuf.Buddy1RegionFreeList@70dc9c35
- DEBUG mpj  - calling allocate ...
- DEBUG mpj  - --allocate--
- DEBUG mpj  -  level :0
- DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@70dc9c35
- DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
- DEBUG mpj  -  cap 128
- DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@70dc9c35
- DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=129 lim=256 cap=8388608]
- DEBUG mpj  - position 128
- DEBUG mpj  - 
-
- createBuffer 12
- DEBUG mpj  - required level 0
- DEBUG mpj  - finding the right level 
- DEBUG mpj  - freeList.size() 17
  DEBUG mpj  - list @level <0>=null
- DEBUG mpj  - list @level <1>=mpjbuf.Buddy1RegionFreeList@6fcb7bfa
+ DEBUG mpj  - list @level <1>=mpjbuf.Buddy1RegionFreeList@759eaa82
  DEBUG mpj  - calling allocate ...
  DEBUG mpj  - --allocate--
  DEBUG mpj  -  level :0
- DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@6fcb7bfa
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@759eaa82
  DEBUG mpj  - position 256
  DEBUG mpj  - list.blockSize 128
  DEBUG mpj  - Adding buddy @ 384
  DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
  DEBUG mpj  -  cap 128
- DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@70dc9c35
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@4ac3b755
  DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=257 lim=384 cap=8388608]
  DEBUG mpj  - position 256
- DEBUG mpj  -  creating eager bufferjava.nio.DirectByteBuffer[pos=0 lim=12 cap=127]
- DEBUG mpj  - Adding the request
- DEBUG mpj  - time_ready_sendrecv=0.003572277
  INFO  mpj  - ---isend---<34021>
- DEBUG mpj  - sender :bc348693-1006-4769-a300-f1cac4c6ece1
- DEBUG mpj  - receiver :1a4777b0-20ea-4c24-8333-a2267bdce0b3
+ DEBUG mpj  - sender :8bf57e7e-edee-48a0-aa9b-29a8a10560bf
+ DEBUG mpj  - receiver :b8b6f32a-87dc-406e-8c7f-70f2a22ee5f9
  DEBUG mpj  - tag :34021
  DEBUG mpj  - isend with remote process connections
- DEBUG mpj  - channel :java.nio.channels.SocketChannel[connected local=/10.134.34.86:65500 remote=/10.134.34.86:31533]
+ DEBUG mpj  - channel :java.nio.channels.SocketChannel[connected local=/192.168.1.13:63885 remote=/192.168.1.13:38248]
  DEBUG mpj  - get writeLock for this channel
  DEBUG mpj  - ---eagerSend---
  DEBUG mpj  -  request.bufoffset 81
@@ -231,22 +317,22 @@
  DEBUG mpj  - required level 0
  DEBUG mpj  - finding the right level 
  DEBUG mpj  - freeList.size() 17
- DEBUG mpj  - list @level <0>=mpjbuf.Buddy1RegionFreeList@70dc9c35
+ DEBUG mpj  - list @level <0>=mpjbuf.Buddy1RegionFreeList@4ac3b755
  DEBUG mpj  - calling allocate ...
  DEBUG mpj  - --allocate--
  DEBUG mpj  -  level :0
- DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@70dc9c35
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@4ac3b755
  DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
  DEBUG mpj  -  cap 128
- DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@70dc9c35
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@4ac3b755
  DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=385 lim=512 cap=8388608]
  DEBUG mpj  - position 384
  INFO  mpj  - ---isend---<34022>
- DEBUG mpj  - sender :bc348693-1006-4769-a300-f1cac4c6ece1
- DEBUG mpj  - receiver :5bc8c651-0e5e-4a56-b496-ace2a0372c37
+ DEBUG mpj  - sender :8bf57e7e-edee-48a0-aa9b-29a8a10560bf
+ DEBUG mpj  - receiver :459f00e7-c7aa-49d3-b07d-67dd95b717d7
  DEBUG mpj  - tag :34022
  DEBUG mpj  - isend with remote process connections
- DEBUG mpj  - channel :java.nio.channels.SocketChannel[connected local=/10.134.34.86:65501 remote=/10.134.34.86:27085]
+ DEBUG mpj  - channel :java.nio.channels.SocketChannel[connected local=/192.168.1.13:63886 remote=/192.168.1.13:38107]
  DEBUG mpj  - get writeLock for this channel
  DEBUG mpj  - ---eagerSend---
  DEBUG mpj  -  request.bufoffset 81
@@ -258,17 +344,17 @@
  INFO  mpj  - ---isend ends---<34022>
  DEBUG mpj  - 
 
- createBuffer 16
+ createBuffer 104
  DEBUG mpj  - required level 0
  DEBUG mpj  - finding the right level 
  DEBUG mpj  - freeList.size() 17
  DEBUG mpj  - list @level <0>=null
  DEBUG mpj  - list @level <1>=null
- DEBUG mpj  - list @level <2>=mpjbuf.Buddy1RegionFreeList@11c87ef1
+ DEBUG mpj  - list @level <2>=mpjbuf.Buddy1RegionFreeList@4dc233dc
  DEBUG mpj  - calling allocate ...
  DEBUG mpj  - --allocate--
  DEBUG mpj  -  level :0
- DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@11c87ef1
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@4dc233dc
  DEBUG mpj  - position 512
  DEBUG mpj  - list.blockSize 256
  DEBUG mpj  - Adding buddy @ 768
@@ -277,21 +363,118 @@
  DEBUG mpj  - Adding buddy @ 640
  DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
  DEBUG mpj  -  cap 128
- DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@70dc9c35
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@4ac3b755
  DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=513 lim=640 cap=8388608]
  DEBUG mpj  - position 512
+ INFO  mpj  - ---isend---<34024>
+ DEBUG mpj  - sender :8bf57e7e-edee-48a0-aa9b-29a8a10560bf
+ DEBUG mpj  - receiver :c0ba35db-5f77-4ea2-874e-a9d79db818bc
+ DEBUG mpj  - tag :34024
+ DEBUG mpj  - isend with remote process connections
+ DEBUG mpj  - channel :java.nio.channels.SocketChannel[connected local=/192.168.1.13:26274 remote=/192.168.1.13:63900]
+ DEBUG mpj  - get writeLock for this channel
+ DEBUG mpj  - ---eagerSend---
+ DEBUG mpj  -  request.bufoffset 81
+ DEBUG mpj  - sendBuffer java.nio.DirectByteBuffer[pos=0 lim=81 cap=127]
+ DEBUG mpj  - request.staticBuffer (1)<java.nio.DirectByteBuffer[pos=0 lim=93 cap=127]> w=0
+ DEBUG mpj  - request.staticBuffer (2)<java.nio.DirectByteBuffer[pos=93 lim=93 cap=127]> w=93
+ DEBUG mpj  - request.dBufSize <0>
+ DEBUG mpj  - --eagerSend finishes--
+ INFO  mpj  - ---isend ends---<34024>
+ DEBUG mpj  - 
+
+ createBuffer 104
+ DEBUG mpj  - required level 0
+ DEBUG mpj  - finding the right level 
+ DEBUG mpj  - freeList.size() 17
+ DEBUG mpj  - list @level <0>=mpjbuf.Buddy1RegionFreeList@4ac3b755
+ DEBUG mpj  - calling allocate ...
+ DEBUG mpj  - --allocate--
+ DEBUG mpj  -  level :0
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@4ac3b755
+ DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
+ DEBUG mpj  -  cap 128
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@4ac3b755
+ DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=641 lim=768 cap=8388608]
+ DEBUG mpj  - position 640
+ INFO  mpj  - ---isend---<34025>
+ DEBUG mpj  - sender :8bf57e7e-edee-48a0-aa9b-29a8a10560bf
+ DEBUG mpj  - receiver :300da2ef-ccea-452b-8fb7-ea2e70a1088a
+ DEBUG mpj  - tag :34025
+ DEBUG mpj  - isend with remote process connections
+ DEBUG mpj  - channel :java.nio.channels.SocketChannel[connected local=/192.168.1.13:26274 remote=/192.168.1.13:63908]
+ DEBUG mpj  - get writeLock for this channel
+ DEBUG mpj  - ---eagerSend---
+ DEBUG mpj  -  request.bufoffset 81
+ DEBUG mpj  - sendBuffer java.nio.DirectByteBuffer[pos=0 lim=81 cap=127]
+ DEBUG mpj  - request.staticBuffer (1)<java.nio.DirectByteBuffer[pos=0 lim=93 cap=127]> w=0
+ DEBUG mpj  - request.staticBuffer (2)<java.nio.DirectByteBuffer[pos=93 lim=93 cap=127]> w=93
+ DEBUG mpj  - request.dBufSize <0>
+ DEBUG mpj  - --eagerSend finishes--
+ INFO  mpj  - ---isend ends---<34025>
+ DEBUG mpj  - 
+
+ createBuffer 104
+ DEBUG mpj  - required level 0
+ DEBUG mpj  - finding the right level 
+ DEBUG mpj  - freeList.size() 17
+ DEBUG mpj  - list @level <0>=null
+ DEBUG mpj  - list @level <1>=mpjbuf.Buddy1RegionFreeList@759eaa82
+ DEBUG mpj  - calling allocate ...
+ DEBUG mpj  - --allocate--
+ DEBUG mpj  -  level :0
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@759eaa82
+ DEBUG mpj  - position 768
+ DEBUG mpj  - list.blockSize 128
+ DEBUG mpj  - Adding buddy @ 896
+ DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
+ DEBUG mpj  -  cap 128
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@4ac3b755
+ DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=769 lim=896 cap=8388608]
+ DEBUG mpj  - position 768
+ INFO  mpj  - ---isend---<34026>
+ DEBUG mpj  - sender :8bf57e7e-edee-48a0-aa9b-29a8a10560bf
+ DEBUG mpj  - receiver :6d3c74bb-3515-41e6-a37d-cd02d4755ebd
+ DEBUG mpj  - tag :34026
+ DEBUG mpj  - isend with remote process connections
+ DEBUG mpj  - channel :java.nio.channels.SocketChannel[connected local=/192.168.1.13:26274 remote=/192.168.1.13:63889]
+ DEBUG mpj  - get writeLock for this channel
+ DEBUG mpj  - ---eagerSend---
+ DEBUG mpj  -  request.bufoffset 81
+ DEBUG mpj  - sendBuffer java.nio.DirectByteBuffer[pos=0 lim=81 cap=127]
+ DEBUG mpj  - request.staticBuffer (1)<java.nio.DirectByteBuffer[pos=0 lim=93 cap=127]> w=0
+ DEBUG mpj  - request.staticBuffer (2)<java.nio.DirectByteBuffer[pos=93 lim=93 cap=127]> w=93
+ DEBUG mpj  - request.dBufSize <0>
+ DEBUG mpj  - --eagerSend finishes--
+ INFO  mpj  - ---isend ends---<34026>
+ DEBUG mpj  - 
+
+ createBuffer 16
+ DEBUG mpj  - required level 0
+ DEBUG mpj  - finding the right level 
+ DEBUG mpj  - freeList.size() 17
+ DEBUG mpj  - list @level <0>=mpjbuf.Buddy1RegionFreeList@4ac3b755
+ DEBUG mpj  - calling allocate ...
+ DEBUG mpj  - --allocate--
+ DEBUG mpj  -  level :0
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@4ac3b755
+ DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
+ DEBUG mpj  -  cap 128
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@4ac3b755
+ DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=897 lim=1024 cap=8388608]
+ DEBUG mpj  - position 896
  INFO  mpj  - ---irecv---<34023>
  DEBUG mpj  - Looking whether this req has been posted or not
  DEBUG mpj  - 
 --free--
- DEBUG mpj  - buffer.list.front 640
+ DEBUG mpj  - buffer.list.front -1
  DEBUG mpj  -  list.level 0
- DEBUG mpj  -  position 256
+ DEBUG mpj  -  position 0
  DEBUG mpj  -  memory (for region) java.nio.DirectByteBuffer[pos=0 lim=8388608 cap=8388608]
- DEBUG mpj  -  buddy 384
- DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=384 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy 128
+ DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=128 lim=8388608 cap=8388608]
  DEBUG mpj  -  buddy is not FREE 
- DEBUG mpj  -  adding the buffer at pos <256
+ DEBUG mpj  -  adding the buffer at pos <0
  DEBUG mpj  - size of htis buffer is 128
  DEBUG mpj  - setting the buf size 12
  DEBUG mpj  - removed 
@@ -306,15 +489,56 @@
  DEBUG mpj  - -- recvCtrlMsgFromSender ---
  DEBUG mpj  - Receiver getting the control message
  DEBUG mpj  - Could be rend, eager, posted b4 or not
- DEBUG mpj  - msb :6613754104229284438
- DEBUG mpj  - lsb :-5433965811025368009
+ DEBUG mpj  - msb :7871294596135076326
+ DEBUG mpj  - lsb :-6665946461400375619
+ DEBUG mpj  - sendCounter :4
+ DEBUG mpj  - tag :34023
+ DEBUG mpj  - staBufferSize :12
+ DEBUG mpj  - dynaBufferSize :0
+ DEBUG mpj  - context :10
+ DEBUG mpj  - commMode :3
+ DEBUG mpj  - type :mpjbuf.Type@6fcb7bfa
+ DEBUG mpj  - sendCounter :4
+ DEBUG mpj  - numEls :1
+ DEBUG mpj  - setting the request.code to RECV_IN_DEV_MEMORY
+ DEBUG mpj  - Calling eagerRecv2mpjMem
+ DEBUG mpj  - ---eagerRecv2mpjMem_34023
+ DEBUG mpj  - static section ...
+ DEBUG mpj  -  creating eager buffer 
+ DEBUG mpj  - 
+
+ createBuffer 12
+ DEBUG mpj  - required level 0
+ DEBUG mpj  - finding the right level 
+ DEBUG mpj  - freeList.size() 17
+ DEBUG mpj  - list @level <0>=mpjbuf.Buddy1RegionFreeList@4ac3b755
+ DEBUG mpj  - calling allocate ...
+ DEBUG mpj  - --allocate--
+ DEBUG mpj  -  level :0
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@4ac3b755
+ DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
+ DEBUG mpj  -  cap 128
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@4ac3b755
+ DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=1 lim=128 cap=8388608]
+ DEBUG mpj  - position 0
+ DEBUG mpj  -  creating eager bufferjava.nio.DirectByteBuffer[pos=0 lim=12 cap=127]
+ DEBUG mpj  - Adding the request
+ DEBUG mpj  - time_ready_sendrecv=0.001073396
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - ---READ_EVENT----24
+ DEBUG mpj  -  received READY_TO_SEND or  READY_TO_RECV
+ DEBUG mpj  - -- recvCtrlMsgFromSender ---
+ DEBUG mpj  - Receiver getting the control message
+ DEBUG mpj  - Could be rend, eager, posted b4 or not
+ DEBUG mpj  - msb :5016729505401293267
+ DEBUG mpj  - lsb :-5729308949548165161
  DEBUG mpj  - sendCounter :3
  DEBUG mpj  - tag :34023
  DEBUG mpj  - staBufferSize :12
  DEBUG mpj  - dynaBufferSize :0
  DEBUG mpj  - context :10
  DEBUG mpj  - commMode :3
- DEBUG mpj  - type :mpjbuf.Type@6df3ec5c
+ DEBUG mpj  - type :mpjbuf.Type@6fcb7bfa
  DEBUG mpj  - sendCounter :3
  DEBUG mpj  - numEls :1
  DEBUG mpj  - setting the request.code to RECV_IN_DEV_MEMORY
@@ -328,34 +552,87 @@
  DEBUG mpj  - required level 0
  DEBUG mpj  - finding the right level 
  DEBUG mpj  - freeList.size() 17
- DEBUG mpj  - list @level <0>=mpjbuf.Buddy1RegionFreeList@70dc9c35
+ DEBUG mpj  - list @level <0>=null
+ DEBUG mpj  - list @level <1>=null
+ DEBUG mpj  - list @level <2>=null
+ DEBUG mpj  - list @level <3>=mpjbuf.Buddy1RegionFreeList@1d7453e5
  DEBUG mpj  - calling allocate ...
  DEBUG mpj  - --allocate--
  DEBUG mpj  -  level :0
- DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@70dc9c35
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@1d7453e5
+ DEBUG mpj  - position 1024
+ DEBUG mpj  - list.blockSize 512
+ DEBUG mpj  - Adding buddy @ 1536
+ DEBUG mpj  - position 1024
+ DEBUG mpj  - list.blockSize 256
+ DEBUG mpj  - Adding buddy @ 1280
+ DEBUG mpj  - position 1024
+ DEBUG mpj  - list.blockSize 128
+ DEBUG mpj  - Adding buddy @ 1152
  DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
  DEBUG mpj  -  cap 128
- DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@70dc9c35
- DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=257 lim=384 cap=8388608]
- DEBUG mpj  - position 256
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@4ac3b755
+ DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=1025 lim=1152 cap=8388608]
+ DEBUG mpj  - position 1024
  DEBUG mpj  -  creating eager bufferjava.nio.DirectByteBuffer[pos=0 lim=12 cap=127]
  DEBUG mpj  - Adding the request
- DEBUG mpj  - time_ready_sendrecv=0.001460898
+ DEBUG mpj  - time_ready_sendrecv=0.001804525
  DEBUG mpj  - ---selector EVENT---
  DEBUG mpj  - ---READ_EVENT----24
  DEBUG mpj  -  received READY_TO_SEND or  READY_TO_RECV
  DEBUG mpj  - -- recvCtrlMsgFromSender ---
  DEBUG mpj  - Receiver getting the control message
  DEBUG mpj  - Could be rend, eager, posted b4 or not
- DEBUG mpj  - msb :1893613766682758180
- DEBUG mpj  - lsb :-8992665744758218573
+ DEBUG mpj  - msb :-4559272456443441502
+ DEBUG mpj  - lsb :-8696827086876698436
+ DEBUG mpj  - sendCounter :4
+ DEBUG mpj  - tag :34023
+ DEBUG mpj  - staBufferSize :12
+ DEBUG mpj  - dynaBufferSize :0
+ DEBUG mpj  - context :10
+ DEBUG mpj  - commMode :3
+ DEBUG mpj  - type :mpjbuf.Type@6fcb7bfa
+ DEBUG mpj  - sendCounter :4
+ DEBUG mpj  - numEls :1
+ DEBUG mpj  - setting the request.code to RECV_IN_DEV_MEMORY
+ DEBUG mpj  - Calling eagerRecv2mpjMem
+ DEBUG mpj  - ---eagerRecv2mpjMem_34023
+ DEBUG mpj  - static section ...
+ DEBUG mpj  -  creating eager buffer 
+ DEBUG mpj  - 
+
+ createBuffer 12
+ DEBUG mpj  - required level 0
+ DEBUG mpj  - finding the right level 
+ DEBUG mpj  - freeList.size() 17
+ DEBUG mpj  - list @level <0>=mpjbuf.Buddy1RegionFreeList@4ac3b755
+ DEBUG mpj  - calling allocate ...
+ DEBUG mpj  - --allocate--
+ DEBUG mpj  -  level :0
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@4ac3b755
+ DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
+ DEBUG mpj  -  cap 128
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@4ac3b755
+ DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=1153 lim=1280 cap=8388608]
+ DEBUG mpj  - position 1152
+ DEBUG mpj  -  creating eager bufferjava.nio.DirectByteBuffer[pos=0 lim=12 cap=127]
+ DEBUG mpj  - Adding the request
+ DEBUG mpj  - time_ready_sendrecv=9.99555E-4
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - ---READ_EVENT----24
+ DEBUG mpj  -  received READY_TO_SEND or  READY_TO_RECV
+ DEBUG mpj  - -- recvCtrlMsgFromSender ---
+ DEBUG mpj  - Receiver getting the control message
+ DEBUG mpj  - Could be rend, eager, posted b4 or not
+ DEBUG mpj  - msb :-5136650960975937426
+ DEBUG mpj  - lsb :-8322809398952008199
  DEBUG mpj  - sendCounter :3
  DEBUG mpj  - tag :34023
  DEBUG mpj  - staBufferSize :12
  DEBUG mpj  - dynaBufferSize :0
  DEBUG mpj  - context :10
  DEBUG mpj  - commMode :3
- DEBUG mpj  - type :mpjbuf.Type@6df3ec5c
+ DEBUG mpj  - type :mpjbuf.Type@6fcb7bfa
  DEBUG mpj  - sendCounter :3
  DEBUG mpj  - numEls :1
  DEBUG mpj  - ---eagerRecv2UserMem---
@@ -364,25 +641,80 @@
  DEBUG mpj  - b(2) java.nio.DirectByteBuffer[pos=12 lim=12 cap=127]
  DEBUG mpj  - request.dBufSize 0
  DEBUG mpj  - --eagerRecv2UserMem ends--
- DEBUG mpj  - time_ready_sendrecv=9.62492E-4
+ DEBUG mpj  - time_ready_sendrecv=8.25206E-4
  INFO  mpj  - ---irecv---<34023>
  DEBUG mpj  - Looking whether this req has been posted or not
  DEBUG mpj  - 
 --free--
- DEBUG mpj  - buffer.list.front 640
+ DEBUG mpj  - buffer.list.front -1
  DEBUG mpj  -  list.level 0
- DEBUG mpj  -  position 256
+ DEBUG mpj  -  position 1024
  DEBUG mpj  -  memory (for region) java.nio.DirectByteBuffer[pos=0 lim=8388608 cap=8388608]
- DEBUG mpj  -  buddy 384
- DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=384 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy 1152
+ DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=1152 lim=8388608 cap=8388608]
  DEBUG mpj  -  buddy is not FREE 
- DEBUG mpj  -  adding the buffer at pos <256
+ DEBUG mpj  -  adding the buffer at pos <1024
  DEBUG mpj  - size of htis buffer is 128
  DEBUG mpj  - setting the buf size 12
  DEBUG mpj  - removed 
+ INFO  mpj  - ---irecv---<34023>
+ DEBUG mpj  - Looking whether this req has been posted or not
  DEBUG mpj  - 
 --free--
- DEBUG mpj  - buffer.list.front 256
+ DEBUG mpj  - buffer.list.front 1024
+ DEBUG mpj  -  list.level 0
+ DEBUG mpj  -  position 1152
+ DEBUG mpj  -  memory (for region) java.nio.DirectByteBuffer[pos=0 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy 1024
+ DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=1024 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy is free ...removing it ..
+ DEBUG mpj  -  buddy 1280
+ DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=1280 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy is free ...removing it ..
+ DEBUG mpj  -  buddy 1536
+ DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=1536 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy is free ...removing it ..
+ DEBUG mpj  -  buddy 0
+ DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=0 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy is not FREE 
+ DEBUG mpj  -  adding the buffer at pos <1024
+ DEBUG mpj  - size of htis buffer is 1024
+ DEBUG mpj  - setting the buf size 12
+ DEBUG mpj  - removed 
+ INFO  mpj  - ---irecv---<34023>
+ DEBUG mpj  - Looking whether this req has been posted or not
+ DEBUG mpj  - No Matching req, so posting ourselves
+ DEBUG mpj  - request.staticBuffer (in recv) java.nio.DirectByteBuffer[pos=8 lim=127 cap=127]
+ DEBUG mpj  - Added request in irecv 
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - ---READ_EVENT----24
+ DEBUG mpj  -  received READY_TO_SEND or  READY_TO_RECV
+ DEBUG mpj  - -- recvCtrlMsgFromSender ---
+ DEBUG mpj  - Receiver getting the control message
+ DEBUG mpj  - Could be rend, eager, posted b4 or not
+ DEBUG mpj  - msb :3462602839336568107
+ DEBUG mpj  - lsb :-8090740720368809846
+ DEBUG mpj  - sendCounter :4
+ DEBUG mpj  - tag :34023
+ DEBUG mpj  - staBufferSize :12
+ DEBUG mpj  - dynaBufferSize :0
+ DEBUG mpj  - context :10
+ DEBUG mpj  - commMode :3
+ DEBUG mpj  - type :mpjbuf.Type@6fcb7bfa
+ DEBUG mpj  - sendCounter :4
+ DEBUG mpj  - numEls :1
+ DEBUG mpj  - ---eagerRecv2UserMem---
+ DEBUG mpj  - request.sBufSize (is it zero?) 12
+ DEBUG mpj  - b(1) java.nio.DirectByteBuffer[pos=0 lim=12 cap=127]
+ DEBUG mpj  - b(2) java.nio.DirectByteBuffer[pos=12 lim=12 cap=127]
+ DEBUG mpj  - request.dBufSize 0
+ DEBUG mpj  - --eagerRecv2UserMem ends--
+ DEBUG mpj  - time_ready_sendrecv=5.43522E-4
+ INFO  mpj  - ---irecv---<34023>
+ DEBUG mpj  - Looking whether this req has been posted or not
+ DEBUG mpj  - 
+--free--
+ DEBUG mpj  - buffer.list.front -1
  DEBUG mpj  -  list.level 0
  DEBUG mpj  -  position 0
  DEBUG mpj  -  memory (for region) java.nio.DirectByteBuffer[pos=0 lim=8388608 cap=8388608]
@@ -391,6 +723,8 @@
  DEBUG mpj  -  buddy is not FREE 
  DEBUG mpj  -  adding the buffer at pos <0
  DEBUG mpj  - size of htis buffer is 128
+ DEBUG mpj  - setting the buf size 12
+ DEBUG mpj  - removed 
  DEBUG mpj  - 
 --free--
  DEBUG mpj  - buffer.list.front 0
@@ -405,6 +739,17 @@
  DEBUG mpj  -  buddy is not FREE 
  DEBUG mpj  -  adding the buffer at pos <0
  DEBUG mpj  - size of htis buffer is 256
+ DEBUG mpj  - 
+--free--
+ DEBUG mpj  - buffer.list.front -1
+ DEBUG mpj  -  list.level 0
+ DEBUG mpj  -  position 256
+ DEBUG mpj  -  memory (for region) java.nio.DirectByteBuffer[pos=0 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy 384
+ DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=384 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy is not FREE 
+ DEBUG mpj  -  adding the buffer at pos <256
+ DEBUG mpj  - size of htis buffer is 128
  DEBUG mpj  - 
 --free--
  DEBUG mpj  - buffer.list.front 256
@@ -424,15 +769,51 @@
  DEBUG mpj  - size of htis buffer is 512
  DEBUG mpj  - 
 --free--
- DEBUG mpj  - buffer.list.front 640
+ DEBUG mpj  - buffer.list.front -1
  DEBUG mpj  -  list.level 0
  DEBUG mpj  -  position 512
  DEBUG mpj  -  memory (for region) java.nio.DirectByteBuffer[pos=0 lim=8388608 cap=8388608]
  DEBUG mpj  -  buddy 640
  DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=640 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy is not FREE 
+ DEBUG mpj  -  adding the buffer at pos <512
+ DEBUG mpj  - size of htis buffer is 128
+ DEBUG mpj  - 
+--free--
+ DEBUG mpj  - buffer.list.front 512
+ DEBUG mpj  -  list.level 0
+ DEBUG mpj  -  position 640
+ DEBUG mpj  -  memory (for region) java.nio.DirectByteBuffer[pos=0 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy 512
+ DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=512 lim=8388608 cap=8388608]
  DEBUG mpj  -  buddy is free ...removing it ..
  DEBUG mpj  -  buddy 768
  DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=768 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy is not FREE 
+ DEBUG mpj  -  adding the buffer at pos <512
+ DEBUG mpj  - size of htis buffer is 256
+ DEBUG mpj  - 
+--free--
+ DEBUG mpj  - buffer.list.front -1
+ DEBUG mpj  -  list.level 0
+ DEBUG mpj  -  position 768
+ DEBUG mpj  -  memory (for region) java.nio.DirectByteBuffer[pos=0 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy 896
+ DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=896 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy is not FREE 
+ DEBUG mpj  -  adding the buffer at pos <768
+ DEBUG mpj  - size of htis buffer is 128
+ DEBUG mpj  - 
+--free--
+ DEBUG mpj  - buffer.list.front 768
+ DEBUG mpj  -  list.level 0
+ DEBUG mpj  -  position 896
+ DEBUG mpj  -  memory (for region) java.nio.DirectByteBuffer[pos=0 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy 768
+ DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=768 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy is free ...removing it ..
+ DEBUG mpj  -  buddy 512
+ DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=512 lim=8388608 cap=8388608]
  DEBUG mpj  -  buddy is free ...removing it ..
  DEBUG mpj  -  buddy 0
  DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=0 lim=8388608 cap=8388608]
@@ -500,11 +881,11 @@
  DEBUG mpj  - list @level <13>=null
  DEBUG mpj  - list @level <14>=null
  DEBUG mpj  - list @level <15>=null
- DEBUG mpj  - list @level <16>=mpjbuf.Buddy1RegionFreeList@2a074bef
+ DEBUG mpj  - list @level <16>=mpjbuf.Buddy1RegionFreeList@9171a3b
  DEBUG mpj  - calling allocate ...
  DEBUG mpj  - --allocate--
  DEBUG mpj  -  level :0
- DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@2a074bef
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@9171a3b
  DEBUG mpj  - position 0
  DEBUG mpj  - list.blockSize 4194304
  DEBUG mpj  - Adding buddy @ 4194304
@@ -555,7 +936,7 @@
  DEBUG mpj  - Adding buddy @ 128
  DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
  DEBUG mpj  -  cap 128
- DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@70dc9c35
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@4ac3b755
  DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=1 lim=128 cap=8388608]
  DEBUG mpj  - position 0
  DEBUG mpj  - 
@@ -648,11 +1029,11 @@
  DEBUG mpj  - list @level <13>=null
  DEBUG mpj  - list @level <14>=null
  DEBUG mpj  - list @level <15>=null
- DEBUG mpj  - list @level <16>=mpjbuf.Buddy1RegionFreeList@2a074bef
+ DEBUG mpj  - list @level <16>=mpjbuf.Buddy1RegionFreeList@9171a3b
  DEBUG mpj  - calling allocate ...
  DEBUG mpj  - --allocate--
  DEBUG mpj  -  level :0
- DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@2a074bef
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@9171a3b
  DEBUG mpj  - position 0
  DEBUG mpj  - list.blockSize 4194304
  DEBUG mpj  - Adding buddy @ 4194304
@@ -703,18 +1084,18 @@
  DEBUG mpj  - Adding buddy @ 128
  DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
  DEBUG mpj  -  cap 128
- DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@70dc9c35
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@4ac3b755
  DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=1 lim=128 cap=8388608]
  DEBUG mpj  - position 0
  DEBUG mpj  - count 1
  DEBUG mpj  - offset0
  DEBUG mpj  - bufjava.nio.DirectByteBuffer[pos=82 lim=127 cap=127]
  INFO  mpj  - ---isend---<33998>
- DEBUG mpj  - sender :bc348693-1006-4769-a300-f1cac4c6ece1
- DEBUG mpj  - receiver :39558805-ac8d-4988-a05a-728d8ecf46ea
+ DEBUG mpj  - sender :8bf57e7e-edee-48a0-aa9b-29a8a10560bf
+ DEBUG mpj  - receiver :9921b031-fbf6-4ccb-9469-28baf5b221d5
  DEBUG mpj  - tag :33998
  DEBUG mpj  - isend with remote process connections
- DEBUG mpj  - channel :java.nio.channels.SocketChannel[connected local=/10.134.34.86:65499 remote=/10.134.34.86:38455]
+ DEBUG mpj  - channel :java.nio.channels.SocketChannel[connected local=/192.168.1.13:63882 remote=/192.168.1.13:26179]
  DEBUG mpj  - get writeLock for this channel
  DEBUG mpj  - ---eagerSend---
  DEBUG mpj  -  request.bufoffset 81
@@ -806,11 +1187,11 @@
  DEBUG mpj  - list @level <13>=null
  DEBUG mpj  - list @level <14>=null
  DEBUG mpj  - list @level <15>=null
- DEBUG mpj  - list @level <16>=mpjbuf.Buddy1RegionFreeList@2a074bef
+ DEBUG mpj  - list @level <16>=mpjbuf.Buddy1RegionFreeList@9171a3b
  DEBUG mpj  - calling allocate ...
  DEBUG mpj  - --allocate--
  DEBUG mpj  -  level :0
- DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@2a074bef
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@9171a3b
  DEBUG mpj  - position 0
  DEBUG mpj  - list.blockSize 4194304
  DEBUG mpj  - Adding buddy @ 4194304
@@ -861,7 +1242,7 @@
  DEBUG mpj  - Adding buddy @ 128
  DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
  DEBUG mpj  -  cap 128
- DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@70dc9c35
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@4ac3b755
  DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=1 lim=128 cap=8388608]
  DEBUG mpj  - position 0
  INFO  mpj  - ---irecv---<33998>
@@ -875,16 +1256,16 @@
  DEBUG mpj  - -- recvCtrlMsgFromSender ---
  DEBUG mpj  - Receiver getting the control message
  DEBUG mpj  - Could be rend, eager, posted b4 or not
- DEBUG mpj  - msb :4131357791133452680
- DEBUG mpj  - lsb :-6892070327425218838
- DEBUG mpj  - sendCounter :6
+ DEBUG mpj  - msb :-7412449782948016949
+ DEBUG mpj  - lsb :-7752620500090478123
+ DEBUG mpj  - sendCounter :9
  DEBUG mpj  - tag :33998
  DEBUG mpj  - staBufferSize :12
  DEBUG mpj  - dynaBufferSize :0
  DEBUG mpj  - context :9
  DEBUG mpj  - commMode :3
- DEBUG mpj  - type :mpjbuf.Type@6df3ec5c
- DEBUG mpj  - sendCounter :6
+ DEBUG mpj  - type :mpjbuf.Type@6fcb7bfa
+ DEBUG mpj  - sendCounter :9
  DEBUG mpj  - numEls :1
  DEBUG mpj  - ---eagerRecv2UserMem---
  DEBUG mpj  - request.sBufSize (is it zero?) 12
@@ -892,7 +1273,7 @@
  DEBUG mpj  - b(2) java.nio.DirectByteBuffer[pos=12 lim=12 cap=127]
  DEBUG mpj  - request.dBufSize 0
  DEBUG mpj  - --eagerRecv2UserMem ends--
- DEBUG mpj  - time_ready_sendrecv=5.19587E-4
+ DEBUG mpj  - time_ready_sendrecv=4.13706E-4
  DEBUG mpj  - count_received 1
  DEBUG mpj  - count 1
  DEBUG mpj  - 
@@ -976,11 +1357,11 @@
  DEBUG mpj  - list @level <13>=null
  DEBUG mpj  - list @level <14>=null
  DEBUG mpj  - list @level <15>=null
- DEBUG mpj  - list @level <16>=mpjbuf.Buddy1RegionFreeList@2a074bef
+ DEBUG mpj  - list @level <16>=mpjbuf.Buddy1RegionFreeList@9171a3b
  DEBUG mpj  - calling allocate ...
  DEBUG mpj  - --allocate--
  DEBUG mpj  -  level :0
- DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@2a074bef
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@9171a3b
  DEBUG mpj  - position 0
  DEBUG mpj  - list.blockSize 4194304
  DEBUG mpj  - Adding buddy @ 4194304
@@ -1031,7 +1412,7 @@
  DEBUG mpj  - Adding buddy @ 128
  DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
  DEBUG mpj  -  cap 128
- DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@70dc9c35
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@4ac3b755
  DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=1 lim=128 cap=8388608]
  DEBUG mpj  - position 0
  DEBUG mpj  - 
@@ -1040,22 +1421,22 @@
  DEBUG mpj  - required level 0
  DEBUG mpj  - finding the right level 
  DEBUG mpj  - freeList.size() 17
- DEBUG mpj  - list @level <0>=mpjbuf.Buddy1RegionFreeList@70dc9c35
+ DEBUG mpj  - list @level <0>=mpjbuf.Buddy1RegionFreeList@4ac3b755
  DEBUG mpj  - calling allocate ...
  DEBUG mpj  - --allocate--
  DEBUG mpj  -  level :0
- DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@70dc9c35
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@4ac3b755
  DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
  DEBUG mpj  -  cap 128
- DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@70dc9c35
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@4ac3b755
  DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=129 lim=256 cap=8388608]
  DEBUG mpj  - position 128
  INFO  mpj  - ---isend---<-994576>
- DEBUG mpj  - sender :bc348693-1006-4769-a300-f1cac4c6ece1
- DEBUG mpj  - receiver :39558805-ac8d-4988-a05a-728d8ecf46ea
+ DEBUG mpj  - sender :8bf57e7e-edee-48a0-aa9b-29a8a10560bf
+ DEBUG mpj  - receiver :9921b031-fbf6-4ccb-9469-28baf5b221d5
  DEBUG mpj  - tag :-994576
  DEBUG mpj  - isend with remote process connections
- DEBUG mpj  - channel :java.nio.channels.SocketChannel[connected local=/10.134.34.86:65499 remote=/10.134.34.86:38455]
+ DEBUG mpj  - channel :java.nio.channels.SocketChannel[connected local=/192.168.1.13:63882 remote=/192.168.1.13:26179]
  DEBUG mpj  - get writeLock for this channel
  DEBUG mpj  - ---eagerSend---
  DEBUG mpj  -  request.bufoffset 81
@@ -1075,19 +1456,31 @@
  DEBUG mpj  - ---finish---
  DEBUG mpj  - Waking up the selector
  DEBUG mpj  - Closed the two selectors
- DEBUG mpj  - peerChannelSize 3
- DEBUG mpj  - peerCtrlChannelSize 3
- DEBUG mpj  - closing data-channel java.nio.channels.SocketChannel[connected local=/10.134.34.86:65499 remote=/10.134.34.86:38455]
+ DEBUG mpj  - peerChannelSize 6
+ DEBUG mpj  - peerCtrlChannelSize 6
+ DEBUG mpj  - closing data-channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:63882 remote=/192.168.1.13:26179]
  DEBUG mpj  - the channel was open, so closing it
- DEBUG mpj  - closing control-channel java.nio.channels.SocketChannel[connected local=/10.134.34.86:65493 remote=/10.134.34.86:30192]
+ DEBUG mpj  - closing control-channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:63873 remote=/192.168.1.13:31879]
  DEBUG mpj  - the channel was open, so closing it
- DEBUG mpj  - closing data-channel java.nio.channels.SocketChannel[connected local=/10.134.34.86:65500 remote=/10.134.34.86:31533]
+ DEBUG mpj  - closing data-channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:63885 remote=/192.168.1.13:38248]
  DEBUG mpj  - the channel was open, so closing it
- DEBUG mpj  - closing control-channel java.nio.channels.SocketChannel[connected local=/10.134.34.86:65497 remote=/10.134.34.86:30385]
+ DEBUG mpj  - closing control-channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:63879 remote=/192.168.1.13:29620]
  DEBUG mpj  - the channel was open, so closing it
- DEBUG mpj  - closing data-channel java.nio.channels.SocketChannel[connected local=/10.134.34.86:65501 remote=/10.134.34.86:27085]
+ DEBUG mpj  - closing data-channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:63886 remote=/192.168.1.13:38107]
  DEBUG mpj  - the channel was open, so closing it
- DEBUG mpj  - closing control-channel java.nio.channels.SocketChannel[connected local=/10.134.34.86:65498 remote=/10.134.34.86:34790]
+ DEBUG mpj  - closing control-channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:63880 remote=/192.168.1.13:32805]
+ DEBUG mpj  - the channel was open, so closing it
+ DEBUG mpj  - closing data-channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:26274 remote=/192.168.1.13:63889]
+ DEBUG mpj  - the channel was open, so closing it
+ DEBUG mpj  - closing control-channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:26601 remote=/192.168.1.13:63895]
+ DEBUG mpj  - the channel was open, so closing it
+ DEBUG mpj  - closing data-channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:26274 remote=/192.168.1.13:63900]
+ DEBUG mpj  - the channel was open, so closing it
+ DEBUG mpj  - closing control-channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:26601 remote=/192.168.1.13:63904]
+ DEBUG mpj  - the channel was open, so closing it
+ DEBUG mpj  - closing data-channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:26274 remote=/192.168.1.13:63908]
+ DEBUG mpj  - the channel was open, so closing it
+ DEBUG mpj  - closing control-channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:26601 remote=/192.168.1.13:63913]
  DEBUG mpj  - the channel was open, so closing it
  DEBUG mpj  - closed all the channels
  DEBUG mpj  - selector thread notifying the user thread
@@ -1161,99 +1554,176 @@
  DEBUG mpj  - size of htis buffer is 8388608
  DEBUG mpj  - Called it ...
  INFO  mpj  - --init method of niodev is called--
- INFO  mpj  - Address: Reemis-MacBook-Pro.local/10.134.34.86
+ INFO  mpj  - Address: Reemis-MacBook-Pro.local/192.168.1.13
  INFO  mpj  - Name :Reemis-MacBook-Pro.local
  INFO  mpj  - rank :3
- INFO  mpj  - Orignal string: #temp line;#Number of Processes;4;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;10.134.34.86@0@0@0@0;10.134.34.86@0@0@1@2;10.134.34.86@0@0@2@4;10.134.34.86@0@0@3@6;#Server Name;Reemis-MacBook-Pro.local;#Server Port;40002
- DEBUG mpj  - created writableServerChannel on port 34882
- DEBUG mpj  - created readableServerChannel on port 38045
+ INFO  mpj  - Orignal string: #temp line;#Number of Processes;7;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.1.13@0@0@0@0;192.168.1.13@0@0@1@2;192.168.1.13@0@0@2@4;192.168.1.13@0@0@3@6;192.168.1.13@0@0@4@8;192.168.1.13@0@0@5@10;192.168.1.13@0@0@6@12;#Server Name;Reemis-MacBook-Pro.local;#Server Port;40002
+ DEBUG mpj  - created writableServerChannel on port 39892
+ DEBUG mpj  - created readableServerChannel on port 33817
  DEBUG mpj  - Connecting to :ServerName Reemis-MacBook-Pro.local ServerPort 40002
- DEBUG mpj  - Socket Connected Reemis-MacBook-Pro.local/10.134.34.86
- DEBUG mpj  - Sending Write Port 34882
- DEBUG mpj  - Sending Read Port38045
- INFO  mpj  - Peer Processes Info #Peer Information;10.134.34.86@31962@35051@0@0;10.134.34.86@29376@28420@1@0;10.134.34.86@25579@27943@2@0;10.134.34.86@38045@34882@3@0
+ DEBUG mpj  - Socket Connected Reemis-MacBook-Pro.local/192.168.1.13
+ DEBUG mpj  - Sending Write Port 39892
+ DEBUG mpj  - Sending Read Port33817
+ INFO  mpj  - Peer Processes Info #Peer Information;192.168.1.13@28982@25646@0@0;192.168.1.13@36953@37327@1@0;192.168.1.13@39056@36511@2@0;192.168.1.13@33817@39892@3@0;192.168.1.13@28010@39130@4@0;192.168.1.13@32389@29006@5@0;192.168.1.13@29704@37023@6@0
  DEBUG mpj  - Nodes list
- DEBUG mpj  - node[0] 10.134.34.86
- DEBUG mpj  - node[1] 10.134.34.86
- DEBUG mpj  - node[2] 10.134.34.86
- DEBUG mpj  - node[3] 10.134.34.86
+ DEBUG mpj  - node[0] 192.168.1.13
+ DEBUG mpj  - node[1] 192.168.1.13
+ DEBUG mpj  - node[2] 192.168.1.13
+ DEBUG mpj  - node[3] 192.168.1.13
+ DEBUG mpj  - node[4] 192.168.1.13
+ DEBUG mpj  - node[5] 192.168.1.13
+ DEBUG mpj  - node[6] 192.168.1.13
  DEBUG mpj  - Read Ports List
- DEBUG mpj  - rPortList[0] 31962
- DEBUG mpj  - rPortList[1] 29376
- DEBUG mpj  - rPortList[2] 25579
- DEBUG mpj  - rPortList[3] 38045
+ DEBUG mpj  - rPortList[0] 28982
+ DEBUG mpj  - rPortList[1] 36953
+ DEBUG mpj  - rPortList[2] 39056
+ DEBUG mpj  - rPortList[3] 33817
+ DEBUG mpj  - rPortList[4] 28010
+ DEBUG mpj  - rPortList[5] 32389
+ DEBUG mpj  - rPortList[6] 29704
  DEBUG mpj  - Write Ports List
- DEBUG mpj  - wPortList[0] 35051
- DEBUG mpj  - wPortList[1] 28420
- DEBUG mpj  - wPortList[2] 27943
- DEBUG mpj  - wPortList[3] 34882
+ DEBUG mpj  - wPortList[0] 25646
+ DEBUG mpj  - wPortList[1] 37327
+ DEBUG mpj  - wPortList[2] 36511
+ DEBUG mpj  - wPortList[3] 39892
+ DEBUG mpj  - wPortList[4] 39130
+ DEBUG mpj  - wPortList[5] 29006
+ DEBUG mpj  - wPortList[6] 37023
  DEBUG mpj  - Ranks List
  DEBUG mpj  - ranks[0] 0
  DEBUG mpj  - ranks[1] 1
  DEBUG mpj  - ranks[2] 2
  DEBUG mpj  - ranks[3] 3
- DEBUG mpj  - Connecting to 10.134.34.86@35051
- DEBUG mpj  - Connecting to 10.134.34.86@28420
- DEBUG mpj  - Connecting to 10.134.34.86@27943
- DEBUG mpj  - Connecting to 10.134.34.86@31962
- DEBUG mpj  - Connecting to 10.134.34.86@29376
- DEBUG mpj  - Connecting to 10.134.34.86@25579
+ DEBUG mpj  - ranks[4] 4
+ DEBUG mpj  - ranks[5] 5
+ DEBUG mpj  - ranks[6] 6
+ DEBUG mpj  - Connecting to 192.168.1.13@25646
+ DEBUG mpj  - Connecting to 192.168.1.13@37327
+ DEBUG mpj  - Connecting to 192.168.1.13@36511
+ DEBUG mpj  - Connecting to 192.168.1.13@28982
+ DEBUG mpj  - Connecting to 192.168.1.13@36953
+ DEBUG mpj  - Connecting to 192.168.1.13@39056
+ DEBUG mpj  - Dont connect to itself, so contine;
  DEBUG mpj  - Starting the selector thread 
  INFO  mpj  - selector Thread started 
  DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - selector calling doAccept (ctrl-channel) 
+ DEBUG mpj  - ---doAccept---
+ DEBUG mpj  - Added channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:33817 remote=/192.168.1.13:63990]
+ DEBUG mpj  - Now the size is <4>
+ DEBUG mpj  - --doAccept ends--
+ DEBUG mpj  -  returning false
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - selector calling doAccept (data-channel) 
+ DEBUG mpj  - ---doAccept---
+ DEBUG mpj  - Added channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:39892 remote=/192.168.1.13:63985]
+ DEBUG mpj  - Now the size is <4>
+ DEBUG mpj  - --doAccept ends--
+ DEBUG mpj  -  returning false
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - selector calling doAccept (data-channel) 
+ DEBUG mpj  - ---doAccept---
+ DEBUG mpj  - Added channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:39892 remote=/192.168.1.13:63999]
+ DEBUG mpj  - Now the size is <5>
+ DEBUG mpj  - --doAccept ends--
+ DEBUG mpj  -  returning false
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - WRITE_EVENT (should not see it)
+ DEBUG mpj  - In, WRITABLE, changing interestOps to READ_ONLY
  DEBUG mpj  - testing if all peers are connected?
- INFO  mpj  -  Yes all nodes are connected to each other 
- DEBUG mpj  - rank<3>is sending its rank,msb,lsb, to all data channels
- DEBUG mpj  - ---READ_EVENT----21
- DEBUG mpj  - ---barrierRead---
- DEBUG mpj  - (after ck) trying to add rank 0into table {}
- DEBUG mpj  - Adding rank 0into table {cacdc9c4-8baa-47d8-a28c-a5d2216c7edb=java.nio.channels.SocketChannel[connected local=/10.134.34.86:65529 remote=/10.134.34.86:35051]}
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - selector calling doAccept (ctrl-channel) 
+ DEBUG mpj  - ---doAccept---
+ DEBUG mpj  - Added channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:33817 remote=/192.168.1.13:64007]
+ DEBUG mpj  - Now the size is <5>
+ DEBUG mpj  - --doAccept ends--
+ DEBUG mpj  -  returning false
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - WRITE_EVENT (should not see it)
+ DEBUG mpj  - In, WRITABLE, changing interestOps to READ_ONLY
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - selector calling doAccept (data-channel) 
+ DEBUG mpj  - ---doAccept---
+ DEBUG mpj  - Added channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:39892 remote=/192.168.1.13:64010]
+ DEBUG mpj  - Now the size is <6>
+ DEBUG mpj  -  notifying and returning true
  DEBUG mpj  - ---selector EVENT---
  DEBUG mpj  - ---READ_EVENT----21
  DEBUG mpj  - ---barrierRead---
- DEBUG mpj  - (after ck) trying to add rank 1into table {cacdc9c4-8baa-47d8-a28c-a5d2216c7edb=java.nio.channels.SocketChannel[connected local=/10.134.34.86:65529 remote=/10.134.34.86:35051]}
- DEBUG mpj  - Adding rank 1into table {12cdcf7c-0a00-4e39-841a-f7ceb14fc271=java.nio.channels.SocketChannel[connected local=/10.134.34.86:65534 remote=/10.134.34.86:28420], cacdc9c4-8baa-47d8-a28c-a5d2216c7edb=java.nio.channels.SocketChannel[connected local=/10.134.34.86:65529 remote=/10.134.34.86:35051]}
+ DEBUG mpj  - (after ck) trying to add rank 0into table {}
+ DEBUG mpj  - Adding rank 0into table {ac97e1c7-e878-4faa-a849-f81493554f07=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63979 remote=/192.168.1.13:25646]}
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - ---READ_EVENT----21
+ DEBUG mpj  - ---barrierRead---
+ DEBUG mpj  - (after ck) trying to add rank 2into table {ac97e1c7-e878-4faa-a849-f81493554f07=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63979 remote=/192.168.1.13:25646]}
+ DEBUG mpj  - Adding rank 2into table {ac97e1c7-e878-4faa-a849-f81493554f07=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63979 remote=/192.168.1.13:25646], b022a1ec-5e1f-483f-b218-8cd6cec36672=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63995 remote=/192.168.1.13:36511]}
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - ---READ_EVENT----21
+ DEBUG mpj  - ---barrierRead---
+ DEBUG mpj  - (after ck) trying to add rank 1into table {ac97e1c7-e878-4faa-a849-f81493554f07=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63979 remote=/192.168.1.13:25646], b022a1ec-5e1f-483f-b218-8cd6cec36672=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63995 remote=/192.168.1.13:36511]}
+ DEBUG mpj  - Adding rank 1into table {ac97e1c7-e878-4faa-a849-f81493554f07=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63979 remote=/192.168.1.13:25646], a76bbd7f-20e7-4582-b8ee-2db70ef4fa23=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63992 remote=/192.168.1.13:37327], b022a1ec-5e1f-483f-b218-8cd6cec36672=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63995 remote=/192.168.1.13:36511]}
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - selector calling doAccept (ctrl-channel) 
+ DEBUG mpj  - ---doAccept---
+ DEBUG mpj  - Added channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:33817 remote=/192.168.1.13:64016]
+ DEBUG mpj  - Now the size is <6>
+ DEBUG mpj  -  notifying and returning true
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - WRITE_EVENT (should not see it)
+ DEBUG mpj  - In, WRITABLE, changing interestOps to READ_ONLY
+ INFO  mpj  -  Yes all nodes are connected to each other 
+ DEBUG mpj  - rank<3>is sending its rank,msb,lsb, to all data channels
  DEBUG mpj  - rank<3> testing if everything is received? 
  DEBUG mpj  - ---selector EVENT---
  DEBUG mpj  - ---READ_EVENT----21
  DEBUG mpj  - ---barrierRead---
- DEBUG mpj  - (after ck) trying to add rank 2into table {12cdcf7c-0a00-4e39-841a-f7ceb14fc271=java.nio.channels.SocketChannel[connected local=/10.134.34.86:65534 remote=/10.134.34.86:28420], cacdc9c4-8baa-47d8-a28c-a5d2216c7edb=java.nio.channels.SocketChannel[connected local=/10.134.34.86:65529 remote=/10.134.34.86:35051]}
- DEBUG mpj  - Adding rank 2into table {7f01d2a9-5152-46e5-b4cf-16ccb016ea14=java.nio.channels.SocketChannel[connected local=/10.134.34.86:65535 remote=/10.134.34.86:27943], 12cdcf7c-0a00-4e39-841a-f7ceb14fc271=java.nio.channels.SocketChannel[connected local=/10.134.34.86:65534 remote=/10.134.34.86:28420], cacdc9c4-8baa-47d8-a28c-a5d2216c7edb=java.nio.channels.SocketChannel[connected local=/10.134.34.86:65529 remote=/10.134.34.86:35051]}
+ DEBUG mpj  - (after ck) trying to add rank 4into table {ac97e1c7-e878-4faa-a849-f81493554f07=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63979 remote=/192.168.1.13:25646], a76bbd7f-20e7-4582-b8ee-2db70ef4fa23=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63992 remote=/192.168.1.13:37327], b022a1ec-5e1f-483f-b218-8cd6cec36672=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63995 remote=/192.168.1.13:36511]}
+ DEBUG mpj  - Adding rank 4into table {ac97e1c7-e878-4faa-a849-f81493554f07=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63979 remote=/192.168.1.13:25646], a76bbd7f-20e7-4582-b8ee-2db70ef4fa23=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63992 remote=/192.168.1.13:37327], bea28866-f694-41c4-ba09-c24ff2cfd247=java.nio.channels.SocketChannel[connected local=/192.168.1.13:33817 remote=/192.168.1.13:64007], b022a1ec-5e1f-483f-b218-8cd6cec36672=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63995 remote=/192.168.1.13:36511]}
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - ---READ_EVENT----21
+ DEBUG mpj  - ---barrierRead---
+ DEBUG mpj  - (after ck) trying to add rank 5into table {ac97e1c7-e878-4faa-a849-f81493554f07=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63979 remote=/192.168.1.13:25646], a76bbd7f-20e7-4582-b8ee-2db70ef4fa23=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63992 remote=/192.168.1.13:37327], bea28866-f694-41c4-ba09-c24ff2cfd247=java.nio.channels.SocketChannel[connected local=/192.168.1.13:33817 remote=/192.168.1.13:64007], b022a1ec-5e1f-483f-b218-8cd6cec36672=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63995 remote=/192.168.1.13:36511]}
+ DEBUG mpj  - Adding rank 5into table {61b5557e-246e-427c-b6d7-4e3a32d9658f=java.nio.channels.SocketChannel[connected local=/192.168.1.13:33817 remote=/192.168.1.13:63990], ac97e1c7-e878-4faa-a849-f81493554f07=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63979 remote=/192.168.1.13:25646], a76bbd7f-20e7-4582-b8ee-2db70ef4fa23=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63992 remote=/192.168.1.13:37327], bea28866-f694-41c4-ba09-c24ff2cfd247=java.nio.channels.SocketChannel[connected local=/192.168.1.13:33817 remote=/192.168.1.13:64007], b022a1ec-5e1f-483f-b218-8cd6cec36672=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63995 remote=/192.168.1.13:36511]}
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - ---READ_EVENT----21
+ DEBUG mpj  - ---barrierRead---
+ DEBUG mpj  - (after ck) trying to add rank 6into table {61b5557e-246e-427c-b6d7-4e3a32d9658f=java.nio.channels.SocketChannel[connected local=/192.168.1.13:33817 remote=/192.168.1.13:63990], ac97e1c7-e878-4faa-a849-f81493554f07=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63979 remote=/192.168.1.13:25646], a76bbd7f-20e7-4582-b8ee-2db70ef4fa23=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63992 remote=/192.168.1.13:37327], bea28866-f694-41c4-ba09-c24ff2cfd247=java.nio.channels.SocketChannel[connected local=/192.168.1.13:33817 remote=/192.168.1.13:64007], b022a1ec-5e1f-483f-b218-8cd6cec36672=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63995 remote=/192.168.1.13:36511]}
+ DEBUG mpj  - Adding rank 6into table {61b5557e-246e-427c-b6d7-4e3a32d9658f=java.nio.channels.SocketChannel[connected local=/192.168.1.13:33817 remote=/192.168.1.13:63990], ac97e1c7-e878-4faa-a849-f81493554f07=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63979 remote=/192.168.1.13:25646], a76bbd7f-20e7-4582-b8ee-2db70ef4fa23=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63992 remote=/192.168.1.13:37327], fc6706a9-8104-46f3-95d9-51a34e200faf=java.nio.channels.SocketChannel[connected local=/192.168.1.13:33817 remote=/192.168.1.13:64016], bea28866-f694-41c4-ba09-c24ff2cfd247=java.nio.channels.SocketChannel[connected local=/192.168.1.13:33817 remote=/192.168.1.13:64007], b022a1ec-5e1f-483f-b218-8cd6cec36672=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63995 remote=/192.168.1.13:36511]}
  DEBUG mpj  - worldReadableTable is filled 
  DEBUG mpj  - ---barrierRead---
  DEBUG mpj  - (after ck) trying to add rank 0into table {}
- DEBUG mpj  - Adding rank 0into table {cacdc9c4-8baa-47d8-a28c-a5d2216c7edb=java.nio.channels.SocketChannel[connected local=/10.134.34.86:49152 remote=/10.134.34.86:31962]}
+ DEBUG mpj  - Adding rank 0into table {ac97e1c7-e878-4faa-a849-f81493554f07=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63996 remote=/192.168.1.13:28982]}
  DEBUG mpj  - ---barrierRead---
- DEBUG mpj  - (after ck) trying to add rank 1into table {cacdc9c4-8baa-47d8-a28c-a5d2216c7edb=java.nio.channels.SocketChannel[connected local=/10.134.34.86:49152 remote=/10.134.34.86:31962]}
- DEBUG mpj  - Adding rank 1into table {12cdcf7c-0a00-4e39-841a-f7ceb14fc271=java.nio.channels.SocketChannel[connected local=/10.134.34.86:49153 remote=/10.134.34.86:29376], cacdc9c4-8baa-47d8-a28c-a5d2216c7edb=java.nio.channels.SocketChannel[connected local=/10.134.34.86:49152 remote=/10.134.34.86:31962]}
+ DEBUG mpj  - (after ck) trying to add rank 1into table {ac97e1c7-e878-4faa-a849-f81493554f07=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63996 remote=/192.168.1.13:28982]}
+ DEBUG mpj  - Adding rank 1into table {ac97e1c7-e878-4faa-a849-f81493554f07=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63996 remote=/192.168.1.13:28982], a76bbd7f-20e7-4582-b8ee-2db70ef4fa23=java.nio.channels.SocketChannel[connected local=/192.168.1.13:64000 remote=/192.168.1.13:36953]}
  DEBUG mpj  - ---barrierRead---
- DEBUG mpj  - (after ck) trying to add rank 2into table {12cdcf7c-0a00-4e39-841a-f7ceb14fc271=java.nio.channels.SocketChannel[connected local=/10.134.34.86:49153 remote=/10.134.34.86:29376], cacdc9c4-8baa-47d8-a28c-a5d2216c7edb=java.nio.channels.SocketChannel[connected local=/10.134.34.86:49152 remote=/10.134.34.86:31962]}
- DEBUG mpj  - Adding rank 2into table {7f01d2a9-5152-46e5-b4cf-16ccb016ea14=java.nio.channels.SocketChannel[connected local=/10.134.34.86:49154 remote=/10.134.34.86:25579], 12cdcf7c-0a00-4e39-841a-f7ceb14fc271=java.nio.channels.SocketChannel[connected local=/10.134.34.86:49153 remote=/10.134.34.86:29376], cacdc9c4-8baa-47d8-a28c-a5d2216c7edb=java.nio.channels.SocketChannel[connected local=/10.134.34.86:49152 remote=/10.134.34.86:31962]}
+ DEBUG mpj  - (after ck) trying to add rank 2into table {ac97e1c7-e878-4faa-a849-f81493554f07=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63996 remote=/192.168.1.13:28982], a76bbd7f-20e7-4582-b8ee-2db70ef4fa23=java.nio.channels.SocketChannel[connected local=/192.168.1.13:64000 remote=/192.168.1.13:36953]}
+ DEBUG mpj  - Adding rank 2into table {ac97e1c7-e878-4faa-a849-f81493554f07=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63996 remote=/192.168.1.13:28982], a76bbd7f-20e7-4582-b8ee-2db70ef4fa23=java.nio.channels.SocketChannel[connected local=/192.168.1.13:64000 remote=/192.168.1.13:36953], b022a1ec-5e1f-483f-b218-8cd6cec36672=java.nio.channels.SocketChannel[connected local=/192.168.1.13:64001 remote=/192.168.1.13:39056]}
+ DEBUG mpj  - ---barrierRead---
+ DEBUG mpj  - (after ck) trying to add rank 5into table {ac97e1c7-e878-4faa-a849-f81493554f07=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63996 remote=/192.168.1.13:28982], a76bbd7f-20e7-4582-b8ee-2db70ef4fa23=java.nio.channels.SocketChannel[connected local=/192.168.1.13:64000 remote=/192.168.1.13:36953], b022a1ec-5e1f-483f-b218-8cd6cec36672=java.nio.channels.SocketChannel[connected local=/192.168.1.13:64001 remote=/192.168.1.13:39056]}
+ DEBUG mpj  - Adding rank 5into table {61b5557e-246e-427c-b6d7-4e3a32d9658f=java.nio.channels.SocketChannel[connected local=/192.168.1.13:39892 remote=/192.168.1.13:63985], ac97e1c7-e878-4faa-a849-f81493554f07=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63996 remote=/192.168.1.13:28982], a76bbd7f-20e7-4582-b8ee-2db70ef4fa23=java.nio.channels.SocketChannel[connected local=/192.168.1.13:64000 remote=/192.168.1.13:36953], b022a1ec-5e1f-483f-b218-8cd6cec36672=java.nio.channels.SocketChannel[connected local=/192.168.1.13:64001 remote=/192.168.1.13:39056]}
+ DEBUG mpj  - ---barrierRead---
+ DEBUG mpj  - (after ck) trying to add rank 4into table {61b5557e-246e-427c-b6d7-4e3a32d9658f=java.nio.channels.SocketChannel[connected local=/192.168.1.13:39892 remote=/192.168.1.13:63985], ac97e1c7-e878-4faa-a849-f81493554f07=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63996 remote=/192.168.1.13:28982], a76bbd7f-20e7-4582-b8ee-2db70ef4fa23=java.nio.channels.SocketChannel[connected local=/192.168.1.13:64000 remote=/192.168.1.13:36953], b022a1ec-5e1f-483f-b218-8cd6cec36672=java.nio.channels.SocketChannel[connected local=/192.168.1.13:64001 remote=/192.168.1.13:39056]}
+ DEBUG mpj  - Adding rank 4into table {61b5557e-246e-427c-b6d7-4e3a32d9658f=java.nio.channels.SocketChannel[connected local=/192.168.1.13:39892 remote=/192.168.1.13:63985], ac97e1c7-e878-4faa-a849-f81493554f07=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63996 remote=/192.168.1.13:28982], a76bbd7f-20e7-4582-b8ee-2db70ef4fa23=java.nio.channels.SocketChannel[connected local=/192.168.1.13:64000 remote=/192.168.1.13:36953], bea28866-f694-41c4-ba09-c24ff2cfd247=java.nio.channels.SocketChannel[connected local=/192.168.1.13:39892 remote=/192.168.1.13:63999], b022a1ec-5e1f-483f-b218-8cd6cec36672=java.nio.channels.SocketChannel[connected local=/192.168.1.13:64001 remote=/192.168.1.13:39056]}
+ DEBUG mpj  - ---barrierRead---
+ DEBUG mpj  - (after ck) trying to add rank 6into table {61b5557e-246e-427c-b6d7-4e3a32d9658f=java.nio.channels.SocketChannel[connected local=/192.168.1.13:39892 remote=/192.168.1.13:63985], ac97e1c7-e878-4faa-a849-f81493554f07=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63996 remote=/192.168.1.13:28982], a76bbd7f-20e7-4582-b8ee-2db70ef4fa23=java.nio.channels.SocketChannel[connected local=/192.168.1.13:64000 remote=/192.168.1.13:36953], bea28866-f694-41c4-ba09-c24ff2cfd247=java.nio.channels.SocketChannel[connected local=/192.168.1.13:39892 remote=/192.168.1.13:63999], b022a1ec-5e1f-483f-b218-8cd6cec36672=java.nio.channels.SocketChannel[connected local=/192.168.1.13:64001 remote=/192.168.1.13:39056]}
+ DEBUG mpj  - Adding rank 6into table {61b5557e-246e-427c-b6d7-4e3a32d9658f=java.nio.channels.SocketChannel[connected local=/192.168.1.13:39892 remote=/192.168.1.13:63985], ac97e1c7-e878-4faa-a849-f81493554f07=java.nio.channels.SocketChannel[connected local=/192.168.1.13:63996 remote=/192.168.1.13:28982], a76bbd7f-20e7-4582-b8ee-2db70ef4fa23=java.nio.channels.SocketChannel[connected local=/192.168.1.13:64000 remote=/192.168.1.13:36953], fc6706a9-8104-46f3-95d9-51a34e200faf=java.nio.channels.SocketChannel[connected local=/192.168.1.13:39892 remote=/192.168.1.13:64010], bea28866-f694-41c4-ba09-c24ff2cfd247=java.nio.channels.SocketChannel[connected local=/192.168.1.13:39892 remote=/192.168.1.13:63999], b022a1ec-5e1f-483f-b218-8cd6cec36672=java.nio.channels.SocketChannel[connected local=/192.168.1.13:64001 remote=/192.168.1.13:39056]}
  DEBUG mpj  - worldWritable is filled 
- DEBUG mpj  - 
-
- createBuffer 104
- DEBUG mpj  - required level 0
- DEBUG mpj  - finding the right level 
- DEBUG mpj  - freeList.size() 0
- DEBUG mpj  - allocating a new region 
- DEBUG mpj  - --initializeRegion--
- DEBUG mpj  - size  8388608
  DEBUG mpj  - ---selector EVENT---
  DEBUG mpj  - ---READ_EVENT----24
  DEBUG mpj  -  received READY_TO_SEND or  READY_TO_RECV
  DEBUG mpj  - -- recvCtrlMsgFromSender ---
  DEBUG mpj  - Receiver getting the control message
  DEBUG mpj  - Could be rend, eager, posted b4 or not
- DEBUG mpj  - msb :-3833185861828458536
- DEBUG mpj  - lsb :-6733825020903260453
+ DEBUG mpj  - msb :-6010086928987697238
+ DEBUG mpj  - lsb :-6320247834782904569
  DEBUG mpj  - sendCounter :3
  DEBUG mpj  - tag :34023
  DEBUG mpj  - staBufferSize :12
  DEBUG mpj  - dynaBufferSize :0
  DEBUG mpj  - context :10
  DEBUG mpj  - commMode :3
- DEBUG mpj  - type :mpjbuf.Type@443f5f31
+ DEBUG mpj  - type :mpjbuf.Type@483c413f
  DEBUG mpj  - sendCounter :3
  DEBUG mpj  - numEls :1
  DEBUG mpj  - setting the request.code to RECV_IN_DEV_MEMORY
@@ -1261,10 +1731,19 @@
  DEBUG mpj  - ---eagerRecv2mpjMem_34023
  DEBUG mpj  - static section ...
  DEBUG mpj  -  creating eager buffer 
+ DEBUG mpj  - 
+
+ createBuffer 12
+ DEBUG mpj  - required level 0
+ DEBUG mpj  - finding the right level 
+ DEBUG mpj  - freeList.size() 0
+ DEBUG mpj  - allocating a new region 
+ DEBUG mpj  - --initializeRegion--
+ DEBUG mpj  - size  8388608
  DEBUG mpj  - calling allocate ...
  DEBUG mpj  - --allocate--
  DEBUG mpj  -  level :0
- DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@7c203dc0
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@4fc903ee
  DEBUG mpj  - position 0
  DEBUG mpj  - list.blockSize 4194304
  DEBUG mpj  - Adding buddy @ 4194304
@@ -1315,129 +1794,53 @@
  DEBUG mpj  - Adding buddy @ 128
  DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
  DEBUG mpj  -  cap 128
- DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@15e2dd92
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@32ba1a6
  DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=1 lim=128 cap=8388608]
  DEBUG mpj  - position 0
+ DEBUG mpj  -  creating eager bufferjava.nio.DirectByteBuffer[pos=0 lim=12 cap=127]
+ DEBUG mpj  - Adding the request
+ DEBUG mpj  - time_ready_sendrecv=0.02780329
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - ---READ_EVENT----24
+ DEBUG mpj  -  received READY_TO_SEND or  READY_TO_RECV
+ DEBUG mpj  - -- recvCtrlMsgFromSender ---
+ DEBUG mpj  - Receiver getting the control message
+ DEBUG mpj  - Could be rend, eager, posted b4 or not
+ DEBUG mpj  - msb :-4710052284471164476
+ DEBUG mpj  - lsb :-5041284659232648633
+ DEBUG mpj  - sendCounter :4
+ DEBUG mpj  - tag :34023
+ DEBUG mpj  - staBufferSize :12
+ DEBUG mpj  - dynaBufferSize :0
+ DEBUG mpj  - context :10
+ DEBUG mpj  - commMode :3
+ DEBUG mpj  - type :mpjbuf.Type@483c413f
+ DEBUG mpj  - sendCounter :4
+ DEBUG mpj  - numEls :1
+ DEBUG mpj  - setting the request.code to RECV_IN_DEV_MEMORY
+ DEBUG mpj  - Calling eagerRecv2mpjMem
+ DEBUG mpj  - ---eagerRecv2mpjMem_34023
+ DEBUG mpj  - static section ...
+ DEBUG mpj  -  creating eager buffer 
  DEBUG mpj  - 
 
  createBuffer 12
  DEBUG mpj  - required level 0
  DEBUG mpj  - finding the right level 
  DEBUG mpj  - freeList.size() 17
- DEBUG mpj  - list @level <0>=mpjbuf.Buddy1RegionFreeList@15e2dd92
+ DEBUG mpj  - list @level <0>=mpjbuf.Buddy1RegionFreeList@32ba1a6
  DEBUG mpj  - calling allocate ...
  DEBUG mpj  - --allocate--
  DEBUG mpj  -  level :0
- DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@15e2dd92
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@32ba1a6
  DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
  DEBUG mpj  -  cap 128
- DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@15e2dd92
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@32ba1a6
  DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=129 lim=256 cap=8388608]
  DEBUG mpj  - position 128
  DEBUG mpj  -  creating eager bufferjava.nio.DirectByteBuffer[pos=0 lim=12 cap=127]
  DEBUG mpj  - Adding the request
- DEBUG mpj  - time_ready_sendrecv=0.025749897
- DEBUG mpj  - ---selector EVENT---
- INFO  mpj  - ---isend---<34020>
- DEBUG mpj  - ---READ_EVENT----24
- DEBUG mpj  -  received READY_TO_SEND or  READY_TO_RECV
- DEBUG mpj  - sender :8a615a4c-ac53-4b0a-a6fb-9c8c86555251
- DEBUG mpj  - -- recvCtrlMsgFromSender ---
- DEBUG mpj  - receiver :cacdc9c4-8baa-47d8-a28c-a5d2216c7edb
- DEBUG mpj  - Receiver getting the control message
- DEBUG mpj  - Could be rend, eager, posted b4 or not
- DEBUG mpj  - tag :34020
- DEBUG mpj  - msb :9151827542449211109
- DEBUG mpj  - isend with remote process connections
- DEBUG mpj  - lsb :-5418086758319986156
- DEBUG mpj  - sendCounter :3
- DEBUG mpj  - tag :34023
- DEBUG mpj  - staBufferSize :12
- DEBUG mpj  - dynaBufferSize :0
- DEBUG mpj  - context :10
- DEBUG mpj  - commMode :3
- DEBUG mpj  - type :mpjbuf.Type@443f5f31
- DEBUG mpj  - sendCounter :3
- DEBUG mpj  - numEls :1
- DEBUG mpj  - setting the request.code to RECV_IN_DEV_MEMORY
- DEBUG mpj  - Calling eagerRecv2mpjMem
- DEBUG mpj  - ---eagerRecv2mpjMem_34023
- DEBUG mpj  - static section ...
- DEBUG mpj  -  creating eager buffer 
- DEBUG mpj  - 
-
- createBuffer 12
- DEBUG mpj  - required level 0
- DEBUG mpj  - finding the right level 
- DEBUG mpj  - freeList.size() 17
- DEBUG mpj  - list @level <0>=null
- DEBUG mpj  - list @level <1>=mpjbuf.Buddy1RegionFreeList@72901b18
- DEBUG mpj  - calling allocate ...
- DEBUG mpj  - --allocate--
- DEBUG mpj  -  level :0
- DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@72901b18
- DEBUG mpj  - position 256
- DEBUG mpj  - list.blockSize 128
- DEBUG mpj  - Adding buddy @ 384
- DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
- DEBUG mpj  -  cap 128
- DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@15e2dd92
- DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=257 lim=384 cap=8388608]
- DEBUG mpj  - position 256
- DEBUG mpj  -  creating eager bufferjava.nio.DirectByteBuffer[pos=0 lim=12 cap=127]
- DEBUG mpj  - Adding the request
- DEBUG mpj  - channel :java.nio.channels.SocketChannel[connected local=/10.134.34.86:49152 remote=/10.134.34.86:31962]
- DEBUG mpj  - get writeLock for this channel
- DEBUG mpj  - time_ready_sendrecv=0.001245215
- DEBUG mpj  - ---selector EVENT---
- DEBUG mpj  - ---eagerSend---
- DEBUG mpj  - ---READ_EVENT----24
- DEBUG mpj  -  request.bufoffset 81
- DEBUG mpj  -  received READY_TO_SEND or  READY_TO_RECV
- DEBUG mpj  - sendBuffer java.nio.DirectByteBuffer[pos=0 lim=81 cap=127]
- DEBUG mpj  - -- recvCtrlMsgFromSender ---
- DEBUG mpj  - Receiver getting the control message
- DEBUG mpj  - Could be rend, eager, posted b4 or not
- DEBUG mpj  - msb :1354967194559073849
- DEBUG mpj  - lsb :-8927550844198469007
- DEBUG mpj  - sendCounter :3
- DEBUG mpj  - tag :34023
- DEBUG mpj  - staBufferSize :12
- DEBUG mpj  - dynaBufferSize :0
- DEBUG mpj  - context :10
- DEBUG mpj  - commMode :3
- DEBUG mpj  - type :mpjbuf.Type@443f5f31
- DEBUG mpj  - sendCounter :3
- DEBUG mpj  - numEls :1
- DEBUG mpj  - setting the request.code to RECV_IN_DEV_MEMORY
- DEBUG mpj  - Calling eagerRecv2mpjMem
- DEBUG mpj  - ---eagerRecv2mpjMem_34023
- DEBUG mpj  - static section ...
- DEBUG mpj  - request.staticBuffer (1)<java.nio.DirectByteBuffer[pos=0 lim=93 cap=127]> w=0
- DEBUG mpj  -  creating eager buffer 
- DEBUG mpj  - 
-
- createBuffer 12
- DEBUG mpj  - required level 0
- DEBUG mpj  - request.staticBuffer (2)<java.nio.DirectByteBuffer[pos=93 lim=93 cap=127]> w=93
- DEBUG mpj  - finding the right level 
- DEBUG mpj  - request.dBufSize <0>
- DEBUG mpj  - freeList.size() 17
- DEBUG mpj  - --eagerSend finishes--
- DEBUG mpj  - list @level <0>=mpjbuf.Buddy1RegionFreeList@15e2dd92
- DEBUG mpj  - calling allocate ...
- DEBUG mpj  - --allocate--
- DEBUG mpj  -  level :0
- DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@15e2dd92
- DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
- DEBUG mpj  -  cap 128
- DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@15e2dd92
- DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=385 lim=512 cap=8388608]
- DEBUG mpj  - position 384
- DEBUG mpj  -  creating eager bufferjava.nio.DirectByteBuffer[pos=0 lim=12 cap=127]
- DEBUG mpj  - Adding the request
- DEBUG mpj  - time_ready_sendrecv=0.001591448
- INFO  mpj  - ---isend ends---<34020>
+ DEBUG mpj  - time_ready_sendrecv=0.001406526
  DEBUG mpj  - 
 
  createBuffer 104
@@ -1445,29 +1848,56 @@
  DEBUG mpj  - finding the right level 
  DEBUG mpj  - freeList.size() 17
  DEBUG mpj  - list @level <0>=null
- DEBUG mpj  - list @level <1>=null
- DEBUG mpj  - list @level <2>=mpjbuf.Buddy1RegionFreeList@34411547
+ DEBUG mpj  - list @level <1>=mpjbuf.Buddy1RegionFreeList@67cda220
  DEBUG mpj  - calling allocate ...
  DEBUG mpj  - --allocate--
  DEBUG mpj  -  level :0
- DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@34411547
- DEBUG mpj  - position 512
- DEBUG mpj  - list.blockSize 256
- DEBUG mpj  - Adding buddy @ 768
- DEBUG mpj  - position 512
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@67cda220
+ DEBUG mpj  - position 256
  DEBUG mpj  - list.blockSize 128
- DEBUG mpj  - Adding buddy @ 640
+ DEBUG mpj  - Adding buddy @ 384
  DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
  DEBUG mpj  -  cap 128
- DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@15e2dd92
- DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=513 lim=640 cap=8388608]
- DEBUG mpj  - position 512
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@32ba1a6
+ DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=257 lim=384 cap=8388608]
+ DEBUG mpj  - position 256
+ INFO  mpj  - ---isend---<34020>
+ DEBUG mpj  - sender :76939857-6ff2-4a0a-84d4-27ce10ccce3b
+ DEBUG mpj  - receiver :ac97e1c7-e878-4faa-a849-f81493554f07
+ DEBUG mpj  - tag :34020
+ DEBUG mpj  - isend with remote process connections
+ DEBUG mpj  - channel :java.nio.channels.SocketChannel[connected local=/192.168.1.13:63996 remote=/192.168.1.13:28982]
+ DEBUG mpj  - get writeLock for this channel
+ DEBUG mpj  - ---eagerSend---
+ DEBUG mpj  -  request.bufoffset 81
+ DEBUG mpj  - sendBuffer java.nio.DirectByteBuffer[pos=0 lim=81 cap=127]
+ DEBUG mpj  - request.staticBuffer (1)<java.nio.DirectByteBuffer[pos=0 lim=93 cap=127]> w=0
+ DEBUG mpj  - request.staticBuffer (2)<java.nio.DirectByteBuffer[pos=93 lim=93 cap=127]> w=93
+ DEBUG mpj  - request.dBufSize <0>
+ DEBUG mpj  - --eagerSend finishes--
+ INFO  mpj  - ---isend ends---<34020>
+ DEBUG mpj  - 
+
+ createBuffer 104
+ DEBUG mpj  - required level 0
+ DEBUG mpj  - finding the right level 
+ DEBUG mpj  - freeList.size() 17
+ DEBUG mpj  - list @level <0>=mpjbuf.Buddy1RegionFreeList@32ba1a6
+ DEBUG mpj  - calling allocate ...
+ DEBUG mpj  - --allocate--
+ DEBUG mpj  -  level :0
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@32ba1a6
+ DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
+ DEBUG mpj  -  cap 128
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@32ba1a6
+ DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=385 lim=512 cap=8388608]
+ DEBUG mpj  - position 384
  INFO  mpj  - ---isend---<34021>
- DEBUG mpj  - sender :8a615a4c-ac53-4b0a-a6fb-9c8c86555251
- DEBUG mpj  - receiver :12cdcf7c-0a00-4e39-841a-f7ceb14fc271
+ DEBUG mpj  - sender :76939857-6ff2-4a0a-84d4-27ce10ccce3b
+ DEBUG mpj  - receiver :a76bbd7f-20e7-4582-b8ee-2db70ef4fa23
  DEBUG mpj  - tag :34021
  DEBUG mpj  - isend with remote process connections
- DEBUG mpj  - channel :java.nio.channels.SocketChannel[connected local=/10.134.34.86:49153 remote=/10.134.34.86:29376]
+ DEBUG mpj  - channel :java.nio.channels.SocketChannel[connected local=/192.168.1.13:64000 remote=/192.168.1.13:36953]
  DEBUG mpj  - get writeLock for this channel
  DEBUG mpj  - ---eagerSend---
  DEBUG mpj  -  request.bufoffset 81
@@ -1483,22 +1913,30 @@
  DEBUG mpj  - required level 0
  DEBUG mpj  - finding the right level 
  DEBUG mpj  - freeList.size() 17
- DEBUG mpj  - list @level <0>=mpjbuf.Buddy1RegionFreeList@15e2dd92
+ DEBUG mpj  - list @level <0>=null
+ DEBUG mpj  - list @level <1>=null
+ DEBUG mpj  - list @level <2>=mpjbuf.Buddy1RegionFreeList@6276e375
  DEBUG mpj  - calling allocate ...
  DEBUG mpj  - --allocate--
  DEBUG mpj  -  level :0
- DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@15e2dd92
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@6276e375
+ DEBUG mpj  - position 512
+ DEBUG mpj  - list.blockSize 256
+ DEBUG mpj  - Adding buddy @ 768
+ DEBUG mpj  - position 512
+ DEBUG mpj  - list.blockSize 128
+ DEBUG mpj  - Adding buddy @ 640
  DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
  DEBUG mpj  -  cap 128
- DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@15e2dd92
- DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=641 lim=768 cap=8388608]
- DEBUG mpj  - position 640
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@32ba1a6
+ DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=513 lim=640 cap=8388608]
+ DEBUG mpj  - position 512
  INFO  mpj  - ---isend---<34022>
- DEBUG mpj  - sender :8a615a4c-ac53-4b0a-a6fb-9c8c86555251
- DEBUG mpj  - receiver :7f01d2a9-5152-46e5-b4cf-16ccb016ea14
+ DEBUG mpj  - sender :76939857-6ff2-4a0a-84d4-27ce10ccce3b
+ DEBUG mpj  - receiver :b022a1ec-5e1f-483f-b218-8cd6cec36672
  DEBUG mpj  - tag :34022
  DEBUG mpj  - isend with remote process connections
- DEBUG mpj  - channel :java.nio.channels.SocketChannel[connected local=/10.134.34.86:49154 remote=/10.134.34.86:25579]
+ DEBUG mpj  - channel :java.nio.channels.SocketChannel[connected local=/192.168.1.13:64001 remote=/192.168.1.13:39056]
  DEBUG mpj  - get writeLock for this channel
  DEBUG mpj  - ---eagerSend---
  DEBUG mpj  -  request.bufoffset 81
@@ -1510,29 +1948,289 @@
  INFO  mpj  - ---isend ends---<34022>
  DEBUG mpj  - 
 
- createBuffer 16
+ createBuffer 104
+ DEBUG mpj  - required level 0
+ DEBUG mpj  - finding the right level 
+ DEBUG mpj  - freeList.size() 17
+ DEBUG mpj  - list @level <0>=mpjbuf.Buddy1RegionFreeList@32ba1a6
+ DEBUG mpj  - calling allocate ...
+ DEBUG mpj  - --allocate--
+ DEBUG mpj  -  level :0
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@32ba1a6
+ DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
+ DEBUG mpj  -  cap 128
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@32ba1a6
+ DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=641 lim=768 cap=8388608]
+ DEBUG mpj  - position 640
+ INFO  mpj  - ---isend---<34024>
+ DEBUG mpj  - sender :76939857-6ff2-4a0a-84d4-27ce10ccce3b
+ DEBUG mpj  - receiver :bea28866-f694-41c4-ba09-c24ff2cfd247
+ DEBUG mpj  - tag :34024
+ DEBUG mpj  - isend with remote process connections
+ DEBUG mpj  - channel :java.nio.channels.SocketChannel[connected local=/192.168.1.13:39892 remote=/192.168.1.13:63999]
+ DEBUG mpj  - get writeLock for this channel
+ DEBUG mpj  - ---eagerSend---
+ DEBUG mpj  -  request.bufoffset 81
+ DEBUG mpj  - sendBuffer java.nio.DirectByteBuffer[pos=0 lim=81 cap=127]
+ DEBUG mpj  - request.staticBuffer (1)<java.nio.DirectByteBuffer[pos=0 lim=93 cap=127]> w=0
+ DEBUG mpj  - request.staticBuffer (2)<java.nio.DirectByteBuffer[pos=93 lim=93 cap=127]> w=93
+ DEBUG mpj  - request.dBufSize <0>
+ DEBUG mpj  - --eagerSend finishes--
+ INFO  mpj  - ---isend ends---<34024>
+ DEBUG mpj  - 
+
+ createBuffer 104
  DEBUG mpj  - required level 0
  DEBUG mpj  - finding the right level 
  DEBUG mpj  - freeList.size() 17
  DEBUG mpj  - list @level <0>=null
- DEBUG mpj  - list @level <1>=mpjbuf.Buddy1RegionFreeList@72901b18
+ DEBUG mpj  - list @level <1>=mpjbuf.Buddy1RegionFreeList@67cda220
  DEBUG mpj  - calling allocate ...
  DEBUG mpj  - --allocate--
  DEBUG mpj  -  level :0
- DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@72901b18
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@67cda220
  DEBUG mpj  - position 768
  DEBUG mpj  - list.blockSize 128
  DEBUG mpj  - Adding buddy @ 896
  DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
  DEBUG mpj  -  cap 128
- DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@15e2dd92
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@32ba1a6
  DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=769 lim=896 cap=8388608]
  DEBUG mpj  - position 768
+ INFO  mpj  - ---isend---<34025>
+ DEBUG mpj  - sender :76939857-6ff2-4a0a-84d4-27ce10ccce3b
+ DEBUG mpj  - receiver :61b5557e-246e-427c-b6d7-4e3a32d9658f
+ DEBUG mpj  - tag :34025
+ DEBUG mpj  - isend with remote process connections
+ DEBUG mpj  - channel :java.nio.channels.SocketChannel[connected local=/192.168.1.13:39892 remote=/192.168.1.13:63985]
+ DEBUG mpj  - get writeLock for this channel
+ DEBUG mpj  - ---eagerSend---
+ DEBUG mpj  -  request.bufoffset 81
+ DEBUG mpj  - sendBuffer java.nio.DirectByteBuffer[pos=0 lim=81 cap=127]
+ DEBUG mpj  - request.staticBuffer (1)<java.nio.DirectByteBuffer[pos=0 lim=93 cap=127]> w=0
+ DEBUG mpj  - request.staticBuffer (2)<java.nio.DirectByteBuffer[pos=93 lim=93 cap=127]> w=93
+ DEBUG mpj  - request.dBufSize <0>
+ DEBUG mpj  - --eagerSend finishes--
+ INFO  mpj  - ---isend ends---<34025>
+ DEBUG mpj  - 
+
+ createBuffer 104
+ DEBUG mpj  - required level 0
+ DEBUG mpj  - finding the right level 
+ DEBUG mpj  - freeList.size() 17
+ DEBUG mpj  - list @level <0>=mpjbuf.Buddy1RegionFreeList@32ba1a6
+ DEBUG mpj  - calling allocate ...
+ DEBUG mpj  - --allocate--
+ DEBUG mpj  -  level :0
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@32ba1a6
+ DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
+ DEBUG mpj  -  cap 128
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@32ba1a6
+ DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=897 lim=1024 cap=8388608]
+ DEBUG mpj  - position 896
+ INFO  mpj  - ---isend---<34026>
+ DEBUG mpj  - sender :76939857-6ff2-4a0a-84d4-27ce10ccce3b
+ DEBUG mpj  - receiver :fc6706a9-8104-46f3-95d9-51a34e200faf
+ DEBUG mpj  - tag :34026
+ DEBUG mpj  - isend with remote process connections
+ DEBUG mpj  - channel :java.nio.channels.SocketChannel[connected local=/192.168.1.13:39892 remote=/192.168.1.13:64010]
+ DEBUG mpj  - get writeLock for this channel
+ DEBUG mpj  - ---eagerSend---
+ DEBUG mpj  -  request.bufoffset 81
+ DEBUG mpj  - sendBuffer java.nio.DirectByteBuffer[pos=0 lim=81 cap=127]
+ DEBUG mpj  - request.staticBuffer (1)<java.nio.DirectByteBuffer[pos=0 lim=93 cap=127]> w=0
+ DEBUG mpj  - request.staticBuffer (2)<java.nio.DirectByteBuffer[pos=93 lim=93 cap=127]> w=93
+ DEBUG mpj  - request.dBufSize <0>
+ DEBUG mpj  - --eagerSend finishes--
+ INFO  mpj  - ---isend ends---<34026>
+ DEBUG mpj  - 
+
+ createBuffer 16
+ DEBUG mpj  - required level 0
+ DEBUG mpj  - finding the right level 
+ DEBUG mpj  - freeList.size() 17
+ DEBUG mpj  - list @level <0>=null
+ DEBUG mpj  - list @level <1>=null
+ DEBUG mpj  - list @level <2>=null
+ DEBUG mpj  - list @level <3>=mpjbuf.Buddy1RegionFreeList@7115054f
+ DEBUG mpj  - calling allocate ...
+ DEBUG mpj  - --allocate--
+ DEBUG mpj  -  level :0
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@7115054f
+ DEBUG mpj  - position 1024
+ DEBUG mpj  - list.blockSize 512
+ DEBUG mpj  - Adding buddy @ 1536
+ DEBUG mpj  - position 1024
+ DEBUG mpj  - list.blockSize 256
+ DEBUG mpj  - Adding buddy @ 1280
+ DEBUG mpj  - position 1024
+ DEBUG mpj  - list.blockSize 128
+ DEBUG mpj  - Adding buddy @ 1152
+ DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
+ DEBUG mpj  -  cap 128
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@32ba1a6
+ DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=1025 lim=1152 cap=8388608]
+ DEBUG mpj  - position 1024
  INFO  mpj  - ---irecv---<34023>
  DEBUG mpj  - Looking whether this req has been posted or not
  DEBUG mpj  - 
 --free--
- DEBUG mpj  - buffer.list.front 896
+ DEBUG mpj  - buffer.list.front 1152
+ DEBUG mpj  -  list.level 0
+ DEBUG mpj  -  position 0
+ DEBUG mpj  -  memory (for region) java.nio.DirectByteBuffer[pos=0 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy 128
+ DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=128 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy is not FREE 
+ DEBUG mpj  -  adding the buffer at pos <0
+ DEBUG mpj  - size of htis buffer is 128
+ DEBUG mpj  - setting the buf size 12
+ DEBUG mpj  - removed 
+ INFO  mpj  - ---irecv---<34023>
+ DEBUG mpj  - Looking whether this req has been posted or not
+ DEBUG mpj  - No Matching req, so posting ourselves
+ DEBUG mpj  - request.staticBuffer (in recv) java.nio.DirectByteBuffer[pos=8 lim=127 cap=127]
+ DEBUG mpj  - Added request in irecv 
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - ---READ_EVENT----24
+ DEBUG mpj  -  received READY_TO_SEND or  READY_TO_RECV
+ DEBUG mpj  - -- recvCtrlMsgFromSender ---
+ DEBUG mpj  - Receiver getting the control message
+ DEBUG mpj  - Could be rend, eager, posted b4 or not
+ DEBUG mpj  - msb :-6382799693157022334
+ DEBUG mpj  - lsb :-5121105462020474333
+ DEBUG mpj  - sendCounter :3
+ DEBUG mpj  - tag :34023
+ DEBUG mpj  - staBufferSize :12
+ DEBUG mpj  - dynaBufferSize :0
+ DEBUG mpj  - context :10
+ DEBUG mpj  - commMode :3
+ DEBUG mpj  - type :mpjbuf.Type@483c413f
+ DEBUG mpj  - sendCounter :3
+ DEBUG mpj  - numEls :1
+ DEBUG mpj  - ---eagerRecv2UserMem---
+ DEBUG mpj  - request.sBufSize (is it zero?) 12
+ DEBUG mpj  - b(1) java.nio.DirectByteBuffer[pos=0 lim=12 cap=127]
+ DEBUG mpj  - b(2) java.nio.DirectByteBuffer[pos=12 lim=12 cap=127]
+ DEBUG mpj  - request.dBufSize 0
+ DEBUG mpj  - --eagerRecv2UserMem ends--
+ DEBUG mpj  - time_ready_sendrecv=0.003736567
+ INFO  mpj  - ---irecv---<34023>
+ DEBUG mpj  - Looking whether this req has been posted or not
+ DEBUG mpj  - No Matching req, so posting ourselves
+ DEBUG mpj  - request.staticBuffer (in recv) java.nio.DirectByteBuffer[pos=8 lim=127 cap=127]
+ DEBUG mpj  - Added request in irecv 
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - ---READ_EVENT----24
+ DEBUG mpj  -  received READY_TO_SEND or  READY_TO_RECV
+ DEBUG mpj  - -- recvCtrlMsgFromSender ---
+ DEBUG mpj  - Receiver getting the control message
+ DEBUG mpj  - Could be rend, eager, posted b4 or not
+ DEBUG mpj  - msb :-259231128466733325
+ DEBUG mpj  - lsb :-7648992730279833681
+ DEBUG mpj  - sendCounter :4
+ DEBUG mpj  - tag :34023
+ DEBUG mpj  - staBufferSize :12
+ DEBUG mpj  - dynaBufferSize :0
+ DEBUG mpj  - context :10
+ DEBUG mpj  - commMode :3
+ DEBUG mpj  - type :mpjbuf.Type@483c413f
+ DEBUG mpj  - sendCounter :4
+ DEBUG mpj  - numEls :1
+ DEBUG mpj  - setting the request.code to RECV_IN_DEV_MEMORY
+ DEBUG mpj  - Calling eagerRecv2mpjMem
+ DEBUG mpj  - ---eagerRecv2mpjMem_34023
+ DEBUG mpj  - static section ...
+ DEBUG mpj  -  creating eager buffer 
+ DEBUG mpj  - 
+
+ createBuffer 12
+ DEBUG mpj  - required level 0
+ DEBUG mpj  - finding the right level 
+ DEBUG mpj  - freeList.size() 17
+ DEBUG mpj  - list @level <0>=mpjbuf.Buddy1RegionFreeList@32ba1a6
+ DEBUG mpj  - calling allocate ...
+ DEBUG mpj  - --allocate--
+ DEBUG mpj  -  level :0
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@32ba1a6
+ DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
+ DEBUG mpj  -  cap 128
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@32ba1a6
+ DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=1 lim=128 cap=8388608]
+ DEBUG mpj  - position 0
+ DEBUG mpj  -  creating eager bufferjava.nio.DirectByteBuffer[pos=0 lim=12 cap=127]
+ DEBUG mpj  - Adding the request
+ DEBUG mpj  - time_ready_sendrecv=0.001185281
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - ---READ_EVENT----24
+ DEBUG mpj  -  received READY_TO_SEND or  READY_TO_RECV
+ DEBUG mpj  - -- recvCtrlMsgFromSender ---
+ DEBUG mpj  - Receiver getting the control message
+ DEBUG mpj  - Could be rend, eager, posted b4 or not
+ DEBUG mpj  - msb :7040627592729084540
+ DEBUG mpj  - lsb :-5271658826945698417
+ DEBUG mpj  - sendCounter :4
+ DEBUG mpj  - tag :34023
+ DEBUG mpj  - staBufferSize :12
+ DEBUG mpj  - dynaBufferSize :0
+ DEBUG mpj  - context :10
+ DEBUG mpj  - commMode :3
+ DEBUG mpj  - type :mpjbuf.Type@483c413f
+ DEBUG mpj  - sendCounter :4
+ DEBUG mpj  - numEls :1
+ DEBUG mpj  - setting the request.code to RECV_IN_DEV_MEMORY
+ DEBUG mpj  - Calling eagerRecv2mpjMem
+ DEBUG mpj  - ---eagerRecv2mpjMem_34023
+ DEBUG mpj  - static section ...
+ DEBUG mpj  -  creating eager buffer 
+ DEBUG mpj  - 
+
+ createBuffer 12
+ DEBUG mpj  - required level 0
+ DEBUG mpj  - finding the right level 
+ DEBUG mpj  - freeList.size() 17
+ DEBUG mpj  - list @level <0>=mpjbuf.Buddy1RegionFreeList@32ba1a6
+ DEBUG mpj  - calling allocate ...
+ DEBUG mpj  - --allocate--
+ DEBUG mpj  -  level :0
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@32ba1a6
+ DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
+ DEBUG mpj  -  cap 128
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@32ba1a6
+ DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=1153 lim=1280 cap=8388608]
+ DEBUG mpj  - position 1152
+ DEBUG mpj  -  creating eager bufferjava.nio.DirectByteBuffer[pos=0 lim=12 cap=127]
+ DEBUG mpj  - Adding the request
+ DEBUG mpj  - time_ready_sendrecv=0.00100505
+ DEBUG mpj  - ---selector EVENT---
+ DEBUG mpj  - ---READ_EVENT----24
+ DEBUG mpj  -  received READY_TO_SEND or  READY_TO_RECV
+ DEBUG mpj  - -- recvCtrlMsgFromSender ---
+ DEBUG mpj  - Receiver getting the control message
+ DEBUG mpj  - Could be rend, eager, posted b4 or not
+ DEBUG mpj  - msb :-5754859337262610369
+ DEBUG mpj  - lsb :-5613582081297521038
+ DEBUG mpj  - sendCounter :3
+ DEBUG mpj  - tag :34023
+ DEBUG mpj  - staBufferSize :12
+ DEBUG mpj  - dynaBufferSize :0
+ DEBUG mpj  - context :10
+ DEBUG mpj  - commMode :3
+ DEBUG mpj  - type :mpjbuf.Type@483c413f
+ DEBUG mpj  - sendCounter :3
+ DEBUG mpj  - numEls :1
+ DEBUG mpj  - ---eagerRecv2UserMem---
+ DEBUG mpj  - request.sBufSize (is it zero?) 12
+ DEBUG mpj  - b(1) java.nio.DirectByteBuffer[pos=0 lim=12 cap=127]
+ DEBUG mpj  - b(2) java.nio.DirectByteBuffer[pos=12 lim=12 cap=127]
+ DEBUG mpj  - request.dBufSize 0
+ DEBUG mpj  - --eagerRecv2UserMem ends--
+ DEBUG mpj  - time_ready_sendrecv=8.11941E-4
+ INFO  mpj  - ---irecv---<34023>
+ DEBUG mpj  - Looking whether this req has been posted or not
+ DEBUG mpj  - 
+--free--
+ DEBUG mpj  - buffer.list.front -1
  DEBUG mpj  -  list.level 0
  DEBUG mpj  -  position 128
  DEBUG mpj  -  memory (for region) java.nio.DirectByteBuffer[pos=0 lim=8388608 cap=8388608]
@@ -1549,12 +2247,12 @@
 --free--
  DEBUG mpj  - buffer.list.front 128
  DEBUG mpj  -  list.level 0
- DEBUG mpj  -  position 384
+ DEBUG mpj  -  position 1152
  DEBUG mpj  -  memory (for region) java.nio.DirectByteBuffer[pos=0 lim=8388608 cap=8388608]
- DEBUG mpj  -  buddy 256
- DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=256 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy 1024
+ DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=1024 lim=8388608 cap=8388608]
  DEBUG mpj  -  buddy is not FREE 
- DEBUG mpj  -  adding the buffer at pos <384
+ DEBUG mpj  -  adding the buffer at pos <1152
  DEBUG mpj  - size of htis buffer is 128
  DEBUG mpj  - setting the buf size 12
  DEBUG mpj  - removed 
@@ -1562,23 +2260,7 @@
  DEBUG mpj  - Looking whether this req has been posted or not
  DEBUG mpj  - 
 --free--
- DEBUG mpj  - buffer.list.front 384
- DEBUG mpj  -  list.level 0
- DEBUG mpj  -  position 256
- DEBUG mpj  -  memory (for region) java.nio.DirectByteBuffer[pos=0 lim=8388608 cap=8388608]
- DEBUG mpj  -  buddy 384
- DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=384 lim=8388608 cap=8388608]
- DEBUG mpj  -  buddy is free ...removing it ..
- DEBUG mpj  -  buddy 0
- DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=0 lim=8388608 cap=8388608]
- DEBUG mpj  -  buddy is not FREE 
- DEBUG mpj  -  adding the buffer at pos <256
- DEBUG mpj  - size of htis buffer is 256
- DEBUG mpj  - setting the buf size 12
- DEBUG mpj  - removed 
- DEBUG mpj  - 
---free--
- DEBUG mpj  - buffer.list.front 128
+ DEBUG mpj  - buffer.list.front 1152
  DEBUG mpj  -  list.level 0
  DEBUG mpj  -  position 0
  DEBUG mpj  -  memory (for region) java.nio.DirectByteBuffer[pos=0 lim=8388608 cap=8388608]
@@ -1587,6 +2269,33 @@
  DEBUG mpj  -  buddy is free ...removing it ..
  DEBUG mpj  -  buddy 256
  DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=256 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy is not FREE 
+ DEBUG mpj  -  adding the buffer at pos <0
+ DEBUG mpj  - size of htis buffer is 256
+ DEBUG mpj  - setting the buf size 12
+ DEBUG mpj  - removed 
+ DEBUG mpj  - 
+--free--
+ DEBUG mpj  - buffer.list.front 1152
+ DEBUG mpj  -  list.level 0
+ DEBUG mpj  -  position 256
+ DEBUG mpj  -  memory (for region) java.nio.DirectByteBuffer[pos=0 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy 384
+ DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=384 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy is not FREE 
+ DEBUG mpj  -  adding the buffer at pos <256
+ DEBUG mpj  - size of htis buffer is 128
+ DEBUG mpj  - 
+--free--
+ DEBUG mpj  - buffer.list.front 256
+ DEBUG mpj  -  list.level 0
+ DEBUG mpj  -  position 384
+ DEBUG mpj  -  memory (for region) java.nio.DirectByteBuffer[pos=0 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy 256
+ DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=256 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy is free ...removing it ..
+ DEBUG mpj  -  buddy 0
+ DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=0 lim=8388608 cap=8388608]
  DEBUG mpj  -  buddy is free ...removing it ..
  DEBUG mpj  -  buddy 512
  DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=512 lim=8388608 cap=8388608]
@@ -1595,7 +2304,7 @@
  DEBUG mpj  - size of htis buffer is 512
  DEBUG mpj  - 
 --free--
- DEBUG mpj  - buffer.list.front 896
+ DEBUG mpj  - buffer.list.front 1152
  DEBUG mpj  -  list.level 0
  DEBUG mpj  -  position 512
  DEBUG mpj  -  memory (for region) java.nio.DirectByteBuffer[pos=0 lim=8388608 cap=8388608]
@@ -1620,12 +2329,23 @@
  DEBUG mpj  - size of htis buffer is 256
  DEBUG mpj  - 
 --free--
- DEBUG mpj  - buffer.list.front 896
+ DEBUG mpj  - buffer.list.front 1152
  DEBUG mpj  -  list.level 0
  DEBUG mpj  -  position 768
  DEBUG mpj  -  memory (for region) java.nio.DirectByteBuffer[pos=0 lim=8388608 cap=8388608]
  DEBUG mpj  -  buddy 896
  DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=896 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy is not FREE 
+ DEBUG mpj  -  adding the buffer at pos <768
+ DEBUG mpj  - size of htis buffer is 128
+ DEBUG mpj  - 
+--free--
+ DEBUG mpj  - buffer.list.front 768
+ DEBUG mpj  -  list.level 0
+ DEBUG mpj  -  position 896
+ DEBUG mpj  -  memory (for region) java.nio.DirectByteBuffer[pos=0 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy 768
+ DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=768 lim=8388608 cap=8388608]
  DEBUG mpj  -  buddy is free ...removing it ..
  DEBUG mpj  -  buddy 512
  DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=512 lim=8388608 cap=8388608]
@@ -1635,6 +2355,26 @@
  DEBUG mpj  -  buddy is free ...removing it ..
  DEBUG mpj  -  buddy 1024
  DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=1024 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy is not FREE 
+ DEBUG mpj  -  adding the buffer at pos <0
+ DEBUG mpj  - size of htis buffer is 1024
+ DEBUG mpj  - 
+--free--
+ DEBUG mpj  - buffer.list.front 1152
+ DEBUG mpj  -  list.level 0
+ DEBUG mpj  -  position 1024
+ DEBUG mpj  -  memory (for region) java.nio.DirectByteBuffer[pos=0 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy 1152
+ DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=1152 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy is free ...removing it ..
+ DEBUG mpj  -  buddy 1280
+ DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=1280 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy is free ...removing it ..
+ DEBUG mpj  -  buddy 1536
+ DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=1536 lim=8388608 cap=8388608]
+ DEBUG mpj  -  buddy is free ...removing it ..
+ DEBUG mpj  -  buddy 0
+ DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=0 lim=8388608 cap=8388608]
  DEBUG mpj  -  buddy is free ...removing it ..
  DEBUG mpj  -  buddy 2048
  DEBUG mpj  -  memory java.nio.DirectByteBuffer[pos=2048 lim=8388608 cap=8388608]
@@ -1696,11 +2436,11 @@
  DEBUG mpj  - list @level <13>=null
  DEBUG mpj  - list @level <14>=null
  DEBUG mpj  - list @level <15>=null
- DEBUG mpj  - list @level <16>=mpjbuf.Buddy1RegionFreeList@7c203dc0
+ DEBUG mpj  - list @level <16>=mpjbuf.Buddy1RegionFreeList@4fc903ee
  DEBUG mpj  - calling allocate ...
  DEBUG mpj  - --allocate--
  DEBUG mpj  -  level :0
- DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@7c203dc0
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@4fc903ee
  DEBUG mpj  - position 0
  DEBUG mpj  - list.blockSize 4194304
  DEBUG mpj  - Adding buddy @ 4194304
@@ -1751,7 +2491,7 @@
  DEBUG mpj  - Adding buddy @ 128
  DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
  DEBUG mpj  -  cap 128
- DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@15e2dd92
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@32ba1a6
  DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=1 lim=128 cap=8388608]
  DEBUG mpj  - position 0
  DEBUG mpj  - 
@@ -1844,11 +2584,11 @@
  DEBUG mpj  - list @level <13>=null
  DEBUG mpj  - list @level <14>=null
  DEBUG mpj  - list @level <15>=null
- DEBUG mpj  - list @level <16>=mpjbuf.Buddy1RegionFreeList@7c203dc0
+ DEBUG mpj  - list @level <16>=mpjbuf.Buddy1RegionFreeList@4fc903ee
  DEBUG mpj  - calling allocate ...
  DEBUG mpj  - --allocate--
  DEBUG mpj  -  level :0
- DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@7c203dc0
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@4fc903ee
  DEBUG mpj  - position 0
  DEBUG mpj  - list.blockSize 4194304
  DEBUG mpj  - Adding buddy @ 4194304
@@ -1899,18 +2639,18 @@
  DEBUG mpj  - Adding buddy @ 128
  DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
  DEBUG mpj  -  cap 128
- DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@15e2dd92
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@32ba1a6
  DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=1 lim=128 cap=8388608]
  DEBUG mpj  - position 0
  DEBUG mpj  - count 1
  DEBUG mpj  - offset0
  DEBUG mpj  - bufjava.nio.DirectByteBuffer[pos=82 lim=127 cap=127]
  INFO  mpj  - ---isend---<33998>
- DEBUG mpj  - sender :8a615a4c-ac53-4b0a-a6fb-9c8c86555251
- DEBUG mpj  - receiver :cacdc9c4-8baa-47d8-a28c-a5d2216c7edb
+ DEBUG mpj  - sender :76939857-6ff2-4a0a-84d4-27ce10ccce3b
+ DEBUG mpj  - receiver :ac97e1c7-e878-4faa-a849-f81493554f07
  DEBUG mpj  - tag :33998
  DEBUG mpj  - isend with remote process connections
- DEBUG mpj  - channel :java.nio.channels.SocketChannel[connected local=/10.134.34.86:49152 remote=/10.134.34.86:31962]
+ DEBUG mpj  - channel :java.nio.channels.SocketChannel[connected local=/192.168.1.13:63996 remote=/192.168.1.13:28982]
  DEBUG mpj  - get writeLock for this channel
  DEBUG mpj  - ---eagerSend---
  DEBUG mpj  -  request.bufoffset 81
@@ -2002,11 +2742,11 @@
  DEBUG mpj  - list @level <13>=null
  DEBUG mpj  - list @level <14>=null
  DEBUG mpj  - list @level <15>=null
- DEBUG mpj  - list @level <16>=mpjbuf.Buddy1RegionFreeList@7c203dc0
+ DEBUG mpj  - list @level <16>=mpjbuf.Buddy1RegionFreeList@4fc903ee
  DEBUG mpj  - calling allocate ...
  DEBUG mpj  - --allocate--
  DEBUG mpj  -  level :0
- DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@7c203dc0
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@4fc903ee
  DEBUG mpj  - position 0
  DEBUG mpj  - list.blockSize 4194304
  DEBUG mpj  - Adding buddy @ 4194304
@@ -2057,7 +2797,7 @@
  DEBUG mpj  - Adding buddy @ 128
  DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
  DEBUG mpj  -  cap 128
- DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@15e2dd92
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@32ba1a6
  DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=1 lim=128 cap=8388608]
  DEBUG mpj  - position 0
  INFO  mpj  - ---irecv---<33998>
@@ -2071,16 +2811,16 @@
  DEBUG mpj  - -- recvCtrlMsgFromSender ---
  DEBUG mpj  - Receiver getting the control message
  DEBUG mpj  - Could be rend, eager, posted b4 or not
- DEBUG mpj  - msb :-3833185861828458536
- DEBUG mpj  - lsb :-6733825020903260453
- DEBUG mpj  - sendCounter :6
+ DEBUG mpj  - msb :-6010086928987697238
+ DEBUG mpj  - lsb :-6320247834782904569
+ DEBUG mpj  - sendCounter :9
  DEBUG mpj  - tag :33998
  DEBUG mpj  - staBufferSize :12
  DEBUG mpj  - dynaBufferSize :0
  DEBUG mpj  - context :9
  DEBUG mpj  - commMode :3
- DEBUG mpj  - type :mpjbuf.Type@443f5f31
- DEBUG mpj  - sendCounter :6
+ DEBUG mpj  - type :mpjbuf.Type@483c413f
+ DEBUG mpj  - sendCounter :9
  DEBUG mpj  - numEls :1
  DEBUG mpj  - ---eagerRecv2UserMem---
  DEBUG mpj  - request.sBufSize (is it zero?) 12
@@ -2088,7 +2828,7 @@
  DEBUG mpj  - b(2) java.nio.DirectByteBuffer[pos=12 lim=12 cap=127]
  DEBUG mpj  - request.dBufSize 0
  DEBUG mpj  - --eagerRecv2UserMem ends--
- DEBUG mpj  - time_ready_sendrecv=6.94774E-4
+ DEBUG mpj  - time_ready_sendrecv=5.98877E-4
  DEBUG mpj  - count_received 1
  DEBUG mpj  - count 1
  DEBUG mpj  - 
@@ -2172,11 +2912,11 @@
  DEBUG mpj  - list @level <13>=null
  DEBUG mpj  - list @level <14>=null
  DEBUG mpj  - list @level <15>=null
- DEBUG mpj  - list @level <16>=mpjbuf.Buddy1RegionFreeList@7c203dc0
+ DEBUG mpj  - list @level <16>=mpjbuf.Buddy1RegionFreeList@4fc903ee
  DEBUG mpj  - calling allocate ...
  DEBUG mpj  - --allocate--
  DEBUG mpj  -  level :0
- DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@7c203dc0
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@4fc903ee
  DEBUG mpj  - position 0
  DEBUG mpj  - list.blockSize 4194304
  DEBUG mpj  - Adding buddy @ 4194304
@@ -2227,7 +2967,7 @@
  DEBUG mpj  - Adding buddy @ 128
  DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
  DEBUG mpj  -  cap 128
- DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@15e2dd92
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@32ba1a6
  DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=1 lim=128 cap=8388608]
  DEBUG mpj  - position 0
  DEBUG mpj  - 
@@ -2236,22 +2976,22 @@
  DEBUG mpj  - required level 0
  DEBUG mpj  - finding the right level 
  DEBUG mpj  - freeList.size() 17
- DEBUG mpj  - list @level <0>=mpjbuf.Buddy1RegionFreeList@15e2dd92
+ DEBUG mpj  - list @level <0>=mpjbuf.Buddy1RegionFreeList@32ba1a6
  DEBUG mpj  - calling allocate ...
  DEBUG mpj  - --allocate--
  DEBUG mpj  -  level :0
- DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@15e2dd92
+ DEBUG mpj  -  list :mpjbuf.Buddy1RegionFreeList@32ba1a6
  DEBUG mpj  - slicedBuffer java.nio.DirectByteBuffer[pos=0 lim=127 cap=127]
  DEBUG mpj  -  cap 128
- DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@15e2dd92
+ DEBUG mpj  - list mpjbuf.Buddy1RegionFreeList@32ba1a6
  DEBUG mpj  - list.memory java.nio.DirectByteBuffer[pos=129 lim=256 cap=8388608]
  DEBUG mpj  - position 128
  INFO  mpj  - ---isend---<-994576>
- DEBUG mpj  - sender :8a615a4c-ac53-4b0a-a6fb-9c8c86555251
- DEBUG mpj  - receiver :cacdc9c4-8baa-47d8-a28c-a5d2216c7edb
+ DEBUG mpj  - sender :76939857-6ff2-4a0a-84d4-27ce10ccce3b
+ DEBUG mpj  - receiver :ac97e1c7-e878-4faa-a849-f81493554f07
  DEBUG mpj  - tag :-994576
  DEBUG mpj  - isend with remote process connections
- DEBUG mpj  - channel :java.nio.channels.SocketChannel[connected local=/10.134.34.86:49152 remote=/10.134.34.86:31962]
+ DEBUG mpj  - channel :java.nio.channels.SocketChannel[connected local=/192.168.1.13:63996 remote=/192.168.1.13:28982]
  DEBUG mpj  - get writeLock for this channel
  DEBUG mpj  - ---eagerSend---
  DEBUG mpj  -  request.bufoffset 81
@@ -2271,19 +3011,31 @@
  DEBUG mpj  - ---finish---
  DEBUG mpj  - Waking up the selector
  DEBUG mpj  - Closed the two selectors
- DEBUG mpj  - peerChannelSize 3
- DEBUG mpj  - peerCtrlChannelSize 3
- DEBUG mpj  - closing data-channel java.nio.channels.SocketChannel[connected local=/10.134.34.86:49152 remote=/10.134.34.86:31962]
+ DEBUG mpj  - peerChannelSize 6
+ DEBUG mpj  - peerCtrlChannelSize 6
+ DEBUG mpj  - closing data-channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:63996 remote=/192.168.1.13:28982]
  DEBUG mpj  - the channel was open, so closing it
- DEBUG mpj  - closing control-channel java.nio.channels.SocketChannel[connected local=/10.134.34.86:65529 remote=/10.134.34.86:35051]
+ DEBUG mpj  - closing control-channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:63979 remote=/192.168.1.13:25646]
  DEBUG mpj  - the channel was open, so closing it
- DEBUG mpj  - closing data-channel java.nio.channels.SocketChannel[connected local=/10.134.34.86:49153 remote=/10.134.34.86:29376]
+ DEBUG mpj  - closing data-channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:64000 remote=/192.168.1.13:36953]
  DEBUG mpj  - the channel was open, so closing it
- DEBUG mpj  - closing control-channel java.nio.channels.SocketChannel[connected local=/10.134.34.86:65534 remote=/10.134.34.86:28420]
+ DEBUG mpj  - closing control-channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:63992 remote=/192.168.1.13:37327]
  DEBUG mpj  - the channel was open, so closing it
- DEBUG mpj  - closing data-channel java.nio.channels.SocketChannel[connected local=/10.134.34.86:49154 remote=/10.134.34.86:25579]
+ DEBUG mpj  - closing data-channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:64001 remote=/192.168.1.13:39056]
  DEBUG mpj  - the channel was open, so closing it
- DEBUG mpj  - closing control-channel java.nio.channels.SocketChannel[connected local=/10.134.34.86:65535 remote=/10.134.34.86:27943]
+ DEBUG mpj  - closing control-channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:63995 remote=/192.168.1.13:36511]
+ DEBUG mpj  - the channel was open, so closing it
+ DEBUG mpj  - closing data-channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:39892 remote=/192.168.1.13:63985]
+ DEBUG mpj  - the channel was open, so closing it
+ DEBUG mpj  - closing control-channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:33817 remote=/192.168.1.13:63990]
+ DEBUG mpj  - the channel was open, so closing it
+ DEBUG mpj  - closing data-channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:39892 remote=/192.168.1.13:63999]
+ DEBUG mpj  - the channel was open, so closing it
+ DEBUG mpj  - closing control-channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:33817 remote=/192.168.1.13:64007]
+ DEBUG mpj  - the channel was open, so closing it
+ DEBUG mpj  - closing data-channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:39892 remote=/192.168.1.13:64010]
+ DEBUG mpj  - the channel was open, so closing it
+ DEBUG mpj  - closing control-channel java.nio.channels.SocketChannel[connected local=/192.168.1.13:33817 remote=/192.168.1.13:64016]
  DEBUG mpj  - the channel was open, so closing it
  DEBUG mpj  - closed all the channels
  DEBUG mpj  - selector thread notifying the user thread

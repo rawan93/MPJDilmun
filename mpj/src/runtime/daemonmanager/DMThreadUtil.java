@@ -53,15 +53,15 @@ public class DMThreadUtil {
 //status of runtime
 public static boolean runtimeStatus = false;
 // (Daemon)Process ID 
-//public static String ProcessID="";
+public static String ProcessID="";
 //Daemon port number 
 //private static int daemonPort = 0;
  // The size of the machine list 
-//public static int sizeOfMachineList;
+public static int sizeOfMachineList;
 //status of Cluster (array list to save the status of each daemon in the cluster)
-//public static ArrayList<Integer> clusterStatus = new ArrayList<Integer>();
+public static ArrayList<Integer> clusterStatus = new ArrayList<Integer>();
 // status of cluster (Final value)
-public static boolean clusterStatus = false;
+public static boolean clusterStatusValue = false;
  // Total number of daemons.
 public static int numberOfDaemons;
 // Set the message of runtime Status
@@ -158,7 +158,7 @@ public static ArrayList<String> machineMsgList;
      	 if(runtimeStatus==true)
       	{
       	
-         clusterStatus=true;
+         clusterStatusValue=true;
          runtimeData = runtimeData + "Cluster status: Existing.\n" + "Runtime status: Running.\n";
          //runtimeStatusMessage="is running";
          //clusterStatusMMessage = "is running";
@@ -167,7 +167,7 @@ public static ArrayList<String> machineMsgList;
       	else if(runtimeStatus==false)
       	{
       	  
-      	 clusterStatus=false;
+      	 clusterStatusValue=false;
       	 runtimeData = runtimeData + "Cluster status: Not existing.\n" + "Runtime status: Not running.\n";
 
       	// runtimeStatusMessage="is not running";
