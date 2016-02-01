@@ -74,82 +74,6 @@ import java.lang.Process;
 import runtime.daemon.Wrapper;
 public class MPJRun {
 
-<<<<<<< HEAD
-  final String DEFAULT_MACHINES_FILE_NAME = "machines";
-  final int DEFAULT_PROTOCOL_SWITCH_LIMIT = 128 * 1024; // 128K
-  private String CONF_FILE_CONTENTS="";
-  private String WRAPPER_INFO = "#Peer Information";
-  private int mxBoardNum = 0;
-  private  int D_SER_PORT = 0;
-  private int DEBUG_PORT = 0;
-  private int portManagerPort = 0;
-
-  /* Variables to store master node information.
-   * This needs to be forwarded to the wrapper processes.
-   */
-  private int SERVER_PORT = 0;
-  private String localhostName = null;
-
-  // Adding YARN related variables here
-  private boolean isYarn = false;
-  private boolean debugYarn = false;
-  static String hadoopHomeDir = null;
-  private String amMem;
-  private String amCores;
-  private String containerMem;
-  private String containerCores;
-  private String yarnQueue;
-  private String appName;
-  private String amPriority;
-  private String mpjContainerPriority;
-  private String hdfsFolder;
-
-  String machinesFile = DEFAULT_MACHINES_FILE_NAME;
-  private int psl = DEFAULT_PROTOCOL_SWITCH_LIMIT;
-
-  ArrayList<String> jvmArgs = new ArrayList<String>();
-  ArrayList<String> appArgs = new ArrayList<String>();
-  String[] jArgs = null;
-  String[] aArgs = null;
-  static Logger logger = null;
-  private Vector<Socket> peerSockets;
-
-  private ArrayList<String> machineList = new ArrayList<String>();
-  int nprocs = Runtime.getRuntime().availableProcessors();
-  String deviceName = "multicore";
-  private String networkDevice = "niodev";
-
-  static String mpjHomeDir = null;
-  byte[] urlArray = null;
-  Hashtable procsPerMachineTable = new Hashtable();
-  int endCount = 0;
-  int streamEndedCount = 0;
-  String wdir;
-  String className = null;
-  String applicationClassPathEntry = null;
-
-  private static String VERSION = "";
-  private static int RUNNING_JAR_FILE = 2;
-  private static int RUNNING_CLASS_FILE = 1;
-  private boolean zippedSource = false;
-  private String sourceFolder = "";
-  int networkProcesscount = -1;
-
-  private boolean ADEBUG = false;
-  private boolean APROFILE = false;
-
-  static final boolean DEBUG = true;
-  private String logLevel = "DEBUG";
-
-  public MPJRun(String args[]) throws Exception {
-
-    java.util.logging.Logger logger1 = java.util.logging.Logger.getLogger("");
-
-    // remove all existing log handlers: remove the ERR handler
-    for (java.util.logging.Handler h : logger1.getHandlers()) {
-      logger1.removeHandler(h);
-    }
-=======
     final String DEFAULT_MACHINES_FILE_NAME = "machines";
     final int DEFAULT_PROTOCOL_SWITCH_LIMIT = 128 * 1024; // 128K
     private String CONF_FILE_CONTENTS = "";
@@ -182,7 +106,6 @@ public class MPJRun {
 
     String machinesFile = DEFAULT_MACHINES_FILE_NAME;
     private int psl = DEFAULT_PROTOCOL_SWITCH_LIMIT;
->>>>>>> 17b3e146b69ae22aa894e2b431a2633a533ace44
 
     ArrayList<String> jvmArgs = new ArrayList<String>();
     ArrayList<String> appArgs = new ArrayList<String>();
