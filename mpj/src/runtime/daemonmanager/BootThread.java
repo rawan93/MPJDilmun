@@ -1,5 +1,6 @@
 package runtime.daemonmanager;
-
+import java.io.IOException;
+import java.lang.management.*;
 /*
  The MIT License
 
@@ -60,6 +61,11 @@ public class BootThread extends DMThread {
     port = daemonPort;
     /*Aisha*/
     numcpu=Runtime.getRuntime().availableProcessors();
+
+    OperatingSystemMXBean osMBean
+            = (OperatingSystemMXBean) ManagementFactory.getOperatingSystemMXBean();
+
+        double load = osMBean.getSystemLoadAverage();
     
 
   }
