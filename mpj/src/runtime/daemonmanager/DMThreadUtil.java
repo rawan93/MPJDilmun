@@ -42,28 +42,42 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-import runtime.common.MPJUtil;
 import runtime.daemonmanager.CLOptions;
 import runtime.daemonmanager.DMThread;
+import runtime.common.MPJUtil;
 
 public class DMThreadUtil {
 
+ // Dilmun code 
 //status of runtime
 public static boolean runtimeStatus = false;
 
 // (Daemon)Process ID 
 public static String ProcessID="";
+//Daemon port number 
+private static int daemonPort = 0;
+ // The size of the machine list 
+public static int sizeOfMachineList;
 
-// status of  Cluster
 
-//public static boolean clusterStatus = false;
+//status of Cluster (array list to save the status of each daemon in the cluster)
+public static ArrayList<Integer> clusterStatus = new ArrayList<Integer>();
 
+// status of cluster (Final value)
 
+public static boolean clusterStatusValue = false;
 
+ // Total number of daemons.
+public static int numberOfDaemons;
+//end of dilmun
+//test
+//array list of device name and id
+public static ArrayList<String> machineMsgList;
+//end test
     
   public static ExecutorService getThreadExecutor(int nThreads) {
     return Executors.newFixedThreadPool(nThreads);
-  }
+  }//end getThreadExecutor method 
 
   public static void ExecuteThreads(ArrayList<Thread> threads, int nThreads) {
 
@@ -71,7 +85,7 @@ public static String ProcessID="";
 
     for (Thread thread : threads) {
       tpes.execute(thread);
-    }
+    } //end for loop 
 
     tpes.shutdown();
 
@@ -80,14 +94,17 @@ public static String ProcessID="";
       tpes.awaitTermination(Long.MAX_VALUE, TimeUnit.NANOSECONDS);
     } catch (InterruptedException e) {
       e.printStackTrace();
-    }
-  }
+    }//end try - catch block 
+  }// end ExecuteThreads method 
 
   public static void ExecuteCommand(CLOptions options) {
 
     String type = options.getCmdType();
     ArrayList<Thread> threads = new ArrayList<Thread>();
     ArrayList<String> machinesList = new ArrayList<String>();
+    //test
+	machineMsgList = new ArrayList<String>();
+	//end test
 
     if (options.getMachineList().size() > 0)
       machinesList = options.getMachineList();
@@ -108,6 +125,10 @@ public static String ProcessID="";
 	  thread = new CleanUpThread(host);
 	} else if (type.equals(DMConstants.STATUS)) {
 	  thread = new StatusThread(host);
+	/*test*/
+	} else if (type.equals(DMConstants.DATA)) {
+	  thread = new DataThread(host);
+	/*end test*/
 	} else if (type.equals(DMConstants.INFO)) {
 	  thread = new ProcessInfoThread(host);
 	}
@@ -115,20 +136,35 @@ public static String ProcessID="";
 	  threads.add(thread);
 	}
 
-      }
+      } //end for loop 
 
       ExecuteThreads(threads, options.getThreadCount());
       
-      
-       //check if the status is required and print
-     if (type.equals(DMConstants.STATUS)) {
-      System.out.println("--------------------------------");
-      System.out.println("runtime status: "+runtimeStatus);
-      System.out.println(" Daemon (Process) ID:"+ProcessID+".");
-      //System.out.println(" Cluster status:"+clusterStatus+".");
+      // set the number of machines in the machineList file 
      
+       sizeOfMachineList=machinesList.size();
       
+      /*test*/
+       //check if the status is required and print
+     if (type.equals(DMConstants.DATA)) {
+     	//status of cluster
+     	//revisit cluster status (doesnt check if cluster exists without runtime)
+     	 if(runtimeStatus==true)
+      	{
+         clusterStatusValue=true;
+      	}
+      	System.out.println("Cluster status: "+clusterStatusValue);
+      	//status of runtime
+     	System.out.println("Runtime status: "+runtimeStatus);
+     	//print the total number of Daemons
+      	System.out.println("Total number of Daemons: "+numberOfDaemons+".");
+      	System.out.println("Machines in cluster:");
+     	for (int i=0; i< machineMsgList.size(); i++){
+     		System.out.println(machineMsgList.get(i));
+     	}
      }
-    }
-  }
-}
+     /*end of test */
+    }//end  outer if 
+  }// end ExecuteCommand method 
+  
+}// end DMThreadUtil class 

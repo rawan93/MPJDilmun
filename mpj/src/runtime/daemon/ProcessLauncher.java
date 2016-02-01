@@ -149,7 +149,11 @@ public class ProcessLauncher extends Thread {
 	logger.debug("starting the process ");
       }
       try {
+         long StartTime = System.currentTimeMillis();
 	p[j] = pb.start();
+	 long EndTime = System.currentTimeMillis();
+       long diff = EndTime - StartTime;
+       System.out.println("Length offf job = " + diff/100 + " second");
       }
       catch (IOException e) {
 	e.printStackTrace();

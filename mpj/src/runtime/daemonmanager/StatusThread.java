@@ -40,7 +40,11 @@ import runtime.common.MPJUtil;
 import runtime.daemonmanager.DMThreadUtil;
 
 public class StatusThread extends DMThread {
+  
   private String host = "localhost";
+  
+  //count for the total number of daemons.
+  public static int countOfDaemons;
 
   public StatusThread(String machineName) {
     host = machineName;
@@ -52,24 +56,66 @@ public class StatusThread extends DMThread {
 
   public void queryMPJExpressDeamons() {
     String pid = DaemonUtil.getMPJProcessID(host);
+    
       if (pid != ""){
       System.out.println(MPJUtil.FormatMessage(host,
 	  DMMessages.MPJDAEMON_AVAILABLE + pid));
 	  
-	 
+	  
+	  
+	  
+	 // Dilmun code 
 	  
       //set mpj status 
       DMThreadUtil.runtimeStatus = true;
       
-      //set daemon number 
+      //Set the process (Daemon) Id 
       DMThreadUtil.ProcessID=pid;
-      
-      }
+      }// end if 
+           
+
     else {
       System.out.println(MPJUtil.FormatMessage(host,
 	  DMMessages.MPJDAEMON_NOT_AVAILABLE));
        // DMThreadUtil.status = false;
-    }
+    }//end else
+    
+    // set the machine list size
+   int MachineListNO;
+    
+    //MachineListNO=DMThreadUtil.getInt();
+    
+    MachineListNO=DMThreadUtil.sizeOfMachineList;
+    
+  
+    
+    for( int i=0;i<=MachineListNO;i++)
+    {
+    
+       //System.out.println("Size"+MachineListNO);
+    
+       if (pid != "")
+       {
+           DMThreadUtil.clusterStatus.add(1);
+           
+           countOfDaemons++; 
+       
+       }// end if 
+       
+       else
+       {
+       
+         DMThreadUtil.clusterStatus.add(0);
+       
+       }//end else
+    
+    }// end for loop 
+    
+    // set the number of Daemons 
+    DMThreadUtil.numberOfDaemons=countOfDaemons;
+    
+    
+    
   }
 
 }

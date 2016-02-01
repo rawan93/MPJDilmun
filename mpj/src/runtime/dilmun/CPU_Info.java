@@ -10,7 +10,9 @@ public class CPU_Info {
       public void NumberOfCPUs(){
     
       int NUM= Runtime.getRuntime().availableProcessors();
+
       System.out.println("You have :  "+NUM+" CPUs ");
+
 
 
 
@@ -20,9 +22,10 @@ public class CPU_Info {
         double load = osMBean.getSystemLoadAverage();
 
 
+
       System.out.println("Load Average in one minute :  "+load);
 
-    com.sun.management.OperatingSystemMXBean operatingSystemMXBean = 
+   /* com.sun.management.OperatingSystemMXBean operatingSystemMXBean = 
          (com.sun.management.OperatingSystemMXBean)ManagementFactory.getOperatingSystemMXBean();
     RuntimeMXBean runtimeMXBean = ManagementFactory.getRuntimeMXBean();
     int availableProcessors = operatingSystemMXBean.getAvailableProcessors();
@@ -42,7 +45,18 @@ public class CPU_Info {
     long elapsedTime = upTime - prevUpTime;
 
     cpuUsage = Math.min(99F, elapsedCpu / (elapsedTime * 10000F * availableProcessors));
-    System.out.println("Java CPU: " + cpuUsage);
+    System.out.println("Java CPU: " + cpuUsage);*/
+
+   try {
+    Process p = Runtime.getRuntime().exec("ls -l");
+
+    System.out.println("CPU usage :  "+p);
+       }
+
+  catch(IOException e) {
+         System.out.println("Completed!");
+    }
+    
   }
 
 
@@ -59,11 +73,23 @@ public class CPU_Info {
 
 
         System.out.println("Free memory (bytes): " + Runtime.getRuntime().freeMemory());
+=======
+      
+
+      System.out.println("System load "+load+" m ");
+
+  }
+
+
+
+      public void SytemMemory(){
+>>>>>>> 380a54bb1980659fef0a6134ef1f0423d064174f
 
         String userName = System.getProperty("user.name");
 
         long memorySize = ((com.sun.management.OperatingSystemMXBean) ManagementFactory.getOperatingSystemMXBean()).getTotalPhysicalMemorySize();
         System.out.println("User Name="+userName);
+<<<<<<< HEAD
         System.out.println("RAM Size="+memorySize+" Bytes");*/
 
 
@@ -84,6 +110,13 @@ public class CPU_Info {
 
 
        }
+
+
+
+        
+   
+
+
 
    
 
