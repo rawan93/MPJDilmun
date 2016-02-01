@@ -71,7 +71,7 @@ import runtime.common.RTConstants;
 import java.lang.ProcessBuilder;
 import java.lang.Process;
 
-//import runtime.daemon.Wrapper;
+import runtime.daemon.Wrapper;
 public class MPJRun {
 
     final String DEFAULT_MACHINES_FILE_NAME = "machines";
@@ -140,6 +140,9 @@ public class MPJRun {
 
     static final boolean DEBUG = true;
     private String logLevel = "DEBUG";
+    //test
+    public double startTime;
+    Map<String, String> executedJob = new HashMap<String, String>();
 
     public MPJRun(String args[]) throws Exception {
 //System.out.println(" ");
@@ -360,6 +363,7 @@ public class MPJRun {
         System.out.println("Name of job: " + className);
 
         double ST = (double) System.currentTimeMillis() / 1000;
+        startTime = (double) System.currentTimeMillis() / 1000;
 
        // Dilmun Code
         //print  Daemon Prot number    
@@ -957,6 +961,7 @@ public class MPJRun {
         CONF_FILE_CONTENTS += ";"
                 + "#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT";
 
+		
         /*
          * number of requested parallel processes are less than or equal to compute
          * nodes
@@ -1141,6 +1146,8 @@ public class MPJRun {
             String host = (String) machineList.get(i);
             try {
                 InetAddress add = InetAddress.getByName(host);
+                //test
+                executedJob.put(host, "0.0");
             } catch (Exception e) {
                 throw new MPJRuntimeException(e);
             }

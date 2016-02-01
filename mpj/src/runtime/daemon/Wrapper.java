@@ -60,7 +60,8 @@ public class Wrapper extends Thread {
   String serverName = null;
   int serverPort = 0;
   private String WRAPPER_INFO = null;
-
+//test
+public double end; 
   public Wrapper(ThreadGroup group, String name) {
     super(group, name);
   }
@@ -137,9 +138,9 @@ public class Wrapper extends Thread {
 	throw new NoSuchMethodException("main");
       }
       m.invoke(null, new Object[] { arvs });
-      
+      end = (double)System.currentTimeMillis()/1000;
       System.out.println("Stopping Process <"+rank+"> on <"+hostName+">");
-      
+      System.out.println("END = "+end+" !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
       /*
 		double ET = (double)System.currentTimeMillis()/1000;
 		System.out.print ("ET= ");
