@@ -1,5 +1,6 @@
 package runtime.daemonmanager;
-
+import java.io.IOException;
+import java.lang.management.*;
 /*
  The MIT License
 
@@ -50,10 +51,23 @@ public class BootThread extends DMThread {
   private String port = "";
   ProcessBuilder pb = null;
   private String msg="";
+  /*Aisha*/
+  private int numcpu=1;
+  private double load=0;
+
 
   public BootThread(String machineName, String daemonPort) {
     host = machineName;
     port = daemonPort;
+    /*Aisha*/
+    numcpu=Runtime.getRuntime().availableProcessors();
+
+    OperatingSystemMXBean osMBean
+            = (OperatingSystemMXBean) ManagementFactory.getOperatingSystemMXBean();
+
+        double load = osMBean.getSystemLoadAverage();
+    
+
   }
 
   public void run() {
@@ -83,8 +97,10 @@ public class BootThread extends DMThread {
           System.out.println("BootThread.run: tid ="+tid+", pid ="+pid);
 					   
 	if (!pid.equals("") && Integer.parseInt(pid) > -1) {
-	  System.out.println(MPJUtil.FormatMessage(host,
+	  System.out.println(numcpu+MPJUtil.FormatMessage(host,
 	      DMMessages.MPJDAEMON_STARTED + pid));
+       System.out.println("number of CPUs"+numcpu); 
+
 	  //test
 	  writeMessage(true, pid);
 	  //msg = MPJUtil.FormatMachineMessage(host,"MPJ Daemon is running", pid, port);
@@ -108,6 +124,7 @@ public class BootThread extends DMThread {
     if (!pid.equals("")) {
       System.out.println(MPJUtil.FormatMessage(host,
 	  DMMessages.MPJDAEMON_ALREADY_RUNNING + pid));
+    
 	  writeMessage(true, pid);
       return false;
     }
@@ -134,6 +151,7 @@ public class BootThread extends DMThread {
   	if (availability == true){
   		msg = MPJUtil.FormatMachineMessage(host,"MPJ Daemon is running", pid, port);
   		DMThreadUtil.numberOfDaemons++;
+
   	} else if (availability == false){
   		msg = MPJUtil.FormatMachineMessage(host,DMMessages.MPJDAEMON_NOT_AVAILABLE, pid, "");
   		DMThreadUtil.numberOfDaemons++;

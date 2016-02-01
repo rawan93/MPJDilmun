@@ -212,15 +212,32 @@ public static ArrayList<String> machineMsgList;
   // *** Open the text file and write the runtime data to it *** 
     
     // The name of the text file to open.
-        String fileName = "RuntimeData.txt";
+    
+         //Open the text file in the same directory the user in it
+        //String fileName = "RuntimeData.txt";
+        
+        //Open the text file in the desktop
+        //String fileName = "/Users/senior/Desktop/RuntimeData.txt";
+        
+        // get the home directory of the machine if Mac or Windows
+        String userHomeFolder = System.getProperty("user.home");
+        
         
         try {
             // Create  an object form FileWriter Class 
-            FileWriter fileWriter = new FileWriter(fileName);
+            
+            //FileWriter fileWriter = new FileWriter(fileName);
+            
+            
+           //Open the text file in the home directory of the machine
+           File textFile = new File(userHomeFolder, "RuntimeData22.txt");
+           BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(textFile));
+          
+                     
             
             // Cerate an object from BufferedWriter Class
             // wrap FileWriter in BufferedWriter.
-            BufferedWriter bufferedWriter =new BufferedWriter(fileWriter);
+            //BufferedWriter bufferedWriter =new BufferedWriter(fileWriter);
         	bufferedWriter.write(data);
             /*bufferedWriter.write(""+clusterStatusMMessage);
             bufferedWriter.newLine();
@@ -242,7 +259,8 @@ public static ArrayList<String> machineMsgList;
             }//end try 
             
              catch(IOException ex) {
-                  System.out.println("Error writing to file '" + fileName + "'");
+                // System.out.println("Error writing to file '" + fileName + "'");
+                System.out.println("Error writing to file ");
            
         }//end catch 
             
