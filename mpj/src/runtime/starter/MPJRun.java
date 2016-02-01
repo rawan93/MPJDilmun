@@ -529,7 +529,8 @@ public class MPJRun {
          
          
         FileWriter writer2 = new FileWriter(f, true); 
-		writer2.write("AVG = " + total/number_of_E_jobs + "\n");
+		writer2.write("AVG Length = " + total/number_of_E_jobs + "\n");
+		writer2.write("Name of running job now :" + className + "\n");
 		writer2.close();
  
 
@@ -555,7 +556,9 @@ public class MPJRun {
             while((currentLine = reader6.readLine()) != null)
             {
                 String trimmedLine = currentLine.trim();
-                if(trimmedLine.contains("AVG ="))
+                if(trimmedLine.contains("AVG Length = "))
+                    continue;
+                    else if(trimmedLine.contains("Name of running job now :"))
                     continue;
                 try {
                     writer6.write(currentLine + "\n");
@@ -569,18 +572,20 @@ public class MPJRun {
             // TODO Auto-generated catch block
            // e.printStackTrace();
         }
-        writer6.write("AVG = " + total/number_of_E_jobs + "\n");
+        writer6.write("AVG Length = " + total/number_of_E_jobs + "\n");
+        writer6.write("Name of running job now :" + className + "\n");
          
 
  		boolean rename = tempFile.renameTo(inputFile);
  
- 		RandomAccessFile ff = new RandomAccessFile(new File("test.txt"), "rw");
+ 		/*RandomAccessFile ff = new RandomAccessFile(new File("test.txt"), "rw");
 		ff.seek(0); // to the beginning
 		ff.write("Running Job: ".getBytes());
-		ff.close();
+		ff.close();*/
  		writer6.close();
 		reader6.close();
           //  System.out.println("File renamed");
+         
     //********test*********//
    }
    

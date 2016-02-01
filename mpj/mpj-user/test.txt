@@ -1,31 +1,12 @@
 Name of job: 
+HelloWorld2
+Length = 
+0.695000171661377
+---------- 
+Name of job: 
 HelloWorld
 Length = 
-12.5
+0.5800001621246338
 ---------- 
-Name of job: 
-HelloWorld2
-Length = 
-0.5709998607635498
----------- 
-Name of job: 
-HelloWorld2
-Length = 
-12.07800006866455
----------- 
-Name of job: 
-HelloWorld2
-Length = 
-0.5750000476837158
----------- 
-Name of job: 
-HelloWorld2
-Length = 
-60.96500015258789
----------- 
-Name of job: 
-HelloWorld2
-Length = 
-29.10700011253357
----------- 
-AVG = 19.299333373705547
+AVG Length = 0.6375001668930054
+Name of running job now :HelloWorld
