@@ -1,16 +1,51 @@
 Device name: 
-Reemis-MacBook-Pro.local
+Rawans-MacBook-Air.local
 Name of job: 
 HelloWorld
 Length = 
-0.9470000267028809
+0.8610000610351562
 ---------- 
 Device name: 
-Reemis-MacBook-Pro.local
+Rawans-MacBook-Air.local
 Name of job: 
-HelloWorld2
+HelloWorld
 Length = 
-0.6210000514984131
+2.197999954223633
 ---------- 
-AVG Length = 0.784000039100647
-Name of running job now: HelloWorld2
+Device name: 
+Rawans-MacBook-Air.local
+Name of job: 
+HelloWorld
+Length = 
+0.9270000457763672
+---------- 
+Device name: 
+Rawans-MacBook-Air.local
+Name of job: 
+HelloWorld
+Length = 
+0.9199998378753662
+---------- 
+Device name: 
+Rawans-MacBook-Air.local
+Name of job: 
+HelloWorld
+Length = 
+0.6360001564025879
+---------- 
+Device name: 
+Rawans-MacBook-Air.local
+Name of job: 
+HelloWorld
+Length = 
+2.4860000610351562
+---------- 
+Device name: 
+Rawans-MacBook-Air.local
+Name of job: 
+HelloWorld
+Length = 
+57.91600012779236
+---------- 
+AVG Length = 9.420571463448661
+Name of running job now: HelloWorld

@@ -4,9 +4,17 @@ Total number of Daemons: 2.
 Machines in cluster:
 [mais-MacBook-Pro.local] 
 MPJ Daemon is running
+<<<<<<< HEAD
+Process ID: 6331
+Port Number: 40055
+[Rawans-MacBook-Air.local] 
+MPJ Daemon is running
+Process ID: 681
+=======
 Process ID: 13211
 Port Number: 40055
 [Aishas-MacBook.local] 
 MPJ Daemon is running
 Process ID: 737
+>>>>>>> d5c7eb82755c144c78ecc2341b2432eb91e96fe8
 Port Number: 40055
