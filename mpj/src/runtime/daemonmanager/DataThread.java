@@ -16,30 +16,33 @@ private String host = "localhost";
 private static int daemonPort = 0;
 static String mpjHomeDir = null;
 
+  //Set the name of the machine
   public DataThread(String machineName) {
     host = machineName;
   }
 
   public void run() {
+     
     queryMPJExpressDeamons();
   }
-
+  // Dilmun code
+  
   public void queryMPJExpressDeamons() {
     String pid = DaemonUtil.getMPJProcessID(host);
     String msg = "";
       if (pid != ""){
-      getDaemonPort();
-      msg = MPJUtil.FormatMachineMessage(host,"MPJ Daemon is running", pid, ""+daemonPort);
-      //msg = msg + " with port number "+ daemonPort;
-      DMThreadUtil.runtimeStatus = true;
-      DMThreadUtil.numberOfDaemons++;
-      }
-    else {
-      msg = MPJUtil.FormatMachineMessage(host, DMMessages.MPJDAEMON_NOT_AVAILABLE, "", "");
-    }
+         getDaemonPort();
+         msg = MPJUtil.FormatMachineMessage(host,"MPJ Daemon is running", pid, ""+daemonPort);
+         //msg = msg + " with port number "+ daemonPort;
+         DMThreadUtil.runtimeStatus = true;
+         DMThreadUtil.numberOfDaemons++;
+      }// end if 
+      else {
+       msg = MPJUtil.FormatMachineMessage(host, DMMessages.MPJDAEMON_NOT_AVAILABLE, "", "");
+    }// end else 
     DMThreadUtil.machineMsgList.add(msg);
     
-  }
+  }// end queryMPJExpressDeamons method
 	
 	public static void getDaemonPort(){
   	Map<String, String> map = System.getenv();

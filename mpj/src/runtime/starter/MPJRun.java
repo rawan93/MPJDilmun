@@ -512,15 +512,6 @@ public class MPJRun {
 		//} catch(FileNotFoundException e) {
 		//e.printStackTrace();
 		//}
-		
-
-       // Dilmun Code
-       //print  Daemon Prot number    
-      //System.out.println("--------------------------------");
-                           
-       //print the port number                                           
-       //System.out.println("Port:"+D_SER_PORT);
-    
 
     // Read the machine file and set machineList
     machineList = MPJUtil.readMachineFile(machinesFile);

@@ -41,7 +41,6 @@ import java.util.ArrayList;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
-
 import runtime.daemonmanager.CLOptions;
 import runtime.daemonmanager.DMThread;
 import runtime.common.MPJUtil;
@@ -55,23 +54,10 @@ public class DMThreadUtil {
 public static boolean runtimeStatus = false;
 // (Daemon)Process ID 
 public static String ProcessID="";
-//Daemon port number 
-//private static int daemonPort = 0;
- // The size of the machine list 
-public static int sizeOfMachineList;
-//status of Cluster (array list to save the status of each daemon in the cluster)
-public static ArrayList<Integer> clusterStatus = new ArrayList<Integer>();
 // status of cluster (Final value)
 public static boolean clusterStatusValue = false;
  // Total number of daemons.
 public static int numberOfDaemons;
-// Set the message of runtime Status
-//public static String runtimeStatusMessage = "";
-// Set the message of cluster Status Value
-//public static String clusterStatusMMessage = "";
-
-
-//end of dilmun
 //test
 //array list of device name and id
 public static ArrayList<String> machineMsgList;
@@ -124,8 +110,13 @@ public static ArrayList<String> machineMsgList;
 	  runtimeStatus=true;
 	} else if (type.equals(DMConstants.HALT)) {
 	  thread = new HaltThread(host);
+	  
+	  //Dilmun code
+	  //set the runtimeStatus to false
 	  runtimeStatus= false;
+	  // set the number Of Daemons to zero
 	  numberOfDaemons = 0;
+	  
 	} else if (type.equals(DMConstants.CLEAN)) {
 	  thread = new CleanUpThread(host);
 	} else if (type.equals(DMConstants.STATUS)) {
@@ -142,144 +133,60 @@ public static ArrayList<String> machineMsgList;
 	}
 
       } //end for loop 
-
-      ExecuteThreads(threads, options.getThreadCount());
       
-      // set the number of machines in the machineList file 
-     
-      // sizeOfMachineList=machinesList.size();
+      ExecuteThreads(threads, options.getThreadCount());
       
       /*test*/
        //check if the status is required and print
      if (type.equals(DMConstants.DATA) || type.equals(DMConstants.BOOT) || type.equals(DMConstants.HALT) ) {
-     	//status of cluster
-     	//revisit cluster status (doesnt check if cluster exists without runtime)
-     	String runtimeData = "";
      	
+     	String runtimeData = "";
+     	//status of cluster
      	 if(runtimeStatus==true)
       	{
-      	
-         clusterStatusValue=true;
-         runtimeData = runtimeData + "Cluster status: Existing.\n" + "Runtime status: Running.\n";
-         //runtimeStatusMessage="is running";
-         //clusterStatusMMessage = "is running";
-         
+            clusterStatusValue=true;
+            runtimeData = runtimeData + "Cluster status: Existing.\n" + "Runtime status: Running.\n";
       	}//end if 
       	else if(runtimeStatus==false)
       	{
-      	  
-      	 clusterStatusValue=false;
-      	 runtimeData = runtimeData + "Cluster status: Not existing.\n" + "Runtime status: Not running.\n";
-
-      	// runtimeStatusMessage="is not running";
-        // clusterStatusMMessage = " is not running";
-      	 
-      	 
-      	
+      	    clusterStatusValue=false;
+      	    runtimeData = runtimeData + "Cluster status: Not existing.\n" + "Runtime status: Not running.\n";
       	}//end else is 
-      	
-      	//System.out.println("Cluster status: "+clusterStatusMMessage);
-      	//status of runtime
-     	//System.out.println("Runtime status: "+runtimeStatusMessage);
      	//print the total number of Daemons
      	runtimeData = runtimeData + "Total number of Daemons: "+numberOfDaemons+".\n"+
      	"Machines in cluster:\n";
      	for (int i=0; i< machineMsgList.size(); i++){
      		runtimeData = runtimeData + machineMsgList.get(i)+"\n";
-     	}
+     	}//end for loop
      	
-      //	System.out.println("Total number of Daemons: "+numberOfDaemons+".");
-      //	System.out.println("Machines in cluster:");
-     	//for (int i=0; i< machineMsgList.size(); i++){
-     	//	System.out.println(machineMsgList.get(i));
-     	//}
-     	
+         //Call the Write To TextFile method to write the Runtime data to textfile
      	 WriteToTextFile(runtimeData);
      	
-     }
+     }//end if 
      /*end of test */
      
     }//end  outer if 
-    
-    
-            
-       
-    
     
   }// end ExecuteCommand method 
   
    public static void WriteToTextFile(String data){
   
   // *** Open the text file and write the runtime data to it *** 
-    
-    // The name of the text file to open.
-    
-         //Open the text file in the same directory the user in it
-        //String fileName = "RuntimeData.txt";
+     try 
+     {
+       // create a folder in mpj folder called DilmunTextFiles  
+       File folder = new File("/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/DilmunTextFiles");
+       folder.mkdir();
+       // create a text file in DilmunTextFiles folder called DilmunData  
+       String fileName = "/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/DilmunTextFiles/DilmunData.txt";
+       BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(fileName));
+       bufferedWriter.write(data);
+        //close the text files.
+       bufferedWriter.close();  
         
-        //Open the text file in the desktop
-        //String fileName = "/Users/senior/Desktop/RuntimeData.txt";
-        
-        // get the home directory of the machine if Mac or Windows
-        String userHomeFolder = System.getProperty("user.home");
-        
-        //Open the text file in the mpj folder
-       // String fileName = "/Dilmun/MPJDilmun/mpj/RuntimeData.txt";
-        
-        
-        try {
-            // Create  an object form FileWriter Class 
-            
-            //FileWriter fileWriter = new FileWriter(fileName);
-            
-            
-           //Open the text file in the home directory of the machine
-           File textFile = new File(userHomeFolder, "RuntimeData22.txt");
-           BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(textFile));
-           
-           //File tempfile = new File("user.dir/tmp", "tempfile.txt");
-           
-           // create Folder in mpj folder 
-          
-           File folder = new File("/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/newFolder");
-           folder.mkdir();
-          
-          String fileName = "/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/newFolder/MData.txt";
-          FileWriter fileWriter = new FileWriter(fileName);
-          
-                     
-            
-            // Cerate an object from BufferedWriter Class
-            // wrap FileWriter in BufferedWriter.
-            //BufferedWriter bufferedWriter =new BufferedWriter(fileWriter);
-        	bufferedWriter.write(data);
-            /*bufferedWriter.write(""+clusterStatusMMessage);
-            bufferedWriter.newLine();
-            bufferedWriter.write(""+runtimeStatusMessage);
-            bufferedWriter.newLine();
-            bufferedWriter.write(""+numberOfDaemons);
-            bufferedWriter.newLine();
-            
-            for (int i=0; i< machineMsgList.size(); i++)
-            {
-                bufferedWriter.write(""+machineMsgList.get(i));
-                 bufferedWriter.newLine();
-     		    
-     	    }//end for loop
-            */
-            // close the text files.
-            bufferedWriter.close();
-            
-            }//end try 
-            
-             catch(IOException ex) {
-                // System.out.println("Error writing to file '" + fileName + "'");
-                System.out.println("Error writing to file ");
-           
-        }//end catch 
-            
-            
+     }//end try 
+     catch(IOException ex) {
+       System.out.println("Error writing to file ");
+     }//end catch 
   }// end WriteToTextFile method 
-  
-  
 }// end DMThreadUtil class 
