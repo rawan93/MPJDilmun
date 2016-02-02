@@ -45,6 +45,8 @@ import java.lang.reflect.*;
 import java.net.DatagramSocket;
 import java.net.ServerSocket;
 
+//import runtime.starter.MPJRun;
+
 public class Wrapper extends Thread {
 
   String portInfo = null;
@@ -141,6 +143,28 @@ public double end;
       end = (double)System.currentTimeMillis()/1000;
       System.out.println("Stopping Process <"+rank+"> on <"+hostName+">");
       System.out.println("END = "+end+" !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+      //MPJRun.executedJob.put(MPJRun.executedJob.get(hostName), "END = "+end) ;
+   
+   /*   
+      //write to output and get at MPJRun
+      InetAddress head = InetAddress.getByName("Rawans-MacBook-Air.local");
+      Socket test = new Socket("Rawans-MacBook-Air.local", 40002);
+      //PrintStream output;
+      if (test.isConnected()){
+      	System.out.println("Connected!!!");
+      	try{
+      	 DataOutputStream out = new DataOutputStream(test.getOutputStream());
+      	 out.writeUTF("hello");
+      	 out.flush();
+      	 //output = new PrintStream(test.getOutputStream());
+         //output.print("hellooooooooooooo");
+         //output.close();
+         test.close();
+         }
+         catch (IOException e) {
+       System.out.println(e);
+       }
+   }   */
       /*
 		double ET = (double)System.currentTimeMillis()/1000;
 		System.out.print ("ET= ");

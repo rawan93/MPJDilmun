@@ -22,3 +22,21 @@
  DEBUG runtime  - -hdfsFolder: <null>
  DEBUG runtime  - appArgs.length: <0>
  DEBUG runtime  - ###########################
+ DEBUG runtime  - Processes Requested 2 are greater than than machines 1
+ DEBUG runtime  - divisor 2
+ DEBUG runtime  - remainder 0
+ DEBUG runtime  - procPerMachineTable==>{192.168.8.104=2}
+ DEBUG runtime  - conf file contents #temp line;#Number of Processes;2;#Protocol Switch Limit;131072;#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT;192.168.8.104@0@0@0@0;192.168.8.104@0@0@1@2
+ DEBUG runtime  - Connecting to Rawans-MacBook-Air.local@40055
+ DEBUG runtime  - procsPerMachineTable {192.168.8.104=2}
+ INFO  runtime  - Machine Name: Rawans-MacBook-Air.local Starting Rank: 0 Process Count: 2
+ DEBUG runtime  - Sending to Socket[addr=Rawans-MacBook-Air.local/192.168.8.104,port=40055,localport=53563]
+ DEBUG runtime  - procsPerMachineTable {192.168.8.104=2}
+ DEBUG runtime  - [MPJRun.java]:Creating server..
+ DEBUG runtime  - [MPJRun.java]:Waiting for <2> to connect
+ DEBUG runtime  - Socket 192.168.8.104 connected to share Rank and Ports
+ DEBUG runtime  - Socket 192.168.8.104 connected to share Rank and Ports
+ DEBUG runtime  - Sending info to Socket 192.168.8.104
+Info: #Peer Information;192.168.8.104@34477@38723@0@0;192.168.8.104@35692@30128@1@0
+ DEBUG runtime  - Sending info to Socket 192.168.8.104
+Info: #Peer Information;192.168.8.104@34477@38723@0@0;192.168.8.104@35692@30128@1@0

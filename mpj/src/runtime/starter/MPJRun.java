@@ -71,85 +71,8 @@ import runtime.common.RTConstants;
 import java.lang.ProcessBuilder;
 import java.lang.Process;
 
-import runtime.daemon.Wrapper;
 public class MPJRun {
 
-<<<<<<< HEAD
-  final String DEFAULT_MACHINES_FILE_NAME = "machines";
-  final int DEFAULT_PROTOCOL_SWITCH_LIMIT = 128 * 1024; // 128K
-  private String CONF_FILE_CONTENTS="";
-  private String WRAPPER_INFO = "#Peer Information";
-  private int mxBoardNum = 0;
-  private  int D_SER_PORT = 0;
-  private int DEBUG_PORT = 0;
-  private int portManagerPort = 0;
-
-  /* Variables to store master node information.
-   * This needs to be forwarded to the wrapper processes.
-   */
-  private int SERVER_PORT = 0;
-  private String localhostName = null;
-
-  // Adding YARN related variables here
-  private boolean isYarn = false;
-  private boolean debugYarn = false;
-  static String hadoopHomeDir = null;
-  private String amMem;
-  private String amCores;
-  private String containerMem;
-  private String containerCores;
-  private String yarnQueue;
-  private String appName;
-  private String amPriority;
-  private String mpjContainerPriority;
-  private String hdfsFolder;
-
-  String machinesFile = DEFAULT_MACHINES_FILE_NAME;
-  private int psl = DEFAULT_PROTOCOL_SWITCH_LIMIT;
-
-  ArrayList<String> jvmArgs = new ArrayList<String>();
-  ArrayList<String> appArgs = new ArrayList<String>();
-  String[] jArgs = null;
-  String[] aArgs = null;
-  static Logger logger = null;
-  private Vector<Socket> peerSockets;
-
-  private ArrayList<String> machineList = new ArrayList<String>();
-  int nprocs = Runtime.getRuntime().availableProcessors();
-  String deviceName = "multicore";
-  private String networkDevice = "niodev";
-
-  static String mpjHomeDir = null;
-  byte[] urlArray = null;
-  Hashtable procsPerMachineTable = new Hashtable();
-  int endCount = 0;
-  int streamEndedCount = 0;
-  String wdir;
-  String className = null;
-  String applicationClassPathEntry = null;
-
-  private static String VERSION = "";
-  private static int RUNNING_JAR_FILE = 2;
-  private static int RUNNING_CLASS_FILE = 1;
-  private boolean zippedSource = false;
-  private String sourceFolder = "";
-  int networkProcesscount = -1;
-
-  private boolean ADEBUG = false;
-  private boolean APROFILE = false;
-
-  static final boolean DEBUG = true;
-  private String logLevel = "DEBUG";
-
-  public MPJRun(String args[]) throws Exception {
-
-    java.util.logging.Logger logger1 = java.util.logging.Logger.getLogger("");
-
-    // remove all existing log handlers: remove the ERR handler
-    for (java.util.logging.Handler h : logger1.getHandlers()) {
-      logger1.removeHandler(h);
-    }
-=======
     final String DEFAULT_MACHINES_FILE_NAME = "machines";
     final int DEFAULT_PROTOCOL_SWITCH_LIMIT = 128 * 1024; // 128K
     private String CONF_FILE_CONTENTS = "";
@@ -182,7 +105,6 @@ public class MPJRun {
 
     String machinesFile = DEFAULT_MACHINES_FILE_NAME;
     private int psl = DEFAULT_PROTOCOL_SWITCH_LIMIT;
->>>>>>> 17b3e146b69ae22aa894e2b431a2633a533ace44
 
     ArrayList<String> jvmArgs = new ArrayList<String>();
     ArrayList<String> appArgs = new ArrayList<String>();
@@ -218,11 +140,11 @@ public class MPJRun {
     static final boolean DEBUG = true;
     private String logLevel = "DEBUG";
     //test
-    public double startTime;
-    Map<String, String> executedJob = new HashMap<String, String>();
+    //public double startTime;
+    // public static Map<String, String> executedJob = new HashMap<String, String>();
 
     public MPJRun(String args[]) throws Exception {
-//System.out.println(" ");
+        //System.out.println(" ");
 
         java.util.logging.Logger logger1 = java.util.logging.Logger.getLogger("");
 
@@ -400,7 +322,7 @@ public class MPJRun {
             return;
         } // YARN runtime ends here
 
-    // Check for MPJE configuration
+        // Check for MPJE configuration
         // Multicore mode
         if (deviceName.equals("multicore")) {
 
@@ -415,8 +337,8 @@ public class MPJRun {
             if (DEBUG && logger.isDebugEnabled()) {
                 logger.debug("className " + className);
             }
-	// to calculate length of job
-            //	long lStartTime = System.currentTimeMillis();
+            // to calculate length of job
+            //long lStartTime = System.currentTimeMillis();
             int jarOrClass = (applicationClassPathEntry.endsWith(".jar")
                     ? RUNNING_JAR_FILE
                     : RUNNING_CLASS_FILE);
@@ -425,32 +347,27 @@ public class MPJRun {
                     applicationClassPathEntry, jarOrClass, nprocs, wdir, jvmArgs,
                     appArgs, mpjHomeDir, ADEBUG, APROFILE, DEBUG_PORT);
 
-     	//	long lEndTime = System.currentTimeMillis();
+            //	long lEndTime = System.currentTimeMillis();
             //  long difference = lEndTime - lStartTime;
-		//System.out.println("Length of job = " + difference/100 + " second");
-       // Dilmun Code 
+            //System.out.println("Length of job = " + difference/100 + " second");
+            // Dilmun Code 
             return;
 
         }
 
-    // Cluster mode
+        // Cluster mode
         System.out.println("MPJ Express (" + VERSION + ") is started in the "
                 + "cluster configuration with " + deviceName);
 
         System.out.println("Name of job: " + className);
 
         double ST = (double) System.currentTimeMillis() / 1000;
-        startTime = (double) System.currentTimeMillis() / 1000;
+       // startTime = (double) System.currentTimeMillis() / 1000;
 
-       // Dilmun Code
-        //print  Daemon Prot number    
-        //System.out.println("--------------------------------");
-       //print the port number                                           
-        //System.out.println("Port:"+D_SER_PORT);
         // Read the machine file and set machineList
         machineList = MPJUtil.readMachineFile(machinesFile);
 
-    // Dilmun Code
+        // Dilmun Code
         for (int i = 0; i < machineList.size(); i++) {
 
         }//end for loop
@@ -503,7 +420,7 @@ public class MPJRun {
 
             int nProcesses = nProcessesInt.intValue();
 
-      // Create xml ticket, pass it to each daemon which then launches
+            // Create xml ticket, pass it to each daemon which then launches
             // wrapper.java
             if (deviceName.equals("hybdev")) {
                 pack(nProcesses, j, peerSock);
@@ -518,13 +435,13 @@ public class MPJRun {
         if (DEBUG && logger.isDebugEnabled()) {
             logger.debug("procsPerMachineTable " + procsPerMachineTable);
         }
-    //mxdev does not needs the read/write ports 
+        //mxdev does not needs the read/write ports 
         //so skipping the port information sharing mechanism
         if (!deviceName.equals("mxdev")) {
             collectPortInfo();
         }
 
-    //****test****//
+        //****test****//
         // end time & difference (ET - ST)
         double ET = (double) System.currentTimeMillis() / 1000;
         double DIF = ET - ST;
@@ -642,6 +559,48 @@ public class MPJRun {
         reader6.close();
 
         //********test*********//
+        ServerSocket server_s = null;
+        try {
+            server_s = new ServerSocket(SERVER_PORT);
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+
+        /*
+         // Socket sock = null;
+         //  sock = new Socket("Rawans-MacBook-Air.local" , 40055);*/
+        Scanner input = null;
+        PrintWriter out = null;
+        for (int j = 0; j < peerSockets.size(); j++) {
+            Socket sock = peerSockets.get(j);
+
+            try {
+
+                //   sock = server_s.accept();
+                input = new Scanner(sock.getInputStream());
+                out = new PrintWriter(sock.getOutputStream(), true);
+                // String in = input.nextLine();
+                if (input.equals("Got")) {
+                    String in = input.nextLine();
+                    System.out.println(in);
+
+                }
+
+            } catch (IOException e) {
+                System.out.println(e);
+
+            } finally {
+                try {
+                    sock.close();
+                    input.close();
+                    out.close();
+                } catch (IOException e) {
+                    System.out.println(e);
+                }
+            }
+
+        }
+
     }
 
     // Parses the input ...
@@ -716,7 +675,7 @@ public class MPJRun {
                 i++;
             } else if (args[i].equals("-dport")) {
                 D_SER_PORT = new Integer(args[i + 1]).intValue();
-        // store the Daemon Port Number
+                // store the Daemon Port Number
                 //DMThreadUtil.DaemonPortNumber=D_SER_PORT;
                 i++;
             } else if (args[i].equals("-dev")) {
@@ -1038,7 +997,6 @@ public class MPJRun {
         CONF_FILE_CONTENTS += ";"
                 + "#Entry, HOST_NAME/IP@READPORT@WRITEPORT@RANK@DEBUGPORT";
 
-		
         /*
          * number of requested parallel processes are less than or equal to compute
          * nodes
@@ -1159,7 +1117,7 @@ public class MPJRun {
         }
     }
 
-  // Hybrid Device Assign Tasks
+    // Hybrid Device Assign Tasks
     private void assignTasksHyb() throws Exception {
 
         int noOfMachines = machineList.size();
@@ -1190,7 +1148,7 @@ public class MPJRun {
                     += "#Entry, HOST_NAME/IP@READPORT@WRITEPORT@NETID@DEBUGPORT";
         }
 
-    // One NIO Process per machine is being implemented, SMP Threads per
+        // One NIO Process per machine is being implemented, SMP Threads per
         // node will be decided in SMPDev
         for (int i = 0; i < networkProcesscount; i++) {
             procsPerMachineTable.put(
@@ -1224,7 +1182,7 @@ public class MPJRun {
             try {
                 InetAddress add = InetAddress.getByName(host);
                 //test
-                executedJob.put(host, "0.0");
+                // executedJob.put(host, "0.0");
             } catch (Exception e) {
                 throw new MPJRuntimeException(e);
             }
@@ -1301,7 +1259,7 @@ public class MPJRun {
     }
 
     private void writeFile(String configurationFileData) {
-    // Method to write CONF_FILE in user directory that will be later used by
+        // Method to write CONF_FILE in user directory that will be later used by
         // MPJ Express Debugger
         try {
             BufferedWriter out = new BufferedWriter(new FileWriter(
@@ -1343,7 +1301,7 @@ public class MPJRun {
         if (DEBUG && logger.isDebugEnabled()) {
             logger.debug("[MPJRun.java]:Waiting for <" + nprocs + "> to connect");
         }
-    // Loop to read port numbers from Wrapper.java processes
+        // Loop to read port numbers from Wrapper.java processes
         // and to create WRAPPER_INFO (containing all IPs and ports)
         for (int i = nprocs; i > 0; i--) {
             try {
