@@ -168,7 +168,7 @@ public class MPJUtil {
   		data= "[" + host + "] " +"\n"+ message+"\nProcess ID:  - \nPort Number: -";
   	} else {
   		data= "[" + host + "] " +"\n"+ message+"\nProcess ID: "+ pid+"\nPort Number: "+ port;
-  	}
+  	}//end else 
     return data;
   }
 

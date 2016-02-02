@@ -43,79 +43,37 @@ public class StatusThread extends DMThread {
   
   private String host = "localhost";
   
-  //count for the total number of daemons.
-  public static int countOfDaemons;
-
+  // Set the name of the machine
   public StatusThread(String machineName) {
     host = machineName;
-  }
+  }// end StatusThread method 
 
   public void run() {
+  
     queryMPJExpressDeamons();
-  }
+  }//end run method 
 
   public void queryMPJExpressDeamons() {
-    String pid = DaemonUtil.getMPJProcessID(host);
+  
+      // get the processID (Daemon ID) from getMPJProcessID method in DaemonUtil class
+      String pid = DaemonUtil.getMPJProcessID(host);
     
       if (pid != ""){
-      System.out.println(MPJUtil.FormatMessage(host,
-	  DMMessages.MPJDAEMON_AVAILABLE + pid));
-	  
-	  
-	  
-	  
-	 // Dilmun code 
-	  
-      //set mpj status 
-      DMThreadUtil.runtimeStatus = true;
-      
-      //Set the process (Daemon) Id 
-      DMThreadUtil.ProcessID=pid;
+         
+         // print host (machine) name + message (is running) + processID(DaemonID)
+		 System.out.println(MPJUtil.FormatMessage(host,DMMessages.MPJDAEMON_AVAILABLE + pid));
+	     
+	     // Dilmun code 
+         //set mpj runtime status to true 
+         DMThreadUtil.runtimeStatus = true;
+         //get the processID (DaemonID)  
+         DMThreadUtil.ProcessID=pid;
+         
       }// end if 
            
-
-    else {
-      System.out.println(MPJUtil.FormatMessage(host,
-	  DMMessages.MPJDAEMON_NOT_AVAILABLE));
-       // DMThreadUtil.status = false;
-    }//end else
-    
-    // set the machine list size
-   int MachineListNO;
-    
-    //MachineListNO=DMThreadUtil.getInt();
-    
-    MachineListNO=DMThreadUtil.sizeOfMachineList;
-    
-  
-    
-    for( int i=0;i<=MachineListNO;i++)
-    {
-    
-       //System.out.println("Size"+MachineListNO);
-    
-       if (pid != "")
-       {
-           DMThreadUtil.clusterStatus.add(1);
-           
-           countOfDaemons++; 
-       
-       }// end if 
-       
-       else
-       {
-       
-         DMThreadUtil.clusterStatus.add(0);
-       
-       }//end else
-    
-    }// end for loop 
-    
-    // set the number of Daemons 
-    DMThreadUtil.numberOfDaemons=countOfDaemons;
-    
-    
-    
-  }
-
-}
+      else {
+        // print host (machine) name + message (is not running)
+         System.out.println(MPJUtil.FormatMessage(host,DMMessages.MPJDAEMON_NOT_AVAILABLE));
+      }//end else
+  }// end queryMPJExpressDeamons method 
+}//end StatusThread class 

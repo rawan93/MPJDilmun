@@ -108,6 +108,8 @@ public class BootThread extends DMThread {
 	  writeMessage(true, pid);
 	  //msg = MPJUtil.FormatMachineMessage(host,"MPJ Daemon is running", pid, port);
 	  //DMThreadUtil.numberOfDaemons++;
+	  
+	  
      } else {
 	  System.out.println(MPJUtil.FormatMessage(host,
 	      DMMessages.MPJDAEMON_NOT_STARTED + pid));  
@@ -153,10 +155,8 @@ public class BootThread extends DMThread {
       System.out.println(MPJUtil.FormatMessage(host, DMMessages.BUSY_PORT));
       return false;
     }
-
   
    //Aisha write in the text file
-   
 
         try {
            
@@ -174,16 +174,16 @@ public class BootThread extends DMThread {
             bufferedWriter.close();
         }
         catch(IOException ex) {
-            System.out.println(
-                "Error writing to file '"
-                + fileName + "'");
+            System.out.println("Error writing to file '" + fileName + "'");
             
         }
         //end file
         
       return true;
   }
-
+  
+  // Dilmun code 
+  
   public void writeMessage(boolean availability, String pid){
   	if (availability == true){
   		msg = MPJUtil.FormatMachineMessage(host,"MPJ Daemon is running", pid, port);
@@ -191,8 +191,8 @@ public class BootThread extends DMThread {
 
   	} else if (availability == false){
   		msg = MPJUtil.FormatMachineMessage(host,DMMessages.MPJDAEMON_NOT_AVAILABLE, pid, "");
-  		DMThreadUtil.numberOfDaemons++;
+  		//DMThreadUtil.numberOfDaemons++;
   	}
   	DMThreadUtil.machineMsgList.add(msg);
-  }
-}
+  }//end writeMessage method 
+}// end BootThread class 
