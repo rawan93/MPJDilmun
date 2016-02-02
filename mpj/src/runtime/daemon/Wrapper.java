@@ -187,8 +187,6 @@ public double end;
        }
       }
       */
-    
-
       //System.out.print(MPJRun.executedJob.get(hostName), "END = "+end) ;
    		
     }
