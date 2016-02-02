@@ -45,7 +45,6 @@ import java.lang.reflect.*;
 import java.net.DatagramSocket;
 import java.net.ServerSocket;
 
-//import runtime.starter.MPJRun;
 
 public class Wrapper extends Thread {
 
@@ -80,7 +79,6 @@ public double end;
    *          MPJRun.java server, args[5] is rank, args[6] is className
    */
   public void execute(String args[]) throws Exception {
-	double ST = (double) System.currentTimeMillis()/1000;
     InetAddress localaddr = InetAddress.getLocalHost();
     hostName = localaddr.getHostName();
 
@@ -108,12 +106,6 @@ public double end;
 
 
     try {
-   
- 	  /*System.out.println(" ");
-   		double ST = (double) System.currentTimeMillis()/1000;
-   		System.out.print ("ST= ");
-   		System.out.printf("%.2f", ST);
-   		System.out.println(" ");*/
    	
       System.out.println("Starting process <"+rank+"> on <"+hostName+">");
 
@@ -140,41 +132,64 @@ public double end;
 	throw new NoSuchMethodException("main");
       }
       m.invoke(null, new Object[] { arvs });
+      //test: end time!
       end = (double)System.currentTimeMillis()/1000;
-      System.out.println("Stopping Process <"+rank+"> on <"+hostName+">");
-      System.out.println("END = "+end+" !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-      //MPJRun.executedJob.put(MPJRun.executedJob.get(hostName), "END = "+end) ;
-   
-   /*   
-      //write to output and get at MPJRun
-      InetAddress head = InetAddress.getByName("Rawans-MacBook-Air.local");
-      Socket test = new Socket("Rawans-MacBook-Air.local", 40002);
-      //PrintStream output;
-      if (test.isConnected()){
-      	System.out.println("Connected!!!");
-      	try{
-      	 DataOutputStream out = new DataOutputStream(test.getOutputStream());
-      	 out.writeUTF("hello");
+      System.out.println("Stopping Process <"+rank+"> on <"+hostName+">");      
+      
+      //write to output and get at MPJRun (name and port value are explicit for trail reasons)
+      InetAddress head = InetAddress.getByName("Reemis-MacBook-Pro.local");
+      Socket headSock = new Socket(head, 40002);
+
+      PrintWriter out = null;
+      //DataInputStream in = null;
+      try{
+      	 //in = new DataInputStream(headSock.getInputStream());
+      	 out = new PrintWriter(headSock.getOutputStream());
+      	 out.write("Got ");
+      	 out.write(hostName);
+      	 out.write(end);
       	 out.flush();
-      	 //output = new PrintStream(test.getOutputStream());
-         //output.print("hellooooooooooooo");
+      	 //output = new PrintStream(headSock.getOutputStream());
+         //output.print("got");
          //output.close();
-         test.close();
          }
          catch (IOException e) {
        System.out.println(e);
        }
-   }   */
+       finally{
+        try{
+         headSock.close();
+     	 //in.close();
+      	 out.close();
+
+         }
+         catch (IOException e) {
+       System.out.println(e);
+       }
+       }
+      
+      
       /*
-		double ET = (double)System.currentTimeMillis()/1000;
-		System.out.print ("ET= ");
-   		System.out.printf("%.2f%n" , ET);
-   		System.out.println(" ");
-   		double DIF = ET - ST;
-   		System.out.format("Length of job = %.2f%n second" , DIF );
-   		System.out.print ("DIF= ");
-   		System.out.printf("%.2f%n" , DIF );
-   		System.out.println(" ");*/
+      if (headSock.isConnected()){
+      	System.out.println("Connected");
+      	try{
+      	 DataOutputStream out = new DataOutputStream(headSock.getOutputStream());
+      	 out.writeUTF("hello");
+      	 out.flush();
+      	 out.close();
+      	 //output = new PrintStream(headSock.getOutputStream());
+         //output.print("test");
+         //output.close();
+         headSock.close();
+         }
+         catch (IOException e) {
+       System.out.println(e);
+       }
+      }
+      */
+    
+
+      //System.out.print(MPJRun.executedJob.get(hostName), "END = "+end) ;
    		
     }
     
@@ -183,26 +198,6 @@ public double end;
                          " starter: exception" + ioe.getMessage());
       ioe.printStackTrace();
     }
-
-/*
-    double ET = (double)System.currentTimeMillis()/1000;
-   		double DIF = ET - ST;
-   		System.out.print ("DIF in wrapper = ");
-   		//System.out.print (className);
-   		System.out.printf("%.2f%n" , DIF);
-   		
-
-		try(PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("outee.txt", true)))) {
-  		 	
-  		 	out.println("Name of job: " + className);
-   			 //more code
-   			 out.println("Length = " + DIF);
-   			 //more code
-		}catch (IOException e) {
-   			 //exception handling left as an exercise for the reader
-		}
-
-*/
 		}
 
   public void run() {
