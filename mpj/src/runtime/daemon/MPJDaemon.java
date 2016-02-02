@@ -245,6 +245,8 @@ public class MPJDaemon {
   }
   public static void main(String args[]) {
     try {
+    //test
+
       MPJDaemon dae = new MPJDaemon(args);
     }
     catch (Exception e) {

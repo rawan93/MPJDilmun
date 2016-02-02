@@ -41,6 +41,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.io.File;
+import java.lang.management.*;
 
 public class DaemonUtil {
 
@@ -133,6 +134,90 @@ public class DaemonUtil {
     // XXX there is no daemon running on the compute node .. ..
     return pid;
   }
+
+//Aisha
+
+public static String getCPUnum(String host) {
+
+    int index = 0;
+    int space = 0;
+    int num = 0;
+    String num2="";
+
+    ArrayList<String> consoleMessages = new ArrayList<String>();
+
+    if (System.getProperty("os.name").startsWith("Windows")) {
+      consoleMessages = getWinJavaProcesses(host);
+    } else {
+      consoleMessages = getJavaProcesses(host);
+    }
+
+    for (String message : consoleMessages) {
+      index = message.indexOf("MPJDaemon");
+      if (index > -1) {
+  space = message.indexOf(" ");
+  num = Runtime.getRuntime().availableProcessors();
+
+  num2= " " + num;
+  return num2;
+      }
+    }
+
+    // XXX Must report an error if this line gets executed .. 
+    // XXX this line always return empty pid .. which means that we think 
+    // XXX there is no daemon running on the compute node .. ..
+    return num2;
+  }
+
+
+
+  public static String gettotalmem(String host) {
+
+    int index = 0;
+    int space = 0;
+    double total = 0;
+    double free = 0;
+    double used= 0;
+    String t="";
+    String f="";
+    String u="";
+
+    ArrayList<String> consoleMessages = new ArrayList<String>();
+
+    if (System.getProperty("os.name").startsWith("Windows")) {
+      consoleMessages = getWinJavaProcesses(host);
+    } else {
+      consoleMessages = getJavaProcesses(host);
+    }
+
+    for (String message : consoleMessages) {
+      index = message.indexOf("MPJDaemon");
+      if (index > -1) {
+  space = message.indexOf(" ");
+  com.sun.management.OperatingSystemMXBean mxbean = (com.sun.management.OperatingSystemMXBean) ManagementFactory.getOperatingSystemMXBean();
+        
+
+        total = mxbean.getTotalPhysicalMemorySize()/(1024*1024*1024);
+        free = mxbean.getFreePhysicalMemorySize()/(1024*1024*1024);
+        used= total - free ;
+
+       t= " " + total;
+  return t;
+      }
+    }
+
+    // XXX Must report an error if this line gets executed .. 
+    // XXX this line always return empty pid .. which means that we think 
+    // XXX there is no daemon running on the compute node .. ..
+    return t;
+  }
+
+  
+
+    
+
+//end Aisha's part
+
 
   /* get details of Java processes on remote Linux system */
   public static ArrayList<String> getJavaProcesses(String host) {
