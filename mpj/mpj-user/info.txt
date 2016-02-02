@@ -1,0 +1,2 @@
+new number of CPUs
+new total memory 

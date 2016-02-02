@@ -78,7 +78,8 @@ public class MPJDaemon {
   PortManagerThread pManager;
 
   public MPJDaemon(String args[]) throws Exception {
-
+//test
+System.out.println("test 2!!!!");
     InetAddress localaddr = InetAddress.getLocalHost();
     String hostName = localaddr.getHostName();
     servSockets = new ConcurrentHashMap<Socket, ProcessLauncher>();
@@ -245,6 +246,8 @@ public class MPJDaemon {
   }
   public static void main(String args[]) {
     try {
+    //test
+
       MPJDaemon dae = new MPJDaemon(args);
     }
     catch (Exception e) {
