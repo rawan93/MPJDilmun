@@ -147,7 +147,7 @@ public double end;
       	 out = new PrintWriter(headSock.getOutputStream());
       	 out.write("Got ");
       	 out.write(hostName);
-      	 out.write(end);
+      	 out.write(""+end);
       	 out.flush();
       	 //output = new PrintStream(headSock.getOutputStream());
          //output.print("got");
