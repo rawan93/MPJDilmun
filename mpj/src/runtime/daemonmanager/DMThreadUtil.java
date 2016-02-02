@@ -46,6 +46,7 @@ import runtime.daemonmanager.CLOptions;
 import runtime.daemonmanager.DMThread;
 import runtime.common.MPJUtil;
 import java.io.*;
+import java.io.File;
 
 public class DMThreadUtil {
 
@@ -222,6 +223,9 @@ public static ArrayList<String> machineMsgList;
         // get the home directory of the machine if Mac or Windows
         String userHomeFolder = System.getProperty("user.home");
         
+        //Open the text file in the mpj folder
+       // String fileName = "/Dilmun/MPJDilmun/mpj/RuntimeData.txt";
+        
         
         try {
             // Create  an object form FileWriter Class 
@@ -232,6 +236,16 @@ public static ArrayList<String> machineMsgList;
            //Open the text file in the home directory of the machine
            File textFile = new File(userHomeFolder, "RuntimeData22.txt");
            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(textFile));
+           
+           //File tempfile = new File("user.dir/tmp", "tempfile.txt");
+           
+           // create Folder in mpj folder 
+          
+           File folder = new File("/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/newFolder");
+           folder.mkdir();
+          
+          String fileName = "/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/newFolder/MData.txt";
+          FileWriter fileWriter = new FileWriter(fileName);
           
                      
             

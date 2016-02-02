@@ -1,6 +1,7 @@
 package runtime.daemonmanager;
 import java.io.IOException;
 import java.lang.management.*;
+import java.io.*;
 /*
  The MIT License
 
@@ -54,18 +55,20 @@ public class BootThread extends DMThread {
   /*Aisha*/
   private int numcpu=1;
   private double load=0;
+  private double total=0;
+  private double free=0;
+  private double used=0;
 
 
   public BootThread(String machineName, String daemonPort) {
     host = machineName;
     port = daemonPort;
-    /*Aisha*/
-    numcpu=Runtime.getRuntime().availableProcessors();
+  
+    
 
-    OperatingSystemMXBean osMBean
-            = (OperatingSystemMXBean) ManagementFactory.getOperatingSystemMXBean();
+        
 
-        double load = osMBean.getSystemLoadAverage();
+        
     
 
   }
@@ -99,7 +102,7 @@ public class BootThread extends DMThread {
 	if (!pid.equals("") && Integer.parseInt(pid) > -1) {
 	  System.out.println(numcpu+MPJUtil.FormatMessage(host,
 	      DMMessages.MPJDAEMON_STARTED + pid));
-       System.out.println("number of CPUs"+numcpu); 
+       
 
 	  //test
 	  writeMessage(true, pid);
@@ -107,7 +110,7 @@ public class BootThread extends DMThread {
 	  //DMThreadUtil.numberOfDaemons++;
      } else {
 	  System.out.println(MPJUtil.FormatMessage(host,
-	      DMMessages.MPJDAEMON_NOT_STARTED + pid)); 
+	      DMMessages.MPJDAEMON_NOT_STARTED + pid));  
 	  for (String message : consoleMessages) //leaving here for legacy 
 	    System.out.println(message); // reasons .. this does not make sense
 	}
@@ -121,9 +124,15 @@ public class BootThread extends DMThread {
   private boolean validExecutionParams() {
 
     String pid = DaemonUtil.getMPJProcessID(host);
+    //Aisha
+    String num=DaemonUtil.getCPUnum(host);
+    String tot=DaemonUtil.gettotalmem(host);
     if (!pid.equals("")) {
       System.out.println(MPJUtil.FormatMessage(host,
 	  DMMessages.MPJDAEMON_ALREADY_RUNNING + pid));
+    System.out.println("new number of CPUs"+num); 
+    System.out.println("new total memory "+tot); 
+    
     
 	  writeMessage(true, pid);
       return false;
@@ -145,6 +154,34 @@ public class BootThread extends DMThread {
     }
 
     return true;
+   //Aisha write in the text file
+    String fileName = "info.txt";
+
+        try {
+           
+            FileWriter fileWriter =
+                new FileWriter(fileName);
+
+           
+            BufferedWriter bufferedWriter =
+                new BufferedWriter(fileWriter);
+
+            bufferedWriter.write("new number of CPUs"+num);
+            bufferedWriter.newLine();
+            bufferedWriter.write("new total memory "+tot);
+          
+
+            /
+            bufferedWriter.close();
+        }
+        catch(IOException ex) {
+            System.out.println(
+                "Error writing to file '"
+                + fileName + "'");
+            
+        }
+        //end file
+    
   }
 
   public void writeMessage(boolean availability, String pid){
