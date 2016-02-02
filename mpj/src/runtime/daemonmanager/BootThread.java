@@ -125,6 +125,7 @@ public class BootThread extends DMThread {
 
     String pid = DaemonUtil.getMPJProcessID(host);
     //Aisha
+     String fileName = "info.txt";
     String num=DaemonUtil.getCPUnum(host);
     String tot=DaemonUtil.gettotalmem(host);
     if (!pid.equals("")) {
@@ -153,25 +154,23 @@ public class BootThread extends DMThread {
       return false;
     }
 
-    return true;
+  
    //Aisha write in the text file
-    String fileName = "info.txt";
+   
 
         try {
            
-            FileWriter fileWriter =
-                new FileWriter(fileName);
+            FileWriter fileWriter = new FileWriter(fileName);
 
            
-            BufferedWriter bufferedWriter =
-                new BufferedWriter(fileWriter);
+            BufferedWriter bufferedWriter=new BufferedWriter(fileWriter);
 
             bufferedWriter.write("new number of CPUs"+num);
             bufferedWriter.newLine();
             bufferedWriter.write("new total memory "+tot);
           
 
-            /
+            
             bufferedWriter.close();
         }
         catch(IOException ex) {
@@ -181,7 +180,8 @@ public class BootThread extends DMThread {
             
         }
         //end file
-    
+        
+      return true;
   }
 
   public void writeMessage(boolean availability, String pid){
