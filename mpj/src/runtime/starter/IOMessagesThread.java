@@ -43,6 +43,9 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Scanner;
 
+//test
+import runtime.starter.MPJRun;
+
 public class IOMessagesThread extends Thread {
 
     Socket clientSock;
@@ -64,10 +67,21 @@ public class IOMessagesThread extends Thread {
             output = new PrintWriter(clientSock.getOutputStream(), true);
             String message = input.nextLine();
             while (!(message.endsWith("EXIT"))) {
-                if (!message.startsWith("@Ping#")) {
+                if (message.startsWith("Dilmun")) {
+                 // retrive device name and length of executed job
+                    String[] parts = message.split(" , ");
+                    String device = parts[1];
+                    String length = parts[2];
+                   
+                    MPJRun.executedJob.put(device, length);
+                } else if (!message.startsWith("@Ping#")) {
                     System.out.println(message);
                 }
                 message = input.nextLine();
+
+            }
+            if (message.endsWith("EXIT")) {
+                System.out.println(MPJRun.executedJob);
             }
 
         } catch (Exception cce) {
