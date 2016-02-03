@@ -347,10 +347,6 @@ public class MPJRun {
                     applicationClassPathEntry, jarOrClass, nprocs, wdir, jvmArgs,
                     appArgs, mpjHomeDir, ADEBUG, APROFILE, DEBUG_PORT);
 
-            //	long lEndTime = System.currentTimeMillis();
-            //  long difference = lEndTime - lStartTime;
-            //System.out.println("Length of job = " + difference/100 + " second");
-            // Dilmun Code 
             return;
 
         }
@@ -445,9 +441,7 @@ public class MPJRun {
         // end time & difference (ET - ST)
         double ET = (double) System.currentTimeMillis() / 1000;
         double DIF = ET - ST;
-        //System.out.print("DIF in MPJRun = ");
-        //System.out.print (className);
-        //System.out.printf("%.2f%n", DIF);
+        
 
         // write in a text file -- Name of job & length of each --
         File f = new File("test.txt");
@@ -505,7 +499,6 @@ public class MPJRun {
         FileWriter writer2 = new FileWriter(f, true);
         writer2.write("AVG Length = " + total / number_of_E_jobs + "\n");
         writer2.write("Name of running job now: " + className + "\n");
-        //writer2.write("Device: " + localhostName + "\n");
         writer2.close();
 
         File inputFile = new File("test.txt");
@@ -514,14 +507,12 @@ public class MPJRun {
         try {
             reader6 = new BufferedReader(new FileReader(inputFile));
         } catch (FileNotFoundException e2) {
-            // TODO Auto-generated catch block
             // e2.printStackTrace();
         }
         BufferedWriter writer6 = null;
         try {
             writer6 = new BufferedWriter(new FileWriter(tempFile));
         } catch (IOException e1) {
-            // TODO Auto-generated catch block
             // e1.printStackTrace();
         }
         String currentLine;
@@ -537,7 +528,6 @@ public class MPJRun {
                 try {
                     writer6.write(currentLine + "\n");
                 } catch (IOException e) {
-                    // TODO Auto-generated catch block
                     // e.printStackTrace();
                 }
             }
@@ -550,57 +540,10 @@ public class MPJRun {
         writer6.write("Name of running job now: " + className + "\n");
 
         boolean rename = tempFile.renameTo(inputFile);
-
-        /*RandomAccessFile ff = new RandomAccessFile(new File("test.txt"), "rw");
-         ff.seek(0); // to the beginning
-         ff.write("Running Job: ".getBytes());
-         ff.close();*/
+        
         writer6.close();
         reader6.close();
-
-        //********test*********//
-    /*    ServerSocket server_s = null;
-         try {
-         server_s = new ServerSocket(SERVER_PORT);
-         } catch (Exception e) {
-         System.out.println(e);
-         e.printStackTrace();
-         }
-         */
-        /*
-         // Socket sock = null;
-         //  sock = new Socket("Rawans-MacBook-Air.local" , 40055);*/
-        /*    Scanner input = null;
-         PrintWriter out = null;
-         for (int j = 0; j < peerSockets.size(); j++) {
-         Socket sock = peerSockets.get(j);
-
-         try {
-
-         //   sock = server_s.accept();
-         input = new Scanner(sock.getInputStream());
-         out = new PrintWriter(sock.getOutputStream(), true);
-         // String in = input.nextLine();
-         if (input.equals("Got")) {
-         //String in = input.nextLine();
-         //System.out.println(in);
-         }
-
-         } catch (IOException e) {
-         System.out.println(e);
-         e.printStackTrace();
-
-         } finally {
-         try {
-         sock.close();
-         input.close();
-         out.close();
-         } catch (IOException e) {
-         System.out.println(e);
-         e.printStackTrace();
-         }
-         }
-         }*/
+        
         System.out.println(executedJob);
 
     }
