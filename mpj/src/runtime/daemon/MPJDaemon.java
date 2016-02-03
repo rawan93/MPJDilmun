@@ -50,6 +50,7 @@ import java.net.Socket;
 import java.util.Map;
 import java.util.StringTokenizer;
 import java.util.concurrent.ConcurrentHashMap;
+import java.io.*;
 
 import org.apache.log4j.DailyRollingFileAppender;
 import org.apache.log4j.Level;
@@ -63,6 +64,9 @@ import runtime.common.RTConstants;
 
 import runtime.daemonmanager.DMConstants;
 import runtime.daemonmanager.MPJHalt;
+
+//test
+import java.lang.management.*;
 
 public class MPJDaemon {
 
@@ -78,11 +82,10 @@ public class MPJDaemon {
   PortManagerThread pManager;
 
   public MPJDaemon(String args[]) throws Exception {
-  	
-   //collect CPU and Memory informations
+    //collect CPU and Memory informations
 
-    int Num_Of_CPU= Runtime.getRuntime().availableProcessors();
-    System.out.println("You have :  "+Num_Of_CPU+" CPUs ");
+    int NUM= Runtime.getRuntime().availableProcessors();
+    System.out.println("You have :  "+NUM+" CPUs ");
 
     OperatingSystemMXBean osMBean= (OperatingSystemMXBean) ManagementFactory.getOperatingSystemMXBean();
 
@@ -90,41 +93,47 @@ public class MPJDaemon {
     System.out.println("Load Average in one minute :  "+load);
   
     com.sun.management.OperatingSystemMXBean mxbean = (com.sun.management.OperatingSystemMXBean) ManagementFactory.getOperatingSystemMXBean();
-    double total_mem = mxbean.getTotalPhysicalMemorySize()/(1024*1024*1024);
-    double free_mem = mxbean.getFreePhysicalMemorySize()/(1024*1024*1024);
-    double used_mem= total_mem - free_mem ;
+    double total = mxbean.getTotalPhysicalMemorySize()/(1024*1024*1024);
+    double free = mxbean.getFreePhysicalMemorySize()/(1024*1024*1024);
+    double used= total - free ;
 
-        System.out.println("Total Physical Memory in GB:" + total_mem);
+        System.out.println("Total Physical Memory in GB:" + total);
 
-        System.out.println("Physical Memory Used in GB: " + used_mem);
+        System.out.println("Physical Memory Used in GB: " + used);
 
-        System.out.println("Physical Memory Free in GB:" + free_mem);
+        System.out.println("Physical Memory Free in GB:" + free);
 
         String fileName = "info.txt";
-        //start write in the file
-        try 
-        {
+
+        try {
+           
             FileWriter fileWriter =new FileWriter(fileName);
+
+           
             BufferedWriter bufferedWriter =new BufferedWriter(fileWriter);
 
-            bufferedWriter.write("You have :  "+Num_Of_CPU+" CPUs ");
+            bufferedWriter.write("You have :  "+NUM+" CPUs ");
             bufferedWriter.newLine();
             bufferedWriter.write("Load Average in one minute :  "+load);
             bufferedWriter.newLine();
-            bufferedWriter.write("Total Physical Memory in GB:" + total_mem);
+            bufferedWriter.write("Total Physical Memory in GB:" + total);
             bufferedWriter.newLine();
-            bufferedWriter.write("Physical Memory Used in GB: " + used_mem);
+            bufferedWriter.write("Physical Memory Used in GB: " + used);
             bufferedWriter.newLine();
-            bufferedWriter.write("Physical Memory Free in GB:" + free_mem);
-   
+            bufferedWriter.write("Physical Memory Free in GB:" + free);
+    
+          
             bufferedWriter.close();
-        }//end try
-        
-        catch(IOException ex)
-        {
-            System.out.println("Error writing to file '"+ fileName + "'");
         }
-        //end write in the file
+        catch(IOException ex) {
+            System.out.println(
+                "Error writing to file '"
+                + fileName + "'");
+            
+        }
+        //end file
+
+
     InetAddress localaddr = InetAddress.getLocalHost();
     String hostName = localaddr.getHostName();
     servSockets = new ConcurrentHashMap<Socket, ProcessLauncher>();
@@ -291,8 +300,7 @@ public class MPJDaemon {
   }
   public static void main(String args[]) {
     try {
-    //test
-
+      
       MPJDaemon dae = new MPJDaemon(args);
     }
     catch (Exception e) {
