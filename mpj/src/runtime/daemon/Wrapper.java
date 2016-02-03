@@ -80,9 +80,9 @@ public class Wrapper extends Thread {
 
         deviceName = args[2];
         /* incase of mxdev the location of mpjdev.conf file is passed
-     * else the complete conf file string is passed
-     * spaces in conf file contents were replaced by new line char
-     * by tau_java.
+         * else the complete conf file string is passed
+         * spaces in conf file contents were replaced by new line char
+         * by tau_java.
          */
         if (!deviceName.equals("mxdev")) {
             args[0] = args[0].replace('|', ' ');
@@ -102,9 +102,11 @@ public class Wrapper extends Thread {
         try {
 
             System.out.println("Starting process <" + rank + "> on <" + hostName + ">");
-            double startTime = (double) System.currentTimeMillis() / 1000;
             String arvs[] = new String[nargs.length + 3];
-
+            
+            //retrieve start time of job
+            double startTime = (double) System.currentTimeMillis() / 1000;
+            
             arvs[0] = rank;
             if (!deviceName.equals("mxdev")) {
                 arvs[1] = portInfo.concat(";#Server Name;" + serverName
@@ -125,63 +127,14 @@ public class Wrapper extends Thread {
                 throw new NoSuchMethodException("main");
             }
             m.invoke(null, new Object[]{arvs});
-            //test: end time!
+            
+            //retrieve end time
             double endTime = (double) System.currentTimeMillis() / 1000;
             System.out.println("Stopping Process <" + rank + "> on <" + hostName + ">");
             //calculate length
             double length = endTime - startTime;
+            //communicate device name and job length
             System.out.println("Dilmun , " + hostName + " , " + String.format("%.4f", length));
-            //write to output and get at MPJRun (name and port value are explicit for trail reasons)
-            /*InetAddress head = InetAddress.getByName("Reemis-MacBook-Pro.local");
-      Socket headSock = new Socket(head, 40002);
-
-      PrintWriter out = null;
-      //DataInputStream in = null;
-      try{
-      	 //in = new DataInputStream(headSock.getInputStream());
-      	// out = new PrintWriter(headSock.getOutputStream());
-      	out.write("Got ");
-      	out.write(hostName);
-      	 out.write(""+end);
-      	 //out.flush();
-      	 //output = new PrintStream(headSock.getOutputStream());
-         //output.print("got");
-         //output.close();
-         }
-         catch (IOException e) {
-       System.out.println(e);
-       }
-       finally{
-        try{
-         headSock.close();
-     	 //in.close();
-      	 out.close();
-
-         }
-         catch (IOException e) {
-          System.out.println(e);
-         }
-       }*/
-
- /*
-      if (headSock.isConnected()){
-      	System.out.println("Connected");
-      	try{
-      	 DataOutputStream out = new DataOutputStream(headSock.getOutputStream());
-      	 out.writeUTF("hello");
-      	 out.flush();
-      	 out.close();
-      	 //output = new PrintStream(headSock.getOutputStream());
-         //output.print("test");
-         //output.close();
-         headSock.close();
-         }
-         catch (IOException e) {
-       System.out.println(e);
-       }
-      }
-             */
-            //System.out.print(MPJRun.executedJob.get(hostName), "END = "+end) ;
         } catch (Exception ioe) {
             System.err.println("[" + hostName + "-Wrapper.java]: Multi-threaded"
                     + " starter: exception" + ioe.getMessage());
