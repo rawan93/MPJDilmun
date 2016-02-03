@@ -78,7 +78,53 @@ public class MPJDaemon {
   PortManagerThread pManager;
 
   public MPJDaemon(String args[]) throws Exception {
+  	
+   //collect CPU and Memory informations
 
+    int Num_Of_CPU= Runtime.getRuntime().availableProcessors();
+    System.out.println("You have :  "+Num_Of_CPU+" CPUs ");
+
+    OperatingSystemMXBean osMBean= (OperatingSystemMXBean) ManagementFactory.getOperatingSystemMXBean();
+
+    double load = osMBean.getSystemLoadAverage();
+    System.out.println("Load Average in one minute :  "+load);
+  
+    com.sun.management.OperatingSystemMXBean mxbean = (com.sun.management.OperatingSystemMXBean) ManagementFactory.getOperatingSystemMXBean();
+    double total_mem = mxbean.getTotalPhysicalMemorySize()/(1024*1024*1024);
+    double free_mem = mxbean.getFreePhysicalMemorySize()/(1024*1024*1024);
+    double used_mem= total_mem - free_mem ;
+
+        System.out.println("Total Physical Memory in GB:" + total_mem);
+
+        System.out.println("Physical Memory Used in GB: " + used_mem);
+
+        System.out.println("Physical Memory Free in GB:" + free_mem);
+
+        String fileName = "info.txt";
+        //start write in the file
+        try 
+        {
+            FileWriter fileWriter =new FileWriter(fileName);
+            BufferedWriter bufferedWriter =new BufferedWriter(fileWriter);
+
+            bufferedWriter.write("You have :  "+Num_Of_CPU+" CPUs ");
+            bufferedWriter.newLine();
+            bufferedWriter.write("Load Average in one minute :  "+load);
+            bufferedWriter.newLine();
+            bufferedWriter.write("Total Physical Memory in GB:" + total_mem);
+            bufferedWriter.newLine();
+            bufferedWriter.write("Physical Memory Used in GB: " + used_mem);
+            bufferedWriter.newLine();
+            bufferedWriter.write("Physical Memory Free in GB:" + free_mem);
+   
+            bufferedWriter.close();
+        }//end try
+        
+        catch(IOException ex)
+        {
+            System.out.println"Error writing to file '"+ fileName + "'");
+        }
+        //end write in the file
     InetAddress localaddr = InetAddress.getLocalHost();
     String hostName = localaddr.getHostName();
     servSockets = new ConcurrentHashMap<Socket, ProcessLauncher>();
