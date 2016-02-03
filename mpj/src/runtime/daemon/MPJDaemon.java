@@ -122,7 +122,7 @@ public class MPJDaemon {
         
         catch(IOException ex)
         {
-            System.out.println"Error writing to file '"+ fileName + "'");
+            System.out.println("Error writing to file '"+ fileName + "'");
         }
         //end write in the file
     InetAddress localaddr = InetAddress.getLocalHost();
