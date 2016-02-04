@@ -93,20 +93,20 @@ public class Wrapper extends Thread {
         serverPort = Integer.parseInt(args[4]);
         rank = args[5];
         className = args[6];
-
         nargs = new String[(args.length - 7)];
         System.arraycopy(args, 7, nargs, 0, nargs.length);
 
         c = Class.forName(className);
-
         try {
 
             System.out.println("Starting process <" + rank + "> on <" + hostName + ">");
             String arvs[] = new String[nargs.length + 3];
-            
+
             //retrieve start time of job
             double startTime = (double) System.currentTimeMillis() / 1000;
-            
+            //communicate running job name
+            System.out.println("Dilmun , " + hostName + " , " + className + " , startTime , " + String.format("%.4f", startTime)+ " , " + processes);
+
             arvs[0] = rank;
             if (!deviceName.equals("mxdev")) {
                 arvs[1] = portInfo.concat(";#Server Name;" + serverName
@@ -127,14 +127,16 @@ public class Wrapper extends Thread {
                 throw new NoSuchMethodException("main");
             }
             m.invoke(null, new Object[]{arvs});
-            
+
             //retrieve end time
             double endTime = (double) System.currentTimeMillis() / 1000;
             System.out.println("Stopping Process <" + rank + "> on <" + hostName + ">");
             //calculate length
-            double length = endTime - startTime;
+            //double length = endTime - startTime;
             //communicate device name and job length
-            System.out.println("Dilmun , " + hostName + " , " + String.format("%.4f", length));
+            //System.out.println("Dilmun , " + hostName + " , " + String.format("%.4f", length));
+            //System.out.println("Dilmun , " + hostName + " , length , " + String.format("%.4f", length));
+            System.out.println("Dilmun , " + hostName + " , " + className + " , endTime , " + String.format("%.4f", endTime));
         } catch (Exception ioe) {
             System.err.println("[" + hostName + "-Wrapper.java]: Multi-threaded"
                     + " starter: exception" + ioe.getMessage());
@@ -153,6 +155,8 @@ public class Wrapper extends Thread {
     public static void main(String args[]) throws Exception {
         ThreadGroup group = new ThreadGroup("MPI" + args[3]);
         Wrapper wrap = new Wrapper(group, args[3]);
+        //double startTime = (double) System.currentTimeMillis() / 1000;
+        //System.out.println("tesst: st: " + startTime);
         wrap.args = args;
         wrap.start();
         wrap.join();
