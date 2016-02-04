@@ -2,10 +2,10 @@
  The MIT License
 
  Copyright (c) 2013 - 2013
-   1. High Performance Computing Group, 
-   School of Electrical Engineering and Computer Science (SEECS), 
-   National University of Sciences and Technology (NUST)
-   2. Khurram Shahzad, Mohsan Jameel, Aamir Shafi, Bryan Carpenter (2013 - 2013)
+ 1. High Performance Computing Group, 
+ School of Electrical Engineering and Computer Science (SEECS), 
+ National University of Sciences and Technology (NUST)
+ 2. Khurram Shahzad, Mohsan Jameel, Aamir Shafi, Bryan Carpenter (2013 - 2013)
    
 
  Permission is hereby granted, free of charge, to any person obtaining
@@ -40,40 +40,39 @@ import runtime.common.MPJUtil;
 import runtime.daemonmanager.DMThreadUtil;
 
 public class StatusThread extends DMThread {
-  
-  private String host = "localhost";
-  
-  // Set the name of the machine
-  public StatusThread(String machineName) {
-    host = machineName;
-  }// end StatusThread method 
 
-  public void run() {
-  
-    queryMPJExpressDeamons();
-  }//end run method 
+    private String host = "localhost";
 
-  public void queryMPJExpressDeamons() {
-  
-      // get the processID (Daemon ID) from getMPJProcessID method in DaemonUtil class
-      String pid = DaemonUtil.getMPJProcessID(host);
-    
-      if (pid != ""){
-         
-         // print host (machine) name + message (is running) + processID(DaemonID)
-		 System.out.println(MPJUtil.FormatMessage(host,DMMessages.MPJDAEMON_AVAILABLE + pid));
-	     
-	     // Dilmun code 
-         //set mpj runtime status to true 
-         DMThreadUtil.runtimeStatus = true;
-         //get the processID (DaemonID)  
-         DMThreadUtil.ProcessID=pid;
-         
-      }// end if 
-           
-      else {
-        // print host (machine) name + message (is not running)
-         System.out.println(MPJUtil.FormatMessage(host,DMMessages.MPJDAEMON_NOT_AVAILABLE));
-      }//end else
-  }// end queryMPJExpressDeamons method 
+    // Set the name of the machine
+    public StatusThread(String machineName) {
+        host = machineName;
+    }// end StatusThread method 
+
+    public void run() {
+
+        queryMPJExpressDeamons();
+    }//end run method 
+
+    public void queryMPJExpressDeamons() {
+
+        // get the processID (Daemon ID) from getMPJProcessID method in DaemonUtil class
+        String pid = DaemonUtil.getMPJProcessID(host);
+
+        if (pid != "") {
+
+            // print host (machine) name + message (is running) + processID(DaemonID)
+            System.out.println(MPJUtil.FormatMessage(host, DMMessages.MPJDAEMON_AVAILABLE + pid));
+
+	         // Dilmun code 
+            //set mpj runtime status to true 
+            DMThreadUtil.runtimeStatus = true;
+            //get the processID (DaemonID)  
+            DMThreadUtil.ProcessID = pid;
+
+        }// end if 
+        else {
+            // print host (machine) name + message (is not running)
+            System.out.println(MPJUtil.FormatMessage(host, DMMessages.MPJDAEMON_NOT_AVAILABLE));
+        }//end else
+    }// end queryMPJExpressDeamons method 
 }//end StatusThread class 
