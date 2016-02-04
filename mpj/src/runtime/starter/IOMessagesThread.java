@@ -67,13 +67,51 @@ public class IOMessagesThread extends Thread {
             output = new PrintWriter(clientSock.getOutputStream(), true);
             String message = input.nextLine();
             while (!(message.endsWith("EXIT"))) {
+                //ArrayList<String> job = MPJRun.executedJob.put(device, className);
                 if (message.startsWith("Dilmun")) {
-                 // retrive device name and length of executed job
+                    // retrive device name and length of executed job
                     String[] parts = message.split(" , ");
                     String device = parts[1];
-                    String length = parts[2];
-                   
-                    MPJRun.executedJob.put(device, length);
+                    //String command = parts[2];
+                    String job = parts[2];
+                    String timeType = parts[3];
+                    String time = parts[4];
+
+                    // String placeHolder = parts[3];
+                    String jobInfo[] = new String[4];
+                    if (timeType.equals("startTime")) {
+                        String processCounter = parts[5];
+                        if (MPJRun.executedJob.get(device) == null) {
+                            jobInfo[0] = job;
+                            jobInfo[1] = time;
+                            jobInfo[2] = "Running";
+                            jobInfo[3] = processCounter;
+
+                            MPJRun.executedJob.put(device, jobInfo);
+
+                        }
+
+                  // System.out.println("start: "+MPJRun.executedJob); 
+                        //  System.out.println("start: job info"+jobInfo[0]+" "+jobInfo[1]+" "+jobInfo[2]);
+                    } else if (timeType.equals("endTime")) {
+                        jobInfo = MPJRun.executedJob.get(device);
+
+                        //System.out.println("end: job info"+jobInfo[0]+" "+jobInfo[1]+" "+jobInfo[2]);
+                        int counter = Integer.parseInt(jobInfo[3]);
+                        counter--;
+                        if (counter == 0) {
+                            double length = Double.parseDouble(time) - Double.parseDouble(jobInfo[1]);
+                            jobInfo[2] = String.format("%.4f", length);
+                        }
+                        jobInfo[3] = "" + counter;
+                        MPJRun.executedJob.put(device, jobInfo);
+                        System.out.println("end: job info" + jobInfo[0] + " " + jobInfo[1] + " " + jobInfo[2] + " " + jobInfo[3]);
+                        // System.out.println("end: "+MPJRun.executedJob);
+                    }
+                 //  if (message.startsWith("job")) {
+                    //MPJRun.executedJob.put(device, job);
+                    //  }
+                    //MPJRun.executedJob.put(device, length);
                 } else if (!message.startsWith("@Ping#")) {
                     System.out.println(message);
                 }
@@ -81,7 +119,7 @@ public class IOMessagesThread extends Thread {
 
             }
             if (message.endsWith("EXIT")) {
-                System.out.println(MPJRun.executedJob);
+                //System.out.println(MPJRun.executedJob);
             }
 
         } catch (Exception cce) {
