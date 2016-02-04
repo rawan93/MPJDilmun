@@ -141,7 +141,8 @@ public class MPJRun {
     private String logLevel = "DEBUG";
     //test
     public static double startTime;
-    public static Map<String, String> executedJob = new HashMap<String, String>();
+    //public static Map<String, String> executedJob = new HashMap<String, String>();
+	public static HashMap<String, String[]> executedJob = new HashMap<String, String[]>();
 
     public MPJRun(String args[]) throws Exception {
         //System.out.println(" ");
@@ -544,7 +545,7 @@ public class MPJRun {
         writer6.close();
         reader6.close();
         
-        System.out.println(executedJob);
+     //   System.out.println(executedJob);
 
     }
 
@@ -1060,6 +1061,9 @@ public class MPJRun {
         if (DEBUG && logger.isDebugEnabled()) {
             logger.debug("conf file contents " + CONF_FILE_CONTENTS);
         }
+        //Test
+
+//System.out.println("procsPerMachineTable: "+procsPerMachineTable);
     }
 
     // Hybrid Device Assign Tasks
