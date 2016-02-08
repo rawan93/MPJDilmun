@@ -68,6 +68,10 @@ public class RTConstants {
   public static String NETWORK_DEVICE = "NetworkDevice";
   public static String MPJ_HOME = "MPJ_HOME";
   public static String MPJ_HOME_DIR = System.getenv("MPJ_HOME");
+  // Dilmun code 
+  public static String MPJ_Dilmun = "MPJ_Dilmun";
+  public static String MPJ_Dilmun_DIR = System.getenv("MPJ_Dilmun");
+  //end Dilmun code
   public static String DEBUG = "Debug";
   public static String DEBUG_PORT = "DebugPort";
   public static String PROFILER = "Profiler";
