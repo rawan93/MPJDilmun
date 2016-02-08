@@ -37,6 +37,12 @@
  */
 package runtime.starter;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
@@ -62,23 +68,31 @@ public class IOMessagesThread extends Thread {
     private void serverSocketInit() {
         Scanner input = null;
         PrintWriter output = null;
+        double length = 0.0;
+        String device = "";
+        String job = "";
+        String timeType = "";
+        String time = "";
+        String jobInfo[] = new String[4];
         try {
             input = new Scanner(clientSock.getInputStream());
             output = new PrintWriter(clientSock.getOutputStream(), true);
             String message = input.nextLine();
+            
             while (!(message.endsWith("EXIT"))) {
+         
                 //ArrayList<String> job = MPJRun.executedJob.put(device, className);
                 if (message.startsWith("Dilmun")) {
+        
                     // retrive device name and length of executed job
                     String[] parts = message.split(" , ");
-                    String device = parts[1];
+                    device = parts[1];
                     //String command = parts[2];
-                    String job = parts[2];
-                    String timeType = parts[3];
-                    String time = parts[4];
-
+                    job = parts[2];
+                    timeType = parts[3];
+                    time = parts[4];
                     // String placeHolder = parts[3];
-                    String jobInfo[] = new String[4];
+                    //String jobInfo[] = new String[4];
                     if (timeType.equals("startTime")) {
                         String processCounter = parts[5];
                         if (MPJRun.executedJob.get(device) == null) {
@@ -88,10 +102,9 @@ public class IOMessagesThread extends Thread {
                             jobInfo[3] = processCounter;
 
                             MPJRun.executedJob.put(device, jobInfo);
-
+                            writeToFile(device, jobInfo[0], jobInfo[2]);
                         }
-
-                  // System.out.println("start: "+MPJRun.executedJob); 
+                        // System.out.println("start: "+MPJRun.executedJob); 
                         //  System.out.println("start: job info"+jobInfo[0]+" "+jobInfo[1]+" "+jobInfo[2]);
                     } else if (timeType.equals("endTime")) {
                         jobInfo = MPJRun.executedJob.get(device);
@@ -100,18 +113,23 @@ public class IOMessagesThread extends Thread {
                         int counter = Integer.parseInt(jobInfo[3]);
                         counter--;
                         if (counter == 0) {
-                            double length = Double.parseDouble(time) - Double.parseDouble(jobInfo[1]);
+                            length = Double.parseDouble(time) - Double.parseDouble(jobInfo[1]);
                             jobInfo[2] = String.format("%.4f", length);
+                                                    writeToFile(device, jobInfo[0], jobInfo[2]);
+
                         }
                         jobInfo[3] = "" + counter;
                         MPJRun.executedJob.put(device, jobInfo);
                         System.out.println("end: job info" + jobInfo[0] + " " + jobInfo[1] + " " + jobInfo[2] + " " + jobInfo[3]);
                         // System.out.println("end: "+MPJRun.executedJob);
+
                     }
                  //  if (message.startsWith("job")) {
                     //MPJRun.executedJob.put(device, job);
                     //  }
                     //MPJRun.executedJob.put(device, length);
+
+                    //   System.out.println(executedJob);
                 } else if (!message.startsWith("@Ping#")) {
                     System.out.println(message);
                 }
@@ -133,6 +151,128 @@ public class IOMessagesThread extends Thread {
                 ioEx.printStackTrace();
             }
         }
+
+    }
+
+    public void writeToFile(String device, String name, String length) {
+
+        // write the information of job in a text file
+        File f = new File("test.txt");
+        try {
+            if (!f.exists()) {
+                f.createNewFile();
+                FileWriter writer = new FileWriter(f, true);
+                writer.write("Device name: \n");
+                writer.write(device + "\n");
+                writer.write("Name of job: \n");
+                writer.write(name + "\n");
+                //writer.write(job + "\n");
+                writer.write("Job status : \n");
+                if (length == "Running") {
+                    writer.write("Running \n");
+                } else {
+                    writer.write("Executed \nLength = \n");
+                    writer.write(length + "\n");
+                }
+                //writer.write(length + "\n");
+                writer.write("---------- \n");
+                writer.close();
+
+                //if file is already exist
+            } else {
+                FileWriter writer = new FileWriter(f, true);
+                writer.write("Device name: \n");
+                writer.write(device + "\n");
+                writer.write("Name of job: \n");
+                writer.write(name + "\n");
+                //writer.write(job + "\n");
+                writer.write("Job status : \n");
+                if (length == "Running") {
+                    writer.write("Running \n");
+                } else {
+                    writer.write("Executed \nLength = \n");
+                    writer.write(length + "\n");
+                }
+                //writer.write(length + "\n");
+                writer.write("---------- \n");
+                writer.close();
+            }
+
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
+
+        //read the file and calculate the average
+        /*double total = 0.0;
+        double d;
+        BufferedReader reader;
+        int number_of_E_jobs = 0;
+        try {
+            reader = new BufferedReader(new FileReader("test.txt"));
+            String line = reader.readLine();
+            while (line != null) {
+                try {
+                    d = Double.valueOf(line);
+                    total += d;
+                    number_of_E_jobs = number_of_E_jobs + 1;
+
+                } catch (NumberFormatException e) {
+                }
+                line = reader.readLine();
+            }
+            FileWriter writer2 = new FileWriter(f, true);
+            writer2.write("AVG Length = " + total / number_of_E_jobs + "\n");
+            if (length == "Running") {
+                writer2.write("Name of running job now: " + name + "\n");
+            }
+            writer2.close();
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+
+        File inputFile = new File("test.txt");
+        File tempFile = new File("myTempFile.txt");
+        BufferedReader reader6 = null;
+        try {
+            reader6 = new BufferedReader(new FileReader(inputFile));
+        } catch (FileNotFoundException e2) {
+            // e2.printStackTrace();
+        }
+        BufferedWriter writer6 = null;
+        try {
+            writer6 = new BufferedWriter(new FileWriter(tempFile));
+        } catch (IOException e1) {
+            // e1.printStackTrace();
+        }
+        String currentLine;
+
+        try {
+            while ((currentLine = reader6.readLine()) != null) {
+                String trimmedLine = currentLine.trim();
+                if (trimmedLine.contains("AVG Length = ")) {
+                    continue;
+                } else if (trimmedLine.contains("Name of running job now: ")) {
+                    continue;
+                }
+                try {
+                    writer6.write(currentLine + "\n");
+                } catch (IOException e) {
+                    // e.printStackTrace();
+                }
+            }
+            writer6.write("AVG Length = " + total / number_of_E_jobs + "\n");
+            if (length == "Running") {
+                writer6.write("Name of running job now: " + name + "\n");
+            }
+            writer6.close();
+            reader6.close();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            // e.printStackTrace();
+        }
+
+        boolean rename = tempFile.renameTo(inputFile);*/
+
     }
 
 }
