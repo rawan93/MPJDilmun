@@ -187,6 +187,9 @@ public class DMThreadUtil {
             //File folder = new File(RTConstants.MPJ_HOME_DIR + "/DilmunTextFiles");
             //folder.mkdir();
             
+            //File folder = new File(RTConstants.MPJ_Dilmun_DIR + "/DilmunTextFiles");
+           // folder.mkdir();
+            
             // create a folder in mpj folder called DilmunTextFiles by using the relative  path 
            //File folder = new File("/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/DilmunTextFiles");
            //folder.mkdir();
@@ -194,11 +197,14 @@ public class DMThreadUtil {
             // create a text file in DilmunTextFiles folder called DilmunData by using the absolute  path 
             //String fileName = RTConstants.MPJ_HOME_DIR + "/DilmunTextFiles/DilmunData.txt";
             
+            //create a text file in DilmunTextFiles folder called DilmunData by using the absolute  path 
+            String fileName = RTConstants.MPJ_Dilmun_DIR + "/DilmunData.txt";
+            
             // create a text file in DilmunTextFiles folder called DilmunData by using the relative  path
             //String fileName = "/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/DilmunTextFiles/DilmunData.txt";
             
             // create a text file 
-            String fileName = "/Users/senior/Documents/workspace/Test1.txt";
+            //String fileName = "/Users/senior/Documents/workspace/Test1.txt";
        
             BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(fileName));
             //write the runtime data to the DilmunData text file d
