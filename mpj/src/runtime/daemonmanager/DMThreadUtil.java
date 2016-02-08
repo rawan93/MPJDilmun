@@ -58,6 +58,8 @@ public class DMThreadUtil {
     public static boolean clusterStatusValue = false;
  // Total number of daemons.
     public static int numberOfDaemons;
+// The size of the machine list 
+    public static int sizeOfMachineList;
 //test
 //array list of device name and id
     public static ArrayList<String> machineMsgList;
@@ -152,12 +154,19 @@ public class DMThreadUtil {
                     clusterStatusValue = false;
                     runtimeData = runtimeData + "Cluster status: Not existing.\n" + "Runtime status: Not running.\n";
                 }//end else is 
+                //print the total number of machines in the machines file 
+                sizeOfMachineList=machinesList.size();
+                runtimeData=runtimeData+"Total number of Machines: "+sizeOfMachineList +".\n";
                 //print the total number of Daemons
-                runtimeData = runtimeData + "Total number of Daemons: " + numberOfDaemons + ".\n"
-                        + "Machines in cluster:\n";
+                runtimeData = runtimeData + "Total number of Daemons: " + numberOfDaemons + ".\n";
+                
+                // print the machines' names in the cluster 
+                if (type.equals(DMConstants.DATA) || type.equals(DMConstants.BOOT)){
+                runtimeData= runtimeData+"Machines in cluster:\n";
                 for (int i = 0; i < machineMsgList.size(); i++) {
                     runtimeData = runtimeData + machineMsgList.get(i) + "\n";
                 }//end for loop
+                }//end if 
 
                 //Call the WriteToTextFile method to write the Runtime data to the textfile
                 WriteToTextFile(runtimeData);
@@ -174,16 +183,32 @@ public class DMThreadUtil {
         // *** Open the text file and write the runtime data to it *** 
         try {
         // RTConstants.MPJ_HOME_DIR get the path to mpj folder in the user device 
-            // create a folder in mpj folder called DilmunTextFiles  
-            File folder = new File(RTConstants.MPJ_HOME_DIR + "/DilmunTextFiles");
-            folder.mkdir();
-            // create a text file in DilmunTextFiles folder called DilmunData  
-            String fileName = RTConstants.MPJ_HOME_DIR + "/DilmunTextFiles/DilmunData.txt";
+            // create a folder in mpj folder called DilmunTextFiles by using the absolute  path 
+            //File folder = new File(RTConstants.MPJ_HOME_DIR + "/DilmunTextFiles");
+            //folder.mkdir();
+            
+            // create a folder in mpj folder called DilmunTextFiles by using the relative  path 
+           //File folder = new File("/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/DilmunTextFiles");
+           //folder.mkdir();
+       
+            // create a text file in DilmunTextFiles folder called DilmunData by using the absolute  path 
+            //String fileName = RTConstants.MPJ_HOME_DIR + "/DilmunTextFiles/DilmunData.txt";
+            
+            // create a text file in DilmunTextFiles folder called DilmunData by using the relative  path
+            //String fileName = "/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/DilmunTextFiles/DilmunData.txt";
+            
+            // create a text file 
+            String fileName = "/Users/senior/Documents/workspace/Test1.txt";
+       
             BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(fileName));
             //write the runtime data to the DilmunData text file d
             bufferedWriter.write(data);
             //close the text files.
             bufferedWriter.close();
+            
+            
+       
+       
 
         }//end try 
         catch (IOException ex) {
