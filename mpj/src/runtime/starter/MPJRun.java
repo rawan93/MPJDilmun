@@ -71,6 +71,10 @@ import runtime.common.RTConstants;
 import java.lang.ProcessBuilder;
 import java.lang.Process;
 
+//test
+import runtime.starter.IOMessagesThread;
+//
+
 public class MPJRun {
 
     final String DEFAULT_MACHINES_FILE_NAME = "machines";
@@ -140,7 +144,7 @@ public class MPJRun {
     static final boolean DEBUG = true;
     private String logLevel = "DEBUG";
     //test
-    public static double startTime;
+  //  public static double startTime;
     //public static Map<String, String> executedJob = new HashMap<String, String>();
 	public static HashMap<String, String[]> executedJob = new HashMap<String, String[]>();
 
@@ -358,8 +362,8 @@ public class MPJRun {
 
         System.out.println("Name of job: " + className);
 
-        double ST = (double) System.currentTimeMillis() / 1000;
-        startTime = (double) System.currentTimeMillis() / 1000;
+       // double ST = (double) System.currentTimeMillis() / 1000;
+       // startTime = (double) System.currentTimeMillis() / 1000;
 
         // Read the machine file and set machineList
         machineList = MPJUtil.readMachineFile(machinesFile);
@@ -437,115 +441,114 @@ public class MPJRun {
         if (!deviceName.equals("mxdev")) {
             collectPortInfo();
         }
-
-        //****test****//
-        // end time & difference (ET - ST)
-        double ET = (double) System.currentTimeMillis() / 1000;
-        double DIF = ET - ST;
         
-
+       // IOMessagesThread IOM = new IOMessagesThread();
+       
+        
         // write in a text file -- Name of job & length of each --
-        File f = new File("test.txt");
-        try {
-            if (!f.exists()) {
-                f.createNewFile();
-                FileWriter writer = new FileWriter(f, true);
-                writer.write("Device name: \n");
-                writer.write(localhostName + "\n");
-                writer.write("Name of job: \n");
-                writer.write(className + "\n");
-                writer.write("Length = \n");
-                writer.write("" + DIF + "\n");
-                writer.write("---------- \n");
-                writer.close();
-            } else {
-                FileWriter writer = new FileWriter(f, true);
-                writer.write("Device name: \n");
-                writer.write(localhostName + "\n");
-                writer.write("Name of job: \n");
-                writer.write(className + "\n");
-                writer.write("Length = \n");
-                writer.write("" + DIF + "\n");
-                writer.write("---------- \n");
-                writer.close();
-            }
-
-        } catch (IOException ex) {
-            System.out.println(ex.getMessage());
-        }
-
-        //read the file and calculate the average..
-        double total = 0.0;
-        double d;
-        BufferedReader reader;
-        int number_of_E_jobs = 0;
-        try {
-            reader = new BufferedReader(new FileReader("test.txt"));
-            String line = reader.readLine();
-            while (line != null) {
-                try {
-                    d = Double.valueOf(line);
-                    total += d;
-                    number_of_E_jobs = number_of_E_jobs + 1;
-
-                } catch (NumberFormatException e) {
-                }
-                line = reader.readLine();
-            }
-
-        } catch (Exception ex) {
-            System.out.println(ex.getMessage());
-        }
-
-        FileWriter writer2 = new FileWriter(f, true);
-        writer2.write("AVG Length = " + total / number_of_E_jobs + "\n");
-        writer2.write("Name of running job now: " + className + "\n");
-        writer2.close();
-
-        File inputFile = new File("test.txt");
-        File tempFile = new File("myTempFile.txt");
-        BufferedReader reader6 = null;
-        try {
-            reader6 = new BufferedReader(new FileReader(inputFile));
-        } catch (FileNotFoundException e2) {
-            // e2.printStackTrace();
-        }
-        BufferedWriter writer6 = null;
-        try {
-            writer6 = new BufferedWriter(new FileWriter(tempFile));
-        } catch (IOException e1) {
-            // e1.printStackTrace();
-        }
-        String currentLine;
-
-        try {
-            while ((currentLine = reader6.readLine()) != null) {
-                String trimmedLine = currentLine.trim();
-                if (trimmedLine.contains("AVG Length = ")) {
-                    continue;
-                } else if (trimmedLine.contains("Name of running job now: ")) {
-                    continue;
-                }
-                try {
-                    writer6.write(currentLine + "\n");
-                } catch (IOException e) {
-                    // e.printStackTrace();
-                }
-            }
-
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            // e.printStackTrace();
-        }
-        writer6.write("AVG Length = " + total / number_of_E_jobs + "\n");
-        writer6.write("Name of running job now: " + className + "\n");
-
-        boolean rename = tempFile.renameTo(inputFile);
-        
-        writer6.close();
-        reader6.close();
-        
-     //   System.out.println(executedJob);
+//        File f = new File("test.txt");
+//        try {
+//            if (!f.exists()) {
+//                f.createNewFile();
+//                FileWriter writer = new FileWriter(f, true);
+//                writer.write("Device name: \n");
+//               // writer.write(MPJRun.executedJob.get(IOMessagesThread.device)+ "\n");
+//               // writer.write(executedJob.values().toString()+ "\n");
+//                writer.write("\n");
+//                writer.write("Name of job: \n");
+//                writer.write(className + "\n");
+//                writer.write("Length = \n");
+//              //  writer.write("" + DIF + "\n");
+//                writer.write("---------- \n");
+//                writer.close();
+//            } else {
+//                FileWriter writer = new FileWriter(f, true);
+//                writer.write("Device name: \n");
+//                writer.write(localhostName + "\n");
+//                writer.write("Name of job: \n");
+//                writer.write(className + "\n");
+//                writer.write("Length = \n");
+//             //   writer.write("" + DIF + "\n");
+//                writer.write("---------- \n");
+//                writer.close();
+//            }
+//
+//        } catch (IOException ex) {
+//            System.out.println(ex.getMessage());
+//        }
+//
+//        //read the file and calculate the average..
+//        double total = 0.0;
+//        double d;
+//        BufferedReader reader;
+//        int number_of_E_jobs = 0;
+//        try {
+//            reader = new BufferedReader(new FileReader("test.txt"));
+//            String line = reader.readLine();
+//            while (line != null) {
+//                try {
+//                    d = Double.valueOf(line);
+//                    total += d;
+//                    number_of_E_jobs = number_of_E_jobs + 1;
+//
+//                } catch (NumberFormatException e) {
+//                }
+//                line = reader.readLine();
+//            }
+//
+//        } catch (Exception ex) {
+//            System.out.println(ex.getMessage());
+//        }
+//
+//        FileWriter writer2 = new FileWriter(f, true);
+//        writer2.write("AVG Length = " + total / number_of_E_jobs + "\n");
+//        writer2.write("Name of running job now: " + className + "\n");
+//        writer2.close();
+//
+//        File inputFile = new File("test.txt");
+//        File tempFile = new File("myTempFile.txt");
+//        BufferedReader reader6 = null;
+//        try {
+//            reader6 = new BufferedReader(new FileReader(inputFile));
+//        } catch (FileNotFoundException e2) {
+//            // e2.printStackTrace();
+//        }
+//        BufferedWriter writer6 = null;
+//        try {
+//            writer6 = new BufferedWriter(new FileWriter(tempFile));
+//        } catch (IOException e1) {
+//            // e1.printStackTrace();
+//        }
+//        String currentLine;
+//
+//        try {
+//            while ((currentLine = reader6.readLine()) != null) {
+//                String trimmedLine = currentLine.trim();
+//                if (trimmedLine.contains("AVG Length = ")) {
+//                    continue;
+//                } else if (trimmedLine.contains("Name of running job now: ")) {
+//                    continue;
+//                }
+//                try {
+//                    writer6.write(currentLine + "\n");
+//                } catch (IOException e) {
+//                    // e.printStackTrace();
+//                }
+//            }
+//
+//        } catch (IOException e) {
+//            // TODO Auto-generated catch block
+//            // e.printStackTrace();
+//        }
+//        writer6.write("AVG Length = " + total / number_of_E_jobs + "\n");
+//        writer6.write("Name of running job now: " + className + "\n");
+//
+//        boolean rename = tempFile.renameTo(inputFile);
+//        
+//        writer6.close();
+//        reader6.close();
+//        
+//     //   System.out.println(executedJob);
 
     }
 
