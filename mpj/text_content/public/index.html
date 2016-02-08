@@ -1,0 +1,48 @@
+<!doctype html>
+
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html ng-app="scotchTodo">
+<head>
+	<!-- META -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+	<title>MPJ information on cluster</title>
+
+	<!-- SCROLLS -->
+	<link rel="stylesheet" href="/client-lib/css/bootstrap.min.css"><!-- load bootstrap -->
+
+	<style>
+		html 					{ overflow-y:scroll; }
+		body 					{ padding-top:50px; }
+		#todo-list 				{ margin-bottom:30px; }
+		#todo-form 	 			{ margin-bottom:50px; }
+	</style>
+
+	<!-- SPELLS -->
+	<script src="/client-lib/js/angular.min.js"></script><!-- load angular -->
+		<script src="core.js"></script>
+	
+
+</head>
+<!-- SET THE CONTROLLER AND GET ALL TODOS WITH INITIALIZE FUNCTION -->
+<body ng-controller="mainController">
+	<div class="container">
+
+		<div class="jumbotron text-center">
+			<h3> MPJ Cluster information</h3>
+		</div>
+
+		<div class="row text-center">
+				<div class="col-md-12">
+		{{mydata}}
+						</div>
+				
+		</div>
+
+		
+
+	</div>
+
+</body>
+</html>
