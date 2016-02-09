@@ -39,7 +39,6 @@ package runtime.starter;
 import java.lang.*;
 import java.util.Scanner;
 //import org.apache.hadoop.yarn.api.ApplicationConstants;
-
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.InetAddress;
@@ -173,9 +172,9 @@ public class MPJRun {
 
 //Dilmun code
 
-Map<String, String> dilmun_map = System.getenv();
+        Map<String, String> dilmun_map = System.getenv();
         try {
-            MPJDilmunDir = map.get("MPJ_Dilmun");
+            MPJDilmunDir = dilmun_map.get("MPJ_Dilmun");
             RTConstants.MPJ_Dilmun_DIR = MPJDilmunDir;
             if (MPJDilmunDir == null) {
                 throw new Exception("[MPJRun.java]:MPJ_Dilmun environment found..");
