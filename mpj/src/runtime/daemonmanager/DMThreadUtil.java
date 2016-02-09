@@ -182,43 +182,19 @@ public class DMThreadUtil {
 
         // *** Open the text file and write the runtime data to it *** 
         try {
-        // RTConstants.MPJ_HOME_DIR get the path to mpj folder in the user device 
-            // create a folder in mpj folder called DilmunTextFiles by using the absolute  path 
-            //File folder = new File(RTConstants.MPJ_HOME_DIR + "/DilmunTextFiles");
-            //folder.mkdir();
             
-            //File folder = new File(RTConstants.MPJ_Dilmun_DIR + "/DilmunTextFiles");
-           // folder.mkdir();
-            
-            // create a folder in mpj folder called DilmunTextFiles by using the relative  path 
-           //File folder = new File("/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/DilmunTextFiles");
-           //folder.mkdir();
-       
-            // create a text file in DilmunTextFiles folder called DilmunData by using the absolute  path 
-            //String fileName = RTConstants.MPJ_HOME_DIR + "/DilmunTextFiles/DilmunData.txt";
-            
-            //create a text file in DilmunTextFiles folder called DilmunData by using the absolute  path 
+            //create a text file in text_content folder called DilmunData by using the absolute  path 
             String fileName = RTConstants.MPJ_Dilmun_DIR + "/DilmunData.txt";
-            
-            // create a text file in DilmunTextFiles folder called DilmunData by using the relative  path
-            //String fileName = "/Users/senior/Desktop/Dilmun/MPJDilmun/mpj/DilmunTextFiles/DilmunData.txt";
-            
-            // create a text file 
-            //String fileName = "/Users/senior/Documents/workspace/Test1.txt";
        
             BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(fileName));
-            //write the runtime data to the DilmunData text file d
+            //write the runtime data to the DilmunData text file 
             bufferedWriter.write(data);
             //close the text files.
             bufferedWriter.close();
             
-            
-       
-       
-
         }//end try 
         catch (IOException ex) {
-            System.out.println("Error writing to file ");
+            System.out.println("Error writing to DilmunData file ");
         }//end catch 
     }// end WriteToTextFile method 
 }// end DMThreadUtil class 
