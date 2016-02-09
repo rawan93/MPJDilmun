@@ -52,23 +52,13 @@ public class BootThread extends DMThread {
   private String port = "";
   ProcessBuilder pb = null;
   private String msg="";
-  /*Aisha*/
-  private int numcpu=1;
-  private double load=0;
-  private double total=0;
-  private double free=0;
-  private double used=0;
+  
 
 
   public BootThread(String machineName, String daemonPort) {
     host = machineName;
     port = daemonPort;
-  
-    
-
-        
-
-        
+     
     
 
   }
@@ -100,7 +90,7 @@ public class BootThread extends DMThread {
           System.out.println("BootThread.run: tid ="+tid+", pid ="+pid);
 					   
 	if (!pid.equals("") && Integer.parseInt(pid) > -1) {
-	  System.out.println(numcpu+MPJUtil.FormatMessage(host,
+	  System.out.println(MPJUtil.FormatMessage(host,
 	      DMMessages.MPJDAEMON_STARTED + pid));
        
 
@@ -126,18 +116,14 @@ public class BootThread extends DMThread {
   private boolean validExecutionParams() {
 
     String pid = DaemonUtil.getMPJProcessID(host);
-    //Aisha
-     String fileName = "info.txt";
-    String num=DaemonUtil.getCPUnum(host);
-    String tot=DaemonUtil.gettotalmem(host);
+    
     if (!pid.equals("")) {
-      System.out.println(MPJUtil.FormatMessage(host,
-	  DMMessages.MPJDAEMON_ALREADY_RUNNING + pid));
-    System.out.println("new number of CPUs"+num); 
-    System.out.println("new total memory "+tot); 
+    System.out.println(MPJUtil.FormatMessage(host,
+    DMMessages.MPJDAEMON_ALREADY_RUNNING + pid));
+   
     
     
-	  writeMessage(true, pid);
+    writeMessage(true, pid);
       return false;
     }
     InetAddress address = null;
@@ -146,7 +132,7 @@ public class BootThread extends DMThread {
       address = InetAddress.getByName(host);
     }
     catch (UnknownHostException e) {
-	  writeMessage(false, "");
+    writeMessage(false, "");
       e.printStackTrace();
       System.out.println(e.getMessage());
       return false;
@@ -156,43 +142,27 @@ public class BootThread extends DMThread {
       return false;
     }
   
-   //Aisha write in the text file
-
-        try {
-           
-            FileWriter fileWriter = new FileWriter(fileName);
-
-           
-            BufferedWriter bufferedWriter=new BufferedWriter(fileWriter);
-
-            bufferedWriter.write("new number of CPUs"+num);
-            bufferedWriter.newLine();
-            bufferedWriter.write("new total memory "+tot);
-          
-
-            
-            bufferedWriter.close();
-        }
-        catch(IOException ex) {
-            System.out.println("Error writing to file '" + fileName + "'");
-            
-        }
-        //end file
+  
         
       return true;
-  }
+  }//end function
   
-  // Dilmun code 
+  
+    
+
+    
   
   public void writeMessage(boolean availability, String pid){
   	if (availability == true){
   		msg = MPJUtil.FormatMachineMessage(host,"MPJ Daemon is running", pid, port);
   		DMThreadUtil.numberOfDaemons++;
 
-  	} else if (availability == false){
+  	} 
+    else if (availability == false){
   		msg = MPJUtil.FormatMachineMessage(host,DMMessages.MPJDAEMON_NOT_AVAILABLE, pid, "");
   		//DMThreadUtil.numberOfDaemons++;
   	}
   	DMThreadUtil.machineMsgList.add(msg);
   }//end writeMessage method 
 }// end BootThread class 
+
