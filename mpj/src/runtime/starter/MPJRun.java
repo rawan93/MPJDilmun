@@ -352,7 +352,7 @@ public class MPJRun {
             //System.out.println("Port:"+D_SER_PORT);
 
             // Name of job
-            System.out.println("Name of job: " + className);
+           // System.out.println("Name of job: " + className);
 
             if (DEBUG && logger.isDebugEnabled()) {
                 logger.debug("className " + className);
@@ -375,10 +375,10 @@ public class MPJRun {
         System.out.println("MPJ Express (" + VERSION + ") is started in the "
                 + "cluster configuration with " + deviceName);
 
-        System.out.println("Name of job: " + className);
+        //System.out.println("Name of job: " + className);
 
-        double ST = (double) System.currentTimeMillis() / 1000;
-        startTime = (double) System.currentTimeMillis() / 1000;
+        //double ST = (double) System.currentTimeMillis() / 1000;
+        //startTime = (double) System.currentTimeMillis() / 1000;
 
         // Read the machine file and set machineList
         machineList = MPJUtil.readMachineFile(machinesFile);
@@ -459,6 +459,7 @@ public class MPJRun {
 
         //****test****//
         // end time & difference (ET - ST)
+        /*
         double ET = (double) System.currentTimeMillis() / 1000;
         double DIF = ET - ST;
         
@@ -563,7 +564,7 @@ public class MPJRun {
         
         writer6.close();
         reader6.close();
-        
+        */
      //   System.out.println(executedJob);
 
     }
