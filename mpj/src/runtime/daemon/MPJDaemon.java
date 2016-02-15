@@ -66,6 +66,8 @@ import runtime.common.RTConstants;
 import runtime.daemonmanager.DMConstants;
 import runtime.daemonmanager.MPJHalt;
 
+import com.sun.management.OperatingSystemMXBean; 
+
 
 
 
@@ -92,6 +94,27 @@ public class MPJDaemon {
 
     double load = osMBean.getSystemLoadAverage();
     System.out.println("Load Average in one minute :  "+load);
+
+    OperatingSystemMXBean mbean = (com.sun.management.OperatingSystemMXBean)ManagementFactory.getOperatingSystemMXBean();
+        double usage;
+        for(int z=0; z<10; z++) {
+            usage = mbean.getSystemCpuLoad();
+            if((usage<0.0 || usage>1.0) && usage != -1.0) 
+            {
+                throw new RuntimeException("getProcessCpuLoad() returns " + usage
+                       +   " which is not in the [0.0,1.0] interval");
+            }//end if
+            else
+              if (z!=0)
+              System.out.println("load the overall system "+ usage*100+" %"); 
+           try {
+                Thread.sleep(200);
+            } //end try
+            catch(InterruptedException e)
+             {
+                e.printStackTrace();
+            }//end catch
+        }//end for
   
     com.sun.management.OperatingSystemMXBean mxbean = (com.sun.management.OperatingSystemMXBean) ManagementFactory.getOperatingSystemMXBean();
     double total_mem = mxbean.getTotalPhysicalMemorySize()/(1024*1024*1024);
@@ -103,6 +126,8 @@ public class MPJDaemon {
     System.out.println("Physical Memory Used in GB: " + used_mem);
 
     System.out.println("Physical Memory Free in GB:" + free_mem);
+
+
 
     String fileName = "info.txt";
     //start write in the text file
