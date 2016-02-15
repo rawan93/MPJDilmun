@@ -1,0 +1,4 @@
+Cluster status: Not existing.
+Runtime status: Not running.
+Total number of Machines: 2.
+Total number of Daemons: 0.

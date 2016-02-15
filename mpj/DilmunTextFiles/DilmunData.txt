@@ -1,4 +1,8 @@
-Cluster status: Not existing.
-Runtime status: Not running.
-Total number of Daemons: 0.
+Cluster status: Existing.
+Runtime status: Running.
+Total number of Daemons: 1.
 Machines in cluster:
+[Rawans-MacBook-Air.local] 
+MPJ Daemon is running
+Process ID: 23160
+Port Number: 50055

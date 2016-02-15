@@ -1,0 +1,25 @@
+Device name: 
+mais-MacBook-Pro.local
+Name of job: 
+HelloWorld
+Job status : Running 
+.————— 
+Device name: 
+mais-MacBook-Pro.local
+Name of job: 
+HelloWorld
+Length = 
+1.628000020980835
+.————— 
+AVG Length = 1.628000020980835
+Name of running job now: HelloWorld
+Device name: mais-MacBook-Pro.local
+Name of job: HelloWorld
+Job status : Executed 
+Length = 0.5490
+.————— 
+Device name: mais-MacBook-Pro.local
+Name of job: HelloWorld
+Job status : Executed 
+Length = 0.5480.
+---------- 

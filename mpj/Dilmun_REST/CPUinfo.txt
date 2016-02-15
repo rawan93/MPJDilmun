@@ -1,0 +1,5 @@
+You have :  4 CPUs 
+Load Average in one minute :  2.54931640625
+Total Physical Memory in GB:4.0
+Physical Memory Used in GB: 4.0
+Physical Memory Free in GB:0.0

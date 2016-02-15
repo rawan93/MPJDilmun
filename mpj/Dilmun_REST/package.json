@@ -1,0 +1,10 @@
+{
+  "name"         : "Dilmun_REST",
+  "version"      : "0.0.0",
+  "description"  : "Display a conent from rest. Read content from text file",
+  "main"         : "server.js",
+  "dependencies" : {
+    "express"    : "~4.7.2"
+  }
+}
+ 
