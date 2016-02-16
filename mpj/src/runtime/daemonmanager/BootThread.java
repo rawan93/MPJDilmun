@@ -44,7 +44,13 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
 
+//test 
+import java.net.Socket;
+import java.net.ServerSocket;
+
+
 import runtime.common.MPJUtil;
+import runtime.common.RTConstants;
 
 public class BootThread extends DMThread {
 
@@ -58,21 +64,18 @@ public class BootThread extends DMThread {
   public BootThread(String machineName, String daemonPort) {
     host = machineName;
     port = daemonPort;
-     
-    
-
   }
 
   public void run() {
     try {
       bootNetWorkMachines();
+      //dataSocket();
     } catch (IOException e) {
       e.printStackTrace();
     }
   }
 
   public void bootNetWorkMachines() throws IOException {
-
     long tid = Thread.currentThread().getId(); 
 
     if (validExecutionParams()) {
@@ -92,7 +95,7 @@ public class BootThread extends DMThread {
 	if (!pid.equals("") && Integer.parseInt(pid) > -1) {
 	  System.out.println(MPJUtil.FormatMessage(host,
 	      DMMessages.MPJDAEMON_STARTED + pid));
-       
+       dataSocket();
 
 	  //test
 	  writeMessage(true, pid);
@@ -149,7 +152,63 @@ public class BootThread extends DMThread {
   
   
     
-
+//Data socket 
+ public void dataSocket(){
+  ServerSocket myService = null;
+    try {
+       myService = new ServerSocket(Integer.parseInt(RTConstants.MPJ_RUN_SERVER_PORT));
+        }
+    catch (IOException e) {
+      System.out.println(e);
+    }
+     Socket serviceSocket = null;
+    try {
+       serviceSocket = myService.accept();
+        }
+    catch (IOException e) {
+       System.out.println(e);
+    }
+     DataInputStream input= null;
+    try {
+       input = new DataInputStream(serviceSocket.getInputStream());
+       String line = input.readLine();
+        while (!(line.endsWith("EXIT"))) {
+        	if (line.startsWith("CPU")){
+             	System.out.println("socket line: "+line); 
+             	String fileName = RTConstants.MPJ_Dilmun_DIR + "/CPUinfo.txt";
+             	String[] parts = line.split(" , ");
+             	try {
+        			FileWriter fileWriter =new FileWriter(fileName);
+      				BufferedWriter bufferedWriter =new BufferedWriter(fileWriter);
+      				bufferedWriter.write(parts[1]+"\n");
+					bufferedWriter.write(parts[2]+"\n");
+					bufferedWriter.write(parts[3]+"\n");
+					bufferedWriter.write(parts[4]+"\n");
+					bufferedWriter.write(parts[5]+"\n");
+      				bufferedWriter.close();
+    			} catch(IOException ex) {
+      				System.out.println("Error writing to file '"+ fileName + "'");
+      		  } //end write in the text file
+            }
+            line = input.readLine();
+       }
+       
+    }
+    catch (IOException e) {
+       System.out.println(e);
+    }
+    
+    
+     try {
+       input.close();
+       serviceSocket.close();
+       myService.close();
+    } 
+    catch (IOException e) {
+       System.out.println(e);
+    }
+    
+  }
     
   
   public void writeMessage(boolean availability, String pid){
