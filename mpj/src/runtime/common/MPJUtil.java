@@ -192,7 +192,9 @@ public class MPJUtil {
 	  RTConstants.MPJ_PORTMANAGER_PORT = confValue(line);
 	} else if (line.startsWith(RTConstants.MPJ_DAEMON_LOGLEVEL_KEY)) {
 	  RTConstants.MPJ_DAEMON_LOGLEVEL = confValue(line);
-	} 
+	} else if (line.startsWith(RTConstants.MPJ_RUN_SERVER_PORT_KEY)) {
+	  RTConstants.MPJ_RUN_SERVER_PORT = confValue(line);
+	}
       }
 
       in.close();
