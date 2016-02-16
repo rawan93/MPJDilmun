@@ -86,14 +86,14 @@ public class MPJDaemon {
 
   public MPJDaemon(String args[]) throws Exception {
     //collect CPU and Memory informations
-
+    System.out.println("worouuud !!");
     int Num_of_CPU= Runtime.getRuntime().availableProcessors();
-    System.out.println("You have :  "+Num_of_CPU+" CPUs ");
+    //System.out.println("You have :  "+Num_of_CPU+" CPUs ");
 
     OperatingSystemMXBean osMBean= (OperatingSystemMXBean) ManagementFactory.getOperatingSystemMXBean();
 
     double load = osMBean.getSystemLoadAverage();
-    System.out.println("Load Average in one minute :  "+load);
+    //System.out.println("Load Average in one minute :  "+load);
 
     OperatingSystemMXBean mbean = (com.sun.management.OperatingSystemMXBean)ManagementFactory.getOperatingSystemMXBean();
         double usage;
@@ -106,7 +106,7 @@ public class MPJDaemon {
             }//end if
             else
               if (z!=0)
-              System.out.println("load the overall system "+ usage*100+" %"); 
+              //System.out.println("load the overall system "+ usage*100+" %"); 
            try {
                 Thread.sleep(200);
             } //end try
@@ -121,24 +121,52 @@ public class MPJDaemon {
     double free_mem = mxbean.getFreePhysicalMemorySize()/(1024*1024*1024);
     double used_mem= total_mem - free_mem ;
 
-    System.out.println("Total Physical Memory in GB:" + total_mem);
+    //System.out.println("Total Physical Memory in GB:" + total_mem);
 
-    System.out.println("Physical Memory Used in GB: " + used_mem);
+    //System.out.println("Physical Memory Used in GB: " + used_mem);
 
-    System.out.println("Physical Memory Free in GB:" + free_mem);
+    //System.out.println("Physical Memory Free in GB:" + free_mem);
+	String cpuInfoMsg = "CPU"+ " , ";
+    cpuInfoMsg = cpuInfoMsg + "You have :  "+Num_of_CPU+" CPUs" +  " , " +
+            "Load Average in one minute :  "+load + " , "+
+            "Total Physical Memory in GB:" + total_mem + " , "+
+            "Physical Memory Used in GB: " + used_mem + " , "+
+            "Physical Memory Free in GB:" + free_mem;
+    //System.out.println(cpuInfoMsg);
+	/*System.out.println("try 1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+ 	File f = new File("info.txt");
+ 	 try {
+            if (!f.exists()) {
+            System.out.println("try 2!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                f.createNewFile();
+                FileWriter writer = new FileWriter(f, true);
+                writer.write("TESSST: \n"+cpuInfoMsg);
+                writer.close();
 
+                //if file is already exist
+            } else if (f.exists()) {
+            System.out.println("try 3!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                FileWriter writer = new FileWriter(f, true);
+                writer.write("TESSST: \n"+cpuInfoMsg);
+                writer.close();
+            }
 
-
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }*/
+        
+        
+        
+ 	
     String fileName = "info.txt";
     //start write in the text file
-
     try 
     {
            
-      FileWriter fileWriter =new FileWriter(fileName);    
+      FileWriter fileWriter =new FileWriter(fileName);
       BufferedWriter bufferedWriter =new BufferedWriter(fileWriter);
-
-      bufferedWriter.write("You have :  "+Num_of_CPU+" CPUs ");
+      bufferedWriter.write("TESSST: \n"+cpuInfoMsg);
+      /*bufferedWriter.write("You have :  "+Num_of_CPU+" CPUs ");
       bufferedWriter.newLine();
       bufferedWriter.write("Load Average in one minute :  "+load);
       bufferedWriter.newLine();
@@ -146,10 +174,8 @@ public class MPJDaemon {
       bufferedWriter.newLine();
       bufferedWriter.write("Physical Memory Used in GB: " + used_mem);
       bufferedWriter.newLine();
-      bufferedWriter.write("Physical Memory Free in GB:" + free_mem);
-    
+      bufferedWriter.write("Physical Memory Free in GB:" + free_mem);*/
       bufferedWriter.close();
-
     }
     catch(IOException ex) 
     {
@@ -158,7 +184,7 @@ public class MPJDaemon {
     } //end write in the text file
         
 
-
+    
     InetAddress localaddr = InetAddress.getLocalHost();
     String hostName = localaddr.getHostName();
     servSockets = new ConcurrentHashMap<Socket, ProcessLauncher>();
@@ -168,8 +194,14 @@ public class MPJDaemon {
       mpjHomeDir = map.get("MPJ_HOME");
       RTConstants.MPJ_HOME_DIR = mpjHomeDir;
       if (mpjHomeDir == null) {
-	throw new Exception("MPJ_HOME environment variable not set!!!");
+		throw new Exception("MPJ_HOME environment variable not set!!!");
       }
+      //test
+      String dataFile = mpjHomeDir+"/Dilmun_REST/info.txt";
+      FileWriter fileWriter =new FileWriter(dataFile);
+      BufferedWriter bufferedWriter =new BufferedWriter(fileWriter);
+      bufferedWriter.write("TESSST Dilmun REST: \n"+cpuInfoMsg);
+      bufferedWriter.close();
     }
 
     catch (Exception exc) {
@@ -177,11 +209,83 @@ public class MPJDaemon {
       exc.printStackTrace();
       return;
     }
-
+	
+	//String dilmunDir = map.get("MPJ_Dilmun");
+	//System.out.println("Daemon dilmun path: "+dilmunDir );
     // Reading values from conf/mpjexpress.conf
-
+    
+    /*String fileName = mpjHomeDir+"/Dilmun_REST/info.txt";
+    //start write in the text file
+    try 
+    {
+           
+      FileWriter fileWriter =new FileWriter(fileName);
+      BufferedWriter bufferedWriter =new BufferedWriter(fileWriter);
+      bufferedWriter.write("TESSST Dilmun REST: \n"+cpuInfoMsg);
+      bufferedWriter.close();
+    }
+    catch(IOException ex) 
+    {
+      System.out.println("Error writing to file '"+ fileName + "'");
+            
+    } //end write in the text file
+*/
     readValuesFromMPJExpressConf();
     createLogger(mpjHomeDir, hostName);
+    
+    
+///check SOCKET!! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Socket MyClient = null;
+    try {
+           MyClient = new Socket("Rawans-MacBook-Air.local",Integer.parseInt(RTConstants.MPJ_RUN_SERVER_PORT));
+    }
+    catch (IOException e) {
+        System.out.println(e);
+    }
+
+
+ DataOutputStream output = null;
+    try {
+       output = new DataOutputStream(MyClient.getOutputStream());
+    }
+    catch (IOException e) {
+       System.out.println(e);
+    }
+    
+    if(output!=null){
+    try{
+    String cpuMsg = "CPU"+ " , " +
+			 "You have :  "+Num_of_CPU+" CPUs" +  " , " +
+            "Load Average in one minute :  "+load + " , "+
+            "Total Physical Memory in GB:" + total_mem + " , "+
+            "Physical Memory Used in GB: " + used_mem + " , "+
+            "Physical Memory Free in GB:" + free_mem +"\n";
+    
+    
+    output.writeBytes(cpuMsg);
+            
+    
+
+    output.writeBytes("EXIT");
+
+      }
+     catch (IOException e) {
+       System.out.println(e);
+    }
+    }
+    
+     try {
+           output.close();
+           MyClient.close();
+    } 
+    catch (IOException e) {
+       System.out.println(e);
+       
+    }
+    ////end sockettttt!!!!!!!!!!!!!!!!!!!!
+    
+    
 
     if (DEBUG && logger.isDebugEnabled()) {
       logger.debug("mpjHomeDir " + mpjHomeDir);
@@ -218,6 +322,10 @@ public class MPJDaemon {
 
     serverSocketInit();
   }
+
+
+
+
 
   private void createLogger(String homeDir, String hostName)
       throws MPJRuntimeException {
@@ -263,6 +371,9 @@ public class MPJDaemon {
  	} catch(Exception eee) { 
 	   eee.printStackTrace(); 
 	} 
+	
+	//TESTTTT
+
 
 	// Connection is accepted and the socket passed onto 
         // ProcessLauncher.java which takes care of the rest
@@ -315,7 +426,9 @@ public class MPJDaemon {
 	  portManagerPort = Integer.parseInt(MPJUtil.confValue(line));
 	} else if (line.startsWith(RTConstants.MPJ_DAEMON_LOGLEVEL_KEY)) {
 	  logLevel = MPJUtil.confValue(line);
-	}
+	} else if (line.startsWith(RTConstants.MPJ_RUN_SERVER_PORT_KEY )) {
+	  RTConstants.MPJ_RUN_SERVER_PORT =  MPJUtil.confValue(line);
+	} 
       }
       in.close();
     }
