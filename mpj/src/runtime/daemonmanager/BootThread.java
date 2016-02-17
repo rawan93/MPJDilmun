@@ -80,9 +80,14 @@ public class BootThread extends DMThread {
 
     if (validExecutionParams()) {
       try {
+      InetAddress localAddress = InetAddress.getLocalHost();
+      //String masterAddress = localAddress.getHostAddress();
+      String masterAddress = localAddress.toString();
+      String masterName = localAddress.getHostName();
+      //System.out.println(masterName);
 	String[] command = { "ssh", host, "java", "-cp",
 	    MPJUtil.getJarPath("daemon") + ":.", "runtime.daemon.MPJDaemon",
-	    port,
+	    port, masterName //masterAddress
 	};
 
 	ArrayList<String> consoleMessages = 
@@ -175,17 +180,40 @@ public class BootThread extends DMThread {
         while (!(line.endsWith("EXIT"))) {
         	if (line.startsWith("CPU")){
              	System.out.println("socket line: "+line); 
-             	String fileName = RTConstants.MPJ_Dilmun_DIR + "/CPUinfo.txt";
+             	//String fileName = RTConstants.MPJ_Dilmun_DIR + "/CPUinfo.txt";
+             	String fileName = RTConstants.MPJ_HOME_DIR + "/Dilmun_REST/CPUinfo.txt";
              	String[] parts = line.split(" , ");
              	try {
-        			FileWriter fileWriter =new FileWriter(fileName);
+             		File f = new File (fileName);
+             		if (!f.exists()) {
+             			f.createNewFile();
+             			FileWriter fileWriter =new FileWriter(f, true);
+      					fileWriter.write(parts[1]+"\n");
+						fileWriter.write(parts[2]+"\n");
+						fileWriter.write(parts[3]+"\n");
+						fileWriter.write(parts[4]+"\n");
+						fileWriter.write(parts[5]+"\n");
+						fileWriter.write(parts[6]+"\n");
+      					fileWriter.close();
+             		} else {
+                		FileWriter fileWriter = new FileWriter(f, true);
+                		fileWriter.write(parts[1]+"\n");
+						fileWriter.write(parts[2]+"\n");
+						fileWriter.write(parts[3]+"\n");
+						fileWriter.write(parts[4]+"\n");
+						fileWriter.write(parts[5]+"\n");
+						fileWriter.write(parts[6]+"\n");
+      					fileWriter.close();
+                		
+                	}
+        			/*FileWriter fileWriter =new FileWriter(fileName);
       				BufferedWriter bufferedWriter =new BufferedWriter(fileWriter);
       				bufferedWriter.write(parts[1]+"\n");
 					bufferedWriter.write(parts[2]+"\n");
 					bufferedWriter.write(parts[3]+"\n");
 					bufferedWriter.write(parts[4]+"\n");
 					bufferedWriter.write(parts[5]+"\n");
-      				bufferedWriter.close();
+      				bufferedWriter.close();*/
     			} catch(IOException ex) {
       				System.out.println("Error writing to file '"+ fileName + "'");
       		  } //end write in the text file
