@@ -69,8 +69,6 @@ import runtime.daemonmanager.MPJHalt;
 import com.sun.management.OperatingSystemMXBean; 
 
 
-
-
 public class MPJDaemon {
 
   private int D_SER_PORT;
@@ -85,8 +83,10 @@ public class MPJDaemon {
   PortManagerThread pManager;
 
   public MPJDaemon(String args[]) throws Exception {
+    System.out.println("TESSST: address sent: "+args[1]);
     //collect CPU and Memory informations
-    System.out.println("worouuud !!");
+    // InetAddress localaddr = InetAddress.getLocalHost();
+     //String hostName = localaddr.getHostName();
     int Num_of_CPU= Runtime.getRuntime().availableProcessors();
     //System.out.println("You have :  "+Num_of_CPU+" CPUs ");
 
@@ -126,12 +126,13 @@ public class MPJDaemon {
     //System.out.println("Physical Memory Used in GB: " + used_mem);
 
     //System.out.println("Physical Memory Free in GB:" + free_mem);
-	String cpuInfoMsg = "CPU"+ " , ";
-    cpuInfoMsg = cpuInfoMsg + "You have :  "+Num_of_CPU+" CPUs" +  " , " +
+	/*String cpuInfoMsg = "CPU"+ " , ";
+    cpuInfoMsg = cpuInfoMsg + hostName + " , " +
+    		 "You have :  "+Num_of_CPU+" CPUs" +  " , " +
             "Load Average in one minute :  "+load + " , "+
             "Total Physical Memory in GB:" + total_mem + " , "+
             "Physical Memory Used in GB: " + used_mem + " , "+
-            "Physical Memory Free in GB:" + free_mem;
+            "Physical Memory Free in GB:" + free_mem;*/
     //System.out.println(cpuInfoMsg);
 	/*System.out.println("try 1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
  	File f = new File("info.txt");
@@ -158,7 +159,7 @@ public class MPJDaemon {
         
         
  	
-    String fileName = "info.txt";
+   /* String fileName = "info.txt";
     //start write in the text file
     try 
     {
@@ -166,7 +167,7 @@ public class MPJDaemon {
       FileWriter fileWriter =new FileWriter(fileName);
       BufferedWriter bufferedWriter =new BufferedWriter(fileWriter);
       bufferedWriter.write("TESSST: \n"+cpuInfoMsg);
-      /*bufferedWriter.write("You have :  "+Num_of_CPU+" CPUs ");
+      bufferedWriter.write("You have :  "+Num_of_CPU+" CPUs ");
       bufferedWriter.newLine();
       bufferedWriter.write("Load Average in one minute :  "+load);
       bufferedWriter.newLine();
@@ -174,7 +175,7 @@ public class MPJDaemon {
       bufferedWriter.newLine();
       bufferedWriter.write("Physical Memory Used in GB: " + used_mem);
       bufferedWriter.newLine();
-      bufferedWriter.write("Physical Memory Free in GB:" + free_mem);*/
+      bufferedWriter.write("Physical Memory Free in GB:" + free_mem);
       bufferedWriter.close();
     }
     catch(IOException ex) 
@@ -183,13 +184,19 @@ public class MPJDaemon {
             
     } //end write in the text file
         
-
+	*/
     
     InetAddress localaddr = InetAddress.getLocalHost();
     String hostName = localaddr.getHostName();
     servSockets = new ConcurrentHashMap<Socket, ProcessLauncher>();
     Map<String, String> map = System.getenv();
-
+	/*String cpuInfoMsg = "CPU"+ " , ";
+    cpuInfoMsg = cpuInfoMsg + hostName + " , " +
+    		 "You have :  "+Num_of_CPU+" CPUs" +  " , " +
+            "Load Average in one minute :  "+load + " , "+
+            "Total Physical Memory in GB:" + total_mem + " , "+
+            "Physical Memory Used in GB: " + used_mem + " , "+
+            "Physical Memory Free in GB:" + free_mem;*/
     try {
       mpjHomeDir = map.get("MPJ_HOME");
       RTConstants.MPJ_HOME_DIR = mpjHomeDir;
@@ -197,11 +204,11 @@ public class MPJDaemon {
 		throw new Exception("MPJ_HOME environment variable not set!!!");
       }
       //test
-      String dataFile = mpjHomeDir+"/Dilmun_REST/info.txt";
+      /*String dataFile = mpjHomeDir+"/Dilmun_REST/info.txt";
       FileWriter fileWriter =new FileWriter(dataFile);
       BufferedWriter bufferedWriter =new BufferedWriter(fileWriter);
       bufferedWriter.write("TESSST Dilmun REST: \n"+cpuInfoMsg);
-      bufferedWriter.close();
+      bufferedWriter.close();*/
     }
 
     catch (Exception exc) {
@@ -236,16 +243,20 @@ public class MPJDaemon {
     
 ///check SOCKET!! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-Socket MyClient = null;
+	Socket MyClient = null;
     try {
-           MyClient = new Socket("Rawans-MacBook-Air.local",Integer.parseInt(RTConstants.MPJ_RUN_SERVER_PORT));
+          // MyClient = new Socket("Rawans-MacBook-Air.local",Integer.parseInt(RTConstants.MPJ_RUN_SERVER_PORT));
+          MyClient = new Socket(args[1],Integer.parseInt(RTConstants.MPJ_RUN_SERVER_PORT));
+          //byte[] masterAddr = args[1].getBytes();
+          //InetAddress masterAdress = InetAddress.getByAddress(masterAddr);
+          //MyClient = new Socket(masterAdress,Integer.parseInt(RTConstants.MPJ_RUN_SERVER_PORT));
     }
     catch (IOException e) {
         System.out.println(e);
     }
 
 
- DataOutputStream output = null;
+ 	DataOutputStream output = null;
     try {
        output = new DataOutputStream(MyClient.getOutputStream());
     }
@@ -255,7 +266,7 @@ Socket MyClient = null;
     
     if(output!=null){
     try{
-    String cpuMsg = "CPU"+ " , " +
+    String cpuMsg = "CPU"+ " , " + hostName + " , " +
 			 "You have :  "+Num_of_CPU+" CPUs" +  " , " +
             "Load Average in one minute :  "+load + " , "+
             "Total Physical Memory in GB:" + total_mem + " , "+
@@ -290,8 +301,9 @@ Socket MyClient = null;
     if (DEBUG && logger.isDebugEnabled()) {
       logger.debug("mpjHomeDir " + mpjHomeDir);
     }
-
-    if (args.length == 1) {
+    
+//CHANGE LENGTH was 1
+    if (args.length == 2) {
       if (DEBUG && logger.isDebugEnabled()) {
 	logger.debug(" args[0] " + args[0]);
 	logger.debug("setting daemon port to" + args[0]);
