@@ -40,6 +40,10 @@ package runtime.daemonmanager;
 import java.util.ArrayList;
 
 import runtime.common.MPJUtil;
+import runtime.common.RTConstants;
+
+//test
+import java.io.*;
 
 public class HaltThread extends DMThread {
   private String host = "localhost";
@@ -63,9 +67,19 @@ public class HaltThread extends DMThread {
 	      DMMessages.HOST_INACESSABLE));
       }
       pid = DaemonUtil.getMPJProcessID(host);
-      if (pid == "")
-	System.out.println(MPJUtil.FormatMessage(host,
-	    DMMessages.MPJDAEMON_STOPPED));
+      if (pid == ""){
+			System.out.println(MPJUtil.FormatMessage(host,
+	    	DMMessages.MPJDAEMON_STOPPED));
+	    	String fileName = RTConstants.MPJ_HOME_DIR + "/Dilmun_REST/CPUinfo.txt";
+	    	try {
+	    			FileWriter fileWriter =new FileWriter(fileName);
+      				BufferedWriter bufferedWriter =new BufferedWriter(fileWriter);
+      				bufferedWriter.write("");
+      				bufferedWriter.close();
+      		} catch(IOException ex) {
+      				System.out.println("Error emptying file '"+ fileName + "'");
+      		}
+	    }
     } else
       System.out.println(MPJUtil.FormatMessage(host,
 	  DMMessages.MPJDAEMON_NOT_AVAILABLE));
